@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+body{
+  background-color: red;
+}
+
+.center{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height:100vh;
+}
+.caixa-v{
+  width: 100vw;
+=======
 body {
   background-color: #990000;
   margin: 0;
@@ -58,4 +72,5 @@ p {
   color: #990000;
   background-color: #F7F7CF;
   margin-bottom: 70px;
+>>>>>>> release/v0.1
 }

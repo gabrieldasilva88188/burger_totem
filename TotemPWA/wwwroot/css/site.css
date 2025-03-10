@@ -1,50 +1,61 @@
-body{
-  background-color: rgb(230, 230, 230);
-}
-
-.center{
-  display:flex;
-  align-items: end;
+body {
+  background-color: #990000;
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+      "logo"
+      "text"
+      "combao"
+      "button";
   justify-content: center;
-  height:100vh;
-}
-.caixa-verm{
-  position: absolute;
-  width: 100vw;
-  height: 15vh;
-  background-color: red;
-  display: flex;
   align-items: center;
-  justify-content: center;
-  color: aliceblue;
-  font-weight: bold;
-  font-size: x-large;
+  grid-gap: 20px;
 }
-.caixa-amar{
-  position: absolute;
-  top: 22vh;
-  width: 100vw;
-  height: 7vh;
-  background-color: rgb(207, 207, 22);
 
+.logo {
+  grid-area: logo;
+  width: 200px;
+  height: 200px;
+  justify-self: center;
 }
-.caixa-verd{
-  position: absolute;
-  top: 15vh;
-  width: 100vw;
-  height: 7vh;
-  background-color: rgb(99, 249, 23);
+
+.caixa-verm {
+  display: none; /* Removido para simplificar o exemplo */
 }
-.inic-p{
-  border: 1px;
-  width: 25vw;
-  height: 7vh;
+
+p {
+  grid-area: text;
+  font-size: xx-large;
+  font-weight: bold;
+  color: #F7F7CF;
+  text-align: center;
+  justify-self: center;
+}
+
+.combao {
+  grid-area: combao;
+  width: 500px;
+  height: 500px;
+  justify-self: center;
+}
+
+.center-baixo {
+  grid-area: button;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 100%;
+}
+
+.inic-p {
+  border: 1px solid;
+  width: 50vw;
+  height: 10vh;
   border-radius: 25px;
   font-weight: bold;
-  background-color: orange;
+  font-size: xx-large;
+  color: #990000;
+  background-color: #F7F7CF;
   margin-bottom: 70px;
-}
-.image-b{
-  width: 30vw;
-  height: 50vh;
 }

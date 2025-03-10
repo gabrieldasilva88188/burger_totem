@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
   background-color: red;
 }
@@ -10,4 +11,66 @@ body{
 }
 .caixa-v{
   width: 100vw;
+=======
+body {
+  background-color: #990000;
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+      "logo"
+      "text"
+      "combao"
+      "button";
+  justify-content: center;
+  align-items: center;
+  grid-gap: 20px;
+}
+
+.logo {
+  grid-area: logo;
+  width: 200px;
+  height: 200px;
+  justify-self: center;
+}
+
+.caixa-verm {
+  display: none; /* Removido para simplificar o exemplo */
+}
+
+p {
+  grid-area: text;
+  font-size: xx-large;
+  font-weight: bold;
+  color: #F7F7CF;
+  text-align: center;
+  justify-self: center;
+}
+
+.combao {
+  grid-area: combao;
+  width: 500px;
+  height: 500px;
+  justify-self: center;
+}
+
+.center-baixo {
+  grid-area: button;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 100%;
+}
+
+.inic-p {
+  border: 1px solid;
+  width: 50vw;
+  height: 10vh;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: xx-large;
+  color: #990000;
+  background-color: #F7F7CF;
+  margin-bottom: 70px;
+>>>>>>> release/v0.1
 }

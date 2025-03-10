@@ -1,31 +1,61 @@
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
 body {
-  margin-bottom: 60px;
+  background-color: #990000;
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+      "logo"
+      "text"
+      "combao"
+      "button";
+  justify-content: center;
+  align-items: center;
+  grid-gap: 20px;
 }
 
-.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
-  color: var(--bs-secondary-color);
-  text-align: end;
+.logo {
+  grid-area: logo;
+  width: 200px;
+  height: 200px;
+  justify-self: center;
 }
 
-.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
-  text-align: start;
+.caixa-verm {
+  display: none; /* Removido para simplificar o exemplo */
+}
+
+p {
+  grid-area: text;
+  font-size: xx-large;
+  font-weight: bold;
+  color: #F7F7CF;
+  text-align: center;
+  justify-self: center;
+}
+
+.combao {
+  grid-area: combao;
+  width: 500px;
+  height: 500px;
+  justify-self: center;
+}
+
+.center-baixo {
+  grid-area: button;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 100%;
+}
+
+.inic-p {
+  border: 1px solid;
+  width: 50vw;
+  height: 10vh;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: xx-large;
+  color: #990000;
+  background-color: #F7F7CF;
+  margin-bottom: 70px;
 }

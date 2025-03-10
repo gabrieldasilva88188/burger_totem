@@ -1,31 +1,50 @@
-html {
-  font-size: 14px;
+body{
+  background-color: rgb(230, 230, 230);
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+.center{
+  display:flex;
+  align-items: end;
+  justify-content: center;
+  height:100vh;
 }
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+.caixa-verm{
+  position: absolute;
+  width: 100vw;
+  height: 15vh;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  font-weight: bold;
+  font-size: x-large;
 }
+.caixa-amar{
+  position: absolute;
+  top: 22vh;
+  width: 100vw;
+  height: 7vh;
+  background-color: rgb(207, 207, 22);
 
-html {
-  position: relative;
-  min-height: 100%;
 }
-
-body {
-  margin-bottom: 60px;
+.caixa-verd{
+  position: absolute;
+  top: 15vh;
+  width: 100vw;
+  height: 7vh;
+  background-color: rgb(99, 249, 23);
 }
-
-.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
-  color: var(--bs-secondary-color);
-  text-align: end;
+.inic-p{
+  border: 1px;
+  width: 25vw;
+  height: 7vh;
+  border-radius: 25px;
+  font-weight: bold;
+  background-color: orange;
+  margin-bottom: 70px;
 }
-
-.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
-  text-align: start;
+.image-b{
+  width: 30vw;
+  height: 50vh;
 }

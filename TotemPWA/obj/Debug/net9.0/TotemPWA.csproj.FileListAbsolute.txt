@@ -15,10 +15,7 @@ C:\burger_totem\TotemPWA\obj\Debug\net9.0\TotemPWA.MvcApplicationPartsAssemblyIn
 C:\burger_totem\TotemPWA\obj\Debug\net9.0\TotemPWA.RazorAssemblyInfo.cache
 C:\burger_totem\TotemPWA\obj\Debug\net9.0\TotemPWA.RazorAssemblyInfo.cs
 C:\burger_totem\TotemPWA\obj\Debug\net9.0\TotemPWA.sourcelink.json
-C:\burger_totem\TotemPWA\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\burger_totem\TotemPWA\obj\Debug\net9.0\scopedcss\bundle\TotemPWA.styles.css
-C:\burger_totem\TotemPWA\obj\Debug\net9.0\scopedcss\projectbundle\TotemPWA.bundle.scp.css
-C:\burger_totem\TotemPWA\obj\Debug\net9.0\compressed\5x7mdqe4nv-0in7k3i2tw.gz
 C:\burger_totem\TotemPWA\obj\Debug\net9.0\compressed\ade2i2q1em-61n19gt1b8.gz
 C:\burger_totem\TotemPWA\obj\Debug\net9.0\compressed\9y97fnyyhx-xtxxf3hu2r.gz
 C:\burger_totem\TotemPWA\obj\Debug\net9.0\compressed\no2xol4q6l-t1cqhe9u97.gz
@@ -80,8 +77,6 @@ C:\burger_totem\TotemPWA\obj\Debug\net9.0\compressed\hmbs8qm6sd-jjsuc0puko.gz
 C:\burger_totem\TotemPWA\obj\Debug\net9.0\compressed\w6vs14lepb-9vr69e8ynj.gz
 C:\burger_totem\TotemPWA\obj\Debug\net9.0\compressed\nt172f528s-87fc7y1x7t.gz
 C:\burger_totem\TotemPWA\obj\Debug\net9.0\compressed\fl9u8jnypx-mlv21k5csn.gz
-C:\burger_totem\TotemPWA\obj\Debug\net9.0\compressed\wykkmgbdqy-i6yagiro6r.gz
-C:\burger_totem\TotemPWA\obj\Debug\net9.0\compressed\usxnowkdfg-i6yagiro6r.gz
 C:\burger_totem\TotemPWA\obj\Debug\net9.0\staticwebassets.build.json
 C:\burger_totem\TotemPWA\obj\Debug\net9.0\staticwebassets.development.json
 C:\burger_totem\TotemPWA\obj\Debug\net9.0\staticwebassets.build.endpoints.json
@@ -96,3 +91,4 @@ C:\burger_totem\TotemPWA\obj\Debug\net9.0\refint\TotemPWA.dll
 C:\burger_totem\TotemPWA\obj\Debug\net9.0\TotemPWA.pdb
 C:\burger_totem\TotemPWA\obj\Debug\net9.0\TotemPWA.genruntimeconfig.cache
 C:\burger_totem\TotemPWA\obj\Debug\net9.0\ref\TotemPWA.dll
+C:\burger_totem\TotemPWA\obj\Debug\net9.0\compressed\5x7mdqe4nv-v2mzadhq30.gz

@@ -4,29 +4,28 @@ using TotemPWA.Models;
 
 namespace TotemPWA.Controllers;
 
-public class HomeController : Controller
+public class ExampleController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
+    private readonly ILogger<ExampleController> _logger;
 
-    public HomeController(ILogger<HomeController> logger)
+    public ExampleController(ILogger<ExampleController> logger)
     {
         _logger = logger;
     }
 
+    [HttpGet]
     public IActionResult Index()
     {
         return View();
     }
-
-    public IActionResult About(){
-        return View();
-    }
-
-     public IActionResult cardapio()
+    [HttpPost]
+    public IActionResult Receive(string name)
     {
+        ViewBag.nome = name;
         return View();
+        //return RedirectionToAction("NovaAction", new{ name });
     }
-       
+
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

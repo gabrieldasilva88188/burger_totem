@@ -17,6 +17,11 @@ public class HomeController : Controller
     {
         return View();
     }
+
+     public IActionResult cardapio()
+    {
+        return View();
+    }
        
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

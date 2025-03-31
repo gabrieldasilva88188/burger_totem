@@ -1,0 +1,79 @@
+@{
+    Layout = "_WelcomeLayout";
+}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho - Totem FastFood</title>
+    <link rel="stylesheet" href="@Url.Content("~/css/carrinho.css")">
+</head>
+<body>
+
+    <header>
+        
+        <h1>🛒 Carrinho de (usuario)</h1>
+        <button class="back-btn">← Voltar</button>
+    </header>
+
+    <main class="cart-container">
+        
+        <div class="cart-items">
+            <div class="cart-item">
+                <img src="~/img/back1.jpg" alt="Whopper">
+                <div class="item-info">
+                    <h2>Big Css</h2>
+                    <p>*sem alface*</p>
+                </div>
+                <div class="item-price">
+                    <p>R$ 27,90</p>
+                    <div class="quantity">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                </div>
+            </div>
+            <p class="edit-item"> <a href="#">Editar Item</a></p>
+        </div>
+
+        
+        <section class="suggestions">
+            <h2>Turbine seu pedido!</h2>
+            <div class="suggestions-container">
+                <div class="suggestion-item">
+                    <img src="~/img/bebidas.png" alt="Free Refill">
+                    <p>Free Refill</p>
+                    <p>R$ 5,00</p>
+                    <button>+</button>
+                </div>
+                <div class="suggestion-item">
+                    <img src="~/img/d4u1GTvl_kmUrrsUwaj0OV0huie-m7AFB15UzmGDqoU.jpg" alt="Batata Frita Grande">
+                    <p>Batata Frita Grande</p>
+                    <p>R$ 8,00</p>
+                    <button>+</button>
+                </div>
+                <div class="suggestion-item">
+                    <img src="~/img/sobremesas1.jpg" alt="Casquinha Baunilha">
+                    <p>Casquinha Baunilha</p>
+                    <p>R$ 4,00</p>
+                    <button>+</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <footer class="cart-summary">
+        <div class="total">
+            <p>Total a pagar:</p>
+            <p class="total-price">R$ 27,90</p>
+        </div>
+        <button class="checkout-btn">Finalizar Pedido</button>
+        <p class="cancel-order">Cancelar Pedido</p>
+    </footer>
+
+</body>
+</html>

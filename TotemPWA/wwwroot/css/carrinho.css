@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: #f8f8f8;
+}
+
+header {
+    background-color: #911313;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.back-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* Área do carrinho */
+.cart-container {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    padding-bottom: 100px;
+}
+
+/* Itens do carrinho */
+
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    background: white;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.item-info {
+    flex: 1;
+    margin-left: 15px;
+}
+
+.item-info h2 {
+    font-size: 22px;
+    color: #4a2900;
+}
+
+.item-info p {
+    font-size: 16px;
+    margin: 3px 0;
+}
+
+
+.item-price {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.quantity {
+    margin-top: 5px;
+}
+
+.quantity button {
+    background: #adc43c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.edit-item {
+    text-align: right;
+    margin: 10px 20px;
+}
+
+.edit-item a {
+    color: #ff6600;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Turbinar Pwedido */
+.suggestions {
+    background: #911313;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 13%;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+    
+}
+
+.suggestions-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.suggestion-item {
+    background: white;
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    width: 120px;
+
+}
+
+.suggestion-item img {
+    width: 60px;
+    height: 60px;
+}
+
+.suggestion-item button {
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 5px;
+    
+}
+
+
+.cart-summary {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Total e botão */
+.total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.total-price {
+    font-weight: bold;
+    color: #ff6600;
+}
+
+/* Botão de finalizar pedido */
+.checkout-btn {
+    background: #adc43c;
+    color: white;
+    font-size: 22px;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/*  cancelar */
+.cancel-order {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ff6600;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+/* Espaçamento entre itens e Turbinar Pedido */
+.cart-items {
+    margin-bottom: 60%; /
+}

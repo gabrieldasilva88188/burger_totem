@@ -1,5 +1,6 @@
 @{
     Layout = "_WelcomeLayout";
+    var CarrinhoUrl = Url.Action("Carrinho", "Home");
 }
 
 <!DOCTYPE html>
@@ -78,7 +79,7 @@
         </div>
         <div class="car-cont">
             <span class="car-text">Ver Carrinho</span>
-            <button class="btn-car" onclick="redirecionar1()">
+            <button class="btn-car" onclick="redirecionarCarrinho()">
                 <i class="fa-solid fa-cart-shopping"></i>
             </button>
         </div>    
@@ -112,7 +113,9 @@
 <<<<<<< HEAD
 =======
 <script>
-    function redirecionar1() {
+const cardapioUrl = '@CarrinhoUrl';
+
+    function redirecionarCarrinho() {
        window.location.href = "/Home/carrinho";
     }
 </script>

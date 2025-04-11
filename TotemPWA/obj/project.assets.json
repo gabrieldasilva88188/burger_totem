@@ -8,39 +8,23 @@
     "net9.0": []
   },
   "packageFolders": {
-<<<<<<< HEAD
-    "C:\\Users\\0031432512021\\.nuget\\packages\\": {},
-=======
-    "C:\\Users\\0031432512013\\.nuget\\packages\\": {},
->>>>>>> 1e2a9164c936e487f219cb6ff7dbd187bd7b6918
+    "C:\\Users\\Nefalem\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\0031432512021\\Desktop\\burger_totem\\totempwa\\TotemPWA.csproj",
+      "projectUniqueName": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\TotemPWA.csproj",
       "projectName": "TotemPWA",
-      "projectPath": "C:\\Users\\0031432512021\\Desktop\\burger_totem\\totempwa\\TotemPWA.csproj",
-      "packagesPath": "C:\\Users\\0031432512021\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\0031432512021\\Desktop\\burger_totem\\totempwa\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\TotemPWA.csproj",
-      "projectName": "TotemPWA",
-      "projectPath": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\TotemPWA.csproj",
-      "packagesPath": "C:\\Users\\0031432512013\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\obj\\",
->>>>>>> 1e2a9164c936e487f219cb6ff7dbd187bd7b6918
+      "projectPath": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\TotemPWA.csproj",
+      "packagesPath": "C:\\Users\\Nefalem\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-<<<<<<< HEAD
-        "C:\\Users\\0031432512021\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-        "C:\\Users\\0031432512013\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 1e2a9164c936e487f219cb6ff7dbd187bd7b6918
+        "C:\\Users\\Nefalem\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -49,6 +33,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -67,7 +52,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net9.0": {
@@ -91,7 +76,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

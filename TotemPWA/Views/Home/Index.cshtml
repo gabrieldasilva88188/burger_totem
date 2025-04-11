@@ -1,5 +1,6 @@
 ﻿@{
     Layout = "_WelcomeLayout";
+    var cardapioUrl = Url.Action("Cardapio", "Home");
 }
 
 <link rel="stylesheet" href="@Url.Content("~/css/site.css")">
@@ -11,12 +12,14 @@
         O MELHOR <br> LANCHE DE <br> SOROCABA.
     </p>
     <img class="combao" src="~/img/Red_Illustrative_Burger_Food_Logo-removebg-preview 1.png" alt="">
-        <button class="inic-p" onclick="redirecionar()">Toque para iniciar</button>
+        <button class="inic-p" onclick="redirecionarCardapio()">Toque para iniciar</button>
 </div>
 
 
 <script>
-    function redirecionar() {
-       window.location.href = "/Home/Cardapio";
+    const cardapioUrl = '@cardapioUrl';
+
+    function redirecionarCardapio() {
+        window.location.href = cardapioUrl;
     }
 </script>

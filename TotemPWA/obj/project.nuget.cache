@@ -1,14 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "xeC5Z63CCGo=",
+  "dgSpecHash": "xX1lAjdhisw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\0031432512021\\Desktop\\burger_totem\\totempwa\\TotemPWA.csproj",
-=======
-  "dgSpecHash": "GotqRt7r5JU=",
-  "success": true,
-  "projectFilePath": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\TotemPWA.csproj",
->>>>>>> 1e2a9164c936e487f219cb6ff7dbd187bd7b6918
+  "projectFilePath": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\TotemPWA.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

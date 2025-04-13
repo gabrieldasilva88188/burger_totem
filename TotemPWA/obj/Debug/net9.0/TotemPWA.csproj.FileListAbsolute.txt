@@ -16,11 +16,9 @@ C:\Users\Nefalem\Documents\Desenvolvimento TotemPWA\Versão Tela Ingredientes\bu
 C:\Users\Nefalem\Documents\Desenvolvimento TotemPWA\Versão Tela Ingredientes\burger_totem\totempwa\bin\Debug\net9.0\TotemPWA.dll
 C:\Users\Nefalem\Documents\Desenvolvimento TotemPWA\Versão Tela Ingredientes\burger_totem\totempwa\bin\Debug\net9.0\TotemPWA.pdb
 C:\Users\Nefalem\Documents\Desenvolvimento TotemPWA\Versão Tela Ingredientes\burger_totem\totempwa\obj\Debug\net9.0\scopedcss\bundle\TotemPWA.styles.css
-C:\Users\Nefalem\Documents\Desenvolvimento TotemPWA\Versão Tela Ingredientes\burger_totem\totempwa\obj\Debug\net9.0\compressed\prh438x6dk-kprvg3qocs.gz
 C:\Users\Nefalem\Documents\Desenvolvimento TotemPWA\Versão Tela Ingredientes\burger_totem\totempwa\obj\Debug\net9.0\compressed\1xn8zmblva-3tu8mhdb18.gz
 C:\Users\Nefalem\Documents\Desenvolvimento TotemPWA\Versão Tela Ingredientes\burger_totem\totempwa\obj\Debug\net9.0\compressed\5x7mdqe4nv-zq2ys93q5m.gz
 C:\Users\Nefalem\Documents\Desenvolvimento TotemPWA\Versão Tela Ingredientes\burger_totem\totempwa\obj\Debug\net9.0\compressed\ade2i2q1em-61n19gt1b8.gz
-C:\Users\Nefalem\Documents\Desenvolvimento TotemPWA\Versão Tela Ingredientes\burger_totem\totempwa\obj\Debug\net9.0\compressed\e2aey3kj30-6m2bssrhjp.gz
 C:\Users\Nefalem\Documents\Desenvolvimento TotemPWA\Versão Tela Ingredientes\burger_totem\totempwa\obj\Debug\net9.0\compressed\9y97fnyyhx-xtxxf3hu2r.gz
 C:\Users\Nefalem\Documents\Desenvolvimento TotemPWA\Versão Tela Ingredientes\burger_totem\totempwa\obj\Debug\net9.0\compressed\no2xol4q6l-t1cqhe9u97.gz
 C:\Users\Nefalem\Documents\Desenvolvimento TotemPWA\Versão Tela Ingredientes\burger_totem\totempwa\obj\Debug\net9.0\compressed\ocf304k2dd-c2jlpeoesf.gz
@@ -95,3 +93,6 @@ C:\Users\Nefalem\Documents\Desenvolvimento TotemPWA\Versão Tela Ingredientes\bu
 C:\Users\Nefalem\Documents\Desenvolvimento TotemPWA\Versão Tela Ingredientes\burger_totem\totempwa\obj\Debug\net9.0\TotemPWA.pdb
 C:\Users\Nefalem\Documents\Desenvolvimento TotemPWA\Versão Tela Ingredientes\burger_totem\totempwa\obj\Debug\net9.0\TotemPWA.genruntimeconfig.cache
 C:\Users\Nefalem\Documents\Desenvolvimento TotemPWA\Versão Tela Ingredientes\burger_totem\totempwa\obj\Debug\net9.0\ref\TotemPWA.dll
+C:\Users\Nefalem\Documents\Desenvolvimento TotemPWA\Versão Tela Ingredientes\burger_totem\totempwa\obj\Debug\net9.0\compressed\prh438x6dk-d4f2opud6x.gz
+C:\Users\Nefalem\Documents\Desenvolvimento TotemPWA\Versão Tela Ingredientes\burger_totem\totempwa\obj\Debug\net9.0\compressed\e2aey3kj30-p4924a0amb.gz
+C:\Users\Nefalem\Documents\Desenvolvimento TotemPWA\Versão Tela Ingredientes\burger_totem\totempwa\obj\Debug\net9.0\compressed\1p7qm2t0m7-6pp7diloij.gz

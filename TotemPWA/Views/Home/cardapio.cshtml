@@ -24,50 +24,58 @@
                 <li><button><img src="~/img/combos.png" alt="Combos"><span>Combos</span></button></li>
                 <li><button><img src="~/img/sobremesas1.jpg" alt="Sobremesas"><span>Sobremesas</span></button></li>
                 <li><button> <img src="~/img/bebidas.png" alt="Bebidas"><span>Bebidas</span></button></li>
-                <li><button><img src="" alt="Extras"><span>Extras</span></button></li>
+                <li><button><img src="~/img/creeper.png" alt="Extras"><span>Extras</span></button></li>
                 <li><button><img src="~/img/molho.jpg" alt="Molhos"><span>Molhos</span></button></li>
             </ul>
         </nav>
         
         <main class="content">
             <div class="produtos">
-                <div class="produto" data-id="1" data-nome="Burguer 404" data-preco="29,00">
+
+                <a href="/Home/Personalizar?id=1" class="produto sem-estilo-hiperlink" >
                     <img src="~/img/lanches.png" alt="Buguer 404">
                     <h3>Buguer 404</h3>
                     <p>R$ 29,00</p>
                     <p>Pão brioche, carne 150g, queijo cheddar, cebola caramelizada.</p>
-                </div>
-                <div class="produto">
+                </a>
+
+                 <a href="/Home/Personalizar?id=2" class="produto sem-estilo-hiperlink">
                     <img src="~/img/full1.png" alt="Full Stack Burger">
                     <h3>Full Stack Burger</h3>
                     <p>R$ 32,00</p>
                     <p>Pão australiano, carne 180g, queijo prato, bacon, barbecue.</p>
-                </div>
-                <div class="produto">
+                </a>
+
+   
+                 <a href="/Home/Personalizar?id=3" class="produto sem-estilo-hiperlink">
                     <img src="~/img/duplo1.jpg" alt="Looping Duplo">
                     <h3>Looping Duplo</h3>
                     <p>R$ 30,00</p>
                     <p>Pão de batata, 2 carnes 120g, queijo cheddar, molho especial.</p>
-                </div>
-                <div class="produto">
-                    <img src="~/img/back1.jpg" alt="Looping Duplo">
+                </a>
+
+
+      
+                 <a href="/Home/Personalizar?id=4" class="produto sem-estilo-hiperlink"> 
+                 <img src="~/img/back1.jpg" alt="Looping Duplo">
                     <h3>Back-End Crispy</h3>
                     <p>R$ 30,00</p>
                     <p>Pão de Brioche, 3 carnes 150g, queijo cheddar, bacon suculento, molho especial.</p>
-                </div>
-                <div class="produto">
-                    <img src="~/img/back1.jpg" alt="Looping Duplo">
-                    <h3>Back-End Crispy</h3>
-                    <p>R$ 30,00</p>
-                    <p>Pão de batata, 2 carnes 120g, cebola crispy, queijo cheddar, molho especial.</p>
-                </div>
-                <div class="produto">
-                    <img src="~/img/back1.jpg" alt="Looping Duplo">
-                    <h3>Back-End Crispy</h3>
-                    <p>R$ 30,00</p>
-                    <p>Pão de batata, 2 carnes 120g, cebola crispy, queijo cheddar, molho especial.</p>
-                </div>
+                    </a>
                
+                 <a href="/Home/Personalizar?id=5" class="produto sem-estilo-hiperlink">
+                    <img src="~/img/back1.jpg" alt="Looping Duplo">
+                    <h3>Back-End Crispy</h3>
+                    <p>R$ 30,00</p>
+                    <p>Pão de batata, 2 carnes 120g, cebola crispy, queijo cheddar, molho especial.</p>
+                    </a>
+                
+                 <a href="/Home/Personalizar?id=6" class="produto sem-estilo-hiperlink">
+                    <img src="~/img/back1.jpg" alt="Looping Duplo">
+                    <h3>Back-End Crispy</h3>
+                    <p>R$ 30,00</p>
+                    <p>Pão de batata, 2 carnes 120g, cebola crispy, queijo cheddar, molho especial.</p>
+                   </a>     
             </div>
         </main>
     </div>
@@ -86,28 +94,20 @@
         <button class="btn-confirm">Pronto</button>
     </footer>
     
-    <div id="modal-personalizar" class="modal">
-        <div class="modal-content">
-            <a class="close"><i class="fa-solid fa-xmark"></i></a>
-            <h2>Personalizar Lanche</h2>
-            <img src="" id="produto-imagem" alt="Imagem do produto">
-            <h3 id="produto-nome"></h3>
-            <p id="produto-preco"></p>
-            <h4>Adicionar Ingredientes:</h4>
-            <div id="ingredientes-container"></div>
-
-            <label for="quantidade-lanche">Escolha a quantidade:</label>
-            <div class="quantidade-container">
-                <button id="diminuir">-</button>
-                <input type="number" id="quantidade-lanche" min="1" value="1" readonly>
-                <button id="aumentar">+</button>
-            </div>
-            <button id="confirmar-personalizacao">Adicionar ao Carrinho</button>
-        </div>
-    </div>
-
+    <
 </body> 
-<script src="@Url.Content("~/js/modalIngredientes.js")"></script>
+
+<script>
+    window.onload = function () {
+    const totalItens = sessionStorage.getItem("totalItens") || 0;
+    const totalPedido = parseFloat(sessionStorage.getItem("totalPedido") || 0).toFixed(2);
+
+    document.getElementById("total-itens").innerText = totalItens;
+    document.getElementById("total-pedido").innerText = totalPedido.replace(".", ",");
+};
+
+</script>
+
 </html>
 
 <<<<<<< HEAD

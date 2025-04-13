@@ -1,6 +1,6 @@
 @{
     Layout = "_WelcomeLayout";
-    var cardapioUrl = Url.Action("Carrinho", "Home");
+    var cardapioUrl = Url.Action("Cardapio", "Home");
 }
 
 <!DOCTYPE html>
@@ -16,7 +16,7 @@
     <header>
         
         <h1>🛒 Carrinho de (usuario)</h1>
-        <button class="back-btn">← Voltar</button>
+        <button class="back-btn" onclick="redirecionarCardapio()">← Voltar</button>
     </header>
 
     <main class="cart-container">
@@ -78,3 +78,79 @@
 
 </body>
 </html>
+
+<script>
+    const cardapioUrl = '@cardapioUrl';
+
+    function redirecionarCardapio() {
+        window.location.href = cardapioUrl;
+    }
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const itens = JSON.parse(sessionStorage.getItem("itensCarrinho")) || [];
+        const container = document.querySelector(".cart-items");
+        const totalPreco = document.querySelector(".total-price");
+
+        container.innerHTML = ""; // Limpa conteúdo fixo
+        let totalGeral = 0;
+
+        itens.forEach((item, index) => {
+            const ingredientes = Object.entries(item.ingredientes)
+                .map(([nome, qtd]) => `${qtd}x ${nome}`)
+                .join(", ");
+
+            totalGeral += item.total;
+
+            container.innerHTML += `
+    <div class="cart-item">
+        <img src="${item.imagem}" alt="${item.nome}">
+        <div class="item-info">
+            <h2>${item.nome}</h2>
+            <p>${ingredientes ? ingredientes : "Sem ingredientes extras"}</p>
+        </div>
+        <div class="item-price">
+            <p>R$ ${item.total.toFixed(2).replace(".", ",")}</p>
+            <div class="quantity">
+                <button onclick="alterarQtd(${index}, -1)">-</button>
+                <span>${item.quantidade}</span>
+                <button onclick="alterarQtd(${index}, 1)">+</button>
+            </div>
+        </div>
+    </div>
+    <p class="edit-item"><a href="#">Editar Item</a></p>
+`;
+
+        });
+
+        totalPreco.textContent = `R$ ${totalGeral.toFixed(2).replace(".", ",")}`;
+    });
+
+    function alterarQtd(index, delta) {
+        let itens = JSON.parse(sessionStorage.getItem("itensCarrinho")) || [];
+        if (!itens[index]) return;
+
+        itens[index].quantidade += delta;
+        if (itens[index].quantidade <= 0) {
+            itens.splice(index, 1); // Remove item se quantidade for zero
+        } else {
+            itens[index].total = itens[index].quantidade * itens[index].precoUnitario;
+        }
+
+        sessionStorage.setItem("itensCarrinho", JSON.stringify(itens));
+
+        // Atualiza total
+        let totalItens = 0, totalPedido = 0;
+        itens.forEach(i => {
+            totalItens += i.quantidade;
+            totalPedido += i.total;
+        });
+
+        sessionStorage.setItem("totalItens", totalItens);
+        sessionStorage.setItem("totalPedido", totalPedido.toFixed(2));
+
+        location.reload(); // Recarrega a tela para atualizar os dados
+    }
+</script>
+

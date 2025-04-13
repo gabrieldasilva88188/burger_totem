@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\carrinho.css"
     },
     {
+      "Id": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\css\\personalizar.css",
+      "PackagePath": "staticwebassets\\css\\personalizar.css"
+    },
+    {
       "Id": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -19,6 +23,10 @@
     {
       "Id": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\img\\Combao.jpg",
       "PackagePath": "staticwebassets\\img\\Combao.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\img\\ImagemSuperiorCardapio.jpg",
+      "PackagePath": "staticwebassets\\img\\ImagemSuperiorCardapio.jpg"
     },
     {
       "Id": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\img\\Logo.jpg",
@@ -49,6 +57,10 @@
       "PackagePath": "staticwebassets\\img\\combos.png"
     },
     {
+      "Id": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\img\\creeper.png",
+      "PackagePath": "staticwebassets\\img\\creeper.png"
+    },
+    {
       "Id": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\img\\d4u1GTvl_kmUrrsUwaj0OV0huie-m7AFB15UzmGDqoU.jpg",
       "PackagePath": "staticwebassets\\img\\d4u1GTvl_kmUrrsUwaj0OV0huie-m7AFB15UzmGDqoU.jpg"
     },
@@ -59,6 +71,30 @@
     {
       "Id": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\img\\full1.png",
       "PackagePath": "staticwebassets\\img\\full1.png"
+    },
+    {
+      "Id": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\img\\ingredientes\\alface.png",
+      "PackagePath": "staticwebassets\\img\\ingredientes\\alface.png"
+    },
+    {
+      "Id": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\img\\ingredientes\\bacon.png",
+      "PackagePath": "staticwebassets\\img\\ingredientes\\bacon.png"
+    },
+    {
+      "Id": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\img\\ingredientes\\carne.png",
+      "PackagePath": "staticwebassets\\img\\ingredientes\\carne.png"
+    },
+    {
+      "Id": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\img\\ingredientes\\cebola.png",
+      "PackagePath": "staticwebassets\\img\\ingredientes\\cebola.png"
+    },
+    {
+      "Id": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\img\\ingredientes\\cheddar.png",
+      "PackagePath": "staticwebassets\\img\\ingredientes\\cheddar.png"
+    },
+    {
+      "Id": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\img\\ingredientes\\tomate.png",
+      "PackagePath": "staticwebassets\\img\\ingredientes\\tomate.png"
     },
     {
       "Id": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\img\\inicial.jpg",

@@ -16,7 +16,7 @@ const precoPao = 2.00;
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('modal-personalizar').style.display = 'none';
     
-    document.querySelectorAll('.produto').forEach(produto => {
+  /*  document.querySelectorAll('.produto').forEach(produto => {
         produto.addEventListener('click', function () {
             const nome = produto.querySelector('h3').textContent;
             const preco = parseFloat(produto.querySelector('p').textContent.replace('R$ ', '').replace(',', '.'));
@@ -67,7 +67,27 @@ document.addEventListener('DOMContentLoaded', () => {
             
             document.getElementById('modal-personalizar').style.display = 'flex';
         });
+    });*/
+
+    document.querySelectorAll('.produto').forEach(produto => {
+        produto.addEventListener('click', function () {
+            const nome = produto.querySelector('h3').textContent;
+            const preco = parseFloat(produto.querySelector('p').textContent.replace('R$ ', '').replace(',', '.'));
+            const imagem = produto.querySelector('img').src;
+            const descricao = produto.querySelector('p:nth-of-type(2)').textContent;
+    
+            const dadosProduto = {
+                nome,
+                preco,
+                imagem,
+                descricao
+            };
+    
+            localStorage.setItem('produtoSelecionado', JSON.stringify(dadosProduto));
+            window.location.href = 'personalizar.html';
+        });
     });
+    
 
     document.querySelector('.close').addEventListener('click', function () {
         document.getElementById('modal-personalizar').style.display = 'none';

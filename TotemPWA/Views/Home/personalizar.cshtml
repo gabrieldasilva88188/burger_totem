@@ -1,0 +1,125 @@
+@{
+    Layout = "_WelcomeLayout";
+    var cardapioUrl = Url.Action("Cardapio", "Home");
+    var nome = ViewBag.Nome ?? "Lanche";
+    var preco = ViewBag.Preco ?? "0,00";
+    var imagem = ViewBag.Imagem ?? "~/img/default.png";
+}
+
+<link rel="stylesheet" href="@Url.Content("~/css/personalizar.css")">
+
+<div class="modal-content">
+     <button class="back-btn" onclick="redirecionarCardapio()">← Voltar</button>
+    <img id="produto-imagem" src="@Url.Content(imagem)" alt="@nome" />
+
+    <h2 id="produto-nome">Personalizar @nome</h2>
+    <p id="produto-preco">Preço: R$ @preco</p>
+
+    <h4 id="adicionar-ingredientes">Escolha os Ingredientes</h4>
+
+    <div id="ingredientes-container">
+        @{
+            var ingredientes = new Dictionary<string, (double Preco, string Imagem)> {
+                { "Queijo", (2.70, "cheddar.png") },
+                { "Carne", (9.60, "carne.png") },
+                { "Bacon", (3.50, "bacon.png") },
+                { "Cebola", (1.50, "cebola.png") },
+                { "Alface", (1.00, "alface.png") },
+                { "Tomate", (1.00, "tomate.png") },
+            };
+
+            foreach (var ingrediente in ingredientes)
+            {
+                var nomeIngrediente = ingrediente.Key;
+                var precoIngrediente = ingrediente.Value.Preco;
+                var imagemIngrediente = ingrediente.Value.Imagem;
+
+                <div class="ingrediente-item">
+                    <span class="ingrediente-nome">@nomeIngrediente (R$ @precoIngrediente.ToString("0.00"))</span>
+                    <div class="ingrediente-controles">
+                        <button class="diminuir" onclick="alterarIngrediente('@nomeIngrediente', -1)">-</button>
+                        <span id="quantidade-@nomeIngrediente" class="quantidade">0</span>
+                        <button class="aumentar" onclick="alterarIngrediente('@nomeIngrediente', 1)">+</button>
+                    </div>
+                   <img src="@Url.Content("~/img/ingredientes/" + imagemIngrediente)" alt="@nomeIngrediente" class="ingrediente-img">
+                </div>
+            }
+        }
+    </div>
+
+    <label for="quantidade-lanche">Escolha a quantidade:</label>
+    <div class="quantidade-container">
+        <button onclick="alterarQtd(-1)">-</button>
+        <input type="number" id="quantidade-lanche" min="1" value="1" readonly>
+        <button onclick="alterarQtd(1)">+</button>
+    </div>
+
+    <button id="confirmar-personalizacao" onclick="adicionarAoCarrinho()">Adicionar ao Carrinho</button>
+</div>
+
+<script>
+    const cardapioUrl = '@cardapioUrl';
+
+    function redirecionarCardapio() {
+        window.location.href = cardapioUrl;
+    }
+</script>
+
+<script>
+    function alterarQtd(valor) {
+        const input = document.getElementById("quantidade-lanche");
+        let novaQtd = parseInt(input.value) + valor;
+        if (novaQtd >= 1) input.value = novaQtd;
+    }
+
+    function alterarIngrediente(nome, valor) {
+        const span = document.getElementById(`quantidade-${nome}`);
+        let qtd = parseInt(span.innerText) + valor;
+        if (qtd < 0) qtd = 0;
+        span.innerText = qtd;
+    }
+
+function adicionarAoCarrinho() {
+    const nome = document.getElementById("produto-nome").innerText.replace("Personalizar ", "");
+    const quantidade = parseInt(document.getElementById("quantidade-lanche").value);
+    const precoTexto = document.getElementById("produto-preco").innerText.replace("Preço: R$ ", "").replace(",", ".");
+    const precoUnitario = parseFloat(precoTexto);
+
+    const ingredientes = {};
+    document.querySelectorAll(".quantidade").forEach(span => {
+        const ingrediente = span.id.replace("quantidade-", "");
+        const qtd = parseInt(span.innerText);
+        if (qtd > 0) ingredientes[ingrediente] = qtd;
+    });
+
+    const imagem = document.getElementById("produto-imagem").getAttribute("src");
+
+    const item = {
+        nome: nome,
+        quantidade: quantidade,
+        precoUnitario: precoUnitario,
+        total: quantidade * precoUnitario,
+        ingredientes: ingredientes,
+        imagem: imagem // <-- Adiciona a imagem ao item
+    };
+
+
+    // Recuperar carrinho atual ou criar novo
+    let itens = JSON.parse(sessionStorage.getItem("itensCarrinho")) || [];
+    itens.push(item);
+    sessionStorage.setItem("itensCarrinho", JSON.stringify(itens));
+
+    // Atualiza total do pedido
+    let totalItens = parseInt(sessionStorage.getItem("totalItens")) || 0;
+    let totalPedido = parseFloat(sessionStorage.getItem("totalPedido")) || 0.0;
+
+    totalItens += quantidade;
+    totalPedido += item.total;
+
+    sessionStorage.setItem("totalItens", totalItens);
+    sessionStorage.setItem("totalPedido", totalPedido.toFixed(2));
+
+    window.location.href = "/Home/Cardapio";
+}
+
+</script>

@@ -12,7 +12,7 @@ header {
     left: 0;
     width: 100%; 
     height: 200px; 
-    background: url('/img/inicial.jpg') no-repeat center center; 
+    background: url('/img/ImagemSuperiorCardapio.jpg') no-repeat center center; 
     background-size: cover; 
     z-index: 1000;
 }
@@ -298,4 +298,10 @@ footer {
     cursor: pointer;
     color: #990000;
 }
+
+.sem-estilo-hiperlink {
+    text-decoration: none;
+    color: inherit;
+}
+
 

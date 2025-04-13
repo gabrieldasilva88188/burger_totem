@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4A4iQwjNiT/8Lc6UGHEEJcclmN28dh9DkmY5DqS18Qo=",
+  "Hash": "cfgMJxF+qgTYUwMioYqT7ads0rWzJt+KgyyxgmwSggo=",
   "Source": "TotemPWA",
   "BasePath": "_content/TotemPWA",
   "Mode": "Default",
@@ -78,6 +78,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\1p7qm2t0m7-6pp7diloij.gz",
+      "SourceId": "TotemPWA",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/TotemPWA",
+      "RelativePath": "css/personalizar#[.{fingerprint=6pp7diloij}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\css\\personalizar.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "jn1ti7sacr",
+      "Integrity": "YURX8hviKR6jCuR6VMGBZFMlco4HHgVreEN7i0l6BqE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\css\\personalizar.css"
     },
     {
       "Identity": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\1xn8zmblva-3tu8mhdb18.gz",
@@ -521,12 +542,12 @@
       "OriginalItemSpec": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\e2aey3kj30-6m2bssrhjp.gz",
+      "Identity": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\e2aey3kj30-p4924a0amb.gz",
       "SourceId": "TotemPWA",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/TotemPWA",
-      "RelativePath": "js/modalIngredientes#[.{fingerprint=6m2bssrhjp}]?.js.gz",
+      "RelativePath": "js/modalIngredientes#[.{fingerprint=p4924a0amb}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -535,8 +556,8 @@
       "RelatedAsset": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\js\\modalIngredientes.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "rwaw1ra56m",
-      "Integrity": "xTMUhCv/qVbd72y180CtX6BDs2Y/NXX9ycV/K6XRoQ4=",
+      "Fingerprint": "c54weqt8ph",
+      "Integrity": "ACOWmjyzoOATpApNoz4lU7eDy9nOaJKGokr4jyH+IrM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\js\\modalIngredientes.js"
@@ -941,12 +962,12 @@
       "OriginalItemSpec": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\prh438x6dk-kprvg3qocs.gz",
+      "Identity": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\prh438x6dk-d4f2opud6x.gz",
       "SourceId": "TotemPWA",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/TotemPWA",
-      "RelativePath": "css/cardapio#[.{fingerprint=kprvg3qocs}]?.css.gz",
+      "RelativePath": "css/cardapio#[.{fingerprint=d4f2opud6x}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -955,8 +976,8 @@
       "RelatedAsset": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\css\\cardapio.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "ywf2pg3mlp",
-      "Integrity": "7pmjXNOnagTVy4Oyln3UvLMbTeoSPcsMOV3cxuJkUVI=",
+      "Fingerprint": "pjsl59wo4a",
+      "Integrity": "xWzTDpGcXE11fhvf2ZGfEgo+uReWx9g+DU6vj66/868=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\css\\cardapio.css"
@@ -1396,8 +1417,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "kprvg3qocs",
-      "Integrity": "+MW1enpmmK2C3+/QE1mVrsk8LFgq774BrcAXpa6jgCk=",
+      "Fingerprint": "d4f2opud6x",
+      "Integrity": "DfUpsSpS7Tk0bVa/OaYXr+lG4hf7y7t1fEIjL7kRR9c=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\cardapio.css"
@@ -1422,6 +1443,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\carrinho.css"
+    },
+    {
+      "Identity": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\css\\personalizar.css",
+      "SourceId": "TotemPWA",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\",
+      "BasePath": "_content/TotemPWA",
+      "RelativePath": "css/personalizar#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6pp7diloij",
+      "Integrity": "2oISvK0nJlE5UGvgHFjV5rH9qWTdz7mMK/PNKOhLqpU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\personalizar.css"
     },
     {
       "Identity": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\css\\site.css",
@@ -1571,6 +1613,27 @@
       "OriginalItemSpec": "wwwroot\\img\\combos.png"
     },
     {
+      "Identity": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\img\\creeper.png",
+      "SourceId": "TotemPWA",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\",
+      "BasePath": "_content/TotemPWA",
+      "RelativePath": "img/creeper#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8fpczfq85u",
+      "Integrity": "TLUfADM5VJ2v92S9U6mg/A+vag+XO1BmyGOj+v8u0Fc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\creeper.png"
+    },
+    {
       "Identity": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\img\\d4u1GTvl_kmUrrsUwaj0OV0huie-m7AFB15UzmGDqoU.jpg",
       "SourceId": "TotemPWA",
       "SourceType": "Discovered",
@@ -1632,6 +1695,153 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\full1.png"
+    },
+    {
+      "Identity": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\img\\ImagemSuperiorCardapio.jpg",
+      "SourceId": "TotemPWA",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\",
+      "BasePath": "_content/TotemPWA",
+      "RelativePath": "img/ImagemSuperiorCardapio#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mcl0ue400x",
+      "Integrity": "FoL2FQj7m9ZGAobytPB2RlYiaOBvV02PRkJQ1pH0pzc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\ImagemSuperiorCardapio.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\img\\ingredientes\\alface.png",
+      "SourceId": "TotemPWA",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\",
+      "BasePath": "_content/TotemPWA",
+      "RelativePath": "img/ingredientes/alface#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ba2d2x1wqg",
+      "Integrity": "LT0Tja7T6D/cFwvY6NtS58+dF/ptnK1m1bF1pC+x/D8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\ingredientes\\alface.png"
+    },
+    {
+      "Identity": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\img\\ingredientes\\bacon.png",
+      "SourceId": "TotemPWA",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\",
+      "BasePath": "_content/TotemPWA",
+      "RelativePath": "img/ingredientes/bacon#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nprfkjz4fl",
+      "Integrity": "9dWez/TrKHqeBqXGB9zN8PyW5uiGVxMFZt8CzYQKxhQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\ingredientes\\bacon.png"
+    },
+    {
+      "Identity": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\img\\ingredientes\\carne.png",
+      "SourceId": "TotemPWA",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\",
+      "BasePath": "_content/TotemPWA",
+      "RelativePath": "img/ingredientes/carne#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4m8g3zchcn",
+      "Integrity": "ZCFkOg1nqZen4o1ldSJBAojNQgCA5ma4/npTAhn4vjw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\ingredientes\\carne.png"
+    },
+    {
+      "Identity": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\img\\ingredientes\\cebola.png",
+      "SourceId": "TotemPWA",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\",
+      "BasePath": "_content/TotemPWA",
+      "RelativePath": "img/ingredientes/cebola#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ncbu5wzozd",
+      "Integrity": "CZY5wzweNkCpnkKZG85km23CDH5W6JXialcLY2sT/b0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\ingredientes\\cebola.png"
+    },
+    {
+      "Identity": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\img\\ingredientes\\cheddar.png",
+      "SourceId": "TotemPWA",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\",
+      "BasePath": "_content/TotemPWA",
+      "RelativePath": "img/ingredientes/cheddar#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zjz2k2b2xj",
+      "Integrity": "fyz3Rsg6gUZN4f9VYvEWXnyGsA0KwCC2I8Lcx4zBM5k=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\ingredientes\\cheddar.png"
+    },
+    {
+      "Identity": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\img\\ingredientes\\tomate.png",
+      "SourceId": "TotemPWA",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\",
+      "BasePath": "_content/TotemPWA",
+      "RelativePath": "img/ingredientes/tomate#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ag1wxurp34",
+      "Integrity": "WriBNgoYFIVBzigbsBT5s3+l3Y0DL7mpN5Da2hpgZvc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\ingredientes\\tomate.png"
     },
     {
       "Identity": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\img\\inicial.jpg",
@@ -1795,8 +2005,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "6m2bssrhjp",
-      "Integrity": "AqKwdMnNC8WM8Jm/oypEM87RpWEhJT+6Ibpcz2qL7BI=",
+      "Fingerprint": "p4924a0amb",
+      "Integrity": "uQbTX303JvVPWh0PN6/J9nSuzcjcCNfa8PlJEfIjP0s=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\modalIngredientes.js"
@@ -3086,12 +3296,12 @@
   "Endpoints": [
     {
       "Route": "css/cardapio.css",
-      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\prh438x6dk-kprvg3qocs.gz",
+      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\prh438x6dk-d4f2opud6x.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000793650794"
+          "Quality": "0.000763941940"
         }
       ],
       "ResponseHeaders": [
@@ -3101,15 +3311,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1259"
+          "Value": "1308"
         },
         {
           "Name": "ETag",
-          "Value": "\"7pmjXNOnagTVy4Oyln3UvLMbTeoSPcsMOV3cxuJkUVI=\""
+          "Value": "\"xWzTDpGcXE11fhvf2ZGfEgo+uReWx9g+DU6vj66/868=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 17:03:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3129,13 +3339,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"+MW1enpmmK2C3+/QE1mVrsk8LFgq774BrcAXpa6jgCk=\""
+          "Value": "W/\"DfUpsSpS7Tk0bVa/OaYXr+lG4hf7y7t1fEIjL7kRR9c=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-+MW1enpmmK2C3+/QE1mVrsk8LFgq774BrcAXpa6jgCk="
+          "Value": "sha256-DfUpsSpS7Tk0bVa/OaYXr+lG4hf7y7t1fEIjL7kRR9c="
         }
       ]
     },
@@ -3150,7 +3360,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5424"
+          "Value": "5520"
         },
         {
           "Name": "Content-Type",
@@ -3158,11 +3368,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+MW1enpmmK2C3+/QE1mVrsk8LFgq774BrcAXpa6jgCk=\""
+          "Value": "\"DfUpsSpS7Tk0bVa/OaYXr+lG4hf7y7t1fEIjL7kRR9c=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 17:03:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3172,13 +3382,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-+MW1enpmmK2C3+/QE1mVrsk8LFgq774BrcAXpa6jgCk="
+          "Value": "sha256-DfUpsSpS7Tk0bVa/OaYXr+lG4hf7y7t1fEIjL7kRR9c="
         }
       ]
     },
     {
       "Route": "css/cardapio.css.gz",
-      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\prh438x6dk-kprvg3qocs.gz",
+      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\prh438x6dk-d4f2opud6x.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3187,7 +3397,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1259"
+          "Value": "1308"
         },
         {
           "Name": "Content-Type",
@@ -3195,11 +3405,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"7pmjXNOnagTVy4Oyln3UvLMbTeoSPcsMOV3cxuJkUVI=\""
+          "Value": "\"xWzTDpGcXE11fhvf2ZGfEgo+uReWx9g+DU6vj66/868=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 17:03:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3217,18 +3427,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-7pmjXNOnagTVy4Oyln3UvLMbTeoSPcsMOV3cxuJkUVI="
+          "Value": "sha256-xWzTDpGcXE11fhvf2ZGfEgo+uReWx9g+DU6vj66/868="
         }
       ]
     },
     {
-      "Route": "css/cardapio.kprvg3qocs.css",
-      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\prh438x6dk-kprvg3qocs.gz",
+      "Route": "css/cardapio.d4f2opud6x.css",
+      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\prh438x6dk-d4f2opud6x.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000793650794"
+          "Quality": "0.000763941940"
         }
       ],
       "ResponseHeaders": [
@@ -3238,15 +3448,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1259"
+          "Value": "1308"
         },
         {
           "Name": "ETag",
-          "Value": "\"7pmjXNOnagTVy4Oyln3UvLMbTeoSPcsMOV3cxuJkUVI=\""
+          "Value": "\"xWzTDpGcXE11fhvf2ZGfEgo+uReWx9g+DU6vj66/868=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 17:03:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3266,13 +3476,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"+MW1enpmmK2C3+/QE1mVrsk8LFgq774BrcAXpa6jgCk=\""
+          "Value": "W/\"DfUpsSpS7Tk0bVa/OaYXr+lG4hf7y7t1fEIjL7kRR9c=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "kprvg3qocs"
+          "Value": "d4f2opud6x"
         },
         {
           "Name": "label",
@@ -3280,12 +3490,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-+MW1enpmmK2C3+/QE1mVrsk8LFgq774BrcAXpa6jgCk="
+          "Value": "sha256-DfUpsSpS7Tk0bVa/OaYXr+lG4hf7y7t1fEIjL7kRR9c="
         }
       ]
     },
     {
-      "Route": "css/cardapio.kprvg3qocs.css",
+      "Route": "css/cardapio.d4f2opud6x.css",
       "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\css\\cardapio.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3295,7 +3505,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5424"
+          "Value": "5520"
         },
         {
           "Name": "Content-Type",
@@ -3303,11 +3513,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+MW1enpmmK2C3+/QE1mVrsk8LFgq774BrcAXpa6jgCk=\""
+          "Value": "\"DfUpsSpS7Tk0bVa/OaYXr+lG4hf7y7t1fEIjL7kRR9c=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 17:03:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3317,7 +3527,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "kprvg3qocs"
+          "Value": "d4f2opud6x"
         },
         {
           "Name": "label",
@@ -3325,13 +3535,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-+MW1enpmmK2C3+/QE1mVrsk8LFgq774BrcAXpa6jgCk="
+          "Value": "sha256-DfUpsSpS7Tk0bVa/OaYXr+lG4hf7y7t1fEIjL7kRR9c="
         }
       ]
     },
     {
-      "Route": "css/cardapio.kprvg3qocs.css.gz",
-      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\prh438x6dk-kprvg3qocs.gz",
+      "Route": "css/cardapio.d4f2opud6x.css.gz",
+      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\prh438x6dk-d4f2opud6x.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3340,7 +3550,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1259"
+          "Value": "1308"
         },
         {
           "Name": "Content-Type",
@@ -3348,11 +3558,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"7pmjXNOnagTVy4Oyln3UvLMbTeoSPcsMOV3cxuJkUVI=\""
+          "Value": "\"xWzTDpGcXE11fhvf2ZGfEgo+uReWx9g+DU6vj66/868=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 17:03:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3370,7 +3580,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "kprvg3qocs"
+          "Value": "d4f2opud6x"
         },
         {
           "Name": "label",
@@ -3378,7 +3588,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-7pmjXNOnagTVy4Oyln3UvLMbTeoSPcsMOV3cxuJkUVI="
+          "Value": "sha256-xWzTDpGcXE11fhvf2ZGfEgo+uReWx9g+DU6vj66/868="
         }
       ]
     },
@@ -3407,7 +3617,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3468,7 +3678,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3513,7 +3723,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3568,7 +3778,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3621,7 +3831,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3658,7 +3868,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3677,6 +3887,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-Q8kEwySghjQ8izAxH7GetcuXNofm1AzfAqO9ChynEyg="
+        }
+      ]
+    },
+    {
+      "Route": "css/personalizar.6pp7diloij.css",
+      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\1p7qm2t0m7-6pp7diloij.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000929368030"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1075"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YURX8hviKR6jCuR6VMGBZFMlco4HHgVreEN7i0l6BqE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 18:21:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"2oISvK0nJlE5UGvgHFjV5rH9qWTdz7mMK/PNKOhLqpU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6pp7diloij"
+        },
+        {
+          "Name": "label",
+          "Value": "css/personalizar.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2oISvK0nJlE5UGvgHFjV5rH9qWTdz7mMK/PNKOhLqpU="
+        }
+      ]
+    },
+    {
+      "Route": "css/personalizar.6pp7diloij.css",
+      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\css\\personalizar.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3718"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2oISvK0nJlE5UGvgHFjV5rH9qWTdz7mMK/PNKOhLqpU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 18:21:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6pp7diloij"
+        },
+        {
+          "Name": "label",
+          "Value": "css/personalizar.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2oISvK0nJlE5UGvgHFjV5rH9qWTdz7mMK/PNKOhLqpU="
+        }
+      ]
+    },
+    {
+      "Route": "css/personalizar.6pp7diloij.css.gz",
+      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\1p7qm2t0m7-6pp7diloij.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1075"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YURX8hviKR6jCuR6VMGBZFMlco4HHgVreEN7i0l6BqE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 18:21:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6pp7diloij"
+        },
+        {
+          "Name": "label",
+          "Value": "css/personalizar.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YURX8hviKR6jCuR6VMGBZFMlco4HHgVreEN7i0l6BqE="
+        }
+      ]
+    },
+    {
+      "Route": "css/personalizar.css",
+      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\1p7qm2t0m7-6pp7diloij.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000929368030"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1075"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YURX8hviKR6jCuR6VMGBZFMlco4HHgVreEN7i0l6BqE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 18:21:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"2oISvK0nJlE5UGvgHFjV5rH9qWTdz7mMK/PNKOhLqpU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2oISvK0nJlE5UGvgHFjV5rH9qWTdz7mMK/PNKOhLqpU="
+        }
+      ]
+    },
+    {
+      "Route": "css/personalizar.css",
+      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\css\\personalizar.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3718"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2oISvK0nJlE5UGvgHFjV5rH9qWTdz7mMK/PNKOhLqpU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 18:21:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2oISvK0nJlE5UGvgHFjV5rH9qWTdz7mMK/PNKOhLqpU="
+        }
+      ]
+    },
+    {
+      "Route": "css/personalizar.css.gz",
+      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\1p7qm2t0m7-6pp7diloij.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1075"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YURX8hviKR6jCuR6VMGBZFMlco4HHgVreEN7i0l6BqE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 18:21:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YURX8hviKR6jCuR6VMGBZFMlco4HHgVreEN7i0l6BqE="
         }
       ]
     },
@@ -3705,7 +4213,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3758,7 +4266,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3795,7 +4303,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3842,7 +4350,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3903,7 +4411,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3948,7 +4456,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4003,7 +4511,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4064,7 +4572,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4109,7 +4617,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4164,7 +4672,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4217,7 +4725,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4254,7 +4762,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4299,7 +4807,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4336,7 +4844,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4381,7 +4889,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4426,7 +4934,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4463,7 +4971,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4508,7 +5016,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4545,7 +5053,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4582,7 +5090,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4627,7 +5135,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4664,7 +5172,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4683,6 +5191,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-OfW3lxQLyfqZLBawxeE6zddtz+n76AryfCP0mU3RL4E="
+        }
+      ]
+    },
+    {
+      "Route": "img/creeper.8fpczfq85u.png",
+      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\img\\creeper.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "81636"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TLUfADM5VJ2v92S9U6mg/A+vag+XO1BmyGOj+v8u0Fc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 17:38:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8fpczfq85u"
+        },
+        {
+          "Name": "label",
+          "Value": "img/creeper.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TLUfADM5VJ2v92S9U6mg/A+vag+XO1BmyGOj+v8u0Fc="
+        }
+      ]
+    },
+    {
+      "Route": "img/creeper.png",
+      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\img\\creeper.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "81636"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TLUfADM5VJ2v92S9U6mg/A+vag+XO1BmyGOj+v8u0Fc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 17:38:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TLUfADM5VJ2v92S9U6mg/A+vag+XO1BmyGOj+v8u0Fc="
         }
       ]
     },
@@ -4709,7 +5299,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4746,7 +5336,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4791,7 +5381,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4836,7 +5426,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4873,7 +5463,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4910,7 +5500,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4929,6 +5519,580 @@
         {
           "Name": "integrity",
           "Value": "sha256-xoOI2nv/xEgD9n3IPQ4ILBORxoprZ1h0WZbame/fNv4="
+        }
+      ]
+    },
+    {
+      "Route": "img/ImagemSuperiorCardapio.jpg",
+      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\img\\ImagemSuperiorCardapio.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "146294"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FoL2FQj7m9ZGAobytPB2RlYiaOBvV02PRkJQ1pH0pzc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 17:00:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FoL2FQj7m9ZGAobytPB2RlYiaOBvV02PRkJQ1pH0pzc="
+        }
+      ]
+    },
+    {
+      "Route": "img/ImagemSuperiorCardapio.mcl0ue400x.jpg",
+      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\img\\ImagemSuperiorCardapio.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "146294"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FoL2FQj7m9ZGAobytPB2RlYiaOBvV02PRkJQ1pH0pzc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 17:00:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mcl0ue400x"
+        },
+        {
+          "Name": "label",
+          "Value": "img/ImagemSuperiorCardapio.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FoL2FQj7m9ZGAobytPB2RlYiaOBvV02PRkJQ1pH0pzc="
+        }
+      ]
+    },
+    {
+      "Route": "img/ingredientes/alface.ba2d2x1wqg.png",
+      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\img\\ingredientes\\alface.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "145099"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LT0Tja7T6D/cFwvY6NtS58+dF/ptnK1m1bF1pC+x/D8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 17:54:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ba2d2x1wqg"
+        },
+        {
+          "Name": "label",
+          "Value": "img/ingredientes/alface.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LT0Tja7T6D/cFwvY6NtS58+dF/ptnK1m1bF1pC+x/D8="
+        }
+      ]
+    },
+    {
+      "Route": "img/ingredientes/alface.png",
+      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\img\\ingredientes\\alface.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "145099"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LT0Tja7T6D/cFwvY6NtS58+dF/ptnK1m1bF1pC+x/D8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 17:54:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LT0Tja7T6D/cFwvY6NtS58+dF/ptnK1m1bF1pC+x/D8="
+        }
+      ]
+    },
+    {
+      "Route": "img/ingredientes/bacon.nprfkjz4fl.png",
+      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\img\\ingredientes\\bacon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "52346"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9dWez/TrKHqeBqXGB9zN8PyW5uiGVxMFZt8CzYQKxhQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 17:52:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nprfkjz4fl"
+        },
+        {
+          "Name": "label",
+          "Value": "img/ingredientes/bacon.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9dWez/TrKHqeBqXGB9zN8PyW5uiGVxMFZt8CzYQKxhQ="
+        }
+      ]
+    },
+    {
+      "Route": "img/ingredientes/bacon.png",
+      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\img\\ingredientes\\bacon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "52346"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9dWez/TrKHqeBqXGB9zN8PyW5uiGVxMFZt8CzYQKxhQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 17:52:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9dWez/TrKHqeBqXGB9zN8PyW5uiGVxMFZt8CzYQKxhQ="
+        }
+      ]
+    },
+    {
+      "Route": "img/ingredientes/carne.4m8g3zchcn.png",
+      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\img\\ingredientes\\carne.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "162219"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZCFkOg1nqZen4o1ldSJBAojNQgCA5ma4/npTAhn4vjw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 17:51:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4m8g3zchcn"
+        },
+        {
+          "Name": "label",
+          "Value": "img/ingredientes/carne.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZCFkOg1nqZen4o1ldSJBAojNQgCA5ma4/npTAhn4vjw="
+        }
+      ]
+    },
+    {
+      "Route": "img/ingredientes/carne.png",
+      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\img\\ingredientes\\carne.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "162219"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZCFkOg1nqZen4o1ldSJBAojNQgCA5ma4/npTAhn4vjw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 17:51:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZCFkOg1nqZen4o1ldSJBAojNQgCA5ma4/npTAhn4vjw="
+        }
+      ]
+    },
+    {
+      "Route": "img/ingredientes/cebola.ncbu5wzozd.png",
+      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\img\\ingredientes\\cebola.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "21565"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CZY5wzweNkCpnkKZG85km23CDH5W6JXialcLY2sT/b0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 17:54:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ncbu5wzozd"
+        },
+        {
+          "Name": "label",
+          "Value": "img/ingredientes/cebola.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CZY5wzweNkCpnkKZG85km23CDH5W6JXialcLY2sT/b0="
+        }
+      ]
+    },
+    {
+      "Route": "img/ingredientes/cebola.png",
+      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\img\\ingredientes\\cebola.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "21565"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CZY5wzweNkCpnkKZG85km23CDH5W6JXialcLY2sT/b0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 17:54:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CZY5wzweNkCpnkKZG85km23CDH5W6JXialcLY2sT/b0="
+        }
+      ]
+    },
+    {
+      "Route": "img/ingredientes/cheddar.png",
+      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\img\\ingredientes\\cheddar.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3872"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fyz3Rsg6gUZN4f9VYvEWXnyGsA0KwCC2I8Lcx4zBM5k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 17:49:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fyz3Rsg6gUZN4f9VYvEWXnyGsA0KwCC2I8Lcx4zBM5k="
+        }
+      ]
+    },
+    {
+      "Route": "img/ingredientes/cheddar.zjz2k2b2xj.png",
+      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\img\\ingredientes\\cheddar.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3872"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fyz3Rsg6gUZN4f9VYvEWXnyGsA0KwCC2I8Lcx4zBM5k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 17:49:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zjz2k2b2xj"
+        },
+        {
+          "Name": "label",
+          "Value": "img/ingredientes/cheddar.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fyz3Rsg6gUZN4f9VYvEWXnyGsA0KwCC2I8Lcx4zBM5k="
+        }
+      ]
+    },
+    {
+      "Route": "img/ingredientes/tomate.ag1wxurp34.png",
+      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\img\\ingredientes\\tomate.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "322972"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WriBNgoYFIVBzigbsBT5s3+l3Y0DL7mpN5Da2hpgZvc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 17:55:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ag1wxurp34"
+        },
+        {
+          "Name": "label",
+          "Value": "img/ingredientes/tomate.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WriBNgoYFIVBzigbsBT5s3+l3Y0DL7mpN5Da2hpgZvc="
+        }
+      ]
+    },
+    {
+      "Route": "img/ingredientes/tomate.png",
+      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\img\\ingredientes\\tomate.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "322972"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WriBNgoYFIVBzigbsBT5s3+l3Y0DL7mpN5Da2hpgZvc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 17:55:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WriBNgoYFIVBzigbsBT5s3+l3Y0DL7mpN5Da2hpgZvc="
         }
       ]
     },
@@ -4955,7 +6119,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4992,7 +6156,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5037,7 +6201,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5074,7 +6238,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5119,7 +6283,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5156,7 +6320,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5201,7 +6365,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5246,7 +6410,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5283,7 +6447,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5328,7 +6492,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5365,7 +6529,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5410,7 +6574,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5447,7 +6611,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5492,7 +6656,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5507,13 +6671,13 @@
       ]
     },
     {
-      "Route": "js/modalIngredientes.6m2bssrhjp.js",
-      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\e2aey3kj30-6m2bssrhjp.gz",
+      "Route": "js/modalIngredientes.js",
+      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\e2aey3kj30-p4924a0amb.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000627352572"
+          "Quality": "0.000583771162"
         }
       ],
       "ResponseHeaders": [
@@ -5523,19 +6687,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1593"
+          "Value": "1712"
         },
         {
           "Name": "ETag",
-          "Value": "\"xTMUhCv/qVbd72y180CtX6BDs2Y/NXX9ycV/K6XRoQ4=\""
+          "Value": "\"ACOWmjyzoOATpApNoz4lU7eDy9nOaJKGokr4jyH+IrM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 16:58:46 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -5551,26 +6715,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"AqKwdMnNC8WM8Jm/oypEM87RpWEhJT+6Ibpcz2qL7BI=\""
+          "Value": "W/\"uQbTX303JvVPWh0PN6/J9nSuzcjcCNfa8PlJEfIjP0s=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "6m2bssrhjp"
-        },
-        {
-          "Name": "label",
-          "Value": "js/modalIngredientes.js"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-AqKwdMnNC8WM8Jm/oypEM87RpWEhJT+6Ibpcz2qL7BI="
+          "Value": "sha256-uQbTX303JvVPWh0PN6/J9nSuzcjcCNfa8PlJEfIjP0s="
         }
       ]
     },
     {
-      "Route": "js/modalIngredientes.6m2bssrhjp.js",
+      "Route": "js/modalIngredientes.js",
       "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\js\\modalIngredientes.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5580,7 +6736,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7325"
+          "Value": "8118"
         },
         {
           "Name": "Content-Type",
@@ -5588,11 +6744,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"AqKwdMnNC8WM8Jm/oypEM87RpWEhJT+6Ibpcz2qL7BI=\""
+          "Value": "\"uQbTX303JvVPWh0PN6/J9nSuzcjcCNfa8PlJEfIjP0s=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 16:58:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uQbTX303JvVPWh0PN6/J9nSuzcjcCNfa8PlJEfIjP0s="
+        }
+      ]
+    },
+    {
+      "Route": "js/modalIngredientes.js.gz",
+      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\e2aey3kj30-p4924a0amb.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1712"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ACOWmjyzoOATpApNoz4lU7eDy9nOaJKGokr4jyH+IrM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 16:58:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ACOWmjyzoOATpApNoz4lU7eDy9nOaJKGokr4jyH+IrM="
+        }
+      ]
+    },
+    {
+      "Route": "js/modalIngredientes.p4924a0amb.js",
+      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\e2aey3kj30-p4924a0amb.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000583771162"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1712"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ACOWmjyzoOATpApNoz4lU7eDy9nOaJKGokr4jyH+IrM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 16:58:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"uQbTX303JvVPWh0PN6/J9nSuzcjcCNfa8PlJEfIjP0s=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "p4924a0amb"
+        },
+        {
+          "Name": "label",
+          "Value": "js/modalIngredientes.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uQbTX303JvVPWh0PN6/J9nSuzcjcCNfa8PlJEfIjP0s="
+        }
+      ]
+    },
+    {
+      "Route": "js/modalIngredientes.p4924a0amb.js",
+      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\js\\modalIngredientes.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8118"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uQbTX303JvVPWh0PN6/J9nSuzcjcCNfa8PlJEfIjP0s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 16:58:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5602,7 +6903,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "6m2bssrhjp"
+          "Value": "p4924a0amb"
         },
         {
           "Name": "label",
@@ -5610,13 +6911,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-AqKwdMnNC8WM8Jm/oypEM87RpWEhJT+6Ibpcz2qL7BI="
+          "Value": "sha256-uQbTX303JvVPWh0PN6/J9nSuzcjcCNfa8PlJEfIjP0s="
         }
       ]
     },
     {
-      "Route": "js/modalIngredientes.6m2bssrhjp.js.gz",
-      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\e2aey3kj30-6m2bssrhjp.gz",
+      "Route": "js/modalIngredientes.p4924a0amb.js.gz",
+      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\e2aey3kj30-p4924a0amb.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5625,7 +6926,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1593"
+          "Value": "1712"
         },
         {
           "Name": "Content-Type",
@@ -5633,11 +6934,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"xTMUhCv/qVbd72y180CtX6BDs2Y/NXX9ycV/K6XRoQ4=\""
+          "Value": "\"ACOWmjyzoOATpApNoz4lU7eDy9nOaJKGokr4jyH+IrM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
+          "Value": "Sun, 13 Apr 2025 16:58:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5655,7 +6956,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "6m2bssrhjp"
+          "Value": "p4924a0amb"
         },
         {
           "Name": "label",
@@ -5663,144 +6964,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-xTMUhCv/qVbd72y180CtX6BDs2Y/NXX9ycV/K6XRoQ4="
-        }
-      ]
-    },
-    {
-      "Route": "js/modalIngredientes.js",
-      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\e2aey3kj30-6m2bssrhjp.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000627352572"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1593"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"xTMUhCv/qVbd72y180CtX6BDs2Y/NXX9ycV/K6XRoQ4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"AqKwdMnNC8WM8Jm/oypEM87RpWEhJT+6Ibpcz2qL7BI=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-AqKwdMnNC8WM8Jm/oypEM87RpWEhJT+6Ibpcz2qL7BI="
-        }
-      ]
-    },
-    {
-      "Route": "js/modalIngredientes.js",
-      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\js\\modalIngredientes.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "7325"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"AqKwdMnNC8WM8Jm/oypEM87RpWEhJT+6Ibpcz2qL7BI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-AqKwdMnNC8WM8Jm/oypEM87RpWEhJT+6Ibpcz2qL7BI="
-        }
-      ]
-    },
-    {
-      "Route": "js/modalIngredientes.js.gz",
-      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\e2aey3kj30-6m2bssrhjp.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1593"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"xTMUhCv/qVbd72y180CtX6BDs2Y/NXX9ycV/K6XRoQ4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:15:55 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-xTMUhCv/qVbd72y180CtX6BDs2Y/NXX9ycV/K6XRoQ4="
+          "Value": "sha256-ACOWmjyzoOATpApNoz4lU7eDy9nOaJKGokr4jyH+IrM="
         }
       ]
     },
@@ -5829,7 +6993,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5882,7 +7046,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5919,7 +7083,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5966,7 +7130,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6027,7 +7191,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6072,7 +7236,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6127,7 +7291,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6180,7 +7344,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6219,7 +7383,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6280,7 +7444,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6325,7 +7489,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6378,7 +7542,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6425,7 +7589,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6478,7 +7642,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6515,7 +7679,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6562,7 +7726,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6615,7 +7779,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6654,7 +7818,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6715,7 +7879,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6760,7 +7924,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6813,7 +7977,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6860,7 +8024,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6913,7 +8077,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6950,7 +8114,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6997,7 +8161,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7058,7 +8222,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7103,7 +8267,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7158,7 +8322,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7211,7 +8375,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7250,7 +8414,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7311,7 +8475,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7356,7 +8520,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7409,7 +8573,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7456,7 +8620,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7509,7 +8673,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7546,7 +8710,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7593,7 +8757,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7654,7 +8818,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7699,7 +8863,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7754,7 +8918,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7807,7 +8971,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7846,7 +9010,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7907,7 +9071,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7952,7 +9116,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8005,7 +9169,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8052,7 +9216,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8105,7 +9269,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8142,7 +9306,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8189,7 +9353,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8250,7 +9414,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8295,7 +9459,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8350,7 +9514,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8411,7 +9575,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8456,7 +9620,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8511,7 +9675,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8564,7 +9728,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8603,7 +9767,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8664,7 +9828,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8709,7 +9873,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8762,7 +9926,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8809,7 +9973,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8862,7 +10026,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8899,7 +10063,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8946,7 +10110,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8999,7 +10163,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9038,7 +10202,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9099,7 +10263,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9144,7 +10308,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9197,7 +10361,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9244,7 +10408,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9297,7 +10461,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9334,7 +10498,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9381,7 +10545,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9442,7 +10606,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9487,7 +10651,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9542,7 +10706,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9603,7 +10767,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9648,7 +10812,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9703,7 +10867,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9756,7 +10920,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9795,7 +10959,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9856,7 +11020,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9901,7 +11065,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9954,7 +11118,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10001,7 +11165,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10054,7 +11218,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10091,7 +11255,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10138,7 +11302,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10191,7 +11355,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10228,7 +11392,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10275,7 +11439,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10336,7 +11500,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10381,7 +11545,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10436,7 +11600,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10489,7 +11653,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10526,7 +11690,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10573,7 +11737,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10634,7 +11798,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10679,7 +11843,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10734,7 +11898,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10795,7 +11959,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10840,7 +12004,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10895,7 +12059,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10948,7 +12112,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10985,7 +12149,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11032,7 +12196,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11085,7 +12249,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11122,7 +12286,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11169,7 +12333,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11230,7 +12394,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11275,7 +12439,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11330,7 +12494,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11391,7 +12555,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11436,7 +12600,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11491,7 +12655,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11544,7 +12708,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11583,7 +12747,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11644,7 +12808,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11689,7 +12853,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11742,7 +12906,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11789,7 +12953,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11842,7 +13006,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11879,7 +13043,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11926,7 +13090,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11987,7 +13151,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12032,7 +13196,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12087,7 +13251,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12140,7 +13304,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12177,7 +13341,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12224,7 +13388,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12285,7 +13449,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12330,7 +13494,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12385,7 +13549,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12438,7 +13602,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12475,7 +13639,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12522,7 +13686,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12583,7 +13747,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12628,7 +13792,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12683,7 +13847,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12736,7 +13900,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12773,7 +13937,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12820,7 +13984,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12873,7 +14037,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12910,7 +14074,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12957,7 +14121,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13018,7 +14182,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13063,7 +14227,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13118,7 +14282,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13179,7 +14343,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13224,7 +14388,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13279,7 +14443,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13332,7 +14496,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13369,7 +14533,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13416,7 +14580,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13469,7 +14633,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13506,7 +14670,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13553,7 +14717,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13614,7 +14778,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13659,7 +14823,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13714,7 +14878,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13775,7 +14939,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13820,7 +14984,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13875,7 +15039,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13928,7 +15092,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13965,7 +15129,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14012,7 +15176,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14065,7 +15229,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14102,7 +15266,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14149,7 +15313,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14210,7 +15374,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14255,7 +15419,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14310,7 +15474,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14363,7 +15527,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14400,7 +15564,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14447,7 +15611,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14508,7 +15672,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14553,7 +15717,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14608,7 +15772,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14661,7 +15825,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14698,7 +15862,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14745,7 +15909,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14806,7 +15970,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14851,7 +16015,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14906,7 +16070,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14959,7 +16123,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14998,7 +16162,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15059,7 +16223,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15104,7 +16268,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15157,7 +16321,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15204,7 +16368,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15257,7 +16421,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15294,7 +16458,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15341,7 +16505,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15402,7 +16566,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15447,7 +16611,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15502,7 +16666,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15563,7 +16727,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15608,7 +16772,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15663,7 +16827,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15724,7 +16888,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15769,7 +16933,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15824,7 +16988,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15877,7 +17041,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15916,7 +17080,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15977,7 +17141,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16022,7 +17186,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16075,7 +17239,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16122,7 +17286,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16175,7 +17339,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16212,7 +17376,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16259,7 +17423,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16320,7 +17484,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16365,7 +17529,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16420,7 +17584,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16473,7 +17637,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16510,7 +17674,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16557,7 +17721,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16618,7 +17782,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16663,7 +17827,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16718,7 +17882,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16771,7 +17935,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16808,7 +17972,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16855,7 +18019,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16908,7 +18072,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16945,7 +18109,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16992,7 +18156,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17053,7 +18217,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17098,7 +18262,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17153,7 +18317,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17206,7 +18370,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17243,7 +18407,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17290,7 +18454,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17351,7 +18515,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17396,7 +18560,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17451,7 +18615,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17512,7 +18676,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17557,7 +18721,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17612,7 +18776,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17665,7 +18829,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17702,7 +18866,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17749,7 +18913,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17802,7 +18966,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17839,7 +19003,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17886,7 +19050,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17947,7 +19111,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17992,7 +19156,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -18047,7 +19211,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -18100,7 +19264,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -18137,7 +19301,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -18184,7 +19348,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -18245,7 +19409,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -18290,7 +19454,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -18345,7 +19509,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -18398,7 +19562,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -18435,7 +19599,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -18482,7 +19646,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -18543,7 +19707,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -18588,7 +19752,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -18643,7 +19807,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -18696,7 +19860,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -18735,7 +19899,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -18796,7 +19960,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -18841,7 +20005,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -18894,7 +20058,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -18941,7 +20105,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -18994,7 +20158,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19031,7 +20195,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19078,7 +20242,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19139,7 +20303,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19184,7 +20348,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19237,7 +20401,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19274,7 +20438,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19321,7 +20485,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19382,7 +20546,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19427,7 +20591,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19482,7 +20646,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19535,7 +20699,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19572,7 +20736,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19619,7 +20783,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19680,7 +20844,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19725,7 +20889,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19780,7 +20944,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19833,7 +20997,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19870,7 +21034,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19917,7 +21081,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19978,7 +21142,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -20023,7 +21187,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -20078,7 +21242,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -20131,7 +21295,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -20168,7 +21332,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -20215,7 +21379,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -20276,7 +21440,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -20321,7 +21485,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -20376,7 +21540,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -20429,7 +21593,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -20466,7 +21630,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -20513,7 +21677,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -20566,7 +21730,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -20603,7 +21767,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -20650,7 +21814,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -20711,7 +21875,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -20756,7 +21920,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -20811,7 +21975,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -20864,7 +22028,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -20901,7 +22065,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -20948,7 +22112,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21009,7 +22173,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21054,7 +22218,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21109,7 +22273,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21162,7 +22326,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21199,7 +22363,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21246,7 +22410,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21307,7 +22471,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21352,7 +22516,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21407,7 +22571,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21460,7 +22624,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21497,7 +22661,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21544,7 +22708,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21605,7 +22769,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21650,7 +22814,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21705,7 +22869,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21766,7 +22930,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21811,7 +22975,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21866,7 +23030,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21919,7 +23083,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21956,7 +23120,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22003,7 +23167,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22056,7 +23220,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22093,7 +23257,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22140,7 +23304,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22201,7 +23365,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22246,7 +23410,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22301,7 +23465,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22354,7 +23518,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22391,7 +23555,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22438,7 +23602,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22499,7 +23663,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22544,7 +23708,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22599,7 +23763,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22660,7 +23824,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22705,7 +23869,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22760,7 +23924,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22813,7 +23977,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22850,7 +24014,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22897,7 +24061,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22958,7 +24122,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -23003,7 +24167,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -23058,7 +24222,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -23119,7 +24283,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -23164,7 +24328,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -23219,7 +24383,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -23272,7 +24436,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -23309,7 +24473,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -23356,7 +24520,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -23409,7 +24573,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -23446,7 +24610,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -23493,7 +24657,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -23554,7 +24718,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -23599,7 +24763,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -23654,7 +24818,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -23707,7 +24871,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -23744,7 +24908,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 16:10:44 GMT"
+          "Value": "Sun, 13 Apr 2025 15:46:05 GMT"
         },
         {
           "Name": "Cache-Control",

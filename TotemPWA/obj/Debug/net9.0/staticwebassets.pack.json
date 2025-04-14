@@ -1,407 +1,407 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\css\\cardapio.css",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\css\\cardapio.css",
       "PackagePath": "staticwebassets\\css\\cardapio.css"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\css\\carrinho.css",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\css\\carrinho.css",
       "PackagePath": "staticwebassets\\css\\carrinho.css"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\css\\personalizar.css",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\css\\personalizar.css",
       "PackagePath": "staticwebassets\\css\\personalizar.css"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\Combao.jpg",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\img\\Combao.jpg",
       "PackagePath": "staticwebassets\\img\\Combao.jpg"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\ImagemSuperiorCardapio.jpg",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\img\\ImagemSuperiorCardapio.jpg",
       "PackagePath": "staticwebassets\\img\\ImagemSuperiorCardapio.jpg"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\Logo.jpg",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\img\\Logo.jpg",
       "PackagePath": "staticwebassets\\img\\Logo.jpg"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\Red Illustrative Burger Food Logo_20250216_231603_0000 1.png",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\img\\Red Illustrative Burger Food Logo_20250216_231603_0000 1.png",
       "PackagePath": "staticwebassets\\img\\Red Illustrative Burger Food Logo_20250216_231603_0000 1.png"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\Red_Illustrative_Burger_Food_Logo-removebg-preview 1.png",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\img\\Red_Illustrative_Burger_Food_Logo-removebg-preview 1.png",
       "PackagePath": "staticwebassets\\img\\Red_Illustrative_Burger_Food_Logo-removebg-preview 1.png"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\back1.jpg",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\img\\back1.jpg",
       "PackagePath": "staticwebassets\\img\\back1.jpg"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\bebidas.png",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\img\\bebidas.png",
       "PackagePath": "staticwebassets\\img\\bebidas.png"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\burguer405.png",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\img\\burguer405.png",
       "PackagePath": "staticwebassets\\img\\burguer405.png"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\carne1.png",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\img\\carne1.png",
       "PackagePath": "staticwebassets\\img\\carne1.png"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\carne2.png",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\img\\carne2.png",
       "PackagePath": "staticwebassets\\img\\carne2.png"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\combos.png",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\img\\combos.png",
       "PackagePath": "staticwebassets\\img\\combos.png"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\creeper.png",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\img\\creeper.png",
       "PackagePath": "staticwebassets\\img\\creeper.png"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\d4u1GTvl_kmUrrsUwaj0OV0huie-m7AFB15UzmGDqoU.jpg",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\img\\d4u1GTvl_kmUrrsUwaj0OV0huie-m7AFB15UzmGDqoU.jpg",
       "PackagePath": "staticwebassets\\img\\d4u1GTvl_kmUrrsUwaj0OV0huie-m7AFB15UzmGDqoU.jpg"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\duplo1.jpg",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\img\\duplo1.jpg",
       "PackagePath": "staticwebassets\\img\\duplo1.jpg"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\frango1.png",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\img\\frango1.png",
       "PackagePath": "staticwebassets\\img\\frango1.png"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\frango2.png",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\img\\frango2.png",
       "PackagePath": "staticwebassets\\img\\frango2.png"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\frango3.png",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\img\\frango3.png",
       "PackagePath": "staticwebassets\\img\\frango3.png"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\full1.png",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\img\\full1.png",
       "PackagePath": "staticwebassets\\img\\full1.png"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\ingredientes\\alface.png",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\img\\ingredientes\\alface.png",
       "PackagePath": "staticwebassets\\img\\ingredientes\\alface.png"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\ingredientes\\bacon.png",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\img\\ingredientes\\bacon.png",
       "PackagePath": "staticwebassets\\img\\ingredientes\\bacon.png"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\ingredientes\\carne.png",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\img\\ingredientes\\carne.png",
       "PackagePath": "staticwebassets\\img\\ingredientes\\carne.png"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\ingredientes\\cebola.png",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\img\\ingredientes\\cebola.png",
       "PackagePath": "staticwebassets\\img\\ingredientes\\cebola.png"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\ingredientes\\cheddar.png",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\img\\ingredientes\\cheddar.png",
       "PackagePath": "staticwebassets\\img\\ingredientes\\cheddar.png"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\ingredientes\\tomate.png",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\img\\ingredientes\\tomate.png",
       "PackagePath": "staticwebassets\\img\\ingredientes\\tomate.png"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\inicial.jpg",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\img\\inicial.jpg",
       "PackagePath": "staticwebassets\\img\\inicial.jpg"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\lanches.png",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\img\\lanches.png",
       "PackagePath": "staticwebassets\\img\\lanches.png"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\molho.jpg",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\img\\molho.jpg",
       "PackagePath": "staticwebassets\\img\\molho.jpg"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\peixe1.png",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\img\\peixe1.png",
       "PackagePath": "staticwebassets\\img\\peixe1.png"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\peixe2.png",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\img\\peixe2.png",
       "PackagePath": "staticwebassets\\img\\peixe2.png"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\peixe3.png",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\img\\peixe3.png",
       "PackagePath": "staticwebassets\\img\\peixe3.png"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\sobremesas1.jpg",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\img\\sobremesas1.jpg",
       "PackagePath": "staticwebassets\\img\\sobremesas1.jpg"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\vegano1.png",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\img\\vegano1.png",
       "PackagePath": "staticwebassets\\img\\vegano1.png"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\vegano2.png",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\img\\vegano2.png",
       "PackagePath": "staticwebassets\\img\\vegano2.png"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\vegano3.png",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\img\\vegano3.png",
       "PackagePath": "staticwebassets\\img\\vegano3.png"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\js\\modalIngredientes.js",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\js\\modalIngredientes.js",
       "PackagePath": "staticwebassets\\js\\modalIngredientes.js"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.js"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.js"
     },
     {
-      "Id": "C:\\Users\\0031432512020\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "Id": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
     },
     {

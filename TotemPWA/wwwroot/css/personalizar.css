@@ -161,6 +161,7 @@ body {
 #confirmar-personalizacao,
 button[onclick="adicionarAoCarrinho()"] {
     margin-bottom: 1rem;
+    margin-right: 1rem;;
     padding: 12px 24px;
     font-size: 1rem;
     background-color: #4CAF50;
@@ -175,20 +176,47 @@ button[onclick="adicionarAoCarrinho()"]:hover {
     background-color: #45a049;
 }
 
-.back-btn {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    padding: 8px 16px;
+
+.botoes-personalizar {
+    display: flex;
+    justify-content: flex-end; /* 👈 Alinha os botões à direita */
+    gap: 10px; /* 👈 Espaço entre os botões */
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.botoes-personalizar .back-btn {
+    padding: 12px 24px;
     font-size: 16px;
-    border: none;
     border-radius: 8px;
     cursor: pointer;
-    z-index: 10;
+    background-color: #ffb300;
+    color: #fff;
+    transition: background-color 0.3s;
+    display: inline-block;
+    text-align: center;
+    border: none; /* Adicione isso para consistência com o outro botão */
+}
+
+.botoes-personalizar .back-btn:hover {
+    background-color: #e09e00;
+}
+
+
+
+.botoes-personalizar button {
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    background-color: #ffb300;
+    color: #fff;
     transition: background-color 0.3s;
 }
-.back-btn:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+
+.botoes-personalizar button:hover {
+    background-color: #e09e00;
 }
+

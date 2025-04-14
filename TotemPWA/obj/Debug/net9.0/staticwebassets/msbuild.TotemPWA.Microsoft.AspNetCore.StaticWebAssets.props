@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>d4f2opud6x</Fingerprint>
-      <Integrity>DfUpsSpS7Tk0bVa/OaYXr+lG4hf7y7t1fEIjL7kRR9c=</Integrity>
+      <Fingerprint>8npitqb9pc</Fingerprint>
+      <Integrity>VCd4dsYdEMVozoXrkCERBDKBnFdUmf3uhpwUeFMq3TY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\cardapio.css'))</OriginalItemSpec>
@@ -48,8 +48,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>6pp7diloij</Fingerprint>
-      <Integrity>2oISvK0nJlE5UGvgHFjV5rH9qWTdz7mMK/PNKOhLqpU=</Integrity>
+      <Fingerprint>2w4oqq3byy</Fingerprint>
+      <Integrity>Pt+LG0Mw+irFCteejSidQkB5iYlz/m23wALzsZTgC+8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\personalizar.css'))</OriginalItemSpec>

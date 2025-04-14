@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cfgMJxF+qgTYUwMioYqT7ads0rWzJt+KgyyxgmwSggo=",
+  "Hash": "g3XJfJpfhHoByBbCRFZYlWU8QFTcJQn4PT670/TLshA=",
   "Source": "TotemPWA",
   "BasePath": "_content/TotemPWA",
   "Mode": "Default",
@@ -80,12 +80,12 @@
       "OriginalItemSpec": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\1p7qm2t0m7-6pp7diloij.gz",
+      "Identity": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\1p7qm2t0m7-2w4oqq3byy.gz",
       "SourceId": "TotemPWA",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/TotemPWA",
-      "RelativePath": "css/personalizar#[.{fingerprint=6pp7diloij}]?.css.gz",
+      "RelativePath": "css/personalizar#[.{fingerprint=2w4oqq3byy}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -94,8 +94,8 @@
       "RelatedAsset": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\css\\personalizar.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "jn1ti7sacr",
-      "Integrity": "YURX8hviKR6jCuR6VMGBZFMlco4HHgVreEN7i0l6BqE=",
+      "Fingerprint": "xiitefr3gt",
+      "Integrity": "9yJPPd3O1yfzJjjVVOk6vhX3m2blaGXTPTb6z5nDSXI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\css\\personalizar.css"
@@ -962,12 +962,12 @@
       "OriginalItemSpec": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\prh438x6dk-d4f2opud6x.gz",
+      "Identity": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\prh438x6dk-8npitqb9pc.gz",
       "SourceId": "TotemPWA",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/TotemPWA",
-      "RelativePath": "css/cardapio#[.{fingerprint=d4f2opud6x}]?.css.gz",
+      "RelativePath": "css/cardapio#[.{fingerprint=8npitqb9pc}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -976,8 +976,8 @@
       "RelatedAsset": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\css\\cardapio.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "pjsl59wo4a",
-      "Integrity": "xWzTDpGcXE11fhvf2ZGfEgo+uReWx9g+DU6vj66/868=",
+      "Fingerprint": "c3qak8sbez",
+      "Integrity": "aCnWwNG1dA671TnBWYb04Zjv77r0Y5r/lhDMs5PNxCg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\css\\cardapio.css"
@@ -1417,8 +1417,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "d4f2opud6x",
-      "Integrity": "DfUpsSpS7Tk0bVa/OaYXr+lG4hf7y7t1fEIjL7kRR9c=",
+      "Fingerprint": "8npitqb9pc",
+      "Integrity": "VCd4dsYdEMVozoXrkCERBDKBnFdUmf3uhpwUeFMq3TY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\cardapio.css"
@@ -1459,8 +1459,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "6pp7diloij",
-      "Integrity": "2oISvK0nJlE5UGvgHFjV5rH9qWTdz7mMK/PNKOhLqpU=",
+      "Fingerprint": "2w4oqq3byy",
+      "Integrity": "Pt+LG0Mw+irFCteejSidQkB5iYlz/m23wALzsZTgC+8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\personalizar.css"
@@ -3295,13 +3295,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/cardapio.css",
-      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\prh438x6dk-d4f2opud6x.gz",
+      "Route": "css/cardapio.8npitqb9pc.css",
+      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\prh438x6dk-8npitqb9pc.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000763941940"
+          "Quality": "0.000550055006"
         }
       ],
       "ResponseHeaders": [
@@ -3311,19 +3311,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1308"
+          "Value": "1817"
         },
         {
           "Name": "ETag",
-          "Value": "\"xWzTDpGcXE11fhvf2ZGfEgo+uReWx9g+DU6vj66/868=\""
+          "Value": "\"aCnWwNG1dA671TnBWYb04Zjv77r0Y5r/lhDMs5PNxCg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 17:03:43 GMT"
+          "Value": "Mon, 14 Apr 2025 03:17:11 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -3339,18 +3339,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"DfUpsSpS7Tk0bVa/OaYXr+lG4hf7y7t1fEIjL7kRR9c=\""
+          "Value": "W/\"VCd4dsYdEMVozoXrkCERBDKBnFdUmf3uhpwUeFMq3TY=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "8npitqb9pc"
+        },
+        {
+          "Name": "label",
+          "Value": "css/cardapio.css"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-DfUpsSpS7Tk0bVa/OaYXr+lG4hf7y7t1fEIjL7kRR9c="
+          "Value": "sha256-VCd4dsYdEMVozoXrkCERBDKBnFdUmf3uhpwUeFMq3TY="
         }
       ]
     },
     {
-      "Route": "css/cardapio.css",
+      "Route": "css/cardapio.8npitqb9pc.css",
       "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\css\\cardapio.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3360,7 +3368,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5520"
+          "Value": "7151"
         },
         {
           "Name": "Content-Type",
@@ -3368,121 +3376,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"DfUpsSpS7Tk0bVa/OaYXr+lG4hf7y7t1fEIjL7kRR9c=\""
+          "Value": "\"VCd4dsYdEMVozoXrkCERBDKBnFdUmf3uhpwUeFMq3TY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 17:03:43 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-DfUpsSpS7Tk0bVa/OaYXr+lG4hf7y7t1fEIjL7kRR9c="
-        }
-      ]
-    },
-    {
-      "Route": "css/cardapio.css.gz",
-      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\prh438x6dk-d4f2opud6x.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1308"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"xWzTDpGcXE11fhvf2ZGfEgo+uReWx9g+DU6vj66/868=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 17:03:43 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-xWzTDpGcXE11fhvf2ZGfEgo+uReWx9g+DU6vj66/868="
-        }
-      ]
-    },
-    {
-      "Route": "css/cardapio.d4f2opud6x.css",
-      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\prh438x6dk-d4f2opud6x.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000763941940"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1308"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"xWzTDpGcXE11fhvf2ZGfEgo+uReWx9g+DU6vj66/868=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 17:03:43 GMT"
+          "Value": "Mon, 14 Apr 2025 03:17:11 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"DfUpsSpS7Tk0bVa/OaYXr+lG4hf7y7t1fEIjL7kRR9c=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "d4f2opud6x"
+          "Value": "8npitqb9pc"
         },
         {
           "Name": "label",
@@ -3490,13 +3398,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-DfUpsSpS7Tk0bVa/OaYXr+lG4hf7y7t1fEIjL7kRR9c="
+          "Value": "sha256-VCd4dsYdEMVozoXrkCERBDKBnFdUmf3uhpwUeFMq3TY="
         }
       ]
     },
     {
-      "Route": "css/cardapio.d4f2opud6x.css",
-      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\css\\cardapio.css",
+      "Route": "css/cardapio.8npitqb9pc.css.gz",
+      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\prh438x6dk-8npitqb9pc.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3505,7 +3413,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5520"
+          "Value": "1817"
         },
         {
           "Name": "Content-Type",
@@ -3513,56 +3421,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"DfUpsSpS7Tk0bVa/OaYXr+lG4hf7y7t1fEIjL7kRR9c=\""
+          "Value": "\"aCnWwNG1dA671TnBWYb04Zjv77r0Y5r/lhDMs5PNxCg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 17:03:43 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "d4f2opud6x"
-        },
-        {
-          "Name": "label",
-          "Value": "css/cardapio.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-DfUpsSpS7Tk0bVa/OaYXr+lG4hf7y7t1fEIjL7kRR9c="
-        }
-      ]
-    },
-    {
-      "Route": "css/cardapio.d4f2opud6x.css.gz",
-      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\prh438x6dk-d4f2opud6x.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1308"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"xWzTDpGcXE11fhvf2ZGfEgo+uReWx9g+DU6vj66/868=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 17:03:43 GMT"
+          "Value": "Mon, 14 Apr 2025 03:17:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3580,7 +3443,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "d4f2opud6x"
+          "Value": "8npitqb9pc"
         },
         {
           "Name": "label",
@@ -3588,7 +3451,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-xWzTDpGcXE11fhvf2ZGfEgo+uReWx9g+DU6vj66/868="
+          "Value": "sha256-aCnWwNG1dA671TnBWYb04Zjv77r0Y5r/lhDMs5PNxCg="
+        }
+      ]
+    },
+    {
+      "Route": "css/cardapio.css",
+      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\prh438x6dk-8npitqb9pc.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000550055006"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1817"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aCnWwNG1dA671TnBWYb04Zjv77r0Y5r/lhDMs5PNxCg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 03:17:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"VCd4dsYdEMVozoXrkCERBDKBnFdUmf3uhpwUeFMq3TY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VCd4dsYdEMVozoXrkCERBDKBnFdUmf3uhpwUeFMq3TY="
+        }
+      ]
+    },
+    {
+      "Route": "css/cardapio.css",
+      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\css\\cardapio.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7151"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VCd4dsYdEMVozoXrkCERBDKBnFdUmf3uhpwUeFMq3TY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 03:17:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VCd4dsYdEMVozoXrkCERBDKBnFdUmf3uhpwUeFMq3TY="
+        }
+      ]
+    },
+    {
+      "Route": "css/cardapio.css.gz",
+      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\prh438x6dk-8npitqb9pc.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1817"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aCnWwNG1dA671TnBWYb04Zjv77r0Y5r/lhDMs5PNxCg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 03:17:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aCnWwNG1dA671TnBWYb04Zjv77r0Y5r/lhDMs5PNxCg="
         }
       ]
     },
@@ -3891,13 +3891,13 @@
       ]
     },
     {
-      "Route": "css/personalizar.6pp7diloij.css",
-      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\1p7qm2t0m7-6pp7diloij.gz",
+      "Route": "css/personalizar.2w4oqq3byy.css",
+      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\1p7qm2t0m7-2w4oqq3byy.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000929368030"
+          "Quality": "0.000859106529"
         }
       ],
       "ResponseHeaders": [
@@ -3907,15 +3907,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1075"
+          "Value": "1163"
         },
         {
           "Name": "ETag",
-          "Value": "\"YURX8hviKR6jCuR6VMGBZFMlco4HHgVreEN7i0l6BqE=\""
+          "Value": "\"9yJPPd3O1yfzJjjVVOk6vhX3m2blaGXTPTb6z5nDSXI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 18:21:05 GMT"
+          "Value": "Sun, 13 Apr 2025 22:30:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3935,13 +3935,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"2oISvK0nJlE5UGvgHFjV5rH9qWTdz7mMK/PNKOhLqpU=\""
+          "Value": "W/\"Pt+LG0Mw+irFCteejSidQkB5iYlz/m23wALzsZTgC+8=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "6pp7diloij"
+          "Value": "2w4oqq3byy"
         },
         {
           "Name": "label",
@@ -3949,12 +3949,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-2oISvK0nJlE5UGvgHFjV5rH9qWTdz7mMK/PNKOhLqpU="
+          "Value": "sha256-Pt+LG0Mw+irFCteejSidQkB5iYlz/m23wALzsZTgC+8="
         }
       ]
     },
     {
-      "Route": "css/personalizar.6pp7diloij.css",
+      "Route": "css/personalizar.2w4oqq3byy.css",
       "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\wwwroot\\css\\personalizar.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3964,7 +3964,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3718"
+          "Value": "4115"
         },
         {
           "Name": "Content-Type",
@@ -3972,11 +3972,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"2oISvK0nJlE5UGvgHFjV5rH9qWTdz7mMK/PNKOhLqpU=\""
+          "Value": "\"Pt+LG0Mw+irFCteejSidQkB5iYlz/m23wALzsZTgC+8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 18:21:05 GMT"
+          "Value": "Sun, 13 Apr 2025 22:30:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3986,7 +3986,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "6pp7diloij"
+          "Value": "2w4oqq3byy"
         },
         {
           "Name": "label",
@@ -3994,13 +3994,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-2oISvK0nJlE5UGvgHFjV5rH9qWTdz7mMK/PNKOhLqpU="
+          "Value": "sha256-Pt+LG0Mw+irFCteejSidQkB5iYlz/m23wALzsZTgC+8="
         }
       ]
     },
     {
-      "Route": "css/personalizar.6pp7diloij.css.gz",
-      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\1p7qm2t0m7-6pp7diloij.gz",
+      "Route": "css/personalizar.2w4oqq3byy.css.gz",
+      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\1p7qm2t0m7-2w4oqq3byy.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4009,7 +4009,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1075"
+          "Value": "1163"
         },
         {
           "Name": "Content-Type",
@@ -4017,11 +4017,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"YURX8hviKR6jCuR6VMGBZFMlco4HHgVreEN7i0l6BqE=\""
+          "Value": "\"9yJPPd3O1yfzJjjVVOk6vhX3m2blaGXTPTb6z5nDSXI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 18:21:05 GMT"
+          "Value": "Sun, 13 Apr 2025 22:30:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4039,7 +4039,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "6pp7diloij"
+          "Value": "2w4oqq3byy"
         },
         {
           "Name": "label",
@@ -4047,18 +4047,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-YURX8hviKR6jCuR6VMGBZFMlco4HHgVreEN7i0l6BqE="
+          "Value": "sha256-9yJPPd3O1yfzJjjVVOk6vhX3m2blaGXTPTb6z5nDSXI="
         }
       ]
     },
     {
       "Route": "css/personalizar.css",
-      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\1p7qm2t0m7-6pp7diloij.gz",
+      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\1p7qm2t0m7-2w4oqq3byy.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000929368030"
+          "Quality": "0.000859106529"
         }
       ],
       "ResponseHeaders": [
@@ -4068,15 +4068,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1075"
+          "Value": "1163"
         },
         {
           "Name": "ETag",
-          "Value": "\"YURX8hviKR6jCuR6VMGBZFMlco4HHgVreEN7i0l6BqE=\""
+          "Value": "\"9yJPPd3O1yfzJjjVVOk6vhX3m2blaGXTPTb6z5nDSXI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 18:21:05 GMT"
+          "Value": "Sun, 13 Apr 2025 22:30:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4096,13 +4096,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"2oISvK0nJlE5UGvgHFjV5rH9qWTdz7mMK/PNKOhLqpU=\""
+          "Value": "W/\"Pt+LG0Mw+irFCteejSidQkB5iYlz/m23wALzsZTgC+8=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-2oISvK0nJlE5UGvgHFjV5rH9qWTdz7mMK/PNKOhLqpU="
+          "Value": "sha256-Pt+LG0Mw+irFCteejSidQkB5iYlz/m23wALzsZTgC+8="
         }
       ]
     },
@@ -4117,7 +4117,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3718"
+          "Value": "4115"
         },
         {
           "Name": "Content-Type",
@@ -4125,11 +4125,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"2oISvK0nJlE5UGvgHFjV5rH9qWTdz7mMK/PNKOhLqpU=\""
+          "Value": "\"Pt+LG0Mw+irFCteejSidQkB5iYlz/m23wALzsZTgC+8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 18:21:05 GMT"
+          "Value": "Sun, 13 Apr 2025 22:30:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4139,13 +4139,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-2oISvK0nJlE5UGvgHFjV5rH9qWTdz7mMK/PNKOhLqpU="
+          "Value": "sha256-Pt+LG0Mw+irFCteejSidQkB5iYlz/m23wALzsZTgC+8="
         }
       ]
     },
     {
       "Route": "css/personalizar.css.gz",
-      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\1p7qm2t0m7-6pp7diloij.gz",
+      "AssetFile": "C:\\Users\\Nefalem\\Documents\\Desenvolvimento TotemPWA\\Versão Tela Ingredientes\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\1p7qm2t0m7-2w4oqq3byy.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4154,7 +4154,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1075"
+          "Value": "1163"
         },
         {
           "Name": "Content-Type",
@@ -4162,11 +4162,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"YURX8hviKR6jCuR6VMGBZFMlco4HHgVreEN7i0l6BqE=\""
+          "Value": "\"9yJPPd3O1yfzJjjVVOk6vhX3m2blaGXTPTb6z5nDSXI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 18:21:05 GMT"
+          "Value": "Sun, 13 Apr 2025 22:30:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4184,7 +4184,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-YURX8hviKR6jCuR6VMGBZFMlco4HHgVreEN7i0l6BqE="
+          "Value": "sha256-9yJPPd3O1yfzJjjVVOk6vhX3m2blaGXTPTb6z5nDSXI="
         }
       ]
     },
@@ -5217,7 +5217,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 17:38:04 GMT"
+          "Value": "Sun, 13 Apr 2025 22:30:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5262,7 +5262,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 17:38:04 GMT"
+          "Value": "Sun, 13 Apr 2025 22:30:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5545,7 +5545,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 17:00:41 GMT"
+          "Value": "Sun, 13 Apr 2025 22:30:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5582,7 +5582,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 17:00:41 GMT"
+          "Value": "Sun, 13 Apr 2025 22:30:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5627,7 +5627,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 17:54:56 GMT"
+          "Value": "Sun, 13 Apr 2025 22:30:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5672,7 +5672,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 17:54:56 GMT"
+          "Value": "Sun, 13 Apr 2025 22:30:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5709,7 +5709,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 17:52:58 GMT"
+          "Value": "Sun, 13 Apr 2025 22:30:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5754,7 +5754,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 17:52:58 GMT"
+          "Value": "Sun, 13 Apr 2025 22:30:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5791,7 +5791,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 17:51:58 GMT"
+          "Value": "Sun, 13 Apr 2025 22:30:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5836,7 +5836,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 17:51:58 GMT"
+          "Value": "Sun, 13 Apr 2025 22:30:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5873,7 +5873,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 17:54:05 GMT"
+          "Value": "Sun, 13 Apr 2025 22:30:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5918,7 +5918,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 17:54:05 GMT"
+          "Value": "Sun, 13 Apr 2025 22:30:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5955,7 +5955,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 17:49:29 GMT"
+          "Value": "Sun, 13 Apr 2025 22:30:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5992,7 +5992,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 17:49:29 GMT"
+          "Value": "Sun, 13 Apr 2025 22:30:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6037,7 +6037,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 17:55:37 GMT"
+          "Value": "Sun, 13 Apr 2025 22:30:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6082,7 +6082,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 17:55:37 GMT"
+          "Value": "Sun, 13 Apr 2025 22:30:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6695,7 +6695,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 16:58:46 GMT"
+          "Value": "Sun, 13 Apr 2025 22:30:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6748,7 +6748,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 16:58:46 GMT"
+          "Value": "Sun, 13 Apr 2025 22:30:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6785,7 +6785,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 16:58:46 GMT"
+          "Value": "Sun, 13 Apr 2025 22:30:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6832,7 +6832,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 16:58:46 GMT"
+          "Value": "Sun, 13 Apr 2025 22:30:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6893,7 +6893,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 16:58:46 GMT"
+          "Value": "Sun, 13 Apr 2025 22:30:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6938,7 +6938,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 16:58:46 GMT"
+          "Value": "Sun, 13 Apr 2025 22:30:36 GMT"
         },
         {
           "Name": "Cache-Control",

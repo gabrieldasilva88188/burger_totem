@@ -9,8 +9,8 @@
 <link rel="stylesheet" href="@Url.Content("~/css/personalizar.css")">
 
 <div class="modal-content">
-     <button class="back-btn" onclick="redirecionarCardapio()">← Voltar</button>
-    <img id="produto-imagem" src="@Url.Content(imagem)" alt="@nome" />
+
+<img id="produto-imagem" src="@Url.Content(imagem)" alt="@nome" />
 
     <h2 id="produto-nome">Personalizar @nome</h2>
     <p id="produto-preco">Preço: R$ @preco</p>
@@ -47,14 +47,13 @@
         }
     </div>
 
-    <label for="quantidade-lanche">Escolha a quantidade:</label>
-    <div class="quantidade-container">
-        <button onclick="alterarQtd(-1)">-</button>
-        <input type="number" id="quantidade-lanche" min="1" value="1" readonly>
-        <button onclick="alterarQtd(1)">+</button>
+    <div class="botoes-personalizar">
+        <button class="back-btn" onclick="redirecionarCardapio()">← Voltar</button>
+        <button id="confirmar-personalizacao" onclick="adicionarAoCarrinho()">Adicionar ao Carrinho</button>
+    
     </div>
 
-    <button id="confirmar-personalizacao" onclick="adicionarAoCarrinho()">Adicionar ao Carrinho</button>
+
 </div>
 
 <script>
@@ -81,35 +80,48 @@
 
 function adicionarAoCarrinho() {
     const nome = document.getElementById("produto-nome").innerText.replace("Personalizar ", "");
-    const quantidade = parseInt(document.getElementById("quantidade-lanche").value);
+    const quantidade = 1;
     const precoTexto = document.getElementById("produto-preco").innerText.replace("Preço: R$ ", "").replace(",", ".");
-    const precoUnitario = parseFloat(precoTexto);
+    let precoBase = parseFloat(precoTexto);
 
     const ingredientes = {};
+    let precoIngredientes = 0.0;
+
+    // Dicionário com os preços dos ingredientes
+    const precosIngredientes = {
+        "Queijo": 2.70,
+        "Carne": 9.60,
+        "Bacon": 3.50,
+        "Cebola": 1.50,
+        "Alface": 1.00,
+        "Tomate": 1.00
+    };
+
     document.querySelectorAll(".quantidade").forEach(span => {
         const ingrediente = span.id.replace("quantidade-", "");
         const qtd = parseInt(span.innerText);
-        if (qtd > 0) ingredientes[ingrediente] = qtd;
+        if (qtd > 0) {
+            ingredientes[ingrediente] = qtd;
+            precoIngredientes += precosIngredientes[ingrediente] * qtd;
+        }
     });
 
+    const precoFinal = precoBase + precoIngredientes;
     const imagem = document.getElementById("produto-imagem").getAttribute("src");
 
     const item = {
         nome: nome,
         quantidade: quantidade,
-        precoUnitario: precoUnitario,
-        total: quantidade * precoUnitario,
+        precoUnitario: precoFinal,
+        total: quantidade * precoFinal,
         ingredientes: ingredientes,
-        imagem: imagem // <-- Adiciona a imagem ao item
+        imagem: imagem
     };
 
-
-    // Recuperar carrinho atual ou criar novo
     let itens = JSON.parse(sessionStorage.getItem("itensCarrinho")) || [];
     itens.push(item);
     sessionStorage.setItem("itensCarrinho", JSON.stringify(itens));
 
-    // Atualiza total do pedido
     let totalItens = parseInt(sessionStorage.getItem("totalItens")) || 0;
     let totalPedido = parseFloat(sessionStorage.getItem("totalPedido")) || 0.0;
 
@@ -121,5 +133,7 @@ function adicionarAoCarrinho() {
 
     window.location.href = "/Home/Cardapio";
 }
+
+
 
 </script>

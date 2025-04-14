@@ -31,15 +31,29 @@ public class HomeController : Controller
     {
     // Exemplo hardcoded, você pode buscar do banco
   // Exemplo hardcoded, você pode buscar do banco
-var produtos = new List<dynamic>
-{
-    new { Id = 1, Nome = "Buguer 404", Preco = "29,00", Imagem = "~/img/lanches.png" },
-    new { Id = 2, Nome = "Full Stack Burger", Preco = "32,00", Imagem = "~/img/full1.png" },
-    new { Id = 3, Nome = "Looping Duplo", Preco = "30,00", Imagem = "~/img/duplo1.jpg" },
-    new { Id = 4, Nome = "Back-End Crispy Triplo", Preco = "30,00", Imagem = "~/img/back1.jpg" }, // Três carnes
-    new { Id = 5, Nome = "Back-End Crispy Onion", Preco = "30,00", Imagem = "~/img/back1.jpg" }, // Cebola crispy
-    new { Id = 6, Nome = "Back-End Crispy Onion 2", Preco = "30,00", Imagem = "~/img/back1.jpg" } // Igual ao anterior, mas separado se quiser variar depois
-};
+    var produtos = new List<dynamic>
+    {
+        // Lanches de Frango
+        new { Id = 1, Nome = "Chicken Code", Preco = "27,00", Imagem = "~/img/frango1.png" },
+        new { Id = 2, Nome = "React Crispy", Preco = "28,50", Imagem = "~/img/frango2.png" },
+        new { Id = 3, Nome = "Frango JS", Preco = "25,00", Imagem = "~/img/frango3.png" },
+
+        // Lanches de Carne
+        new { Id = 4, Nome = "Buguer 404", Preco = "29,00", Imagem = "~/img/carne1.png" },
+        new { Id = 5, Nome = "Full Stack Burger", Preco = "32,00", Imagem = "~/img/full1.png" },
+        new { Id = 6, Nome = "Looping Duplo", Preco = "30,00", Imagem = "~/img/carne2.png" },
+
+        // Lanches Veganos
+        new { Id = 7, Nome = "Green Stack", Preco = "26,00", Imagem = "~/img/vegano1.png" },
+        new { Id = 8, Nome = "Vegan Full", Preco = "27,00", Imagem = "~/img/vegano2.png" },
+        new { Id = 9, Nome = "Buguer Plant", Preco = "28,00", Imagem = "~/img/vegano3.png" },
+
+        // Lanches de Peixe
+        new { Id = 10, Nome = "Fish Dev", Preco = "29,00", Imagem = "~/img/peixe1.png" },
+        new { Id = 11, Nome = "Salmão Byte", Preco = "34,00", Imagem = "~/img/peixe2.png" },
+        new { Id = 12, Nome = "Tuna Stack", Preco = "31,00", Imagem = "~/img/peixe3.png" }
+    };
+
 
 
     var produto = produtos.FirstOrDefault(p => p.Id == id);

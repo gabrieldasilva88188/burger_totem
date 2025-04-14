@@ -75,8 +75,6 @@ header {
     flex-grow: 1;
 }
 
-
-
 .content {
     flex-grow: 1;
     padding: 20px;
@@ -92,17 +90,27 @@ header {
     gap: 20px;
 }
 
-.produto{
+.produto {
     background: #fff;
     padding: 15px;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Remova ou comente a linha abaixo, pois o <a> agora é block */
+    /* display: inline-block; */
+    width: 100%; /* Garante que ocupe a largura da célula do grid */
+    box-sizing: border-box; /* Evita que o padding aumente a largura */
+}
+
+.produtos a.produto {
+    display: block; /* Faz o link ocupar toda a célula do grid */
+    text-decoration: none; /* Já definido na classe sem-estilo-hiperlink, mas garante aqui */
+    color: inherit; /* Garante que a cor do texto não seja alterada pelo link */
 }
 
 .produto img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
 }
 
@@ -303,5 +311,57 @@ footer {
     text-decoration: none;
     color: inherit;
 }
+
+.top-menu-scroll {
+    display: flex;
+    justify-content: center; /* centraliza os botões */
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 0.5rem;
+    padding: 10px 0;
+    margin: 0 auto; /* centraliza horizontalmente */
+    background: transparent;
+    border: none;
+    width: 100%; /* garante que ocupa o espaço necessário */
+    box-sizing: border-box; /* evita ultrapassar o espaço do container */
+}
+
+
+.top-menu-scroll::-webkit-scrollbar {
+    height: 6px;
+}
+
+.top-menu-scroll::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 3px;
+}
+
+.top-filter {
+    background-color: #ffcc00; /* cor de exemplo, pode ajustar */
+    border: none;
+    padding: 10px 20px;
+    margin-right: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.top-filter:hover {
+    background-color: #ffaa00;
+}
+
+main.content {
+    padding-top: 0;
+    margin-top: 0;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centraliza todo o conteúdo filho */
+}
+
+   
+
+
+
 
 

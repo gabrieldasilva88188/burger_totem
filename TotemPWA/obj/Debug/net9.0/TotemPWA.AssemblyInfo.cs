@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TotemPWA")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9cd3f453ba0a987f0f5843e74cc4a7b6d2f30f30")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43899f26d967c9308daf5fe107e6a008b3f7649d")]
 [assembly: System.Reflection.AssemblyProductAttribute("TotemPWA")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TotemPWA")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

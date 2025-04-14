@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oD/e6400InYspsHjAAL7UmKdOriqcasMjLeOERN2Vto=",
+  "Hash": "IZBS6iBx5oh1+xqLXup4zxoHpMwvW26JG2F0IBsK/kM=",
   "Source": "TotemPWA",
   "BasePath": "_content/TotemPWA",
   "Mode": "Default",
@@ -1529,6 +1529,27 @@
       "OriginalItemSpec": "wwwroot\\img\\back1.jpg"
     },
     {
+      "Identity": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\barbecue.png",
+      "SourceId": "TotemPWA",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\",
+      "BasePath": "_content/TotemPWA",
+      "RelativePath": "img/barbecue#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "svc3agt7h7",
+      "Integrity": "+H2CUW1BnXxdGomSmDpCINnTKnHh68Jd3dh3NVBIg28=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\barbecue.png"
+    },
+    {
       "Identity": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\bebidas.png",
       "SourceId": "TotemPWA",
       "SourceType": "Discovered",
@@ -1613,6 +1634,27 @@
       "OriginalItemSpec": "wwwroot\\img\\carne2.png"
     },
     {
+      "Identity": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\coca-cola.png",
+      "SourceId": "TotemPWA",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\",
+      "BasePath": "_content/TotemPWA",
+      "RelativePath": "img/coca-cola#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "e0c2xinatg",
+      "Integrity": "sh0Lps41u2m6Q/j7TlV64HNqgK5Vi4tJeqgvP0mvuz4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\coca-cola.png"
+    },
+    {
       "Identity": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\Combao.jpg",
       "SourceId": "TotemPWA",
       "SourceType": "Discovered",
@@ -1632,6 +1674,69 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Combao.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\combo1.png",
+      "SourceId": "TotemPWA",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\",
+      "BasePath": "_content/TotemPWA",
+      "RelativePath": "img/combo1#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ibixftjzep",
+      "Integrity": "AjKATyttW1+4A/wZRp78N5TU7bMhkSInc89rB0n3HqI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\combo1.png"
+    },
+    {
+      "Identity": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\combo2.png",
+      "SourceId": "TotemPWA",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\",
+      "BasePath": "_content/TotemPWA",
+      "RelativePath": "img/combo2#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9mx7w3p2gx",
+      "Integrity": "8cFym3ihPEdS+WCU2GtUaNoh2Zvplg85qwiYKsiv0Q8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\combo2.png"
+    },
+    {
+      "Identity": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\combo3.png",
+      "SourceId": "TotemPWA",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\",
+      "BasePath": "_content/TotemPWA",
+      "RelativePath": "img/combo3#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ysdstyzp85",
+      "Integrity": "4qnk8WuiQH8VaAtjtjLIe6+m/bfmRrlV3RT/Vo3xTlQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\combo3.png"
     },
     {
       "Identity": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\combos.png",
@@ -2012,6 +2117,27 @@
       "OriginalItemSpec": "wwwroot\\img\\Logo.jpg"
     },
     {
+      "Identity": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\maionese-casa.png",
+      "SourceId": "TotemPWA",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\",
+      "BasePath": "_content/TotemPWA",
+      "RelativePath": "img/maionese-casa#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "c9ck7xcpsx",
+      "Integrity": "EAbqK74fBd1SgqbLIThgntSNZ6vlQnl/VCxK/zVrhBs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\maionese-casa.png"
+    },
+    {
       "Identity": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\molho.jpg",
       "SourceId": "TotemPWA",
       "SourceType": "Discovered",
@@ -2138,6 +2264,48 @@
       "OriginalItemSpec": "wwwroot\\img\\Red_Illustrative_Burger_Food_Logo-removebg-preview 1.png"
     },
     {
+      "Identity": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\sobremesa1.png",
+      "SourceId": "TotemPWA",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\",
+      "BasePath": "_content/TotemPWA",
+      "RelativePath": "img/sobremesa1#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0gqvccvtoe",
+      "Integrity": "YPw1lHRw7WmUvtJfueZBCavYxchdfVD1kbCOOruaiZk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\sobremesa1.png"
+    },
+    {
+      "Identity": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\sobremesa2.png",
+      "SourceId": "TotemPWA",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\",
+      "BasePath": "_content/TotemPWA",
+      "RelativePath": "img/sobremesa2#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "odqba9858h",
+      "Integrity": "TCiU5iGOyRARdb1AHj7LIuc7exjq0wfoKPgfLHtazJM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\sobremesa2.png"
+    },
+    {
       "Identity": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\sobremesas1.jpg",
       "SourceId": "TotemPWA",
       "SourceType": "Discovered",
@@ -2157,6 +2325,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\sobremesas1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\suco-laranja.png",
+      "SourceId": "TotemPWA",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\",
+      "BasePath": "_content/TotemPWA",
+      "RelativePath": "img/suco-laranja#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "caf5tr3tgi",
+      "Integrity": "pNUsjn4eoJMkHLP1i/Y01CqUVmmxRkRM00wt8JMsw5E=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\suco-laranja.png"
     },
     {
       "Identity": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\vegano1.png",
@@ -5098,6 +5287,88 @@
       ]
     },
     {
+      "Route": "img/barbecue.png",
+      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\barbecue.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "226403"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+H2CUW1BnXxdGomSmDpCINnTKnHh68Jd3dh3NVBIg28=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 21:05:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+H2CUW1BnXxdGomSmDpCINnTKnHh68Jd3dh3NVBIg28="
+        }
+      ]
+    },
+    {
+      "Route": "img/barbecue.svc3agt7h7.png",
+      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\barbecue.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "226403"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+H2CUW1BnXxdGomSmDpCINnTKnHh68Jd3dh3NVBIg28=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 21:05:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "svc3agt7h7"
+        },
+        {
+          "Name": "label",
+          "Value": "img/barbecue.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+H2CUW1BnXxdGomSmDpCINnTKnHh68Jd3dh3NVBIg28="
+        }
+      ]
+    },
+    {
       "Route": "img/bebidas.k4swsq9p2r.png",
       "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\bebidas.png",
       "Selectors": [],
@@ -5426,6 +5697,88 @@
       ]
     },
     {
+      "Route": "img/coca-cola.e0c2xinatg.png",
+      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\coca-cola.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1177621"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sh0Lps41u2m6Q/j7TlV64HNqgK5Vi4tJeqgvP0mvuz4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 21:05:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "e0c2xinatg"
+        },
+        {
+          "Name": "label",
+          "Value": "img/coca-cola.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sh0Lps41u2m6Q/j7TlV64HNqgK5Vi4tJeqgvP0mvuz4="
+        }
+      ]
+    },
+    {
+      "Route": "img/coca-cola.png",
+      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\coca-cola.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1177621"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sh0Lps41u2m6Q/j7TlV64HNqgK5Vi4tJeqgvP0mvuz4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 21:05:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sh0Lps41u2m6Q/j7TlV64HNqgK5Vi4tJeqgvP0mvuz4="
+        }
+      ]
+    },
+    {
       "Route": "img/Combao.jpg",
       "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\Combao.jpg",
       "Selectors": [],
@@ -5504,6 +5857,252 @@
         {
           "Name": "integrity",
           "Value": "sha256-5SP293EeFPJ7HtdLrCpFfwZSOZeqbVfM2E6Fq6VCRaY="
+        }
+      ]
+    },
+    {
+      "Route": "img/combo1.ibixftjzep.png",
+      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\combo1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "157722"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AjKATyttW1+4A/wZRp78N5TU7bMhkSInc89rB0n3HqI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 21:05:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ibixftjzep"
+        },
+        {
+          "Name": "label",
+          "Value": "img/combo1.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AjKATyttW1+4A/wZRp78N5TU7bMhkSInc89rB0n3HqI="
+        }
+      ]
+    },
+    {
+      "Route": "img/combo1.png",
+      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\combo1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "157722"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AjKATyttW1+4A/wZRp78N5TU7bMhkSInc89rB0n3HqI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 21:05:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AjKATyttW1+4A/wZRp78N5TU7bMhkSInc89rB0n3HqI="
+        }
+      ]
+    },
+    {
+      "Route": "img/combo2.9mx7w3p2gx.png",
+      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\combo2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "767393"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8cFym3ihPEdS+WCU2GtUaNoh2Zvplg85qwiYKsiv0Q8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 21:05:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9mx7w3p2gx"
+        },
+        {
+          "Name": "label",
+          "Value": "img/combo2.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8cFym3ihPEdS+WCU2GtUaNoh2Zvplg85qwiYKsiv0Q8="
+        }
+      ]
+    },
+    {
+      "Route": "img/combo2.png",
+      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\combo2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "767393"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8cFym3ihPEdS+WCU2GtUaNoh2Zvplg85qwiYKsiv0Q8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 21:05:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8cFym3ihPEdS+WCU2GtUaNoh2Zvplg85qwiYKsiv0Q8="
+        }
+      ]
+    },
+    {
+      "Route": "img/combo3.png",
+      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\combo3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "569094"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4qnk8WuiQH8VaAtjtjLIe6+m/bfmRrlV3RT/Vo3xTlQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 21:05:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4qnk8WuiQH8VaAtjtjLIe6+m/bfmRrlV3RT/Vo3xTlQ="
+        }
+      ]
+    },
+    {
+      "Route": "img/combo3.ysdstyzp85.png",
+      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\combo3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "569094"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4qnk8WuiQH8VaAtjtjLIe6+m/bfmRrlV3RT/Vo3xTlQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 21:05:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ysdstyzp85"
+        },
+        {
+          "Name": "label",
+          "Value": "img/combo3.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4qnk8WuiQH8VaAtjtjLIe6+m/bfmRrlV3RT/Vo3xTlQ="
         }
       ]
     },
@@ -6984,6 +7583,88 @@
       ]
     },
     {
+      "Route": "img/maionese-casa.c9ck7xcpsx.png",
+      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\maionese-casa.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "393300"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EAbqK74fBd1SgqbLIThgntSNZ6vlQnl/VCxK/zVrhBs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 21:05:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "c9ck7xcpsx"
+        },
+        {
+          "Name": "label",
+          "Value": "img/maionese-casa.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EAbqK74fBd1SgqbLIThgntSNZ6vlQnl/VCxK/zVrhBs="
+        }
+      ]
+    },
+    {
+      "Route": "img/maionese-casa.png",
+      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\maionese-casa.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "393300"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EAbqK74fBd1SgqbLIThgntSNZ6vlQnl/VCxK/zVrhBs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 21:05:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EAbqK74fBd1SgqbLIThgntSNZ6vlQnl/VCxK/zVrhBs="
+        }
+      ]
+    },
+    {
       "Route": "img/molho.exc3p29ten.jpg",
       "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\molho.jpg",
       "Selectors": [],
@@ -7476,6 +8157,170 @@
       ]
     },
     {
+      "Route": "img/sobremesa1.0gqvccvtoe.png",
+      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\sobremesa1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1565809"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YPw1lHRw7WmUvtJfueZBCavYxchdfVD1kbCOOruaiZk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 21:05:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0gqvccvtoe"
+        },
+        {
+          "Name": "label",
+          "Value": "img/sobremesa1.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YPw1lHRw7WmUvtJfueZBCavYxchdfVD1kbCOOruaiZk="
+        }
+      ]
+    },
+    {
+      "Route": "img/sobremesa1.png",
+      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\sobremesa1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1565809"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YPw1lHRw7WmUvtJfueZBCavYxchdfVD1kbCOOruaiZk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 21:05:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YPw1lHRw7WmUvtJfueZBCavYxchdfVD1kbCOOruaiZk="
+        }
+      ]
+    },
+    {
+      "Route": "img/sobremesa2.odqba9858h.png",
+      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\sobremesa2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1781945"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TCiU5iGOyRARdb1AHj7LIuc7exjq0wfoKPgfLHtazJM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 21:05:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "odqba9858h"
+        },
+        {
+          "Name": "label",
+          "Value": "img/sobremesa2.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TCiU5iGOyRARdb1AHj7LIuc7exjq0wfoKPgfLHtazJM="
+        }
+      ]
+    },
+    {
+      "Route": "img/sobremesa2.png",
+      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\sobremesa2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1781945"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TCiU5iGOyRARdb1AHj7LIuc7exjq0wfoKPgfLHtazJM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 21:05:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TCiU5iGOyRARdb1AHj7LIuc7exjq0wfoKPgfLHtazJM="
+        }
+      ]
+    },
+    {
       "Route": "img/sobremesas1.4iiss7hbm9.jpg",
       "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\sobremesas1.jpg",
       "Selectors": [],
@@ -7554,6 +8399,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-rDSzJu3IbSwj8KcQv1yULTDtBQIlhnyPYLk5Wtyde8M="
+        }
+      ]
+    },
+    {
+      "Route": "img/suco-laranja.caf5tr3tgi.png",
+      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\suco-laranja.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "959605"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pNUsjn4eoJMkHLP1i/Y01CqUVmmxRkRM00wt8JMsw5E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 21:05:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "caf5tr3tgi"
+        },
+        {
+          "Name": "label",
+          "Value": "img/suco-laranja.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pNUsjn4eoJMkHLP1i/Y01CqUVmmxRkRM00wt8JMsw5E="
+        }
+      ]
+    },
+    {
+      "Route": "img/suco-laranja.png",
+      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\suco-laranja.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "959605"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pNUsjn4eoJMkHLP1i/Y01CqUVmmxRkRM00wt8JMsw5E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 21:05:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pNUsjn4eoJMkHLP1i/Y01CqUVmmxRkRM00wt8JMsw5E="
         }
       ]
     },

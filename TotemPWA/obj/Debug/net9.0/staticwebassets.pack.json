@@ -45,6 +45,10 @@
       "PackagePath": "staticwebassets\\img\\back1.jpg"
     },
     {
+      "Id": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\barbecue.png",
+      "PackagePath": "staticwebassets\\img\\barbecue.png"
+    },
+    {
       "Id": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\bebidas.png",
       "PackagePath": "staticwebassets\\img\\bebidas.png"
     },
@@ -59,6 +63,10 @@
     {
       "Id": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\carne2.png",
       "PackagePath": "staticwebassets\\img\\carne2.png"
+    },
+    {
+      "Id": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\coca-cola.png",
+      "PackagePath": "staticwebassets\\img\\coca-cola.png"
     },
     {
       "Id": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\combo1.png",
@@ -137,6 +145,10 @@
       "PackagePath": "staticwebassets\\img\\lanches.png"
     },
     {
+      "Id": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\maionese-casa.png",
+      "PackagePath": "staticwebassets\\img\\maionese-casa.png"
+    },
+    {
       "Id": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\molho.jpg",
       "PackagePath": "staticwebassets\\img\\molho.jpg"
     },
@@ -153,8 +165,20 @@
       "PackagePath": "staticwebassets\\img\\peixe3.png"
     },
     {
+      "Id": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\sobremesa1.png",
+      "PackagePath": "staticwebassets\\img\\sobremesa1.png"
+    },
+    {
+      "Id": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\sobremesa2.png",
+      "PackagePath": "staticwebassets\\img\\sobremesa2.png"
+    },
+    {
       "Id": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\sobremesas1.jpg",
       "PackagePath": "staticwebassets\\img\\sobremesas1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\suco-laranja.png",
+      "PackagePath": "staticwebassets\\img\\suco-laranja.png"
     },
     {
       "Id": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\vegano1.png",

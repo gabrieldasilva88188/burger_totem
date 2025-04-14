@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3+Z4yjBg0FfR1IrjbDaj3UU6Mdw0s0puC9hAt8lZ3sU=",
+  "Hash": "Yo+4qRWE1JvXD9/dToxtsnVWlwvQ6LifJDMFwChygus=",
   "Source": "TotemPWA",
   "BasePath": "_content/TotemPWA",
   "Mode": "Default",
@@ -80,12 +80,12 @@
       "OriginalItemSpec": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\1p7qm2t0m7-1w18vf158u.gz",
+      "Identity": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\1p7qm2t0m7-r298koyng3.gz",
       "SourceId": "TotemPWA",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/TotemPWA",
-      "RelativePath": "css/personalizar#[.{fingerprint=1w18vf158u}]?.css.gz",
+      "RelativePath": "css/personalizar#[.{fingerprint=r298koyng3}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -94,8 +94,8 @@
       "RelatedAsset": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\css\\personalizar.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "e0c6les1tg",
-      "Integrity": "slArEyV8br+WKwhrTyQlIrjMIgv6aLN85QLQzEwKQSw=",
+      "Fingerprint": "jv19ohwf59",
+      "Integrity": "QdKM4mwOcIfTM2SQcY7atkzcQfa/PWeyK/HnSQLeoQw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\css\\personalizar.css"
@@ -962,12 +962,12 @@
       "OriginalItemSpec": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\prh438x6dk-7ih7k4qcty.gz",
+      "Identity": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\prh438x6dk-v7xrkh14nm.gz",
       "SourceId": "TotemPWA",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/TotemPWA",
-      "RelativePath": "css/cardapio#[.{fingerprint=7ih7k4qcty}]?.css.gz",
+      "RelativePath": "css/cardapio#[.{fingerprint=v7xrkh14nm}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -976,8 +976,8 @@
       "RelatedAsset": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\css\\cardapio.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "ald2m4yokk",
-      "Integrity": "Tjf6nUvE+EgT790oQhKbDShCPO380Di9sNtvFUXY4q0=",
+      "Fingerprint": "tt19ppbmfw",
+      "Integrity": "gV5vBGSlYP8CMtsW94YtHdGOJAWLXbUbWItd/kBrihk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\css\\cardapio.css"
@@ -1417,8 +1417,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "7ih7k4qcty",
-      "Integrity": "oeeHXa8J29f9N0Y5pxqKhuLN0hKVfdHWSVZYnt6LT7I=",
+      "Fingerprint": "v7xrkh14nm",
+      "Integrity": "FZe/O0yYTYTmsDTyjGhuNV0gyDdM1YDNiQrJaMMSll8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\cardapio.css"
@@ -1459,8 +1459,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "1w18vf158u",
-      "Integrity": "b9lpJo7n8qOPOfeXWpHiWA/yp8Ro0DV0ODUWRCkRbPg=",
+      "Fingerprint": "r298koyng3",
+      "Integrity": "DUzGcI8shp+UzlOqowQgQ4K++Qt0nmNY4TQF4yXS6zQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\personalizar.css"
@@ -1632,6 +1632,69 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Combao.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\combo1.png",
+      "SourceId": "TotemPWA",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\",
+      "BasePath": "_content/TotemPWA",
+      "RelativePath": "img/combo1#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ibixftjzep",
+      "Integrity": "AjKATyttW1+4A/wZRp78N5TU7bMhkSInc89rB0n3HqI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\combo1.png"
+    },
+    {
+      "Identity": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\combo2.png",
+      "SourceId": "TotemPWA",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\",
+      "BasePath": "_content/TotemPWA",
+      "RelativePath": "img/combo2#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9mx7w3p2gx",
+      "Integrity": "8cFym3ihPEdS+WCU2GtUaNoh2Zvplg85qwiYKsiv0Q8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\combo2.png"
+    },
+    {
+      "Identity": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\combo3.png",
+      "SourceId": "TotemPWA",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\",
+      "BasePath": "_content/TotemPWA",
+      "RelativePath": "img/combo3#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ysdstyzp85",
+      "Integrity": "4qnk8WuiQH8VaAtjtjLIe6+m/bfmRrlV3RT/Vo3xTlQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\combo3.png"
     },
     {
       "Identity": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\combos.png",
@@ -3526,13 +3589,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/cardapio.7ih7k4qcty.css",
-      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\prh438x6dk-7ih7k4qcty.gz",
+      "Route": "css/cardapio.css",
+      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\prh438x6dk-v7xrkh14nm.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000549450549"
+          "Quality": "0.000530222694"
         }
       ],
       "ResponseHeaders": [
@@ -3542,19 +3605,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1819"
+          "Value": "1885"
         },
         {
           "Name": "ETag",
-          "Value": "\"Tjf6nUvE+EgT790oQhKbDShCPO380Di9sNtvFUXY4q0=\""
+          "Value": "\"gV5vBGSlYP8CMtsW94YtHdGOJAWLXbUbWItd/kBrihk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 17:33:55 GMT"
+          "Value": "Mon, 14 Apr 2025 19:15:47 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -3570,26 +3633,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"oeeHXa8J29f9N0Y5pxqKhuLN0hKVfdHWSVZYnt6LT7I=\""
+          "Value": "W/\"FZe/O0yYTYTmsDTyjGhuNV0gyDdM1YDNiQrJaMMSll8=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "7ih7k4qcty"
-        },
-        {
-          "Name": "label",
-          "Value": "css/cardapio.css"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-oeeHXa8J29f9N0Y5pxqKhuLN0hKVfdHWSVZYnt6LT7I="
+          "Value": "sha256-FZe/O0yYTYTmsDTyjGhuNV0gyDdM1YDNiQrJaMMSll8="
         }
       ]
     },
     {
-      "Route": "css/cardapio.7ih7k4qcty.css",
+      "Route": "css/cardapio.css",
       "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\css\\cardapio.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3599,7 +3654,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7151"
+          "Value": "7391"
         },
         {
           "Name": "Content-Type",
@@ -3607,11 +3662,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"oeeHXa8J29f9N0Y5pxqKhuLN0hKVfdHWSVZYnt6LT7I=\""
+          "Value": "\"FZe/O0yYTYTmsDTyjGhuNV0gyDdM1YDNiQrJaMMSll8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 17:33:55 GMT"
+          "Value": "Mon, 14 Apr 2025 19:15:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FZe/O0yYTYTmsDTyjGhuNV0gyDdM1YDNiQrJaMMSll8="
+        }
+      ]
+    },
+    {
+      "Route": "css/cardapio.css.gz",
+      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\prh438x6dk-v7xrkh14nm.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1885"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gV5vBGSlYP8CMtsW94YtHdGOJAWLXbUbWItd/kBrihk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 19:15:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gV5vBGSlYP8CMtsW94YtHdGOJAWLXbUbWItd/kBrihk="
+        }
+      ]
+    },
+    {
+      "Route": "css/cardapio.v7xrkh14nm.css",
+      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\prh438x6dk-v7xrkh14nm.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000530222694"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1885"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gV5vBGSlYP8CMtsW94YtHdGOJAWLXbUbWItd/kBrihk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 19:15:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"FZe/O0yYTYTmsDTyjGhuNV0gyDdM1YDNiQrJaMMSll8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v7xrkh14nm"
+        },
+        {
+          "Name": "label",
+          "Value": "css/cardapio.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FZe/O0yYTYTmsDTyjGhuNV0gyDdM1YDNiQrJaMMSll8="
+        }
+      ]
+    },
+    {
+      "Route": "css/cardapio.v7xrkh14nm.css",
+      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\css\\cardapio.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7391"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FZe/O0yYTYTmsDTyjGhuNV0gyDdM1YDNiQrJaMMSll8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 19:15:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3621,7 +3821,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "7ih7k4qcty"
+          "Value": "v7xrkh14nm"
         },
         {
           "Name": "label",
@@ -3629,13 +3829,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-oeeHXa8J29f9N0Y5pxqKhuLN0hKVfdHWSVZYnt6LT7I="
+          "Value": "sha256-FZe/O0yYTYTmsDTyjGhuNV0gyDdM1YDNiQrJaMMSll8="
         }
       ]
     },
     {
-      "Route": "css/cardapio.7ih7k4qcty.css.gz",
-      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\prh438x6dk-7ih7k4qcty.gz",
+      "Route": "css/cardapio.v7xrkh14nm.css.gz",
+      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\prh438x6dk-v7xrkh14nm.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3644,7 +3844,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1819"
+          "Value": "1885"
         },
         {
           "Name": "Content-Type",
@@ -3652,11 +3852,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Tjf6nUvE+EgT790oQhKbDShCPO380Di9sNtvFUXY4q0=\""
+          "Value": "\"gV5vBGSlYP8CMtsW94YtHdGOJAWLXbUbWItd/kBrihk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 17:33:55 GMT"
+          "Value": "Mon, 14 Apr 2025 19:15:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3674,7 +3874,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "7ih7k4qcty"
+          "Value": "v7xrkh14nm"
         },
         {
           "Name": "label",
@@ -3682,144 +3882,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Tjf6nUvE+EgT790oQhKbDShCPO380Di9sNtvFUXY4q0="
-        }
-      ]
-    },
-    {
-      "Route": "css/cardapio.css",
-      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\prh438x6dk-7ih7k4qcty.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000549450549"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1819"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Tjf6nUvE+EgT790oQhKbDShCPO380Di9sNtvFUXY4q0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 17:33:55 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"oeeHXa8J29f9N0Y5pxqKhuLN0hKVfdHWSVZYnt6LT7I=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-oeeHXa8J29f9N0Y5pxqKhuLN0hKVfdHWSVZYnt6LT7I="
-        }
-      ]
-    },
-    {
-      "Route": "css/cardapio.css",
-      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\css\\cardapio.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "7151"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"oeeHXa8J29f9N0Y5pxqKhuLN0hKVfdHWSVZYnt6LT7I=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 17:33:55 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-oeeHXa8J29f9N0Y5pxqKhuLN0hKVfdHWSVZYnt6LT7I="
-        }
-      ]
-    },
-    {
-      "Route": "css/cardapio.css.gz",
-      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\prh438x6dk-7ih7k4qcty.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1819"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Tjf6nUvE+EgT790oQhKbDShCPO380Di9sNtvFUXY4q0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 17:33:55 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Tjf6nUvE+EgT790oQhKbDShCPO380Di9sNtvFUXY4q0="
+          "Value": "sha256-gV5vBGSlYP8CMtsW94YtHdGOJAWLXbUbWItd/kBrihk="
         }
       ]
     },
@@ -4122,13 +4185,13 @@
       ]
     },
     {
-      "Route": "css/personalizar.1w18vf158u.css",
-      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\1p7qm2t0m7-1w18vf158u.gz",
+      "Route": "css/personalizar.css",
+      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\1p7qm2t0m7-r298koyng3.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000772797527"
+          "Quality": "0.000776397516"
         }
       ],
       "ResponseHeaders": [
@@ -4138,19 +4201,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1293"
+          "Value": "1287"
         },
         {
           "Name": "ETag",
-          "Value": "\"slArEyV8br+WKwhrTyQlIrjMIgv6aLN85QLQzEwKQSw=\""
+          "Value": "\"QdKM4mwOcIfTM2SQcY7atkzcQfa/PWeyK/HnSQLeoQw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 16:12:03 GMT"
+          "Value": "Mon, 14 Apr 2025 19:15:47 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -4166,26 +4229,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"b9lpJo7n8qOPOfeXWpHiWA/yp8Ro0DV0ODUWRCkRbPg=\""
+          "Value": "W/\"DUzGcI8shp+UzlOqowQgQ4K++Qt0nmNY4TQF4yXS6zQ=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "1w18vf158u"
-        },
-        {
-          "Name": "label",
-          "Value": "css/personalizar.css"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-b9lpJo7n8qOPOfeXWpHiWA/yp8Ro0DV0ODUWRCkRbPg="
+          "Value": "sha256-DUzGcI8shp+UzlOqowQgQ4K++Qt0nmNY4TQF4yXS6zQ="
         }
       ]
     },
     {
-      "Route": "css/personalizar.1w18vf158u.css",
+      "Route": "css/personalizar.css",
       "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\css\\personalizar.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -4195,7 +4250,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4760"
+          "Value": "4727"
         },
         {
           "Name": "Content-Type",
@@ -4203,11 +4258,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"b9lpJo7n8qOPOfeXWpHiWA/yp8Ro0DV0ODUWRCkRbPg=\""
+          "Value": "\"DUzGcI8shp+UzlOqowQgQ4K++Qt0nmNY4TQF4yXS6zQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 16:12:03 GMT"
+          "Value": "Mon, 14 Apr 2025 19:15:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DUzGcI8shp+UzlOqowQgQ4K++Qt0nmNY4TQF4yXS6zQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/personalizar.css.gz",
+      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\1p7qm2t0m7-r298koyng3.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1287"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QdKM4mwOcIfTM2SQcY7atkzcQfa/PWeyK/HnSQLeoQw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 19:15:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QdKM4mwOcIfTM2SQcY7atkzcQfa/PWeyK/HnSQLeoQw="
+        }
+      ]
+    },
+    {
+      "Route": "css/personalizar.r298koyng3.css",
+      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\1p7qm2t0m7-r298koyng3.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000776397516"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1287"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QdKM4mwOcIfTM2SQcY7atkzcQfa/PWeyK/HnSQLeoQw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 19:15:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"DUzGcI8shp+UzlOqowQgQ4K++Qt0nmNY4TQF4yXS6zQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "r298koyng3"
+        },
+        {
+          "Name": "label",
+          "Value": "css/personalizar.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DUzGcI8shp+UzlOqowQgQ4K++Qt0nmNY4TQF4yXS6zQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/personalizar.r298koyng3.css",
+      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\css\\personalizar.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4727"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DUzGcI8shp+UzlOqowQgQ4K++Qt0nmNY4TQF4yXS6zQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 19:15:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4217,7 +4417,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "1w18vf158u"
+          "Value": "r298koyng3"
         },
         {
           "Name": "label",
@@ -4225,13 +4425,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-b9lpJo7n8qOPOfeXWpHiWA/yp8Ro0DV0ODUWRCkRbPg="
+          "Value": "sha256-DUzGcI8shp+UzlOqowQgQ4K++Qt0nmNY4TQF4yXS6zQ="
         }
       ]
     },
     {
-      "Route": "css/personalizar.1w18vf158u.css.gz",
-      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\1p7qm2t0m7-1w18vf158u.gz",
+      "Route": "css/personalizar.r298koyng3.css.gz",
+      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\1p7qm2t0m7-r298koyng3.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4240,7 +4440,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1293"
+          "Value": "1287"
         },
         {
           "Name": "Content-Type",
@@ -4248,11 +4448,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"slArEyV8br+WKwhrTyQlIrjMIgv6aLN85QLQzEwKQSw=\""
+          "Value": "\"QdKM4mwOcIfTM2SQcY7atkzcQfa/PWeyK/HnSQLeoQw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 16:12:03 GMT"
+          "Value": "Mon, 14 Apr 2025 19:15:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4270,7 +4470,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "1w18vf158u"
+          "Value": "r298koyng3"
         },
         {
           "Name": "label",
@@ -4278,144 +4478,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-slArEyV8br+WKwhrTyQlIrjMIgv6aLN85QLQzEwKQSw="
-        }
-      ]
-    },
-    {
-      "Route": "css/personalizar.css",
-      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\1p7qm2t0m7-1w18vf158u.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000772797527"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1293"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"slArEyV8br+WKwhrTyQlIrjMIgv6aLN85QLQzEwKQSw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 16:12:03 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"b9lpJo7n8qOPOfeXWpHiWA/yp8Ro0DV0ODUWRCkRbPg=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-b9lpJo7n8qOPOfeXWpHiWA/yp8Ro0DV0ODUWRCkRbPg="
-        }
-      ]
-    },
-    {
-      "Route": "css/personalizar.css",
-      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\css\\personalizar.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4760"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"b9lpJo7n8qOPOfeXWpHiWA/yp8Ro0DV0ODUWRCkRbPg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 16:12:03 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-b9lpJo7n8qOPOfeXWpHiWA/yp8Ro0DV0ODUWRCkRbPg="
-        }
-      ]
-    },
-    {
-      "Route": "css/personalizar.css.gz",
-      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\obj\\Debug\\net9.0\\compressed\\1p7qm2t0m7-1w18vf158u.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1293"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"slArEyV8br+WKwhrTyQlIrjMIgv6aLN85QLQzEwKQSw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 16:12:03 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-slArEyV8br+WKwhrTyQlIrjMIgv6aLN85QLQzEwKQSw="
+          "Value": "sha256-QdKM4mwOcIfTM2SQcY7atkzcQfa/PWeyK/HnSQLeoQw="
         }
       ]
     },
@@ -5504,6 +5567,252 @@
         {
           "Name": "integrity",
           "Value": "sha256-5SP293EeFPJ7HtdLrCpFfwZSOZeqbVfM2E6Fq6VCRaY="
+        }
+      ]
+    },
+    {
+      "Route": "img/combo1.ibixftjzep.png",
+      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\combo1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "157722"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AjKATyttW1+4A/wZRp78N5TU7bMhkSInc89rB0n3HqI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 19:30:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ibixftjzep"
+        },
+        {
+          "Name": "label",
+          "Value": "img/combo1.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AjKATyttW1+4A/wZRp78N5TU7bMhkSInc89rB0n3HqI="
+        }
+      ]
+    },
+    {
+      "Route": "img/combo1.png",
+      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\combo1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "157722"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AjKATyttW1+4A/wZRp78N5TU7bMhkSInc89rB0n3HqI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 19:30:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AjKATyttW1+4A/wZRp78N5TU7bMhkSInc89rB0n3HqI="
+        }
+      ]
+    },
+    {
+      "Route": "img/combo2.9mx7w3p2gx.png",
+      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\combo2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "767393"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8cFym3ihPEdS+WCU2GtUaNoh2Zvplg85qwiYKsiv0Q8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 19:33:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9mx7w3p2gx"
+        },
+        {
+          "Name": "label",
+          "Value": "img/combo2.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8cFym3ihPEdS+WCU2GtUaNoh2Zvplg85qwiYKsiv0Q8="
+        }
+      ]
+    },
+    {
+      "Route": "img/combo2.png",
+      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\combo2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "767393"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8cFym3ihPEdS+WCU2GtUaNoh2Zvplg85qwiYKsiv0Q8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 19:33:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8cFym3ihPEdS+WCU2GtUaNoh2Zvplg85qwiYKsiv0Q8="
+        }
+      ]
+    },
+    {
+      "Route": "img/combo3.png",
+      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\combo3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "569094"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4qnk8WuiQH8VaAtjtjLIe6+m/bfmRrlV3RT/Vo3xTlQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 19:34:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4qnk8WuiQH8VaAtjtjLIe6+m/bfmRrlV3RT/Vo3xTlQ="
+        }
+      ]
+    },
+    {
+      "Route": "img/combo3.ysdstyzp85.png",
+      "AssetFile": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\combo3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "569094"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4qnk8WuiQH8VaAtjtjLIe6+m/bfmRrlV3RT/Vo3xTlQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 19:34:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ysdstyzp85"
+        },
+        {
+          "Name": "label",
+          "Value": "img/combo3.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4qnk8WuiQH8VaAtjtjLIe6+m/bfmRrlV3RT/Vo3xTlQ="
         }
       ]
     },

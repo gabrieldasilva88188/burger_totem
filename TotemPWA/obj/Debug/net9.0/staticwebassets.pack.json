@@ -61,6 +61,18 @@
       "PackagePath": "staticwebassets\\img\\carne2.png"
     },
     {
+      "Id": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\combo1.png",
+      "PackagePath": "staticwebassets\\img\\combo1.png"
+    },
+    {
+      "Id": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\combo2.png",
+      "PackagePath": "staticwebassets\\img\\combo2.png"
+    },
+    {
+      "Id": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\combo3.png",
+      "PackagePath": "staticwebassets\\img\\combo3.png"
+    },
+    {
       "Id": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\wwwroot\\img\\combos.png",
       "PackagePath": "staticwebassets\\img\\combos.png"
     },

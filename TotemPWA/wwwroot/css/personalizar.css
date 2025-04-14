@@ -160,8 +160,7 @@ body {
 /* Botão confirmar */
 #confirmar-personalizacao,
 button[onclick="adicionarAoCarrinho()"] {
-    margin-bottom: 1rem;
-    margin-right: 1rem;;
+    height: 60px;
     padding: 12px 24px;
     font-size: 1rem;
     background-color: #4CAF50;

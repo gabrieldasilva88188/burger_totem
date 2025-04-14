@@ -48,7 +48,9 @@
                     <img src="~/img/bebidas.png" alt="Free Refill">
                     <p>Free Refill</p>
                     <p>R$ 5,00</p>
-                    <button>+</button>
+                    <button style="
+                margin-top: 25px;
+            ">+</button>
                 </div>
                 <div class="suggestion-item">
                     <img src="~/img/d4u1GTvl_kmUrrsUwaj0OV0huie-m7AFB15UzmGDqoU.jpg" alt="Batata Frita Grande">
@@ -116,10 +118,11 @@
                 <button onclick="alterarQtd(${index}, -1)">-</button>
                 <span>${item.quantidade}</span>
                 <button onclick="alterarQtd(${index}, 1)">+</button>
+                <p class="edit-item"><a href="#">Editar Item</a></p>
             </div>
         </div>
     </div>
-    <p class="edit-item"><a href="#">Editar Item</a></p>
+    
 `;
 
         });

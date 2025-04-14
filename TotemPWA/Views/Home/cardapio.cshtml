@@ -16,13 +16,12 @@
     <header>
     
     </header>
-
     
     <div class="container">
     
         <nav class="sidebar">
             <ul>
-                <li class="active" data-filter="lanches"><button><img src="~/img/lanches.png" alt="Lanches"><span>Lanches</span></button></li>
+                <li><button data-filter="lanches"><img src="~/img/lanches.png" alt="Lanches"><span>Lanches</span></button></li>
                 <li ><button  data-filter="combos"><img src="~/img/combos.png" alt="Combos"><span>Combos</span></button></li>
                 <li><button data-filter="sobremesas"><img src="~/img/sobremesas1.jpg" alt="Sobremesas"><span>Sobremesas</span></button></li>
                 <li><button data-filter="bebidas"> <img src="~/img/bebidas.png" alt="Bebidas"><span>Bebidas</span></button></li>
@@ -250,65 +249,81 @@ const subcategoriasPorCategoria = {
 };
 
 
- document.addEventListener("DOMContentLoaded", function () {
+    window.onload = function () {
+        const totalItens = sessionStorage.getItem("totalItens") || 0;
+        const totalPedido = parseFloat(sessionStorage.getItem("totalPedido") || 0).toFixed(2);
+
+        document.getElementById("total-itens").innerText = totalItens;
+        document.getElementById("total-pedido").innerText = totalPedido.replace(".", ",");
+    };
+    </script>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
     const botoesFiltroTopo = document.querySelectorAll(".top-filter");
     const botoesFiltroSidebar = document.querySelectorAll(".sidebar button");
     const produtos = document.querySelectorAll(".produto");
     const topMenuScroll = document.querySelector(".top-menu-scroll");
 
-    function aplicarFiltro(filtro, ehFiltroPrincipal = false) {
-        produtos.forEach(produto => {
-            const categoria = produto.getAttribute("data-categoria");
-            const categoriaPrincipal = produto.getAttribute("data-categoria-principal");
+    let filtroPrincipalAtual = "lanches";
+    let subFiltroAtual = "todos";
 
-            if (
-                filtro === "todos" ||
-                categoria === filtro ||
-                categoriaPrincipal === filtro
-            ) {
-                produto.style.display = "inline-block";
+    // Função para aplicar os filtros
+    function aplicarFiltros(categoriaPrincipal, subCategoria = 'todos') {
+        produtos.forEach(produto => {
+            const catPrincipal = produto.getAttribute('data-categoria-principal');
+            const catSub = produto.getAttribute('data-categoria');
+
+            if (categoriaPrincipal === 'lanches') {
+                if (catPrincipal === 'lanches' && (subCategoria === 'todos' || catSub === subCategoria)) {
+                    produto.style.display = 'block';
+                } else {
+                    produto.style.display = 'none';
+                }
             } else {
-                produto.style.display = "none";
+                if (catPrincipal === categoriaPrincipal) {
+                    produto.style.display = 'ruby';
+                } else {
+                    produto.style.display = 'none';
+                }
             }
         });
-
-        // Controla a visibilidade do menu de subcategorias SOMENTE quando um filtro principal é aplicado
-        if (ehFiltroPrincipal) {
-            if (filtro === "lanches") {
-                topMenuScroll.style.display = "flex";
-            } else {
-                topMenuScroll.style.display = "none";
-            }
-        }
     }
 
-    botoesFiltroTopo.forEach(botao => {
-        botao.addEventListener("click", () => {
-            const filtro = botao.getAttribute("data-filter");
-            aplicarFiltro(filtro); // Ao clicar no subfiltro, 'ehFiltroPrincipal' é false por padrão
+    // Ativa os lanches por padrão
+    aplicarFiltros('lanches', 'todos');
+    topMenuScroll.style.display = 'flex';
 
-            botoesFiltroTopo.forEach(btn => btn.classList.remove("active"));
-            botao.classList.add("active");
-        });
-    });
-
+    // Clique nos filtros principais (lateral)
     botoesFiltroSidebar.forEach(botao => {
-        botao.addEventListener("click", () => {
-            const filtro = botao.parentElement.getAttribute("data-filter");
-            aplicarFiltro(filtro, true); // Indica que este é um filtro principal
+        botao.addEventListener('click', function () {
+            const filtro = this.getAttribute('data-filter');
 
-            document.querySelectorAll(".sidebar li").forEach(li => li.classList.remove("active"));
-            botao.parentElement.classList.add("active");
+            filtroPrincipalAtual = filtro;
+            subFiltroAtual = 'todos'; // resetar subfiltro ao mudar de categoria principal
+
+            if (filtro === 'lanches') {
+                topMenuScroll.style.display = 'flex';
+                aplicarFiltros('lanches', 'todos');
+            } else {
+                topMenuScroll.style.display = 'none';
+                aplicarFiltros(filtro);
+            }
         });
     });
 
-    // Define o estado inicial para "lanches"
-    aplicarFiltro("lanches", true);
-    document.querySelector('.sidebar [data-filter="lanches"]').parentElement.classList.add("active");
+    // Clique nos subfiltros de lanches (topo)
+    botoesFiltroTopo.forEach(botao => {
+        botao.addEventListener('click', function () {
+            const sub = this.getAttribute('data-filter');
+            subFiltroAtual = sub;
+
+            aplicarFiltros('lanches', sub);
+        });
+    });
 });
 
-const cardapioUrl = '@CarrinhoUrl';
-
+// Função de redirecionamento para o carrinho
 function redirecionarCarrinho() {
     window.location.href = "/Home/carrinho";
 }

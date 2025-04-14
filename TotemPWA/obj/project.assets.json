@@ -8,23 +8,39 @@
     "net9.0": []
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\0031432512014\\.nuget\\packages\\": {},
+=======
+    "C:\\Users\\0031432512013\\.nuget\\packages\\": {},
+>>>>>>> 9cd3f453ba0a987f0f5843e74cc4a7b6d2f30f30
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\TotemPWA.csproj",
       "projectName": "TotemPWA",
       "projectPath": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\TotemPWA.csproj",
       "packagesPath": "C:\\Users\\0031432512014\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\0031432512014\\Documents\\burger_totem\\totempwa\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\TotemPWA.csproj",
+      "projectName": "TotemPWA",
+      "projectPath": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\TotemPWA.csproj",
+      "packagesPath": "C:\\Users\\0031432512013\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\0031432512013\\Documents\\burger_totem\\totemPWA\\obj\\",
+>>>>>>> 9cd3f453ba0a987f0f5843e74cc4a7b6d2f30f30
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\0031432512014\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\0031432512013\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 9cd3f453ba0a987f0f5843e74cc4a7b6d2f30f30
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

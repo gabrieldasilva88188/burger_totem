@@ -32,6 +32,7 @@ header {
     top: 200px; 
     bottom: 60px; 
     overflow-y: auto;
+    z-index: 3;
 }
 .sidebar button {
     background: none;
@@ -85,6 +86,7 @@ header {
 
 
 .produtos {
+    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
@@ -127,6 +129,7 @@ footer {
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
     height: 70px; 
     font-size: 16px; 
+    z-index: 4;
 }
 
 
@@ -313,6 +316,12 @@ footer {
 }
 
 .top-menu-scroll {
+    top: 200px;
+    z-index: 2;
+    position: fixed;
+    background-color: #f8f8f8;
+    display: flex;
+    width: 75vw;
     display: flex;
     justify-content: center; /* centraliza os botões */
     overflow-x: auto;
@@ -320,7 +329,6 @@ footer {
     gap: 0.5rem;
     padding: 10px 0;
     margin: 0 auto; /* centraliza horizontalmente */
-    background: transparent;
     border: none;
     width: 100%; /* garante que ocupa o espaço necessário */
     box-sizing: border-box; /* evita ultrapassar o espaço do container */
@@ -337,17 +345,21 @@ footer {
 }
 
 .top-filter {
-    background-color: #ffcc00; /* cor de exemplo, pode ajustar */
-    border: none;
+    background-color: #ffffff; /* cor de exemplo, pode ajustar */
+    border: solid;
     padding: 10px 20px;
     margin-right: 5px;
     border-radius: 10px;
     cursor: pointer;
     white-space: nowrap;
+    border-color: #ffffff;
+    
 }
 
 .top-filter:hover {
-    background-color: #ffaa00;
+    border-radius: 10px;
+    border-color: #ffaa00;
+    transform: scale(0.5px);
 }
 
 main.content {

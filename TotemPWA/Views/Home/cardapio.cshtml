@@ -21,187 +21,42 @@
     
         <nav class="sidebar">
             <ul>
-                <li><button data-filter="lanches"><img src="~/img/lanches.png" alt="Lanches"><span>Lanches</span></button></li>
-                <li ><button  data-filter="combos"><img src="~/img/combos.png" alt="Combos"><span>Combos</span></button></li>
-                <li><button data-filter="sobremesas"><img src="~/img/sobremesas1.jpg" alt="Sobremesas"><span>Sobremesas</span></button></li>
-                <li><button data-filter="bebidas"> <img src="~/img/bebidas.png" alt="Bebidas"><span>Bebidas</span></button></li>
-                <li><button data-filter="extras"><img src="~/img/creeper.png" alt="Extras"><span>Extras</span></button></li>
-                <li><button data-filter="molhos"><img src="~/img/molho.jpg" alt="Molhos"><span>Molhos</span></button></li>
+                  @foreach (var category in ViewBag.Categories)
+                    {
+                        string activeClass = category.active ? "active" : "";
+                        <a href="/Cardapio/@category.id" class="category-btn @activeClass">
+                            <span class="icon">🍕</span>
+                            <span class="label">@category.name</span>
+                        </a>
+                    }
             </ul>
         </nav>
         
         <main class="content">
         <div class="top-menu-scroll">
-        <button class="top-filter" data-filter="frango">Frango</button>
-        <button class="top-filter" data-filter="carne">Carne</button>
-        <button class="top-filter" data-filter="vegano">Vegano</button>
-        <button class="top-filter" data-filter="peixe">Peixe</button>
+           @foreach (var subcategory in ViewBag.SubCategories)
+                {
+                    string activeClass = subcategory.active ? "active" : "";
+                    <a href="/Cardapio/@ViewBag.Category/@subcategory.id" class="subcategory-btn @activeClass">
+                        <span class="label">@subcategory.name</span>
+                    </a>
+                }
         </div>
         
             <div class="produtos">
 
-            <!-- Lanches de Frango -->
-            <a href="/Home/Personalizar?id=1" class="produto sem-estilo-hiperlink" data-categoria="frango" data-categoria-principal="lanches">
-                <img src="~/img/frango1.png" alt="Chicken Code">
-                <h3>Chicken Code</h3>
-                <p>R$ 27,00</p>
-                <p>Pão brioche, frango empanado crocante, alface, tomate, maionese temperada.</p>
-            </a>
+                  @foreach (var product in ViewBag.Products)
+                {
+                    <div class="menu-item">
+                        <img src="https://fakeimg.pl/60x60/?retina=1&text=%F0%9F%8D%95" alt="@product.name">
+                        <div class="options">
+                            <h3>@product.name</h3>
+                            <p>@product.description</p>
 
-            <a href="/Home/Personalizar?id=2" class="produto sem-estilo-hiperlink" data-categoria="frango" data-categoria-principal="lanches">
-                <img src="~/img/frango2.png" alt="React Crispy">
-                <h3>React Crispy</h3>
-                <p>R$ 28,50</p>
-                <p>Pão australiano, frango grelhado, queijo cheddar, cebola crispy e molho barbecue.</p>
-            </a>
-
-            <a href="/Home/Personalizar?id=3" class="produto sem-estilo-hiperlink" data-categoria="frango" data-categoria-principal="lanches">
-                <img src="~/img/frango3.png" alt="Frango JS">
-                <h3>Frango JS</h3>
-                <p>R$ 25,00</p>
-                <p>Pão de batata, tiras de frango, catupiry, milho e batata palha.</p>
-            </a>
-
-            <!-- Lanches de Carne -->
-            <a href="/Home/Personalizar?id=4" class="produto sem-estilo-hiperlink" data-categoria="carne" data-categoria-principal="lanches">
-                <img src="~/img/carne1.png" alt="Buguer 404">
-                <h3>Buguer 404</h3>
-                <p>R$ 29,00</p>
-                <p>Pão brioche, carne 150g, queijo cheddar, cebola caramelizada.</p>
-            </a>
-
-            <a href="/Home/Personalizar?id=5" class="produto sem-estilo-hiperlink" data-categoria="carne" data-categoria-principal="lanches">
-                <img src="~/img/full1.png" alt="Full Stack Burger">
-                <h3>Full Stack Burger</h3>
-                <p>R$ 32,00</p>
-                <p>Pão australiano, carne 180g, queijo prato, bacon, barbecue.</p>
-            </a>
-
-            <a href="/Home/Personalizar?id=6" class="produto sem-estilo-hiperlink" data-categoria="carne" data-categoria-principal="lanches">
-                <img src="~/img/carne2.png" alt="Looping Duplo">
-                <h3>Looping Duplo</h3>
-                <p>R$ 30,00</p>
-                <p>Pão de batata, 2 carnes 120g, queijo cheddar, molho especial.</p>
-            </a>
-
-            <!-- Lanches Veganos -->
-            <a href="/Home/Personalizar?id=7" class="produto sem-estilo-hiperlink" data-categoria="vegano" data-categoria-principal="lanches">
-                <img src="~/img/vegano1.png" alt="Green Stack">
-                <h3>Green Stack</h3>
-                <p>R$ 26,00</p>
-                <p>Pão integral, hambúrguer de grão-de-bico, alface americana, tomate e maionese vegana.</p>
-            </a>
-
-            <a href="/Home/Personalizar?id=8" class="produto sem-estilo-hiperlink" data-categoria="vegano" data-categoria-principal="lanches">
-                <img src="~/img/vegano2.png" alt="Vegan Full">
-                <h3>Vegan Full</h3>
-                <p>R$ 27,00</p>
-                <p>Pão australiano, hambúrguer de lentilha, cebola caramelizada, rúcula e barbecue vegano.</p>
-            </a>
-
-            <a href="/Home/Personalizar?id=9" class="produto sem-estilo-hiperlink" data-categoria="vegano" data-categoria-principal="lanches">
-                <img src="~/img/vegano3.png" alt="Buguer Plant">
-                <h3>Buguer Plant</h3>
-                <p>R$ 28,00</p>
-                <p>Pão de batata, hambúrguer vegetal, queijo vegano, picles, alface e maionese vegetal.</p>
-            </a>
-
-            <!-- Lanches de Peixe -->
-            <a href="/Home/Personalizar?id=10" class="produto sem-estilo-hiperlink" data-categoria="peixe" data-categoria-principal="lanches">
-                <img src="~/img/peixe1.png" alt="Fish Dev">
-                <h3>Fish Dev</h3>
-                <p>R$ 29,00</p>
-                <p>Pão brioche, filé de peixe empanado, alface americana, molho tártaro e queijo prato.</p>
-            </a>
-
-            <a href="/Home/Personalizar?id=11" class="produto sem-estilo-hiperlink" data-categoria="peixe" data-categoria-principal="lanches">
-                <img src="~/img/peixe2.png" alt="Salmão Byte">
-                <h3>Salmão Byte</h3>
-                <p>R$ 34,00</p>
-                <p>Pão artesanal, salmão grelhado, cream cheese, alface e molho de limão siciliano.</p>
-            </a>
-
-            <a href="/Home/Personalizar?id=12" class="produto sem-estilo-hiperlink" data-categoria="peixe" data-categoria-principal="lanches">
-                <img src="~/img/peixe3.png" alt="Tuna Stack">
-                <h3>Tuna Stack</h3>
-                <p>R$ 31,00</p>
-                <p>Pão integral, hambúrguer de atum, picles, alface, mostarda e ketchup.</p>
-            </a>
-
-            <!-- Combos -->
-            <a href="/Home/Personalizar?id=13" class="produto sem-estilo-hiperlink" data-categoria="normal" data-categoria-principal="combos" >
-                <img src="~/img/combo3.png" alt="Combo Dev">
-                <h3>Combo Dev</h3>  
-                <p>R$ 45,00</p>
-                <p>Buguer 404 + batata média + refrigerante lata.</p>
-            </a>
-
-            <a href="/Home/Personalizar?id=14" class="produto sem-estilo-hiperlink"data-categoria="premium" data-categoria-principal="combos">
-                <img src="~/img/combo2.png" alt="Combo Full">
-                <h3>Combo Full</h3>
-                <p>R$ 48,00</p>
-                <p>Full Stack Burger + batata rústica + suco natural.</p>
-            </a>
-
-            <!-- Sobremesas -->
-            <a href="/Home/Personalizar?id=15" class="produto sem-estilo-hiperlink" data-categoria="biscoito" data-categoria-principal="sobremesas">
-                <img src="~/img/sobremesa1.png" alt="Brownie Code">
-                <h3>Brownie Code</h3>
-                <p>R$ 12,00</p>
-                <p>Brownie de chocolate com cobertura de brigadeiro.</p>
-            </a>
-
-            <a href="/Home/Personalizar?id=16" class="produto sem-estilo-hiperlink" data-categoria="tortta" data-categoria-principal="sobremesas">
-                <img src="~/img/sobremesa2.png" alt="Cheesecake JS">
-                <h3>Cheesecake JS</h3>
-                <p>R$ 14,00</p>
-                <p>Cheesecake de frutas vermelhas com base crocante.</p>
-            </a>
-
-            <!-- Bebidas -->
-            <a href="/Home/Personalizar?id=17" class="produto sem-estilo-hiperlink" data-categoria="refrigerante"  data-categoria-principal="bebidas">
-                <img src="~/img/coca-cola.png" alt="Coca-Cola">
-                <h3>Coca-Cola</h3>
-                <p>R$ 6,00</p>
-                <p>Refrigerante lata 350ml.</p>
-            </a>
-
-            <a href="/Home/Personalizar?id=18" class="produto sem-estilo-hiperlink" data-categoria="suco" data-categoria-principal="bebidas">
-                <img src="~/img/suco-laranja.png" alt="Suco Dev">
-                <h3>Suco Dev</h3>
-                <p>R$ 8,00</p>
-                <p>Suco natural de laranja ou abacaxi 300ml.</p>
-            </a>
-
-            <!-- Extras -->
-            <a href="/Home/Personalizar?id=19" class="produto sem-estilo-hiperlink"  data-categoria-principal="extras">
-                <img src="~/img/extra1.jpg" alt="Batata Rústica">
-                <h3>Batata Rústica</h3>
-                <p>R$ 10,00</p>
-                <p>Batatas cortadas com casca, temperadas com ervas.</p>
-            </a>
-
-            <a href="/Home/Personalizar?id=20" class="produto sem-estilo-hiperlink"  data-categoria-principal="extras">
-                <img src="~/img/extra2.jpg" alt="Onion Rings">
-                <h3>Onion Rings</h3>
-                <p>R$ 11,00</p>
-                <p>Anéis de cebola empanados, crocantes e dourados.</p>
-            </a>
-
-            <!-- Molhos -->
-            <a href="/Home/Personalizar?id=21" class="produto sem-estilo-hiperlink"  data-categoria-principal="molhos">
-                <img src="~/img/barbecue.png" alt="Barbecue">
-                <h3>Molho Barbecue</h3>
-                <p>R$ 3,00</p>
-                <p>Molho barbecue artesanal defumado.</p>
-            </a>
-
-            <a href="/Home/Personalizar?id=22" class="produto sem-estilo-hiperlink" data-categoria-principal="molhos">
-                <img src="~/img/maionese-casa.png" alt="Maionese da Casa">
-                <h3>Maionese da Casa</h3>
-                <p>R$ 3,00</p>
-                <p>Maionese temperada com ervas finas.</p>
-            </a>
+                            <strong>@product.price.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("pt-BR"))</strong>
+                        </div>
+                    </div>
+                }
             </div>
 
         </main>

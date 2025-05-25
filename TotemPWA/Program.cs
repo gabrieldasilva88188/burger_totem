@@ -10,10 +10,11 @@ builder.Services.AddControllersWithViews();
         //         options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
         //         options.JsonSerializerOptions.MaxDepth = 4;
         //     });
-
+        
 // Add SQL Server Connection 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+   // options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+      options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Add Swagger services
 builder.Services.AddEndpointsApiExplorer();

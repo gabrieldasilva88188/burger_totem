@@ -7,7 +7,7 @@
 namespace TotemPWA.Migrations
 {
     /// <inheritdoc />
-    public partial class AjusteParaSQLite : Migration
+    public partial class AddSlugToCategory : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -19,6 +19,7 @@ namespace TotemPWA.Migrations
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Name = table.Column<string>(type: "TEXT", maxLength: 255, nullable: false),
+                    Slug = table.Column<string>(type: "TEXT", maxLength: 255, nullable: false),
                     ParentCategoryId = table.Column<int>(type: "INTEGER", nullable: true)
                 },
                 constraints: table =>
@@ -76,20 +77,24 @@ namespace TotemPWA.Migrations
 
             migrationBuilder.InsertData(
                 table: "Categories",
-                columns: new[] { "Id", "Name", "ParentCategoryId" },
+                columns: new[] { "Id", "Name", "ParentCategoryId", "Slug" },
                 values: new object[,]
                 {
-                    { 1, "Burgers", null },
-                    { 2, "Combos", null },
-                    { 3, "Bebidas", null },
-                    { 4, "Acompanhamentos", null },
-                    { 5, "Molhos", null },
-                    { 6, "Artesanais", 1 },
-                    { 7, "Tradicionais", 1 },
-                    { 8, "Refrigerantes", 3 },
-                    { 9, "Sucos", 3 },
-                    { 10, "Batatas", 4 },
-                    { 11, "Onion Rings", 4 }
+                    { 1, "Lanches", null, "lanches" },
+                    { 2, "Combos", null, "combos" },
+                    { 3, "Sobremesas", null, "sobremesas" },
+                    { 4, "Bebidas", null, "bebidas" },
+                    { 5, "Extras", null, "extras" },
+                    { 6, "Molhos", null, "molhos" },
+                    { 7, "C#", 1, "c" },
+                    { 8, "Java", 1, "java" },
+                    { 9, "Python", 1, "python" },
+                    { 10, "JavaScript", 1, "javascript" },
+                    { 11, "Refrigerantes", 4, "refrigerantes" },
+                    { 12, "Cafés", 4, "cafs" },
+                    { 13, "Acompanhamentos", 5, "acompanhamentos" },
+                    { 14, "Anéis de Loop", 5, "anis-de-loop" },
+                    { 15, "Tipos de Molhos", 6, "tipos-de-molhos" }
                 });
 
             migrationBuilder.InsertData(
@@ -97,12 +102,39 @@ namespace TotemPWA.Migrations
                 columns: new[] { "Id", "CategoryId", "Description", "Name", "Price" },
                 values: new object[,]
                 {
-                    { 2, 2, "Cheeseburger + Batata + Refrigerante", "Combo Cheeseburger", 25.99m },
-                    { 5, 5, "Molho especial barbecue", "Molho Barbecue", 2.00m },
-                    { 1, 6, "Pão, carne, queijo e molho especial", "Cheeseburger", 15.99m },
-                    { 3, 8, "350ml", "Refrigerante Lata", 6.00m },
-                    { 4, 10, "Porção média", "Batata Frita", 8.00m },
-                    { 6, 7, "Pão, carne, queijo e molho especial", "Cheeseburger 2", 15.99m }
+                    { 2, 2, "C# Burguer + Loop Fries + Byte-Cola", "Combo Stack Overflow", 32.99m },
+                    { 5, 6, "Só aparece quando você não espera", "NullPointer Molho", 3.00m },
+                    { 10, 2, "JS Double Shot + Snake.py + Byte-Cola", "Combo Dev Full Stack", 39.90m },
+                    { 11, 3, "Sobremesa que quebra qualquer dieta", "Exception Sundae", 12.00m },
+                    { 12, 3, "Doce processado com zero erros", "Compiler Cheesecake", 10.50m }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Categories",
+                columns: new[] { "Id", "Name", "ParentCategoryId", "Slug" },
+                values: new object[,]
+                {
+                    { 16, "Molhos Picantes", 15, "molhos-picantes" },
+                    { 17, "Molhos Doces", 15, "molhos-doces" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Products",
+                columns: new[] { "Id", "CategoryId", "Description", "Name", "Price" },
+                values: new object[,]
+                {
+                    { 1, 7, "Burguer orientado a objetos com queijo derretido", "C# Burguer", 18.50m },
+                    { 3, 12, "Café forte com robusta implementação", "JavaBean Espresso", 7.50m },
+                    { 4, 13, "Batatas em looping infinito", "Loop Fries", 9.00m },
+                    { 6, 8, "Sabor não encontrado, mas delicioso", "Burguer 404", 19.99m },
+                    { 7, 9, "Sanduíche dinâmico e legível", "Snake.py Sanduíche", 17.00m },
+                    { 8, 10, "Burguer assíncrono com dois hambúrgueres", "JS Double Shot", 21.00m },
+                    { 9, 11, "Refrigerante com sabor binário", "Byte-Cola", 5.50m },
+                    { 13, 12, "Café com operadores booleanos", "Latte Lógico", 6.00m },
+                    { 14, 13, "Batatas fritas com comportamento inesperado", "Bug Fries", 8.90m },
+                    { 15, 7, "Frango funcional com sabor puro", "Lambda Chicken", 16.99m },
+                    { 16, 16, "Molho picante que trata qualquer exceção", "Spicy Try-Catch", 4.50m },
+                    { 17, 17, "Molho doce com final em recursão infinita", "Sweet Loop", 4.00m }
                 });
 
             migrationBuilder.CreateIndex(

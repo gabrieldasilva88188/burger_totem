@@ -23,10 +23,16 @@
             <ul>
                   @foreach (var category in ViewBag.Categories)
                     {
+                        /*
                         string activeClass = category.active ? "active" : "";
-                        <a href="/Cardapio/@category.id" class="category-btn @activeClass">
+                       <a href="/Cardapio/@category.slug" class="category-btn @activeClass">
                             <span class="icon">🍕</span>
                             <span class="label">@category.name</span>
+                        </a>
+                        */
+
+                        <a href="/cardapio/@category.slug" class="@(category.active ? "active" : "")">
+                            @category.name
                         </a>
                     }
             </ul>
@@ -34,11 +40,17 @@
         
         <main class="content">
         <div class="top-menu-scroll">
-           @foreach (var subcategory in ViewBag.SubCategories)
+           @foreach (var sub in ViewBag.SubCategories)
                 {
+                    /*
                     string activeClass = subcategory.active ? "active" : "";
-                    <a href="/Cardapio/@ViewBag.Category/@subcategory.id" class="subcategory-btn @activeClass">
+                    <a href="/Cardapio/@ViewBag.Category/@subcategory.slug" class="subcategory-btn @activeClass">
                         <span class="label">@subcategory.name</span>
+                    </a>
+                    */
+
+                    <a href="/cardapio/@ViewBag.Category/@sub.slug" class="@(sub.active ? "active" : "")">
+                        @sub.name
                     </a>
                 }
         </div>
@@ -55,6 +67,8 @@
 
                             <strong>@product.price.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("pt-BR"))</strong>
                         </div>
+
+                        
                     </div>
                 }
             </div>

@@ -12,6 +12,8 @@ namespace TotemPWA.Data
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<Variation> Variations { get; set; }
+        public DbSet<Client> Clients { get; set; }
+        public DbSet<Employee> Employees { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -43,6 +45,15 @@ namespace TotemPWA.Data
             modelBuilder.Entity<Variation>()
                 .Property(v => v.AdditionalPrice)
                 .HasColumnType("decimal(18,2)");
+
+          
+            modelBuilder.Entity<Client>()
+                .HasDiscriminator<string>("Discriminator")
+                .HasValue<Client>("Client")
+                .HasValue<Employee>("Employee");
+
+             base.OnModelCreating(modelBuilder);
+            
 
                  modelBuilder.Entity<Category>().HasData(
                 new Category { Id = 1, Name = "Lanches", ParentCategoryId = null },
@@ -86,7 +97,22 @@ namespace TotemPWA.Data
                 new Product { Id = 15, Name = "Lambda Chicken", CategoryId = 7, Price = 16.99m, Description = "Frango funcional com sabor puro" },
                 new Product { Id = 16, Name = "Spicy Try-Catch", CategoryId = 16, Price = 4.50m, Description = "Molho picante que trata qualquer exceção" },
                 new Product { Id = 17, Name = "Sweet Loop", CategoryId = 17, Price = 4.00m, Description = "Molho doce com final em recursão infinita" }
-            );      
+            );   
+
+            modelBuilder.Entity<Employee>().HasData(
+                new Employee
+                {
+                    Id = 1,
+                    User = "Admin",
+                    Password = "123456", // <- senha "123456" com hash base64
+                    Type = "admin"
+                }
+            );
+
+
+
+
+   
                
             // dotnet ef migrations add SeedProducts
             // dotnet ef database update

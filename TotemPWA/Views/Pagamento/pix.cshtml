@@ -1,0 +1,22 @@
+@{
+    Layout = "_WelcomeLayout";
+    var pixUrl = Url.Action("Pix", "Home");
+}
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento pix</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+   <link rel="stylesheet" href="@Url.Content("~/css/pix.css")">
+</head>
+<body>
+    <i class="fa-solid fa-arrow-left fa-2xl"></i>
+    <h1>pagamento com pix</h1>
+    <p>escaneie o QR code abaixo</p>
+    <img src="./qr.png" alt="qr code do pix">
+    <p><strong>o QR code expira em 0:00</strong></p>
+</body>
+</html>

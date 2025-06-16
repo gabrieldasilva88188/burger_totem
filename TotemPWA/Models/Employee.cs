@@ -1,13 +1,10 @@
-
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 
+
 public class Employee : Client
 {
-    public int clienteId { get; set; }
-    public string type { get; set; }
-    public string user { get; set; }
-    public string password { get; set; }
-
-    // Permissões futuras, ex: gerenciamento de produtos
+    public string Type { get; set; } = string.Empty;
+    public string User { get; set; } = string.Empty;
+    public string Password { get; set; } = string.Empty;
 }

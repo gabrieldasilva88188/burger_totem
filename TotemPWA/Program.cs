@@ -20,6 +20,15 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();  // Adiciona o Swagger
 
+
+// Aqui você registra o serviço de sessão
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30); // Tempo de vida da sessão
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
+
 var app = builder.Build();
 
 using (var scope = app.Services.CreateScope())
@@ -51,6 +60,9 @@ app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "TotemPWA AP
 
 app.UseHttpsRedirection();
 app.UseRouting();
+
+// Aqui você ativa o middleware
+app.UseSession();
 
 app.UseAuthorization();
 

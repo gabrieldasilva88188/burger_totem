@@ -21,5 +21,8 @@ namespace TotemPWA.Models
         public Category? Category { get; set; }
 
         public ICollection<Variation> Variations { get; set; } = new List<Variation>();
+
+        // NOVO CAMPO: Imagem armazenada como array de bytes (BLOB no SQLite)
+        public byte[]? Image { get; set; }
     }
 }

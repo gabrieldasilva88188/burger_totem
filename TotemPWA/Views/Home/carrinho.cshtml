@@ -92,7 +92,7 @@
             <p>Total a pagar:</p>
             <p class="total-price">R$ 27,90</p>
         </div>
-        <button class="checkout-btn">Finalizar Pedido</button>
+        <button class="checkout-btn" onclick="redirecionarEscolha()">Finalizar Pedido</button>
         <p class="cancel-order">Cancelar Pedido</p>
     </footer>
 
@@ -105,6 +105,10 @@
     function redirecionarCardapio() {
         window.location.href = cardapioUrl;
     }
+
+    function redirecionarEscolha() {
+        window.location.href = "escolha";
+    }
 </script>
 
 <script>
@@ -115,7 +119,7 @@
 
         container.innerHTML = ""; // Limpa conteúdo fixo
         let totalGeral = 0;
-
+o
         itens.forEach((item, index) => {
             const ingredientes = Object.entries(item.ingredientes)
                 .map(([nome, qtd]) => `${qtd}x ${nome}`)

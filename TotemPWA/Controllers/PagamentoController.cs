@@ -20,4 +20,8 @@ public class PagamentoController : Controller
     {
         return View();
     }
+    public IActionResult Tpagamento()
+    {
+        return View();
+    }
 }

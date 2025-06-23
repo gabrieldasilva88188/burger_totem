@@ -1,0 +1,73 @@
+@{
+    Layout = "_WelcomeLayout";
+}
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<!-- Estilo principal -->
+  <link rel="stylesheet" href="@Url.Content("~/css/tpagamento.css")"/>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de pagamento</title>
+  <!-- Font Awesome -->
+  <script src="@Url.Content("~/css/fontawesome-free-6.7.2-web/js/all.min.js")"></script>
+</head>
+<body>
+  <!-- Container central com proporção fixa -->
+  <div class="main-container">
+
+    <!-- Botão de voltar -->
+    <a href="#" class="back-button " onclick="voltar()">
+      <i class="fa-solid fa-arrow-left fa-xl"></i>
+    </a>
+    
+    <h1>COMO DESEJA REALIZAR O PAGAMENTO?</h1>
+    <h2>SELECIONE A FORMA DE PAGAMENTO</h2>
+
+    <!-- Opções de pagamento -->
+    <div class="payment-options">
+      <button class="option-btn" onclick="redirecionarCartao()">
+        <i class="fa-regular fa-credit-card fa-2xl"></i> CARTÃO DE CRÉDITO
+      </button>
+
+      <button class="option-btn" onclick="redirecionarCartao()">
+        <i class="fa-regular fa-credit-card fa-2xl"></i> CARTÃO DE DÉBITO
+      </button>
+
+      <button class="option-btn" onclick="redirecionarPix()">
+        <i class="fa-brands fa-pix fa-2xl"></i> PIX
+      </button>
+
+      <button class="option-btn" onclick="redirecionarGooglePay()">
+        <i class="fa-brands fa-google-pay fa-2xl"></i> GOOGLE PAY
+      </button>
+
+      <button class="option-btn" onclick="selectPayment('Apple Pay')">
+        <i class="fa-brands fa-apple-pay fa-2xl"></i> APPLE PAY
+      </button>
+
+      <button class="option-btn" onclick="selectPayment('Dinheiro')">
+        <i class="fa-solid fa-money-bill-wave fa-2xl"></i> DINHEIRO
+      </button>
+    </div>
+
+  </div>
+  <script>
+    function selectPayment(method) {
+    alert("Você selecionou: " + method);
+  }
+    function redirecionarGooglePay() {
+      window.location.href = "@Url.Content("~/Pagamento/Googlepay")";
+    }
+    function redirecionarPix() {
+      window.location.href = "@Url.Content("~/Pagamento/Pix")";
+    }
+    function redirecionarCartao() {
+      window.location.href = "@Url.Content("~/Pagamento/Cartao")";
+    }
+    function voltar() {
+      window.location.href = "@Url.Content("~/Home/Carrinho")";
+    }
+  </script>
+  </body>
+</html>

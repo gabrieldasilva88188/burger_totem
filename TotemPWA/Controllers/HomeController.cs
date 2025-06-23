@@ -126,7 +126,14 @@ public class HomeController : Controller
     {
         return View();
     }
-
+    public IActionResult ClienteNome()
+    {
+        return View();
+    }
+    public IActionResult ClienteCPF()
+    {
+        return View();
+    }
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {

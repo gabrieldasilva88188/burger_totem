@@ -1,6 +1,5 @@
 @{
     Layout = "_WelcomeLayout";
-    var googlepayUrl = Url.Action("Googlepay", "Home");
 }
 
 <!DOCTYPE html>
@@ -9,14 +8,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagamento pix</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-   <link rel="stylesheet" href="@Url.Content("~/css/googlepay.css")">
+    <link rel="stylesheet" href="@Url.Content("~/css/googlepay.css")">
+    <link rel="stylesheet" href="@Url.Content("~/css/fontawesome-free-6.7.2-web/css/all.css")">
+    <link rel="stylesheet" href="@Url.Content("~/css/fontawesome-free-6.7.2-web/css/all.min.css")">
+    <script src="@Url.Content("~/css/fontawesome-free-6.7.2-web/js/all.js")"></script>
+    <script src="@Url.Content("~/css/fontawesome-free-6.7.2-web/js/all.min.js")"></script>
 </head>
 <body>
     <i class="fa-solid fa-arrow-left fa-2xl"></i>
     <h1>pagamento com Google pay</h1>
     <p>aproxime seu celular do leitor para pagar</p>
-    <img src="./googlepay.png" alt="qr code do pix">
+    <img src="~/img/tpagamento/googlepay.png" alt="qr code do pix">
     <p><strong></strong></p>
 </body>
 </html>

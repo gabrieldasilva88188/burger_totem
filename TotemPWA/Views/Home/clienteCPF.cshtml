@@ -1,0 +1,50 @@
+@{
+    Layout = "_WelcomeLayout";
+    var cardapioUrl = Url.Action("clienteNome", "Home");
+}
+<head>
+    <link rel="stylesheet" href="@Url.Content("~/css/cliCPF.css")"/>
+</head>
+<h1>DIGITE SEU CPF</h1>
+  <div class="input-box">
+    <input type="text" id="nome" readonly placeholder="Número">
+  </div>
+
+  <div class="keyboard" id="keyboard"></div>
+
+  <button id="continuar">CONTINUAR</button>
+
+  <script>
+      const keyboard = document.getElementById('keyboard');
+    const input = document.getElementById('nome');
+    const keys = [
+      "1", "2", "3",
+      "4", "5", "6",
+      "7", "8", "9",
+      "←", "0", "Limpar"
+    ];
+
+    keys.forEach(key => {
+      const button = document.createElement('button');
+      button.textContent = key;
+      button.classList.add('key');
+
+      button.addEventListener('click', () => {
+        if (key === "←") {
+          input.value = input.value.slice(0, -1);
+        } else if (key === "Limpar") {
+          input.value = "";
+        } else {
+          input.value += key;
+        }
+      });
+
+      keyboard.appendChild(button);
+    });
+
+    document.getElementById('continuar').addEventListener('click', () => {
+      alert(`Número inserido: ${input.value}`);
+      //  redirecionar para a próxima página
+      window.location.href = "Cardapio";
+    });
+  </script>

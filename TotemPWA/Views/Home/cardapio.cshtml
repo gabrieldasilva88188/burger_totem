@@ -61,20 +61,16 @@
             <div class="produtos">
 
                   @foreach (var product in ViewBag.Products)
-                {
-                    <div class="menu-item">
-                        <img src="https://fakeimg.pl/60x60/?retina=1&text=%F0%9F%8D%95" alt="@product.name">
-                        <div class="options">
-                            
-                            <h3>@product.name</h3>
-                            <p>@product.description</p>
-
-                            <strong>@product.price.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("pt-BR"))</strong>
-                        </div>
-
-                        
-                    </div>
-                }
+                    {
+                        <a href="/Home/Personalizar?Id=@product.id" class="menu-item sem-estilo-hiperlink">
+                            <img src="https://fakeimg.pl/60x60/?retina=1&text=%F0%9F%8D%95" alt="@product.name">
+                            <div class="options">
+                                <h3>@product.name</h3>
+                                <p>@product.description</p>
+                                <strong>@product.price.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("pt-BR"))</strong>
+                            </div>
+                        </a>
+                    }
             </div>
 
         </main>
@@ -95,7 +91,11 @@
     </footer>
     
 
+<script>
+// Função de redirecionamento para o carrinho
+    function redirecionarCarrinho() {
+        window.location.href = "/Home/carrinho";
+    }
+</script>
 </body>
 </html>
-
-

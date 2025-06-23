@@ -63,7 +63,7 @@
                   @foreach (var product in ViewBag.Products)
                     {
                         <a href="/Home/Personalizar?Id=@product.id" class="menu-item sem-estilo-hiperlink">
-                            <img src="https://fakeimg.pl/60x60/?retina=1&text=%F0%9F%8D%95" alt="@product.name">
+                            <img src="@Url.Action("GetImage", "HubAdministrativo", new { id = product.id })" alt="@product.name">
                             <div class="options">
                                 <h3>@product.name</h3>
                                 <p>@product.description</p>

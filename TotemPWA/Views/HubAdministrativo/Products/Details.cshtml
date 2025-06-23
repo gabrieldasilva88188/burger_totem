@@ -1,0 +1,28 @@
+@model TotemPWA.Models.Product
+
+<h2>Detalhes do Produto</h2>
+
+<div class="mb-3">
+    <label class="form-label">Nome:</label>
+    <div>@Model.Name</div>
+</div>
+<div class="mb-3">
+    <label class="form-label">Descrição:</label>
+    <div>@Model.Description</div>
+</div>
+<div class="mb-3">
+    <label class="form-label">Preço:</label>
+    <div>R$ @Model.Price.ToString("F2")</div>
+</div>
+<div class="mb-3">
+    <label class="form-label">Categoria:</label>
+    <div>@Model.Category?.Name</div>
+</div>
+<div class="mb-3">
+    <label class="form-label">Imagem:</label><br />
+    @if (Model.Image != null)
+    {
+        <img src="@Url.Action("GetImage", "Products", new { id = Model.Id })" alt="Imagem" width="120" height="120" style="object-fit:cover; border-radius:8px;" />
+    }
+</div>
+<a asp-action="Index" class="btn btn-secondary">Voltar</a> 

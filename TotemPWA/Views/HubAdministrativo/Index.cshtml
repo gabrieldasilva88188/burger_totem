@@ -1,7 +1,9 @@
 @{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
     ViewData["Title"] = "Hub Administrativo";
 }
-
-<h2>Bem-vindo ao Hub Administrativo</h2>
-
-<p>Você está logado como: @Context.Session.GetString("EmployeeName")</p>
+<div class="admin-welcome">
+    <h2>Bem-vindo ao Hub Administrativo</h2>
+    <p>Você está logado como: @Context.Session.GetString("EmployeeName")</p>
+    <p>Use o menu lateral para gerenciar o sistema.</p>
+</div>

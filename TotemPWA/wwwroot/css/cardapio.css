@@ -3,6 +3,7 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #f8f8f8;
+    
 }
 
 
@@ -24,18 +25,17 @@ header {
 }
 
 .sidebar {
-    width: 220px;
+    width: 180px;
     background: #ffffff;
-    padding: 20px 0;
+    padding: 10px 0;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
     position: fixed;
-    top: 200px;
+    top: 240px;
     bottom: 60px;
     overflow-y: auto;
     z-index: 3;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .sidebar button {
@@ -63,42 +63,36 @@ header {
 }
 .sidebar ul {
     list-style: none;
-    padding: 0;
+    padding: 10px 0; /* Padding interno para afastar das bordas */
+    margin: 0;
+    flex: 1;
     display: flex;
     flex-direction: column;
-    height: 100%; 
+    justify-content: center; /* Centraliza verticalmente o conteúdo */
+    gap: 8px; /* Espaço uniforme entre itens */
 }
 
 .sidebar li {
-    padding: 20px; 
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    cursor: pointer;
-    font-size: 16px; 
-    flex-grow: 1;
+    flex: 0 0 auto; /* Não deixa os itens esticarem */
 }
 /* Estilo dos links */
 .sidebar a {
-    margin-top:50px ;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    width: 100px;
-    padding: 10px;
-
+    display: block;
+    width: 90%;
+    padding: 8px 0;
     text-align: center;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
     color: #444;
     text-decoration: none;
-
     background-color: #f7f7f7;
     border-radius: 12px;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
+    position: relative; /* Permite ajustes finos */
+    top: 6px; /* Move o botão para cima, grudando na imagem */
 }
 
 /* Hover */
@@ -445,7 +439,7 @@ main.content {
 
    .menu-item {
     background: white;
-    padding: 15px;
+    padding: 12px;
     border-radius: 20px;
     text-align: center;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
@@ -479,6 +473,128 @@ main.content {
     text-overflow: ellipsis;
 }
 
+/* Estilos para as imagens das categorias */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 15px;
+}
+
+.sidebar a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    width: 85%;
+}
+
+.sidebar a:hover, .sidebar a.active {
+    background-color: #f0f0f0;
+}
+
+.category-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 8px;
+    border: 2px solid #ddd;
+}
+
+.category-name {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Estilos para o menu lateral com imagens */
+.sidebar {
+    width: 220px;
+    background: #fff;
+    padding: 20px 0;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 5px;
+}
+
+.sidebar a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    padding: 15px 10px;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.sidebar a:hover, .sidebar a.active {
+    background-color: #f8f8f8;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.category-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #f1f1f1;
+    transition: all 0.3s ease;
+}
+
+.sidebar a:hover .category-icon, 
+.sidebar a.active .category-icon {
+    border-color: #FF6B6B;
+    transform: scale(1.1);
+}
+
+.category-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+}
+
+/* Efeito quando a categoria está ativa */
+.sidebar a.active {
+    background-color: #ff914d;
+    color: white;
+}
+
+.sidebar a.active .category-name {
+    color: white;
+}
+
+.sidebar a.active .category-icon {
+    border-color: white;
+    box-shadow: 0 0 0 2px #ff914d;
+}
+
+.sidebar img {
+    width: 90%;
+    height: 160px;
+    border-radius: 10%;
+    object-fit: cover;
+    margin-bottom: 2px; /* Reduzido drasticamente o espaço abaixo da imagem */
+}
 
 
 

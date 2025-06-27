@@ -20,24 +20,16 @@
     <div class="container">
     
         <nav class="sidebar">
-            <ul>
-                <li>
-                    
-                  @foreach (var category in ViewBag.Categories)
-                    {
-                        /*
-                        string activeClass = category.active ? "active" : "";
-                       <a href="/Cardapio/@category.slug" class="category-btn @activeClass">
-                            <span class="icon">🍕</span>
-                            <span class="label">@category.name</span>
-                        </a>
-                        */
-
+         <ul>
+            @foreach (var category in ViewBag.Categories)
+                {
+                    <li>
+                        <img src="~/img/categories/@(category.slug).png" alt="@category.name">
                         <a href="/cardapio/@category.slug" class="@(category.active ? "active" : "")">
                             @category.name
                         </a>
-                    }
-                </li>
+                    </li>
+                }
             </ul>
         </nav>
         

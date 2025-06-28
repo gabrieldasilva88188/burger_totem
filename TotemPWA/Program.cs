@@ -29,6 +29,8 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true;
 });
 
+
+
 var app = builder.Build();
 
 using (var scope = app.Services.CreateScope())
@@ -44,6 +46,18 @@ using (var scope = app.Services.CreateScope())
 
     // Executa o Seed (inicialização de dados)
     // await DbInitializer.InitializeAsync(context);
+}
+
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var context = services.GetRequiredService<ApplicationDbContext>();
+
+    // Aplica as migrações do zero
+    context.Database.Migrate();       
+
+    // Executa o Seed (inicialização de dados de categorias + cupons)
+    await DbInitializer.InitializeAsync(context);
 }
 
 // Configure the HTTP request pipeline.
@@ -72,6 +86,7 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}")
     .WithStaticAssets();
+
 
 
 

@@ -1,4 +1,5 @@
 using System.Text.Json;
+using System.Text.Json.Nodes;
 using TotemPWA.Models;
 
 namespace TotemPWA.Data
@@ -7,25 +8,46 @@ namespace TotemPWA.Data
     {
         public static async Task InitializeAsync(ApplicationDbContext context)
         {
-            if (context.Categories.Any())
+            if (context.Categories.Any() && context.Cupons.Any())
                 return;
 
             var json = await File.ReadAllTextAsync("Data/SeedData.json");
 
-            var rootCategories = JsonSerializer.Deserialize<List<CategorySeed>>(json, new JsonSerializerOptions
-            {
-                PropertyNameCaseInsensitive = true
-            });
+            // Lê o arquivo como JsonNode para acessar as partes separadas
+            var rootArray = JsonNode.Parse(json)?.AsArray();
+            if (rootArray == null) return;
 
-            if (rootCategories != null)
+            foreach (var element in rootArray)
             {
-                foreach (var categorySeed in rootCategories)
+                // Verifica se é um objeto com "Cupons"
+                if (element?["Cupom"] is JsonArray cuponsArray)
                 {
-                    await CreateCategoryRecursiveAsync(context, categorySeed, parentId: null);
+                    // Só adiciona se ainda não tiver cupons no banco
+                    if (!context.Cupons.Any())
+                    {
+                        foreach (var c in cuponsArray)
+                        {
+                            var cupom = new Cupom
+                            {
+                                Code = c?["Code"]?.ToString() ?? "",
+                                Discount = c?["Discount"]?.GetValue<decimal>() ?? 0,
+                                ValidUntil = c?["ValidUntil"]?.GetValue<DateTime?>(),
+                                Active = c?["Active"]?.GetValue<bool>() ?? false
+                            };
+                            context.Cupons.Add(cupom);
+                        }
+                    }
                 }
-
-                await context.SaveChangesAsync();
+                // Se for uma categoria, processa normalmente
+                else if (element?["name"] != null)
+                {
+                    var categorySeed = element.Deserialize<CategorySeed>();
+                    if (categorySeed != null)
+                        await CreateCategoryRecursiveAsync(context, categorySeed, null);
+                }
             }
+
+            await context.SaveChangesAsync();
         }
 
         private static async Task CreateCategoryRecursiveAsync(ApplicationDbContext context, CategorySeed seed, int? parentId)
@@ -37,9 +59,8 @@ namespace TotemPWA.Data
             };
 
             context.Categories.Add(category);
-            await context.SaveChangesAsync(); // necessário para obter o Id da categoria
+            await context.SaveChangesAsync(); // necessário para obter o Id
 
-            // Cria os produtos da categoria
             foreach (var productSeed in seed.Products ?? new List<ProductSeed>())
             {
                 var product = new Product
@@ -51,7 +72,7 @@ namespace TotemPWA.Data
                 };
 
                 context.Products.Add(product);
-                await context.SaveChangesAsync(); // necessário para obter o Id do produto
+                await context.SaveChangesAsync();
 
                 foreach (var variationSeed in productSeed.Variations ?? new List<VariationSeed>())
                 {
@@ -66,7 +87,6 @@ namespace TotemPWA.Data
                 }
             }
 
-            // Recursivamente cria subcategorias
             foreach (var subcategorySeed in seed.Subcategories ?? new List<CategorySeed>())
             {
                 await CreateCategoryRecursiveAsync(context, subcategorySeed, category.Id);

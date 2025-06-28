@@ -35,6 +35,7 @@
                     <a class="btn btn-success" asp-action="Create">Novo Produto <i class="fas fa-plus"></i></a>
                     <a class="btn btn-primary btn-sm" asp-action="Edit" asp-route-id="@item.Id">Editar<i class="fas fa-edit"></i></a>
                     <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@item.Id">Exluir<i class="fas fa-trash"></i></a>
+                    <a class="btn btn-warning btn-sm" asp-action="ManageIngredients" asp-route-id="@item.Id">Gerenciar Ingredientes <i class="fas fa-cogs"></i></a>
                 </td>
             </tr>
         }

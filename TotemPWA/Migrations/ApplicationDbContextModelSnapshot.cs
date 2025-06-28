@@ -109,80 +109,235 @@ namespace TotemPWA.Migrations
                         new
                         {
                             Id = 7,
-                            Name = "C#",
+                            Name = "Smash Burgers",
                             ParentCategoryId = 1,
-                            Slug = "c"
+                            Slug = "smash-burgers"
                         },
                         new
                         {
                             Id = 8,
-                            Name = "Java",
+                            Name = "Hambúrguer Artesanal",
                             ParentCategoryId = 1,
-                            Slug = "java"
+                            Slug = "hambrguer-artesanal"
                         },
                         new
                         {
                             Id = 9,
-                            Name = "Python",
+                            Name = "Vegetarianos",
                             ParentCategoryId = 1,
-                            Slug = "python"
+                            Slug = "vegetarianos"
                         },
                         new
                         {
                             Id = 10,
-                            Name = "JavaScript",
+                            Name = "Frango",
                             ParentCategoryId = 1,
-                            Slug = "javascript"
+                            Slug = "frango"
                         },
                         new
                         {
                             Id = 11,
+                            Name = "Duplos e Triplo Burgers",
+                            ParentCategoryId = 1,
+                            Slug = "duplos-e-triplo-burgers"
+                        },
+                        new
+                        {
+                            Id = 12,
+                            Name = "Combo Econômico",
+                            ParentCategoryId = 2,
+                            Slug = "combo-econmico"
+                        },
+                        new
+                        {
+                            Id = 13,
+                            Name = "Combo Casal",
+                            ParentCategoryId = 2,
+                            Slug = "combo-casal"
+                        },
+                        new
+                        {
+                            Id = 14,
+                            Name = "Combo Infantil",
+                            ParentCategoryId = 2,
+                            Slug = "combo-infantil"
+                        },
+                        new
+                        {
+                            Id = 15,
+                            Name = "Combo Veggie",
+                            ParentCategoryId = 2,
+                            Slug = "combo-veggie"
+                        },
+                        new
+                        {
+                            Id = 16,
+                            Name = "Combo Premium",
+                            ParentCategoryId = 2,
+                            Slug = "combo-premium"
+                        },
+                        new
+                        {
+                            Id = 17,
+                            Name = "Sundaes",
+                            ParentCategoryId = 3,
+                            Slug = "sundaes"
+                        },
+                        new
+                        {
+                            Id = 18,
+                            Name = "Milkshakes",
+                            ParentCategoryId = 3,
+                            Slug = "milkshakes"
+                        },
+                        new
+                        {
+                            Id = 19,
+                            Name = "Brownies",
+                            ParentCategoryId = 3,
+                            Slug = "brownies"
+                        },
+                        new
+                        {
+                            Id = 20,
+                            Name = "Tortas Geladas",
+                            ParentCategoryId = 3,
+                            Slug = "tortas-geladas"
+                        },
+                        new
+                        {
+                            Id = 21,
+                            Name = "Sorvetes e Gelatos",
+                            ParentCategoryId = 3,
+                            Slug = "sorvetes-e-gelatos"
+                        },
+                        new
+                        {
+                            Id = 22,
                             Name = "Refrigerantes",
                             ParentCategoryId = 4,
                             Slug = "refrigerantes"
                         },
                         new
                         {
-                            Id = 12,
-                            Name = "Cafés",
+                            Id = 23,
+                            Name = "Sucos Naturais",
                             ParentCategoryId = 4,
-                            Slug = "cafs"
+                            Slug = "sucos-naturais"
                         },
                         new
                         {
-                            Id = 13,
-                            Name = "Acompanhamentos",
+                            Id = 24,
+                            Name = "Energéticos",
+                            ParentCategoryId = 4,
+                            Slug = "energticos"
+                        },
+                        new
+                        {
+                            Id = 25,
+                            Name = "Bebidas Quentes",
+                            ParentCategoryId = 4,
+                            Slug = "bebidas-quentes"
+                        },
+                        new
+                        {
+                            Id = 26,
+                            Name = "Bebidas Zero Açúcar",
+                            ParentCategoryId = 4,
+                            Slug = "bebidas-zero-acar"
+                        },
+                        new
+                        {
+                            Id = 27,
+                            Name = "Batatas Fritas",
                             ParentCategoryId = 5,
-                            Slug = "acompanhamentos"
+                            Slug = "batatas-fritas"
                         },
                         new
                         {
-                            Id = 14,
-                            Name = "Anéis de Loop",
+                            Id = 28,
+                            Name = "Onion Rings",
                             ParentCategoryId = 5,
-                            Slug = "anis-de-loop"
+                            Slug = "onion-rings"
                         },
                         new
                         {
-                            Id = 15,
-                            Name = "Tipos de Molhos",
+                            Id = 29,
+                            Name = "Nuggets",
+                            ParentCategoryId = 5,
+                            Slug = "nuggets"
+                        },
+                        new
+                        {
+                            Id = 30,
+                            Name = "Queijo Empanado",
+                            ParentCategoryId = 5,
+                            Slug = "queijo-empanado"
+                        },
+                        new
+                        {
+                            Id = 31,
+                            Name = "Salada Extra",
+                            ParentCategoryId = 5,
+                            Slug = "salada-extra"
+                        },
+                        new
+                        {
+                            Id = 32,
+                            Name = "Molhos Clássicos",
                             ParentCategoryId = 6,
-                            Slug = "tipos-de-molhos"
+                            Slug = "molhos-clssicos"
                         },
                         new
                         {
-                            Id = 16,
+                            Id = 33,
                             Name = "Molhos Picantes",
-                            ParentCategoryId = 15,
+                            ParentCategoryId = 6,
                             Slug = "molhos-picantes"
                         },
                         new
                         {
-                            Id = 17,
+                            Id = 34,
                             Name = "Molhos Doces",
-                            ParentCategoryId = 15,
+                            ParentCategoryId = 6,
                             Slug = "molhos-doces"
+                        },
+                        new
+                        {
+                            Id = 35,
+                            Name = "Molhos Especiais da Casa",
+                            ParentCategoryId = 6,
+                            Slug = "molhos-especiais-da-casa"
+                        },
+                        new
+                        {
+                            Id = 36,
+                            Name = "Molhos Veganos",
+                            ParentCategoryId = 6,
+                            Slug = "molhos-veganos"
                         });
+                });
+
+            modelBuilder.Entity("TotemPWA.Models.Ingredient", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Limit")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Ingredients");
                 });
 
             modelBuilder.Entity("TotemPWA.Models.Product", b =>
@@ -228,131 +383,277 @@ namespace TotemPWA.Migrations
                         new
                         {
                             Id = 2,
-                            CategoryId = 2,
-                            Description = "C# Burguer + Loop Fries + Byte-Cola",
-                            Name = "Combo Stack Overflow",
-                            Price = 32.99m
+                            CategoryId = 7,
+                            Description = "Lanche organizado por indentação com sabor dinâmico",
+                            Name = "Python Stack",
+                            Price = 17.90m
                         },
                         new
                         {
                             Id = 3,
-                            CategoryId = 12,
-                            Description = "Café forte com robusta implementação",
-                            Name = "JavaBean Espresso",
-                            Price = 7.50m
+                            CategoryId = 8,
+                            Description = "Bagunçado, mas funcional",
+                            Name = "PHP Buguer",
+                            Price = 15.90m
                         },
                         new
                         {
                             Id = 4,
-                            CategoryId = 13,
-                            Description = "Batatas em looping infinito",
-                            Name = "Loop Fries",
-                            Price = 9.00m
+                            CategoryId = 8,
+                            Description = "Sanduíche robusto com tipagem forte",
+                            Name = "Java Sandwich",
+                            Price = 18.00m
                         },
                         new
                         {
                             Id = 5,
-                            CategoryId = 6,
-                            Description = "Só aparece quando você não espera",
-                            Name = "NullPointer Molho",
-                            Price = 3.00m
+                            CategoryId = 11,
+                            Description = "Burger crocante com padrão de arquitetura limpa",
+                            Name = "Crunch#",
+                            Price = 19.90m
                         },
                         new
                         {
                             Id = 6,
-                            CategoryId = 8,
-                            Description = "Sabor não encontrado, mas delicioso",
-                            Name = "Burguer 404",
-                            Price = 19.99m
+                            CategoryId = 9,
+                            Description = "Requintado, elegante e poderoso",
+                            Name = "Ruby Royale",
+                            Price = 22.00m
                         },
                         new
                         {
                             Id = 7,
-                            CategoryId = 9,
-                            Description = "Sanduíche dinâmico e legível",
-                            Name = "Snake.py Sanduíche",
-                            Price = 17.00m
+                            CategoryId = 10,
+                            Description = "Prático, rápido e direto ao ponto",
+                            Name = "Go Burguer",
+                            Price = 17.50m
                         },
                         new
                         {
                             Id = 8,
                             CategoryId = 10,
-                            Description = "Burguer assíncrono com dois hambúrgueres",
-                            Name = "JS Double Shot",
-                            Price = 21.00m
+                            Description = "Com cheddar intenso, goroutines de sabor",
+                            Name = "Go Burguer Cheddar",
+                            Price = 18.90m
                         },
                         new
                         {
                             Id = 9,
-                            CategoryId = 11,
-                            Description = "Refrigerante com sabor binário",
-                            Name = "Byte-Cola",
-                            Price = 5.50m
+                            CategoryId = 9,
+                            Description = "Opção vegetariana com performance",
+                            Name = "Go Burguer Veggie",
+                            Price = 16.50m
                         },
                         new
                         {
                             Id = 10,
-                            CategoryId = 2,
+                            CategoryId = 16,
                             Description = "JS Double Shot + Snake.py + Byte-Cola",
-                            Name = "Combo Dev Full Stack",
+                            Name = "Combo Full Stack",
                             Price = 39.90m
                         },
                         new
                         {
                             Id = 11,
-                            CategoryId = 3,
-                            Description = "Sobremesa que quebra qualquer dieta",
-                            Name = "Exception Sundae",
-                            Price = 12.00m
+                            CategoryId = 14,
+                            Description = "Combo perfeito para codar e matar a fome",
+                            Name = "Dev Meal",
+                            Price = 34.90m
                         },
                         new
                         {
                             Id = 12,
-                            CategoryId = 3,
-                            Description = "Doce processado com zero erros",
-                            Name = "Compiler Cheesecake",
-                            Price = 10.50m
+                            CategoryId = 15,
+                            Description = "Combo com itens refatorados do menu",
+                            Name = "Refatoração Total",
+                            Price = 37.90m
                         },
                         new
                         {
                             Id = 13,
-                            CategoryId = 12,
-                            Description = "Café com operadores booleanos",
-                            Name = "Latte Lógico",
-                            Price = 6.00m
+                            CategoryId = 13,
+                            Description = "Combo com dois Go Burguers e batata",
+                            Name = "Go Burguers",
+                            Price = 31.90m
                         },
                         new
                         {
                             Id = 14,
-                            CategoryId = 13,
-                            Description = "Batatas fritas com comportamento inesperado",
-                            Name = "Bug Fries",
-                            Price = 8.90m
+                            CategoryId = 12,
+                            Description = "Para quem vive na nuvem (literalmente)",
+                            Name = "Cloud Combo",
+                            Price = 32.99m
                         },
                         new
                         {
                             Id = 15,
-                            CategoryId = 7,
-                            Description = "Frango funcional com sabor puro",
-                            Name = "Lambda Chicken",
-                            Price = 16.99m
+                            CategoryId = 12,
+                            Description = "Interface deliciosa entre fome e felicidade",
+                            Name = "API Meal",
+                            Price = 33.50m
                         },
                         new
                         {
                             Id = 16,
-                            CategoryId = 16,
-                            Description = "Molho picante que trata qualquer exceção",
-                            Name = "Spicy Try-Catch",
-                            Price = 4.50m
+                            CategoryId = 32,
+                            Description = "Molho com sabor aprimorado",
+                            Name = "Barbecue++",
+                            Price = 3.50m
                         },
                         new
                         {
                             Id = 17,
-                            CategoryId = 17,
-                            Description = "Molho doce com final em recursão infinita",
-                            Name = "Sweet Loop",
+                            CategoryId = 33,
+                            Description = "Molho picante, mas reativo",
+                            Name = "Chipotle.js",
+                            Price = 3.50m
+                        },
+                        new
+                        {
+                            Id = 18,
+                            CategoryId = 34,
+                            Description = "Maionese inteligente que aprende seu gosto",
+                            Name = "MayoAI",
+                            Price = 3.00m
+                        },
+                        new
+                        {
+                            Id = 19,
+                            CategoryId = 32,
+                            Description = "Molho básico com endpoints deliciosos",
+                            Name = "KetchAPI",
+                            Price = 2.90m
+                        },
+                        new
+                        {
+                            Id = 20,
+                            CategoryId = 35,
+                            Description = "Molho com sabor dinâmico e animado",
+                            Name = "Salsa Script",
                             Price = 4.00m
+                        },
+                        new
+                        {
+                            Id = 21,
+                            CategoryId = 36,
+                            Description = "Visualmente bonito e bem formatado",
+                            Name = "Css Cream",
+                            Price = 4.00m
+                        },
+                        new
+                        {
+                            Id = 22,
+                            CategoryId = 18,
+                            Description = "Bate tudo e retorna o melhor resultado",
+                            Name = "MilkShake SQL",
+                            Price = 10.00m
+                        },
+                        new
+                        {
+                            Id = 23,
+                            CategoryId = 17,
+                            Description = "Sobremesa quente hospedada com amor",
+                            Name = "Petit Gateau da Nuvem",
+                            Price = 12.90m
+                        },
+                        new
+                        {
+                            Id = 24,
+                            CategoryId = 21,
+                            Description = "Sempre responsiva e cremosa",
+                            Name = "Casquinha Bootstrap",
+                            Price = 6.00m
+                        },
+                        new
+                        {
+                            Id = 25,
+                            CategoryId = 19,
+                            Description = "Doces armazenados para carregamento rápido",
+                            Name = "Cache Cookies",
+                            Price = 7.50m
+                        },
+                        new
+                        {
+                            Id = 26,
+                            CategoryId = 20,
+                            Description = "Fácil de consumir e muito poderosa",
+                            Name = "Python Pie",
+                            Price = 9.00m
+                        },
+                        new
+                        {
+                            Id = 27,
+                            CategoryId = 20,
+                            Description = "Bolo orientado a delícias",
+                            Name = "Cake++",
+                            Price = 10.50m
+                        },
+                        new
+                        {
+                            Id = 28,
+                            CategoryId = 22,
+                            Description = "Refrigerante com sintaxe refrescante",
+                            Name = "ColaScript",
+                            Price = 5.50m
+                        },
+                        new
+                        {
+                            Id = 29,
+                            CategoryId = 23,
+                            Description = "Suco forte e robusto",
+                            Name = "JavaJuice",
+                            Price = 6.00m
+                        },
+                        new
+                        {
+                            Id = 30,
+                            CategoryId = 24,
+                            Description = "Refresca na hora e reage ao seu gosto",
+                            Name = "React Refresco",
+                            Price = 6.50m
+                        },
+                        new
+                        {
+                            Id = 31,
+                            CategoryId = 24,
+                            Description = "Bebida funcional e saborosa",
+                            Name = "SmoothieScript",
+                            Price = 7.00m
+                        },
+                        new
+                        {
+                            Id = 32,
+                            CategoryId = 26,
+                            Description = "Limonada elegante com sabor refinado",
+                            Name = "Ruby Lemonade",
+                            Price = 6.90m
+                        },
+                        new
+                        {
+                            Id = 33,
+                            CategoryId = 25,
+                            Description = "Bebida ágil e intensa",
+                            Name = "Swift Sake",
+                            Price = 8.00m
                         });
+                });
+
+            modelBuilder.Entity("TotemPWA.Models.ProductIngredient", b =>
+                {
+                    b.Property<int>("ProductId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("IngredientId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("ProductId", "IngredientId");
+
+                    b.HasIndex("IngredientId");
+
+                    b.ToTable("ProductIngredients");
                 });
 
             modelBuilder.Entity("TotemPWA.Models.Variation", b =>
@@ -430,6 +731,25 @@ namespace TotemPWA.Migrations
                     b.Navigation("Category");
                 });
 
+            modelBuilder.Entity("TotemPWA.Models.ProductIngredient", b =>
+                {
+                    b.HasOne("TotemPWA.Models.Ingredient", "Ingredient")
+                        .WithMany("ProductIngredients")
+                        .HasForeignKey("IngredientId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("TotemPWA.Models.Product", "Product")
+                        .WithMany("ProductIngredients")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Ingredient");
+
+                    b.Navigation("Product");
+                });
+
             modelBuilder.Entity("TotemPWA.Models.Variation", b =>
                 {
                     b.HasOne("TotemPWA.Models.Product", "Product")
@@ -448,8 +768,15 @@ namespace TotemPWA.Migrations
                     b.Navigation("Subcategories");
                 });
 
+            modelBuilder.Entity("TotemPWA.Models.Ingredient", b =>
+                {
+                    b.Navigation("ProductIngredients");
+                });
+
             modelBuilder.Entity("TotemPWA.Models.Product", b =>
                 {
+                    b.Navigation("ProductIngredients");
+
                     b.Navigation("Variations");
                 });
 #pragma warning restore 612, 618

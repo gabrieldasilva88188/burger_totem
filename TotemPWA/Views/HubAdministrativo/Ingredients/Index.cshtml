@@ -1,0 +1,32 @@
+@model IEnumerable<TotemPWA.Models.Ingredient>
+@{
+    ViewBag.Title = "Ingredientes";
+}
+<h2>Ingredientes</h2>
+<p>
+    <a href="@Url.Action("CreateIngredient", "HubAdministrativo")" class="btn btn-primary">Adicionar Ingrediente</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Preço</th>
+            <th>Limite</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>R$ @item.Price.ToString("0.00")</td>
+                <td>@item.Limit</td>
+                <td>
+                    <a href="@Url.Action("EditIngredient", "HubAdministrativo", new { id = item.Id })" class="btn btn-sm btn-warning">Editar</a>
+                    <a href="@Url.Action("DeleteIngredient", "HubAdministrativo", new { id = item.Id })" class="btn btn-sm btn-danger">Excluir</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table> 

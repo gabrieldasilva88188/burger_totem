@@ -185,6 +185,28 @@ namespace TotemPWA.Migrations
                         });
                 });
 
+            modelBuilder.Entity("TotemPWA.Models.Ingredient", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Limit")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Ingredients");
+                });
+
             modelBuilder.Entity("TotemPWA.Models.Product", b =>
                 {
                     b.Property<int>("Id")
@@ -355,6 +377,24 @@ namespace TotemPWA.Migrations
                         });
                 });
 
+            modelBuilder.Entity("TotemPWA.Models.ProductIngredient", b =>
+                {
+                    b.Property<int>("ProductId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("IngredientId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("ProductId", "IngredientId");
+
+                    b.HasIndex("IngredientId");
+
+                    b.ToTable("ProductIngredients");
+                });
+
             modelBuilder.Entity("TotemPWA.Models.Variation", b =>
                 {
                     b.Property<int>("Id")
@@ -430,6 +470,25 @@ namespace TotemPWA.Migrations
                     b.Navigation("Category");
                 });
 
+            modelBuilder.Entity("TotemPWA.Models.ProductIngredient", b =>
+                {
+                    b.HasOne("TotemPWA.Models.Ingredient", "Ingredient")
+                        .WithMany("ProductIngredients")
+                        .HasForeignKey("IngredientId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("TotemPWA.Models.Product", "Product")
+                        .WithMany("ProductIngredients")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Ingredient");
+
+                    b.Navigation("Product");
+                });
+
             modelBuilder.Entity("TotemPWA.Models.Variation", b =>
                 {
                     b.HasOne("TotemPWA.Models.Product", "Product")
@@ -448,8 +507,15 @@ namespace TotemPWA.Migrations
                     b.Navigation("Subcategories");
                 });
 
+            modelBuilder.Entity("TotemPWA.Models.Ingredient", b =>
+                {
+                    b.Navigation("ProductIngredients");
+                });
+
             modelBuilder.Entity("TotemPWA.Models.Product", b =>
                 {
+                    b.Navigation("ProductIngredients");
+
                     b.Navigation("Variations");
                 });
 #pragma warning restore 612, 618

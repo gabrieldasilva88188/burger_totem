@@ -24,5 +24,7 @@ namespace TotemPWA.Models
 
         // NOVO CAMPO: Imagem armazenada como array de bytes (BLOB no SQLite)
         public byte[]? Image { get; set; }
+
+        public ICollection<ProductIngredient> ProductIngredients { get; set; } = new List<ProductIngredient>();
     }
 }

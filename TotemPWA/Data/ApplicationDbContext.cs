@@ -14,6 +14,8 @@ namespace TotemPWA.Data
         public DbSet<Variation> Variations { get; set; }
         public DbSet<Client> Clients { get; set; }
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<Ingredient> Ingredients { get; set; }
+        public DbSet<ProductIngredient> ProductIngredients { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -109,11 +111,19 @@ namespace TotemPWA.Data
                 }
             );
 
+            modelBuilder.Entity<ProductIngredient>()
+                .HasKey(pi => new { pi.ProductId, pi.IngredientId });
 
+            modelBuilder.Entity<ProductIngredient>()
+                .HasOne(pi => pi.Product)
+                .WithMany(p => p.ProductIngredients)
+                .HasForeignKey(pi => pi.ProductId);
 
+            modelBuilder.Entity<ProductIngredient>()
+                .HasOne(pi => pi.Ingredient)
+                .WithMany(i => i.ProductIngredients)
+                .HasForeignKey(pi => pi.IngredientId);
 
-   
-               
             // dotnet ef migrations add SeedProducts
             // dotnet ef database update
 

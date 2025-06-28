@@ -31,7 +31,7 @@ header {
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
     position: fixed;
     top: 240px;
-    bottom: 60px;
+    bottom: 85px;
     overflow-y: auto;
     z-index: 3;
     display: flex;

@@ -4,6 +4,7 @@
 
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,11 +16,18 @@
     <script src="@Url.Content("~/css/fontawesome-free-6.7.2-web/js/all.js")"></script>
     <script src="@Url.Content("~/css/fontawesome-free-6.7.2-web/js/all.min.js")"></script>
 </head>
+
 <body>
-    <i class="fa-solid fa-arrow-left fa-2xl"></i>
+    <i onclick="voltar()" class="fa-solid fa-arrow-left fa-2xl"></i>
     <h1>pagamento com cartão</h1>
     <p>insira,aproxime ou passe seu cartão no leitor ao lado</p>
     <img src="~/img/tpagamento/cartao.png" alt="qr code do pix">
     <p><strong>cartão de debito</strong></p>
+    <script>
+        function voltar() {
+            window.location.href = "@Url.Content("~/Pagamento/tpagamento")";
+        }
+    </script>
 </body>
+
 </html>

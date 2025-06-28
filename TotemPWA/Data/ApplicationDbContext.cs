@@ -14,6 +14,8 @@ namespace TotemPWA.Data
         public DbSet<Variation> Variations { get; set; }
         public DbSet<Client> Clients { get; set; }
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<Cupom> Cupons { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -46,38 +48,38 @@ namespace TotemPWA.Data
                 .Property(v => v.AdditionalPrice)
                 .HasColumnType("decimal(18,2)");
 
-          
+
             modelBuilder.Entity<Client>()
                 .HasDiscriminator<string>("Discriminator")
                 .HasValue<Client>("Client")
                 .HasValue<Employee>("Employee");
 
-             base.OnModelCreating(modelBuilder);
-            
+            base.OnModelCreating(modelBuilder);
 
-                 modelBuilder.Entity<Category>().HasData(
-                new Category { Id = 1, Name = "Lanches", ParentCategoryId = null },
-                new Category { Id = 2, Name = "Combos", ParentCategoryId = null },
-                new Category { Id = 3, Name = "Sobremesas", ParentCategoryId = null },
-                new Category { Id = 4, Name = "Bebidas", ParentCategoryId = null },
-                new Category { Id = 5, Name = "Extras", ParentCategoryId = null },
-                new Category { Id = 6, Name = "Molhos", ParentCategoryId = null },
 
-                new Category { Id = 7, Name = "C#", ParentCategoryId = 1 },
-                new Category { Id = 8, Name = "Java", ParentCategoryId = 1 },
-                new Category { Id = 9, Name = "Python", ParentCategoryId = 1 },
-                new Category { Id = 10, Name = "JavaScript", ParentCategoryId = 1 },
+            modelBuilder.Entity<Category>().HasData(
+           new Category { Id = 1, Name = "Lanches", ParentCategoryId = null },
+           new Category { Id = 2, Name = "Combos", ParentCategoryId = null },
+           new Category { Id = 3, Name = "Sobremesas", ParentCategoryId = null },
+           new Category { Id = 4, Name = "Bebidas", ParentCategoryId = null },
+           new Category { Id = 5, Name = "Extras", ParentCategoryId = null },
+           new Category { Id = 6, Name = "Molhos", ParentCategoryId = null },
 
-                new Category { Id = 11, Name = "Refrigerantes", ParentCategoryId = 4 },
-                new Category { Id = 12, Name = "Cafés", ParentCategoryId = 4 },
+           new Category { Id = 7, Name = "C#", ParentCategoryId = 1 },
+           new Category { Id = 8, Name = "Java", ParentCategoryId = 1 },
+           new Category { Id = 9, Name = "Python", ParentCategoryId = 1 },
+           new Category { Id = 10, Name = "JavaScript", ParentCategoryId = 1 },
 
-                new Category { Id = 13, Name = "Acompanhamentos", ParentCategoryId = 5 },
-                new Category { Id = 14, Name = "Anéis de Loop", ParentCategoryId = 5 },
+           new Category { Id = 11, Name = "Refrigerantes", ParentCategoryId = 4 },
+           new Category { Id = 12, Name = "Cafés", ParentCategoryId = 4 },
 
-                new Category { Id = 15, Name = "Tipos de Molhos", ParentCategoryId = 6 },
-                new Category { Id = 16, Name = "Molhos Picantes", ParentCategoryId = 15 },
-                new Category { Id = 17, Name = "Molhos Doces", ParentCategoryId = 15 }
-            );
+           new Category { Id = 13, Name = "Acompanhamentos", ParentCategoryId = 5 },
+           new Category { Id = 14, Name = "Anéis de Loop", ParentCategoryId = 5 },
+
+           new Category { Id = 15, Name = "Tipos de Molhos", ParentCategoryId = 6 },
+           new Category { Id = 16, Name = "Molhos Picantes", ParentCategoryId = 15 },
+           new Category { Id = 17, Name = "Molhos Doces", ParentCategoryId = 15 }
+       );
 
             modelBuilder.Entity<Product>().HasData(
                 new Product { Id = 1, Name = "C# Burguer", CategoryId = 7, Price = 18.50m, Description = "Burguer orientado a objetos com queijo derretido" },
@@ -97,7 +99,7 @@ namespace TotemPWA.Data
                 new Product { Id = 15, Name = "Lambda Chicken", CategoryId = 7, Price = 16.99m, Description = "Frango funcional com sabor puro" },
                 new Product { Id = 16, Name = "Spicy Try-Catch", CategoryId = 16, Price = 4.50m, Description = "Molho picante que trata qualquer exceção" },
                 new Product { Id = 17, Name = "Sweet Loop", CategoryId = 17, Price = 4.00m, Description = "Molho doce com final em recursão infinita" }
-            );   
+            );
 
             modelBuilder.Entity<Employee>().HasData(
                 new Employee
@@ -112,8 +114,8 @@ namespace TotemPWA.Data
 
 
 
-   
-               
+
+
             // dotnet ef migrations add SeedProducts
             // dotnet ef database update
 

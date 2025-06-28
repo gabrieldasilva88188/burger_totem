@@ -7,18 +7,18 @@
         "products": [
           {
             "name": "Cheeseburger",
-            "price": 15.00,
+            "price": 15.0,
             "variations": [
-              { "description": "Extra Queijo", "additionalPrice": 2.00 },
-              { "description": "Pão sem gergelim", "additionalPrice": 0.00 }
+              { "description": "Extra Queijo", "additionalPrice": 2.0 },
+              { "description": "Pão sem gergelim", "additionalPrice": 0.0 }
             ]
           },
           {
             "name": "X-Bacon",
-            "price": 18.50,
+            "price": 18.5,
             "variations": [
-              { "description": "Bacon crocante", "additionalPrice": 2.50 },
-              { "description": "Sem cebola", "additionalPrice": 0.00 }
+              { "description": "Bacon crocante", "additionalPrice": 2.5 },
+              { "description": "Sem cebola", "additionalPrice": 0.0 }
             ]
           }
         ]
@@ -28,9 +28,9 @@
         "products": [
           {
             "name": "Frango com Creme",
-            "price": 12.00,
+            "price": 12.0,
             "variations": [
-              { "description": "Pão integral", "additionalPrice": 1.00 }
+              { "description": "Pão integral", "additionalPrice": 1.0 }
             ]
           }
         ]
@@ -45,15 +45,15 @@
         "products": [
           {
             "name": "Coca-Cola Lata",
-            "price": 6.00,
+            "price": 6.0,
             "variations": [
-              { "description": "Com gelo", "additionalPrice": 0.00 },
-              { "description": "Sem gelo", "additionalPrice": 0.00 }
+              { "description": "Com gelo", "additionalPrice": 0.0 },
+              { "description": "Sem gelo", "additionalPrice": 0.0 }
             ]
           },
           {
             "name": "Guaraná Antárctica Lata",
-            "price": 5.50,
+            "price": 5.5,
             "variations": []
           }
         ]
@@ -63,15 +63,15 @@
         "products": [
           {
             "name": "Suco de Laranja",
-            "price": 7.00,
+            "price": 7.0,
             "variations": [
-              { "description": "Com açúcar", "additionalPrice": 0.00 },
-              { "description": "Sem açúcar", "additionalPrice": 0.00 }
+              { "description": "Com açúcar", "additionalPrice": 0.0 },
+              { "description": "Sem açúcar", "additionalPrice": 0.0 }
             ]
           },
           {
             "name": "Suco de Abacaxi com Hortelã",
-            "price": 7.50,
+            "price": 7.5,
             "variations": []
           }
         ]
@@ -86,18 +86,40 @@
         "products": [
           {
             "name": "Pudim",
-            "price": 8.00,
+            "price": 8.0,
             "variations": []
           },
           {
             "name": "Brownie com Sorvete",
-            "price": 10.00,
+            "price": 10.0,
             "variations": [
-              { "description": "Sorvete de creme", "additionalPrice": 0.00 },
-              { "description": "Sorvete de chocolate", "additionalPrice": 1.00 }
+              { "description": "Sorvete de creme", "additionalPrice": 0.0 },
+              { "description": "Sorvete de chocolate", "additionalPrice": 1.0 }
             ]
           }
         ]
+      }
+    ]
+  },
+  {
+    "Cupom": [
+      {
+        "Code": "DESCONTO",
+        "Discount": 0.1,
+        "ValidUntil": "2025-12-31",
+        "Active": true
+      },
+      {
+        "Code": "PROMO",
+        "Discount": 0.05,
+        "ValidUntil": null,
+        "Active": true
+      },
+      {
+        "Code": "BLACKFRIDAY",
+        "Discount": 0.2,
+        "ValidUntil": "2025-11-29",
+        "Active": false
       }
     ]
   }

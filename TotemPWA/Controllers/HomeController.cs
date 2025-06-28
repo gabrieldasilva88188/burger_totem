@@ -27,6 +27,34 @@ public class HomeController : Controller
         return View();
     }
 
+    [HttpGet]
+    public async Task<IActionResult> VerificarCupom(string codigo)
+    {
+        if (string.IsNullOrWhiteSpace(codigo))
+            return Json(new { valido = false, mensagem = "Cupom inválido." });
+
+        var codigoFormatado = codigo.Trim().ToUpper();
+        var cupom = await _context.Cupons
+            .FirstOrDefaultAsync(c => c.Code == codigoFormatado);
+
+
+        if (cupom == null)
+            return Json(new { valido = false, mensagem = "Cupom não encontrado." });
+
+        if (!cupom.Active )
+            return Json(new { valido = false, mensagem = "Cupom inativo." });
+
+        if (cupom.ValidUntil.HasValue && cupom.ValidUntil < DateTime.Now)
+            return Json(new { valido = false, mensagem = "Cupom expirado." });
+
+        return Json(new
+        {
+            valido = true,
+            desconto = cupom.Discount,
+            mensagem = $"Cupom aplicado! {cupom.Discount:P0} de desconto."
+        });
+    }
+
     [HttpGet("Cardapio/{categorySlug?}/{subcategorySlug?}")]
     public async Task<IActionResult> Cardapio(string categorySlug, string subcategorySlug)
     {
@@ -145,7 +173,7 @@ public class HomeController : Controller
     }
     public IActionResult Escolha()
     {
-    return View("escolha");
+        return View("escolha");
     }
 
 }

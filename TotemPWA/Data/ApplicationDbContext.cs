@@ -16,6 +16,7 @@ namespace TotemPWA.Data
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Ingredient> Ingredients { get; set; }
         public DbSet<ProductIngredient> ProductIngredients { get; set; }
+        public DbSet<Cupom> Cupons { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -48,14 +49,14 @@ namespace TotemPWA.Data
                 .Property(v => v.AdditionalPrice)
                 .HasColumnType("decimal(18,2)");
 
-          
+
             modelBuilder.Entity<Client>()
                 .HasDiscriminator<string>("Discriminator")
                 .HasValue<Client>("Client")
                 .HasValue<Employee>("Employee");
 
-             base.OnModelCreating(modelBuilder);
-            
+            base.OnModelCreating(modelBuilder);
+
 
             modelBuilder.Entity<Category>().HasData(
                 // Categorias principais
@@ -155,7 +156,6 @@ namespace TotemPWA.Data
             new Product { Id = 32, Name = "Ruby Lemonade", CategoryId = 26, Price = 6.90m, Description = "Limonada elegante com sabor refinado" },
             new Product { Id = 33, Name = "Swift Sake", CategoryId = 25, Price = 8.00m, Description = "Bebida ágil e intensa" }
         );
-
 
             modelBuilder.Entity<Employee>().HasData(
                 new Employee

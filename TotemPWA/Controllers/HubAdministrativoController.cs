@@ -243,4 +243,72 @@ public async Task<IActionResult> RemoveIngredientFromProduct(int productId, int 
     }
     return RedirectToAction("ManageIngredients", new { id = productId });
 }
+
+// CRUD de Categorias
+[HttpGet]
+public async Task<IActionResult> Categories()
+{
+    var categorias = await _context.Categories.Include(c => c.ParentCategory).ToListAsync();
+    return View("Categories/Index", categorias);
+}
+
+[HttpGet]
+public async Task<IActionResult> CreateCategory()
+{
+    ViewBag.Categorias = new SelectList(await _context.Categories.ToListAsync(), "Id", "Name");
+    return View("Categories/Create");
+}
+
+[HttpPost]
+public async Task<IActionResult> CreateCategory(Category category)
+{
+    if (ModelState.IsValid)
+    {
+        _context.Categories.Add(category);
+        await _context.SaveChangesAsync();
+        return RedirectToAction("Categories");
+    }
+    ViewBag.Categorias = new SelectList(await _context.Categories.ToListAsync(), "Id", "Name", category.ParentCategoryId);
+    return View("Categories/Create", category);
+}
+
+[HttpGet]
+public async Task<IActionResult> EditCategory(int id)
+{
+    var category = await _context.Categories.FindAsync(id);
+    if (category == null) return NotFound();
+    ViewBag.Categorias = new SelectList(await _context.Categories.Where(c => c.Id != id).ToListAsync(), "Id", "Name", category.ParentCategoryId);
+    return View("Categories/Edit", category);
+}
+
+[HttpPost]
+public async Task<IActionResult> EditCategory(Category category)
+{
+    if (ModelState.IsValid)
+    {
+        _context.Categories.Update(category);
+        await _context.SaveChangesAsync();
+        return RedirectToAction("Categories");
+    }
+    ViewBag.Categorias = new SelectList(await _context.Categories.Where(c => c.Id != category.Id).ToListAsync(), "Id", "Name", category.ParentCategoryId);
+    return View("Categories/Edit", category);
+}
+
+[HttpGet]
+public async Task<IActionResult> DeleteCategory(int id)
+{
+    var category = await _context.Categories.Include(c => c.ParentCategory).FirstOrDefaultAsync(c => c.Id == id);
+    if (category == null) return NotFound();
+    return View("Categories/Delete", category);
+}
+
+[HttpPost]
+public async Task<IActionResult> DeleteCategory(Category category)
+{
+    var categoryDb = await _context.Categories.FindAsync(category.Id);
+    if (categoryDb == null) return NotFound();
+    _context.Categories.Remove(categoryDb);
+    await _context.SaveChangesAsync();
+    return RedirectToAction("Categories");
+}
 }

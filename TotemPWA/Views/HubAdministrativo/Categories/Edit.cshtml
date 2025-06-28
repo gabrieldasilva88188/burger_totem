@@ -1,0 +1,22 @@
+@model TotemPWA.Models.Category
+@{
+    ViewBag.Title = "Editar Categoria";
+}
+<h2>Editar Categoria</h2>
+<form asp-action="EditCategory" method="post">
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group">
+        <label asp-for="Name">Nome</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ParentCategoryId">Categoria Pai</label>
+        <select asp-for="ParentCategoryId" asp-items="ViewBag.Categorias" class="form-control">
+            <option value="">Nenhuma</option>
+        </select>
+        <span asp-validation-for="ParentCategoryId" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-success">Salvar</button>
+    <a href="@Url.Action("Categories", "HubAdministrativo")" class="btn btn-secondary">Cancelar</a>
+</form> 

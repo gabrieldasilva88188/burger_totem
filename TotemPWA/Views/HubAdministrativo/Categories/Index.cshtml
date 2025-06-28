@@ -1,0 +1,32 @@
+@model IEnumerable<TotemPWA.Models.Category>
+@{
+    ViewBag.Title = "Categorias";
+}
+<h2>Categorias</h2>
+<p>
+    <a href="@Url.Action("CreateCategory", "HubAdministrativo")" class="btn btn-primary">Adicionar Categoria</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Slug</th>
+            <th>Categoria Pai</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Slug</td>
+                <td>@item.ParentCategory?.Name</td>
+                <td>
+                    <a href="@Url.Action("EditCategory", "HubAdministrativo", new { id = item.Id })" class="btn btn-sm btn-warning">Editar</a>
+                    <a href="@Url.Action("DeleteCategory", "HubAdministrativo", new { id = item.Id })" class="btn btn-sm btn-danger">Excluir</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table> 

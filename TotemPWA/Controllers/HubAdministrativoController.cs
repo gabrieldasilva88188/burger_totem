@@ -130,4 +130,117 @@ public async Task<IActionResult> GetImage(int id)
 
     return File(produto.Image, mimeType);
 }
+
+// CRUD de Ingredientes
+[HttpGet]
+public async Task<IActionResult> Ingredients()
+{
+    var ingredientes = await _context.Ingredients.ToListAsync();
+    return View("Ingredients/Index", ingredientes);
+}
+
+[HttpGet]
+public IActionResult CreateIngredient()
+{
+    return View("Ingredients/Create");
+}
+
+[HttpPost]
+public async Task<IActionResult> CreateIngredient(Ingredient ingredient)
+{
+    if (ModelState.IsValid)
+    {
+        _context.Ingredients.Add(ingredient);
+        await _context.SaveChangesAsync();
+        return RedirectToAction("Ingredients");
+    }
+    return View("Ingredients/Create", ingredient);
+}
+
+[HttpGet]
+public async Task<IActionResult> EditIngredient(int id)
+{
+    var ingredient = await _context.Ingredients.FindAsync(id);
+    if (ingredient == null) return NotFound();
+    return View("Ingredients/Edit", ingredient);
+}
+
+[HttpPost]
+public async Task<IActionResult> EditIngredient(Ingredient ingredient)
+{
+    if (ModelState.IsValid)
+    {
+        _context.Ingredients.Update(ingredient);
+        await _context.SaveChangesAsync();
+        return RedirectToAction("Ingredients");
+    }
+    return View("Ingredients/Edit", ingredient);
+}
+
+[HttpGet]
+public async Task<IActionResult> DeleteIngredient(int id)
+{
+    var ingredient = await _context.Ingredients.FindAsync(id);
+    if (ingredient == null) return NotFound();
+    return View("Ingredients/Delete", ingredient);
+}
+
+[HttpPost]
+public async Task<IActionResult> DeleteIngredient(Ingredient ingredient)
+{
+    var ingredientDb = await _context.Ingredients.FindAsync(ingredient.Id);
+    if (ingredientDb == null) return NotFound();
+    _context.Ingredients.Remove(ingredientDb);
+    await _context.SaveChangesAsync();
+    return RedirectToAction("Ingredients");
+}
+
+[HttpGet]
+public async Task<IActionResult> ManageIngredients(int id)
+{
+    var produto = await _context.Products
+        .Include(p => p.ProductIngredients)
+            .ThenInclude(pi => pi.Ingredient)
+        .FirstOrDefaultAsync(p => p.Id == id);
+    if (produto == null) return NotFound();
+
+    var todosIngredientes = await _context.Ingredients.ToListAsync();
+    var ingredientesAssociados = produto.ProductIngredients.Select(pi => new {
+        pi.IngredientId,
+        pi.Ingredient.Name,
+        pi.Quantity,
+        pi.Ingredient.Limit
+    }).ToList();
+    var ingredientesDisponiveis = todosIngredientes.Where(i => !produto.ProductIngredients.Any(pi => pi.IngredientId == i.Id)).ToList();
+
+    ViewBag.Produto = produto;
+    ViewBag.IngredientesAssociados = ingredientesAssociados;
+    ViewBag.IngredientesDisponiveis = ingredientesDisponiveis;
+    return View("Products/ManageIngredients");
+}
+
+[HttpPost]
+public async Task<IActionResult> AddIngredientToProduct(int productId, int ingredientId, int quantity)
+{
+    var exists = await _context.ProductIngredients.AnyAsync(pi => pi.ProductId == productId && pi.IngredientId == ingredientId);
+    if (!exists)
+    {
+        var pi = new ProductIngredient { ProductId = productId, IngredientId = ingredientId, Quantity = quantity };
+        _context.ProductIngredients.Add(pi);
+        await _context.SaveChangesAsync();
+    }
+    return RedirectToAction("ManageIngredients", new { id = productId });
+}
+
+[HttpPost]
+public async Task<IActionResult> RemoveIngredientFromProduct(int productId, int ingredientId)
+{
+    var pi = await _context.ProductIngredients.FirstOrDefaultAsync(x => x.ProductId == productId && x.IngredientId == ingredientId);
+    if (pi != null)
+    {
+        _context.ProductIngredients.Remove(pi);
+        await _context.SaveChangesAsync();
+    }
+    return RedirectToAction("ManageIngredients", new { id = productId });
+}
 }

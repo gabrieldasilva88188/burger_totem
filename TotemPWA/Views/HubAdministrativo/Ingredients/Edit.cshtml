@@ -1,0 +1,25 @@
+@model TotemPWA.Models.Ingredient
+@{
+    ViewBag.Title = "Editar Ingrediente";
+}
+<h2>Editar Ingrediente</h2>
+<form asp-action="EditIngredient" method="post">
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group">
+        <label asp-for="Name">Nome</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Price">Preço</label>
+        <input asp-for="Price" class="form-control" type="number" step="0.01" />
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Limit">Limite</label>
+        <input asp-for="Limit" class="form-control" type="number" />
+        <span asp-validation-for="Limit" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-success">Salvar</button>
+    <a href="@Url.Action("Ingredients", "HubAdministrativo")" class="btn btn-secondary">Cancelar</a>
+</form> 

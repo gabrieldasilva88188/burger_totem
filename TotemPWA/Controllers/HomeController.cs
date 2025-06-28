@@ -90,30 +90,34 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult Personalizar(int id)
+    public async Task<IActionResult> Personalizar(int id)
     {
-        var produtos = new List<dynamic>
-        {
-            new { Id = 1, Nome = "Chicken Code", Preco = "27,00", Imagem = "~/img/frango1.png" },
-            new { Id = 2, Nome = "React Crispy", Preco = "28,50", Imagem = "~/img/frango2.png" },
-            new { Id = 3, Nome = "Frango JS", Preco = "25,00", Imagem = "~/img/frango3.png" },
-            new { Id = 4, Nome = "Buguer 404", Preco = "29,00", Imagem = "~/img/carne1.png" },
-            new { Id = 5, Nome = "Full Stack Burger", Preco = "32,00", Imagem = "~/img/full1.png" },
-            new { Id = 6, Nome = "Looping Duplo", Preco = "30,00", Imagem = "~/img/carne2.png" },
-            new { Id = 7, Nome = "Green Stack", Preco = "26,00", Imagem = "~/img/vegano1.png" },
-            new { Id = 8, Nome = "Vegan Full", Preco = "27,00", Imagem = "~/img/vegano2.png" },
-            new { Id = 9, Nome = "Buguer Plant", Preco = "28,00", Imagem = "~/img/vegano3.png" },
-            new { Id = 10, Nome = "Fish Dev", Preco = "29,00", Imagem = "~/img/peixe1.png" },
-            new { Id = 11, Nome = "Salmão Byte", Preco = "34,00", Imagem = "~/img/peixe2.png" },
-            new { Id = 12, Nome = "Tuna Stack", Preco = "31,00", Imagem = "~/img/peixe3.png" }
-        };
+        var produto = await _context.Products
+            .Include(p => p.ProductIngredients)
+                .ThenInclude(pi => pi.Ingredient)
+            .FirstOrDefaultAsync(p => p.Id == id);
 
-        var produto = produtos.FirstOrDefault(p => p.Id == id);
         if (produto == null) return NotFound();
 
-        ViewBag.Nome = produto.Nome;
-        ViewBag.Preco = produto.Preco;
-        ViewBag.Imagem = produto.Imagem;
+        ViewBag.Nome = produto.Name;
+        ViewBag.Preco = produto.Price.ToString("0.00");
+        if (produto.Image != null)
+        {
+            string imgSrc = $"/Home/GetImage/{produto.Id}";
+            ViewBag.Imagem = imgSrc;
+        }
+        else
+        {
+            ViewBag.Imagem = "~/img/default.png";
+        }
+
+        ViewBag.Ingredientes = produto.ProductIngredients.Select(pi => new {
+            pi.Ingredient.Id,
+            pi.Ingredient.Name,
+            pi.Ingredient.Price,
+            pi.Ingredient.Limit,
+            pi.Quantity
+        }).ToList();
 
         return View();
     }

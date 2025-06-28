@@ -18,30 +18,22 @@
     <h4 id="adicionar-ingredientes">Escolha os Ingredientes</h4>
 
     <div id="ingredientes-container">
-        @{
-            var ingredientes = new Dictionary<string, (double Preco, string Imagem)> {
-                { "Queijo", (2.70, "cheddar.png") },
-                { "Carne", (9.60, "carne.png") },
-                { "Bacon", (3.50, "bacon.png") },
-                { "Cebola", (1.50, "cebola.png") },
-                { "Alface", (1.00, "alface.png") },
-                { "Tomate", (1.00, "tomate.png") },
-            };
-
-            foreach (var ingrediente in ingredientes)
+        @if (ViewBag.Ingredientes != null)
+        {
+            foreach (var ingrediente in ViewBag.Ingredientes)
             {
-                var nomeIngrediente = ingrediente.Key;
-                var precoIngrediente = ingrediente.Value.Preco;
-                var imagemIngrediente = ingrediente.Value.Imagem;
-
+                string nomeIngrediente = ingrediente.Name;
+                double precoIngrediente = (double)ingrediente.Price;
+                int limite = ingrediente.Limit;
+                int quantidade = ingrediente.Quantity;
                 <div class="ingrediente-item">
                     <span class="ingrediente-nome">@nomeIngrediente (R$ @precoIngrediente.ToString("0.00"))</span>
                     <div class="ingrediente-controles">
                         <button class="diminuir" onclick="alterarIngrediente('@nomeIngrediente', -1)">-</button>
-                        <span id="quantidade-@nomeIngrediente" class="quantidade">0</span>
+                        <span id="quantidade-@nomeIngrediente" class="quantidade">@quantidade</span>
                         <button class="aumentar" onclick="alterarIngrediente('@nomeIngrediente', 1)">+</button>
                     </div>
-                   <img src="@Url.Content("~/img/ingredientes/" + imagemIngrediente)" alt="@nomeIngrediente" class="ingrediente-img">
+                    <img src="@Url.Content("~/img/ingredientes/" + @nomeIngrediente.ToLower() + ".png")" alt="@nomeIngrediente" class="ingrediente-img">
                 </div>
             }
         }
@@ -87,15 +79,15 @@ function adicionarAoCarrinho() {
     const ingredientes = {};
     let precoIngredientes = 0.0;
 
-    // Dicionário com os preços dos ingredientes
-    const precosIngredientes = {
-        "Queijo": 2.70,
-        "Carne": 9.60,
-        "Bacon": 3.50,
-        "Cebola": 1.50,
-        "Alface": 1.00,
-        "Tomate": 1.00
-    };
+    // Atualizar o dicionário de preços dos ingredientes dinamicamente
+    const precosIngredientes = {};
+    @if (ViewBag.Ingredientes != null)
+    {
+        foreach (var ingrediente in ViewBag.Ingredientes)
+        {
+            <text>precosIngredientes["@ingrediente.Name"] = @(((double)ingrediente.Price).ToString("0.00", System.Globalization.CultureInfo.InvariantCulture));</text>
+        }
+    }
 
     document.querySelectorAll(".quantidade").forEach(span => {
         const ingrediente = span.id.replace("quantidade-", "");

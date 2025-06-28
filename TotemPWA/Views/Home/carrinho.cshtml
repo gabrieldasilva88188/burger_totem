@@ -38,6 +38,14 @@
       <div class="keyboard" id="keyboard"></div>
     </div>
   </div>
+  <!-- Modal de Mensagem -->
+  <div class="modal-msg-overlay" id="modalMsgOverlay">
+    <div class="modal-msg">
+      <p id="modalMsgTexto"></p>
+      <button onclick="fecharModalMsg()">Fechar</button>
+    </div>
+  </div>
+
 
   </div>
   <main class="cart-container">
@@ -183,6 +191,18 @@
 </script>
 
 <script>
+  function exibirMensagemCupom(texto) {
+    const overlay = document.getElementById("modalMsgOverlay");
+    const msgTexto = document.getElementById("modalMsgTexto");
+
+    msgTexto.textContent = texto;
+    overlay.style.display = "flex";
+  }
+
+  function fecharModalMsg() {
+    document.getElementById("modalMsgOverlay").style.display = "none";
+  }
+
   function openModal() {
     document.getElementById("modalOverlay").style.display = "flex";
   }
@@ -209,7 +229,7 @@
 
       if (["Resetar", "Espaço", "Enter"].includes(key)) {
         button.classList.add('key-spc');
-      } 
+      }
       if (["←"].includes(key)) {
         button.classList.add('key-wide');
       }
@@ -222,11 +242,11 @@
         } else if (key === "Resetar") {
           input.value = "";
         } else if (key === "Espaço") {
-          if (input.value.length < 10) input.value += " ";
+          if (input.value.length < 11) input.value += " ";
         } else if (key === "Enter") {
           submeterCupom(input.value);
         } else {
-          if (input.value.length < 10) input.value += key;
+          if (input.value.length < 11) input.value += key;
         }
       });
 
@@ -248,14 +268,14 @@
       return;
     }
     if (sessionStorage.getItem("cupomAplicado") === "true") {
-      alert("Cupom já aplicado a este pedido.");
+      exibirMensagemCupom("Cupom já aplicado a este pedido.");
       return;
     }
     fetch(`/Home/VerificarCupom?codigo=${encodeURIComponent(valorCupom)}`)
       .then(response => response.json())
       .then(data => {
         if (data.valido) {
-          alert(`Cupom "${valorCupom}" aplicado com sucesso! 🎉`);
+          exibirMensagemCupom(`Cupom "${valorCupom}" aplicado com sucesso! 🎉`);
 
           const totalPreco = document.querySelector(".total-price");
           const valorAtual = parseFloat(totalPreco.textContent.replace("R$", "").replace(",", "."));
@@ -264,7 +284,7 @@
           totalPreco.textContent = `R$ ${novoTotal.toFixed(2).replace(".", ",")}`;
           sessionStorage.setItem("cupomAplicado", "true");
         } else {
-          alert(data.mensagem);
+           exibirMensagemCupom(data.mensagem);
         }
 
         closeModal();

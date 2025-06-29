@@ -1,0 +1,47 @@
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+    <meta charset="UTF-8" />
+    <title>Pagamento em Dinheiro</title>
+    <link rel="stylesheet" href="@Url.Content("~/css/pagDinheiro.css")">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    </head>
+    <body>
+
+    <div class="top">
+        <button  onclick="voltar()" class="back-button">
+        <i class="fas fa-arrow-left"></i>
+        </button> 
+    </div>
+
+    <h1>Pagamento com Dinheiro</h1>
+
+  <div class="container">
+    <div id="pedidoNumero" class="pedido-numero">
+        Número do Pedido: #
+    </div>
+
+    <div class="orientacao">
+        Dirija-se ao caixa para realizar o pagamento.
+    </div>
+
+    <div class="total">
+        R$ 34,90
+    </div>
+</div>
+    <script>
+        function voltar() {
+                window.location.href = "@Url.Content("~/Pagamento/tpagamento")";
+            }
+
+        function gerarNumeroPedido() {
+        return Math.floor(Math.random() * 9000) + 1000;
+        }
+
+        const numeroPedido = gerarNumeroPedido();
+        document.getElementById('pedidoNumero').innerText = 'Número do Pedido: #' + numeroPedido;
+    </script>
+
+    </body>
+    </html>

@@ -99,16 +99,42 @@ public class HomeController : Controller
             .ToList();
 
         // Produtos da subcategoria ativa
-        var products = await _context.Products
-            .Where(p => p.CategoryId == activeSubcategoryId)
-            .Select(p => new
-            {
-                id = p.Id,
-                name = p.Name,
-                description = p.Description,
-                price = p.Price
-            })
-            .ToListAsync();
+        var products = new List<object>();
+        if (activeSubcategoryId != null)
+        {
+            products = await _context.Products
+                .Where(p => p.CategoryId == activeSubcategoryId)
+                .Select(p => new
+                {
+                    id = p.Id,
+                    name = p.Name,
+                    description = p.Description,
+                    price = p.Price
+                })
+                .ToListAsync<object>();
+        }
+        else if (activeCategoryId != null)
+        {
+            var subcategoryIds = await _context.Categories
+                .Where(c => c.ParentCategoryId == activeCategoryId)
+                .Select(c => c.Id)
+                .ToListAsync();
+
+            products = await _context.Products
+                .Where(p => p.CategoryId == activeCategoryId || subcategoryIds.Contains(p.CategoryId))
+                .Select(p => new
+                {
+                    id = p.Id,
+                    name = p.Name,
+                    description = p.Description,
+                    price = p.Price
+                })
+                .ToListAsync<object>();
+        }
+        else
+        {
+            products = new List<object>();
+        }
 
         ViewBag.Category = activeCategory?.Slug;
         ViewBag.Categories = rootCategories;

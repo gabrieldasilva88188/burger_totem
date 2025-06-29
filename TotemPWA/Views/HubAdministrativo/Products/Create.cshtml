@@ -4,35 +4,65 @@
     ViewData["Title"] = "Novo Produto";
 }
 
-<h2>Novo Produto</h2>
+<link rel="stylesheet" href="@Url.Content("~/css/produto/novoProduto.css")">
 
-<form asp-action="Create" method="post" enctype="multipart/form-data">
-    <div class="mb-3">
-        <label asp-for="Name" class="form-label">Nome</label>
-        <input asp-for="Name" class="form-control" required />
-        <span asp-validation-for="Name" class="text-danger"></span>
+<div class="content">
+    <div class="form-container">
+        <h2 class="form-title">Novo Produto</h2>
+
+        <form asp-action="Create" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label asp-for="Name" class="form-label">Nome</label>
+                <input asp-for="Name" class="form-control" required />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="Description" class="form-label">Descrição</label>
+                <textarea asp-for="Description" class="form-control" rows="3" required></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="Price" class="form-label">Preço</label>
+                <input asp-for="Price" class="form-control" type="number" step="0.01" required />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="CategoryId" class="form-label">Categoria</label>
+                <select asp-for="CategoryId" asp-items="ViewBag.Categorias" class="form-select" required>
+                    <option value="">Selecione...</option>
+                </select>
+                <span asp-validation-for="CategoryId" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Imagem</label>
+                <div class="file-upload">
+                    <img id="imagePreview" class="file-upload-preview" src="#" alt="Pré-visualização da imagem">
+                    <input type="file" name="ImageFile" class="form-control" accept="image/*" id="imageUpload" />
+                </div>
+            </div>
+            
+            <div class="form-actions">
+                <button type="submit" class="btn btn-success">Salvar</button>
+                <a href="@Url.Action("Products", "HubAdministrativo")" class="btn btn-secondary">Cancelar</a>
+            </div>
+        </form>
     </div>
-    <div class="mb-3">
-        <label asp-for="Description" class="form-label">Descrição</label>
-        <textarea asp-for="Description" class="form-control" rows="3" required></textarea>
-        <span asp-validation-for="Description" class="text-danger"></span>
-    </div>
-    <div class="mb-3">
-        <label asp-for="Price" class="form-label">Preço</label>
-        <input asp-for="Price" class="form-control" type="number" step="0.01" required />
-        <span asp-validation-for="Price" class="text-danger"></span>
-    </div>
-    <div class="mb-3">
-        <label asp-for="CategoryId" class="form-label">Categoria</label>
-        <select asp-for="CategoryId" asp-items="ViewBag.Categorias" class="form-select" required>
-            <option value="">Selecione...</option>
-        </select>
-        <span asp-validation-for="CategoryId" class="text-danger"></span>
-    </div>
-    <div class="mb-3">
-        <label class="form-label">Imagem</label>
-        <input type="file" name="ImageFile" class="form-control" accept="image/*" />
-    </div>
-    <button type="submit" class="btn btn-success">Salvar</button>
-    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
-</form> 
+</div>
+
+<script>
+    // Script opcional para pré-visualização da imagem
+    document.getElementById('imageUpload').addEventListener('change', function(e) {
+        const preview = document.getElementById('imagePreview');
+        const file = e.target.files[0];
+        if (file) {
+            preview.style.display = 'block';
+            preview.src = URL.createObjectURL(file);
+        } else {
+            preview.style.display = 'none';
+        }
+    });
+</script>

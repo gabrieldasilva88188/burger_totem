@@ -46,7 +46,7 @@
         <i class="fa-brands fa-apple-pay fa-2xl"></i> APPLE PAY
       </button>
 
-      <button class="option-btn" onclick="selectPayment('Dinheiro')">
+      <button class="option-btn" onclick="redirecionarDinheiro()">
         <i class="fa-solid fa-money-bill-wave fa-2xl"></i> DINHEIRO
       </button>
     </div>
@@ -64,6 +64,9 @@
     }
     function redirecionarCartao() {
       window.location.href = "@Url.Content("~/Pagamento/Cartao")";
+    }
+     function redirecionarDinheiro() {
+      window.location.href = "@Url.Content("~/Pagamento/Dinheiro")";
     }
     function voltar() {
       window.location.href = "@Url.Content("~/Home/escolha")";

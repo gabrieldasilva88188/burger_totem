@@ -24,4 +24,8 @@ public class PagamentoController : Controller
     {
         return View();
     }
+    public IActionResult Dinheiro()
+    {
+        return View("dinheiro"); 
+    }
 }

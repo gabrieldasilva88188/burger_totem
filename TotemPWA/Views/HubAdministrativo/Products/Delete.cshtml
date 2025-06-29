@@ -1,5 +1,7 @@
 @model TotemPWA.Models.Product
 
+<link rel="stylesheet" href="@Url.Content("~/css/produto/deletarProduto.css")">
+
 <h2>Excluir Produto</h2>
 
 <div class="alert alert-danger">
@@ -26,12 +28,12 @@
     <label class="form-label">Imagem:</label><br />
     @if (Model.Image != null)
     {
-        <img src="@Url.Action("GetImage", "Products", new { id = Model.Id })" alt="Imagem" width="80" height="80" style="object-fit:cover; border-radius:8px;" />
+        <img src="@Url.Action("GetImage", "HubAdministrativo", new { id = Model.Id })" alt="Imagem" width="80" height="80" style="object-fit:cover; border-radius:8px;" />
     }
 </div>
 
 <form asp-action="Delete" method="post">
     <input type="hidden" asp-for="Id" />
     <button type="submit" class="btn btn-danger">Excluir</button>
-    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+      <a href="@Url.Action("Products", "HubAdministrativo")" class="btn btn-secondary">Cancelar</a>
 </form> 

@@ -50,7 +50,7 @@ public class HomeController : Controller
         return Json(new
         {
             valido = true,
-            desconto = cupom.Discount,
+            desconto = cupom.Discount.ToString(System.Globalization.CultureInfo.InvariantCulture),
             mensagem = $"Cupom aplicado! {cupom.Discount:P0} de desconto."
         });
     }

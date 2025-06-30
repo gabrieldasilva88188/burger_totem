@@ -30,7 +30,7 @@
   </div>
 
   <!-- Botao para abrir o modal de cupom -->
-  <button class="open-modal-btn botao-cupom" onclick="openModal()"><i class="fa-solid fa-ticket"></i> Adicionar Cupom</button>
+  <button class="open-modal-btn botao-cupom" onclick="abrirModalCupom()"><i class="fa-solid fa-ticket"></i> Adicionar Cupom</button>
 
   <button id="btnRemoverCupom" class="remove-cupom-btn" onclick="removerCupom()">
     Remover Cupom
@@ -332,7 +332,7 @@
 
     let totalFinal = totalBruto;
     const cupomAplicado = sessionStorage.getItem("cupomAplicado") === "true";
-    const descontoCupom = parseFloat(sessionStorage.getItem("descontoCupom")) || 0;
+    const descontoCupom = parseFloat((sessionStorage.getItem("descontoCupom") || "0").replace(',', '.')) || 0;
 
     if (cupomAplicado && descontoCupom > 0) {
       totalFinal = totalBruto * (1 - descontoCupom);

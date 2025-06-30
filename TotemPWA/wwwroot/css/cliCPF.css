@@ -63,3 +63,21 @@
     button#continuar:hover {
       background-color: rgba(255, 255, 255, 0.1);
     }
+    #continuarnocpf {
+    background: transparent;
+    color: #ffffffcc; /* branco com opacidade suave */
+    border: none;
+    font-size: 0.9rem;
+    text-decoration: underline;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#continuarnocpf:hover {
+    color: #ffffff; /* um branco mais forte no hover */
+}

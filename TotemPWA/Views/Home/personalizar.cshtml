@@ -5,6 +5,7 @@
     var preco = ViewBag.Preco ?? "0,00";
     var imagem = ViewBag.Imagem ?? "~/img/default.png";
 }
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 <link rel="stylesheet" href="@Url.Content("~/css/personalizar.css")">
 
@@ -45,7 +46,8 @@
     </div>
 
     <div class="botoes-personalizar">
-        <button class="back-btn" onclick="redirecionarCardapio()">← Voltar</button>
+        <button class="btn-voltar" onclick="redirecionarCardapio()">  <i class="fa-solid fa-arrow-left">  </i> Voltar
+</button>
         <button id="confirmar-personalizacao" onclick="adicionarAoCarrinho()">@(ViewBag.Editando == true ? "Atualizar Carrinho" : "Adicionar ao Carrinho")</button>
     
     </div>

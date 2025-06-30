@@ -15,7 +15,7 @@
     <!-- Letras de A-Z -->
   </div>
 
-  <button id="continuar">continuar</button>
+  <button id="continuar">CONTINUAR</button>
 
   <script >
     
@@ -52,8 +52,14 @@
     });
 
     document.getElementById('continuar').addEventListener('click', () => {
-      alert(`Nome inserido: ${input.value}`);
-      //  redirecionar para a próxima página
-      window.location.href = "clienteCPF"; 
+      const nomeDigitado = input.value.trim();
+
+      if (nomeDigitado.length === 0) {
+        alert("Por favor, digite seu nome.");
+        return;
+      }
+
+      sessionStorage.setItem("nomeUsuario", nomeDigitado);
+      window.location.href = "clienteCPF";
     });
   </script>

@@ -49,8 +49,9 @@ header {
     flex: 1;
     overflow-y: auto;
     padding: 20px;
-    padding-bottom: 100px;
-}
+    
+    
+    }
 
 /* Itens do carrinho */
 
@@ -63,6 +64,7 @@ header {
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
 }
 
 .cart-item img {
@@ -218,7 +220,7 @@ header {
 }
 /* Espaçamento entre itens e Turbinar Pedido */
 .cart-items {
-    margin-bottom: 60%; /
+    margin-bottom: 100%; /
 }
 
         /* Sessao do modal de cupom presente no */
@@ -229,12 +231,12 @@ header {
     background-color: #adc43c;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 25px;
     cursor: pointer;
-    width: 25%;
-    height: 3%;
+    width: 30%;
+    padding: 10px 0; /* controla a altura com padding */
     margin: 2%;
-    margin-left: 70%;
+    margin-left: 73%;
   }
 .remove-cupom-btn {
   font-size: 18px;
@@ -273,7 +275,8 @@ header {
   /* Modal */
   .modal {
     background-color: white;
-    border: 3px solid #990000;
+    border: 5px solid #990000;
+    border-radius: 20px;
     width: 90%;
     max-width: 400px;
     padding: 30px 20px;
@@ -402,3 +405,30 @@ header {
 .key-reset:hover {
   background-color: #e53935;
 }
+
+.btn-voltar {
+    background-color: #a10f0f;
+    color: #ffffff;
+    border: 2px solid #ffffff; 
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.btn-voltar:hover {
+    background-color: #820d0d;
+    transform: scale(1.03);
+}
+
+.btn-voltar i {
+    font-size: 1.1rem;
+}
+
+

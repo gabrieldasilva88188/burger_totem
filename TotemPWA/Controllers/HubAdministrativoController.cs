@@ -311,4 +311,83 @@ public async Task<IActionResult> DeleteCategory(Category category)
     await _context.SaveChangesAsync();
     return RedirectToAction("Categories");
 }
+
+// CRUD de Funcionários
+[HttpGet]
+public async Task<IActionResult> Employees()
+{
+    var funcionarios = await _context.Employees.ToListAsync();
+    return View("Employees/Index", funcionarios);
+}
+
+[HttpGet]
+public IActionResult CreateEmployee()
+{
+    return View("Employees/Create");
+}
+
+[HttpPost]
+public async Task<IActionResult> CreateEmployee(Employee employee)
+{
+    if (ModelState.IsValid)
+    {
+        _context.Employees.Add(employee);
+        await _context.SaveChangesAsync();
+        return RedirectToAction("Employees");
+    }
+    return View("Employees/Create", employee);
+}
+
+[HttpGet]
+public async Task<IActionResult> EditEmployee(int id)
+{
+    var employee = await _context.Employees.FindAsync(id);
+    if (employee == null) return NotFound();
+    return View("Employees/Edit", employee);
+}
+
+[HttpPost]
+public async Task<IActionResult> EditEmployee(Employee employee)
+{
+    if (ModelState.IsValid)
+    {
+        var employeeDb = await _context.Employees.FindAsync(employee.Id);
+        if (employeeDb == null) return NotFound();
+        
+        // Atualiza os campos básicos
+        employeeDb.Name = employee.Name;
+        employeeDb.Email = employee.Email;
+        employeeDb.User = employee.User;
+        employeeDb.Type = employee.Type;
+        
+        // Só atualiza a senha se foi fornecida
+        if (!string.IsNullOrEmpty(employee.Password))
+        {
+            employeeDb.Password = employee.Password;
+        }
+        
+        _context.Employees.Update(employeeDb);
+        await _context.SaveChangesAsync();
+        return RedirectToAction("Employees");
+    }
+    return View("Employees/Edit", employee);
+}
+
+[HttpGet]
+public async Task<IActionResult> DeleteEmployee(int id)
+{
+    var employee = await _context.Employees.FindAsync(id);
+    if (employee == null) return NotFound();
+    return View("Employees/Delete", employee);
+}
+
+[HttpPost]
+public async Task<IActionResult> DeleteEmployee(Employee employee)
+{
+    var employeeDb = await _context.Employees.FindAsync(employee.Id);
+    if (employeeDb == null) return NotFound();
+    _context.Employees.Remove(employeeDb);
+    await _context.SaveChangesAsync();
+    return RedirectToAction("Employees");
+}
 }

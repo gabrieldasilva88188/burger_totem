@@ -54,19 +54,19 @@
 
             <div class="produtos">
 
-                @foreach (var product in ViewBag.Products)
-                {
-                    <a href="/Home/Personalizar?Id=@product.id" class="menu-item sem-estilo-hiperlink">
-                        <img src="@Url.Action("GetImage", "HubAdministrativo", new { id = product.id })"
-                            alt="@product.name">
-                        <div class="options">
-                            <h3>@product.name</h3>
-                            <p>@product.description</p>
-                            <strong>@product.price.ToString("C",
-                                                            System.Globalization.CultureInfo.GetCultureInfo("pt-BR"))</strong>
-                    </div>
-                </a>
-                                }
+
+                  @foreach (var product in ViewBag.Products)
+                    {
+                        <a href="/Home/Personalizar/@product.slug" class="menu-item sem-estilo-hiperlink">
+                            <img src="@Url.Action("GetImage", "HubAdministrativo", new { id = product.id })" alt="@product.name">
+                            <div class="options">
+                                <h3>@product.name</h3>
+                                <p>@product.description</p>
+                                <strong>@product.price.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("pt-BR"))</strong>
+                            </div>
+                        </a>
+                    }
+
             </div>
 
         </main>

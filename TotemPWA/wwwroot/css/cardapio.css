@@ -597,5 +597,16 @@ main.content {
 }
 
 
+.options p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* Mostra até 2 linhas */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.95rem; /* Ajuste fino para caber certinho */
+    line-height: 1.2rem; /* Deixe proporcional ao tamanho da fonte */
+    height: 2.4rem; /* Limita o tamanho exato da área para 2 linhas */
+}
+
 
 

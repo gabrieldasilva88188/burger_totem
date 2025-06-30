@@ -22,9 +22,7 @@
                 <li><a href="/HubAdministrativo/Products"><i class="fas fa-hamburger"></i> Produtos</a></li>
                 <li><a href="/HubAdministrativo/Ingredients"><i class="fas fa-hamburger"></i> Ingredientes</a></li>
                 <li><a href="/HubAdministrativo/Categories"><i class="fas fa-list"></i> Categorias</a></li>
-                <li><a href="#"><i class="fas fa-user-tie"></i> Funcionários</a></li>
-                <li><a href="#"><i class="fas fa-users"></i> Clientes</a></li>
-                <li><a href="#"><i class="fas fa-layer-group"></i> Variações</a></li>
+                <li><a href="/HubAdministrativo/Employees"><i class="fas fa-user-tie"></i> Funcionários</a></li>
                 <li><a href="/EmployeeLogin/Logout"><i class="fas fa-sign-out-alt"></i> Sair</a></li>
             </ul>
         </nav>
@@ -33,5 +31,6 @@
         </main>
     </div>
     <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html> 

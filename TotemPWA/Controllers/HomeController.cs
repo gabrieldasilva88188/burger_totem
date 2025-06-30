@@ -55,7 +55,6 @@ public class HomeController : Controller
         });
     }
 
-    [HttpGet("Cardapio/{categorySlug?}/{subcategorySlug?}")]
     public async Task<IActionResult> Cardapio(string categorySlug, string subcategorySlug)
     {
         // Categorias principais (sem pai)
@@ -106,7 +105,8 @@ public class HomeController : Controller
                 id = p.Id,
                 name = p.Name,
                 description = p.Description,
-                price = p.Price
+                price = p.Price,
+                slug = p.Slug
             })
             .ToListAsync();
 
@@ -118,18 +118,19 @@ public class HomeController : Controller
         return View();
     }
 
-    public async Task<IActionResult> Personalizar(int id, bool? editando = false)
+    public async Task<IActionResult> Personalizar(string slug, bool? editando = false)
     {
         var produto = await _context.Products
             .Include(p => p.ProductIngredients)
                 .ThenInclude(pi => pi.Ingredient)
-            .FirstOrDefaultAsync(p => p.Id == id);
+            .FirstOrDefaultAsync(p => p.Slug == slug);
 
         if (produto == null) return NotFound();
 
         ViewBag.Nome = produto.Name;
         ViewBag.Preco = produto.Price.ToString("0.00");
         ViewBag.ProdutoId = produto.Id;
+        ViewBag.ProdutoSlug = produto.Slug;
         ViewBag.Editando = editando;
         if (produto.Image != null)
         {
@@ -150,6 +151,20 @@ public class HomeController : Controller
         }).ToList();
 
         return View();
+    }
+
+    // Método legado para compatibilidade (aceita ID)
+    public async Task<IActionResult> PersonalizarPorId(int id, bool? editando = false)
+    {
+        var produto = await _context.Products
+            .Include(p => p.ProductIngredients)
+                .ThenInclude(pi => pi.Ingredient)
+            .FirstOrDefaultAsync(p => p.Id == id);
+
+        if (produto == null) return NotFound();
+
+        // Redireciona para a URL com slug
+        return RedirectToAction("Personalizar", new { slug = produto.Slug, editando });
     }
 
     public IActionResult Carrinho()

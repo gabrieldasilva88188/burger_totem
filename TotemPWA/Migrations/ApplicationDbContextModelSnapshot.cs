@@ -17,34 +17,6 @@ namespace TotemPWA.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.6");
 
-            modelBuilder.Entity("Client", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("Discriminator")
-                        .IsRequired()
-                        .HasMaxLength(8)
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Clients");
-
-                    b.HasDiscriminator().HasValue("Client");
-
-                    b.UseTphMappingStrategy();
-                });
-
             modelBuilder.Entity("TotemPWA.Models.Category", b =>
                 {
                     b.Property<int>("Id")
@@ -319,6 +291,90 @@ namespace TotemPWA.Migrations
                         });
                 });
 
+            modelBuilder.Entity("TotemPWA.Models.Client", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
+                        .HasMaxLength(8)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Clients");
+
+                    b.HasDiscriminator().HasValue("Client");
+
+                    b.UseTphMappingStrategy();
+                });
+
+            modelBuilder.Entity("TotemPWA.Models.Combo", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(1000)
+                        .HasColumnType("TEXT");
+
+                    b.Property<byte[]>("Image")
+                        .HasColumnType("BLOB");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Combos");
+                });
+
+            modelBuilder.Entity("TotemPWA.Models.ComboProduct", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("ComboId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ComboId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("ComboProducts");
+                });
+
             modelBuilder.Entity("TotemPWA.Models.Cupom", b =>
                 {
                     b.Property<int>("Id")
@@ -390,6 +446,11 @@ namespace TotemPWA.Migrations
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
 
+                    b.Property<string>("Slug")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("TEXT");
+
                     b.HasKey("Id");
 
                     b.HasIndex("CategoryId");
@@ -403,7 +464,8 @@ namespace TotemPWA.Migrations
                             CategoryId = 7,
                             Description = "Burguer orientado a objetos com queijo derretido",
                             Name = "C# Burguer",
-                            Price = 18.50m
+                            Price = 18.50m,
+                            Slug = "c-burguer"
                         },
                         new
                         {
@@ -411,7 +473,8 @@ namespace TotemPWA.Migrations
                             CategoryId = 7,
                             Description = "Lanche organizado por indentação com sabor dinâmico",
                             Name = "Python Stack",
-                            Price = 17.90m
+                            Price = 17.90m,
+                            Slug = "python-stack"
                         },
                         new
                         {
@@ -419,7 +482,8 @@ namespace TotemPWA.Migrations
                             CategoryId = 8,
                             Description = "Bagunçado, mas funcional",
                             Name = "PHP Buguer",
-                            Price = 15.90m
+                            Price = 15.90m,
+                            Slug = "php-buguer"
                         },
                         new
                         {
@@ -427,7 +491,8 @@ namespace TotemPWA.Migrations
                             CategoryId = 8,
                             Description = "Sanduíche robusto com tipagem forte",
                             Name = "Java Sandwich",
-                            Price = 18.00m
+                            Price = 18.00m,
+                            Slug = "java-sandwich"
                         },
                         new
                         {
@@ -435,7 +500,8 @@ namespace TotemPWA.Migrations
                             CategoryId = 11,
                             Description = "Burger crocante com padrão de arquitetura limpa",
                             Name = "Crunch#",
-                            Price = 19.90m
+                            Price = 19.90m,
+                            Slug = "crunch"
                         },
                         new
                         {
@@ -443,7 +509,8 @@ namespace TotemPWA.Migrations
                             CategoryId = 9,
                             Description = "Requintado, elegante e poderoso",
                             Name = "Ruby Royale",
-                            Price = 22.00m
+                            Price = 22.00m,
+                            Slug = "ruby-royale"
                         },
                         new
                         {
@@ -451,7 +518,8 @@ namespace TotemPWA.Migrations
                             CategoryId = 10,
                             Description = "Prático, rápido e direto ao ponto",
                             Name = "Go Burguer",
-                            Price = 17.50m
+                            Price = 17.50m,
+                            Slug = "go-burguer"
                         },
                         new
                         {
@@ -459,7 +527,8 @@ namespace TotemPWA.Migrations
                             CategoryId = 10,
                             Description = "Com cheddar intenso, goroutines de sabor",
                             Name = "Go Burguer Cheddar",
-                            Price = 18.90m
+                            Price = 18.90m,
+                            Slug = "go-burguer-cheddar"
                         },
                         new
                         {
@@ -467,7 +536,8 @@ namespace TotemPWA.Migrations
                             CategoryId = 9,
                             Description = "Opção vegetariana com performance",
                             Name = "Go Burguer Veggie",
-                            Price = 16.50m
+                            Price = 16.50m,
+                            Slug = "go-burguer-veggie"
                         },
                         new
                         {
@@ -475,7 +545,8 @@ namespace TotemPWA.Migrations
                             CategoryId = 16,
                             Description = "JS Double Shot + Snake.py + Byte-Cola",
                             Name = "Combo Full Stack",
-                            Price = 39.90m
+                            Price = 39.90m,
+                            Slug = "combo-full-stack"
                         },
                         new
                         {
@@ -483,7 +554,8 @@ namespace TotemPWA.Migrations
                             CategoryId = 14,
                             Description = "Combo perfeito para codar e matar a fome",
                             Name = "Dev Meal",
-                            Price = 34.90m
+                            Price = 34.90m,
+                            Slug = "dev-meal"
                         },
                         new
                         {
@@ -491,7 +563,8 @@ namespace TotemPWA.Migrations
                             CategoryId = 15,
                             Description = "Combo com itens refatorados do menu",
                             Name = "Refatoração Total",
-                            Price = 37.90m
+                            Price = 37.90m,
+                            Slug = "refatoracao-total"
                         },
                         new
                         {
@@ -499,7 +572,8 @@ namespace TotemPWA.Migrations
                             CategoryId = 13,
                             Description = "Combo com dois Go Burguers e batata",
                             Name = "Go Burguers",
-                            Price = 31.90m
+                            Price = 31.90m,
+                            Slug = "go-burguers"
                         },
                         new
                         {
@@ -507,7 +581,8 @@ namespace TotemPWA.Migrations
                             CategoryId = 12,
                             Description = "Para quem vive na nuvem (literalmente)",
                             Name = "Cloud Combo",
-                            Price = 32.99m
+                            Price = 32.99m,
+                            Slug = "cloud-combo"
                         },
                         new
                         {
@@ -515,7 +590,8 @@ namespace TotemPWA.Migrations
                             CategoryId = 12,
                             Description = "Interface deliciosa entre fome e felicidade",
                             Name = "API Meal",
-                            Price = 33.50m
+                            Price = 33.50m,
+                            Slug = "api-meal"
                         },
                         new
                         {
@@ -523,7 +599,8 @@ namespace TotemPWA.Migrations
                             CategoryId = 32,
                             Description = "Molho com sabor aprimorado",
                             Name = "Barbecue++",
-                            Price = 3.50m
+                            Price = 3.50m,
+                            Slug = "barbecue"
                         },
                         new
                         {
@@ -531,7 +608,8 @@ namespace TotemPWA.Migrations
                             CategoryId = 33,
                             Description = "Molho picante, mas reativo",
                             Name = "Chipotle.js",
-                            Price = 3.50m
+                            Price = 3.50m,
+                            Slug = "chipotlejs"
                         },
                         new
                         {
@@ -539,7 +617,8 @@ namespace TotemPWA.Migrations
                             CategoryId = 34,
                             Description = "Maionese inteligente que aprende seu gosto",
                             Name = "MayoAI",
-                            Price = 3.00m
+                            Price = 3.00m,
+                            Slug = "mayoai"
                         },
                         new
                         {
@@ -547,7 +626,8 @@ namespace TotemPWA.Migrations
                             CategoryId = 32,
                             Description = "Molho básico com endpoints deliciosos",
                             Name = "KetchAPI",
-                            Price = 2.90m
+                            Price = 2.90m,
+                            Slug = "ketchapi"
                         },
                         new
                         {
@@ -555,7 +635,8 @@ namespace TotemPWA.Migrations
                             CategoryId = 35,
                             Description = "Molho com sabor dinâmico e animado",
                             Name = "Salsa Script",
-                            Price = 4.00m
+                            Price = 4.00m,
+                            Slug = "salsa-script"
                         },
                         new
                         {
@@ -563,7 +644,8 @@ namespace TotemPWA.Migrations
                             CategoryId = 36,
                             Description = "Visualmente bonito e bem formatado",
                             Name = "Css Cream",
-                            Price = 4.00m
+                            Price = 4.00m,
+                            Slug = "css-cream"
                         },
                         new
                         {
@@ -571,7 +653,8 @@ namespace TotemPWA.Migrations
                             CategoryId = 18,
                             Description = "Bate tudo e retorna o melhor resultado",
                             Name = "MilkShake SQL",
-                            Price = 10.00m
+                            Price = 10.00m,
+                            Slug = "milkshake-sql"
                         },
                         new
                         {
@@ -579,7 +662,8 @@ namespace TotemPWA.Migrations
                             CategoryId = 17,
                             Description = "Sobremesa quente hospedada com amor",
                             Name = "Petit Gateau da Nuvem",
-                            Price = 12.90m
+                            Price = 12.90m,
+                            Slug = "petit-gateau-da-nuvem"
                         },
                         new
                         {
@@ -587,7 +671,8 @@ namespace TotemPWA.Migrations
                             CategoryId = 21,
                             Description = "Sempre responsiva e cremosa",
                             Name = "Casquinha Bootstrap",
-                            Price = 6.00m
+                            Price = 6.00m,
+                            Slug = "casquinha-bootstrap"
                         },
                         new
                         {
@@ -595,7 +680,8 @@ namespace TotemPWA.Migrations
                             CategoryId = 19,
                             Description = "Doces armazenados para carregamento rápido",
                             Name = "Cache Cookies",
-                            Price = 7.50m
+                            Price = 7.50m,
+                            Slug = "cache-cookies"
                         },
                         new
                         {
@@ -603,7 +689,8 @@ namespace TotemPWA.Migrations
                             CategoryId = 20,
                             Description = "Fácil de consumir e muito poderosa",
                             Name = "Python Pie",
-                            Price = 9.00m
+                            Price = 9.00m,
+                            Slug = "python-pie"
                         },
                         new
                         {
@@ -611,7 +698,8 @@ namespace TotemPWA.Migrations
                             CategoryId = 20,
                             Description = "Bolo orientado a delícias",
                             Name = "Cake++",
-                            Price = 10.50m
+                            Price = 10.50m,
+                            Slug = "cake"
                         },
                         new
                         {
@@ -619,7 +707,8 @@ namespace TotemPWA.Migrations
                             CategoryId = 22,
                             Description = "Refrigerante com sintaxe refrescante",
                             Name = "ColaScript",
-                            Price = 5.50m
+                            Price = 5.50m,
+                            Slug = "colascript"
                         },
                         new
                         {
@@ -627,7 +716,8 @@ namespace TotemPWA.Migrations
                             CategoryId = 23,
                             Description = "Suco forte e robusto",
                             Name = "JavaJuice",
-                            Price = 6.00m
+                            Price = 6.00m,
+                            Slug = "javajuice"
                         },
                         new
                         {
@@ -635,7 +725,8 @@ namespace TotemPWA.Migrations
                             CategoryId = 24,
                             Description = "Refresca na hora e reage ao seu gosto",
                             Name = "React Refresco",
-                            Price = 6.50m
+                            Price = 6.50m,
+                            Slug = "react-refresco"
                         },
                         new
                         {
@@ -643,7 +734,8 @@ namespace TotemPWA.Migrations
                             CategoryId = 24,
                             Description = "Bebida funcional e saborosa",
                             Name = "SmoothieScript",
-                            Price = 7.00m
+                            Price = 7.00m,
+                            Slug = "smoothiescript"
                         },
                         new
                         {
@@ -651,7 +743,8 @@ namespace TotemPWA.Migrations
                             CategoryId = 26,
                             Description = "Limonada elegante com sabor refinado",
                             Name = "Ruby Lemonade",
-                            Price = 6.90m
+                            Price = 6.90m,
+                            Slug = "ruby-lemonade"
                         },
                         new
                         {
@@ -659,7 +752,8 @@ namespace TotemPWA.Migrations
                             CategoryId = 25,
                             Description = "Bebida ágil e intensa",
                             Name = "Swift Sake",
-                            Price = 8.00m
+                            Price = 8.00m,
+                            Slug = "swift-sake"
                         });
                 });
 
@@ -705,9 +799,9 @@ namespace TotemPWA.Migrations
                     b.ToTable("Variations");
                 });
 
-            modelBuilder.Entity("Employee", b =>
+            modelBuilder.Entity("TotemPWA.Models.Employee", b =>
                 {
-                    b.HasBaseType("Client");
+                    b.HasBaseType("TotemPWA.Models.Client");
 
                     b.Property<string>("Password")
                         .IsRequired()
@@ -743,6 +837,25 @@ namespace TotemPWA.Migrations
                         .OnDelete(DeleteBehavior.NoAction);
 
                     b.Navigation("ParentCategory");
+                });
+
+            modelBuilder.Entity("TotemPWA.Models.ComboProduct", b =>
+                {
+                    b.HasOne("TotemPWA.Models.Combo", "Combo")
+                        .WithMany("ComboProducts")
+                        .HasForeignKey("ComboId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("TotemPWA.Models.Product", "Product")
+                        .WithMany("ComboProducts")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Combo");
+
+                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("TotemPWA.Models.Product", b =>
@@ -793,6 +906,11 @@ namespace TotemPWA.Migrations
                     b.Navigation("Subcategories");
                 });
 
+            modelBuilder.Entity("TotemPWA.Models.Combo", b =>
+                {
+                    b.Navigation("ComboProducts");
+                });
+
             modelBuilder.Entity("TotemPWA.Models.Ingredient", b =>
                 {
                     b.Navigation("ProductIngredients");
@@ -800,6 +918,8 @@ namespace TotemPWA.Migrations
 
             modelBuilder.Entity("TotemPWA.Models.Product", b =>
                 {
+                    b.Navigation("ComboProducts");
+
                     b.Navigation("ProductIngredients");
 
                     b.Navigation("Variations");

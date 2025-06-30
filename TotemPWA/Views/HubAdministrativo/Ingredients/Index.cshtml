@@ -2,8 +2,11 @@
 @{
     ViewBag.Title = "Ingredientes";
 }
-
-<link rel="stylesheet" href="@Url.Content("~/css/ingredientes/IndexIngredientes.css")">
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "Hub Administrativo";
+}
+<link rel="stylesheet" href="@Url.Content("~/css/produto/produtosCRUD.css")">
 
 <h2>Ingredientes</h2>
 <p>

@@ -1,6 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 using System.Text.RegularExpressions;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TotemPWA.Models
 {
@@ -43,6 +44,11 @@ namespace TotemPWA.Models
 
         // Relacionamento com combos
         public ICollection<ComboProduct> ComboProducts { get; set; } = new List<ComboProduct>();
+
+        public ICollection<Promotion> Promotions { get; set; } = new List<Promotion>();
+
+        [NotMapped]
+        public decimal? PrecoPromocional { get; set; }
 
         private string GenerateSlug(string text)
         {

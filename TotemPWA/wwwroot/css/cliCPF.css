@@ -51,6 +51,7 @@
     }
 
     button#continuar {
+      width: 227px;
       padding: 15px 30px;
       font-size: 1.2rem;
       border: 2px solid white;
@@ -62,4 +63,20 @@
 
     button#continuar:hover {
       background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .secondary-btn {
+        border: 2px solid white;
+        background: none;
+        color: white;
+        padding: 15px 30px;
+        font-size: 1.2em;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, border-color 0.3s ease;
+        margin-top: 20px; /* Espaçamento do botão de continuar */
+    }
+
+    .secondary-btn:hover {
+        background-color: rgba(255, 255, 255, 0.1);
     }

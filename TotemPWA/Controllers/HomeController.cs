@@ -98,15 +98,22 @@ public class HomeController : Controller
             .ToList();
 
         // Produtos da subcategoria ativa
+        var now = DateTime.Now;
         var products = await _context.Products
             .Where(p => p.CategoryId == activeSubcategoryId)
+            .Include(p => p.Promotions)
             .Select(p => new
             {
                 id = p.Id,
                 name = p.Name,
                 description = p.Description,
                 price = p.Price,
-                slug = p.Slug
+                slug = p.Slug,
+                precoPromocional = p.Promotions
+                    .Where(pr => pr.ValidUntil >= now)
+                    .OrderByDescending(pr => pr.ValidUntil)
+                    .Select(pr => p.Price * (decimal)(1 - pr.Percent / 100.0))
+                    .FirstOrDefault()
             })
             .ToListAsync();
 
@@ -123,12 +130,24 @@ public class HomeController : Controller
         var produto = await _context.Products
             .Include(p => p.ProductIngredients)
                 .ThenInclude(pi => pi.Ingredient)
+            .Include(p => p.Promotions)
             .FirstOrDefaultAsync(p => p.Slug == slug);
 
         if (produto == null) return NotFound();
 
+        var now = DateTime.Now;
+        var promo = produto.Promotions
+            .Where(p => p.ValidUntil >= now)
+            .OrderByDescending(p => p.ValidUntil)
+            .FirstOrDefault();
+        decimal precoFinal = produto.Price;
+        if (promo != null)
+        {
+            precoFinal = produto.Price * (decimal)(1 - promo.Percent / 100.0);
+        }
+
         ViewBag.Nome = produto.Name;
-        ViewBag.Preco = produto.Price.ToString("0.00");
+        ViewBag.Preco = precoFinal.ToString("0.00");
         ViewBag.ProdutoId = produto.Id;
         ViewBag.ProdutoSlug = produto.Slug;
         ViewBag.Editando = editando;

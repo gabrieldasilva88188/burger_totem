@@ -32,7 +32,23 @@ public class HubAdministrativoController : Controller
 [HttpGet]
 public async Task<IActionResult> Products()
 {
-    var produtos = await _context.Products.Include(p => p.Category).ToListAsync();
+    var now = DateTime.Now;
+    var produtos = await _context.Products
+        .Include(p => p.Category)
+        .Include(p => p.Promotions)
+        .ToListAsync();
+
+    foreach (var produto in produtos)
+    {
+        var promo = produto.Promotions
+            .Where(p => p.ValidUntil >= now)
+            .OrderByDescending(p => p.ValidUntil)
+            .FirstOrDefault();
+        if (promo != null)
+        {
+            produto.PrecoPromocional = produto.Price * (decimal)(1 - promo.Percent / 100.0);
+        }
+    }
     return View("Products/Index", produtos);
 }
 
@@ -106,8 +122,20 @@ public async Task<IActionResult> Delete(Product product)
 [HttpGet]
 public async Task<IActionResult> Details(int id)
 {
-    var produto = await _context.Products.Include(p => p.Category).FirstOrDefaultAsync(p => p.Id == id);
+    var produto = await _context.Products
+        .Include(p => p.Category)
+        .Include(p => p.Promotions)
+        .FirstOrDefaultAsync(p => p.Id == id);
     if (produto == null) return NotFound();
+    var now = DateTime.Now;
+    var promo = produto.Promotions
+        .Where(p => p.ValidUntil >= now)
+        .OrderByDescending(p => p.ValidUntil)
+        .FirstOrDefault();
+    if (promo != null)
+    {
+        produto.PrecoPromocional = produto.Price * (decimal)(1 - promo.Percent / 100.0);
+    }
     return View("Products/Details", produto);
 }
 
@@ -389,5 +417,50 @@ public async Task<IActionResult> DeleteEmployee(Employee employee)
     _context.Employees.Remove(employeeDb);
     await _context.SaveChangesAsync();
     return RedirectToAction("Employees");
+}
+
+[HttpGet]
+public async Task<IActionResult> Promotion(int id)
+{
+    var produto = await _context.Products
+        .Include(p => p.Promotions)
+        .FirstOrDefaultAsync(p => p.Id == id);
+    if (produto == null) return NotFound();
+    var now = DateTime.Now;
+    var promo = produto.Promotions
+        .Where(p => p.ValidUntil >= now)
+        .OrderByDescending(p => p.ValidUntil)
+        .FirstOrDefault();
+    ViewBag.Promotion = promo;
+    return View("Products/Promotion", produto);
+}
+
+[HttpPost]
+public async Task<IActionResult> Promotion(int id, double percent, DateTime validUntil)
+{
+    var produto = await _context.Products.Include(p => p.Promotions).FirstOrDefaultAsync(p => p.Id == id);
+    if (produto == null) return NotFound();
+    // Remove promoções antigas
+    var oldPromos = produto.Promotions.Where(p => p.ValidUntil >= DateTime.Now).ToList();
+    _context.Promotions.RemoveRange(oldPromos);
+    // Adiciona nova promoção
+    var promo = new Promotion
+    {
+        ProductId = id,
+        Percent = percent,
+        ValidUntil = validUntil
+    };
+    _context.Promotions.Add(promo);
+    await _context.SaveChangesAsync();
+    return RedirectToAction("Products");
+}
+
+[HttpPost]
+public async Task<IActionResult> RemovePromotion(int id)
+{
+    var promos = await _context.Promotions.Where(p => p.ProductId == id && p.ValidUntil >= DateTime.Now).ToListAsync();
+    _context.Promotions.RemoveRange(promos);
+    await _context.SaveChangesAsync();
+    return RedirectToAction("Products");
 }
 }

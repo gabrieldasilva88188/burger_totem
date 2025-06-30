@@ -62,7 +62,17 @@
                             <div class="options">
                                 <h3>@product.name</h3>
                                 <p>@product.description</p>
-                                <strong>@product.price.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("pt-BR"))</strong>
+                                @if (product.precoPromocional != null && Convert.ToDecimal(product.precoPromocional) > 0 && Convert.ToDecimal(product.precoPromocional) < product.price)
+                                {
+                                    <span style="text-decoration:line-through;color:#888;">@product.price.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("pt-BR"))</span>
+                                    <strong style="color:#d9534f;font-weight:bold;">
+                                        @Convert.ToDecimal(product.precoPromocional).ToString("C", System.Globalization.CultureInfo.GetCultureInfo("pt-BR"))
+                                    </strong>
+                                }
+                                else
+                                {
+                                    <strong>@product.price.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("pt-BR"))</strong>
+                                }
                             </div>
                         </a>
                     }

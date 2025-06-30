@@ -33,12 +33,23 @@
                 </td>
                 <td>@item.Name</td>
                 <td>@item.Description</td>
-                <td>R$ @item.Price.ToString("F2")</td>
+                <td>
+                    @if (item.PrecoPromocional.HasValue)
+                    {
+                        <span style="text-decoration:line-through;color:#888;">R$ @item.Price.ToString("F2")</span>
+                        <span style="color:#d9534f;font-weight:bold;"> R$ @item.PrecoPromocional.Value.ToString("F2")</span>
+                    }
+                    else
+                    {
+                        <span>R$ @item.Price.ToString("F2")</span>
+                    }
+                </td>
                 <td>@item.Category?.Name</td>
                 <td>
                     <a class="btn btn-primary btn-sm" asp-action="Edit" asp-route-id="@item.Id">Editar<i class="fas fa-edit"></i></a>
                     <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@item.Id">Exluir<i class="fas fa-trash"></i></a>
                     <a class="btn btn-warning btn-sm" asp-action="ManageIngredients" asp-route-id="@item.Id">Gerenciar Ingredientes <i class="fas fa-cogs"></i></a>
+                    <a class="btn btn-success btn-sm" asp-action="Promotion" asp-route-id="@item.Id">Promoção <i class="fas fa-percent"></i></a>
                 </td>
             </tr>
         }

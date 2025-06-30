@@ -15,7 +15,17 @@
 </div>
 <div class="mb-3">
     <label class="form-label">Preço:</label>
-    <div>R$ @Model.Price.ToString("F2")</div>
+    <div>
+        @if (Model.PrecoPromocional.HasValue)
+        {
+            <span style="text-decoration:line-through;color:#888;">R$ @Model.Price.ToString("F2")</span>
+            <span style="color:#d9534f;font-weight:bold;"> R$ @Model.PrecoPromocional.Value.ToString("F2")</span>
+        }
+        else
+        {
+            <span>R$ @Model.Price.ToString("F2")</span>
+        }
+    </div>
 </div>
 <div class="mb-3">
     <label class="form-label">Categoria:</label>

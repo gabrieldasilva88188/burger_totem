@@ -5,42 +5,44 @@
 
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Hamburgueria</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-   <link rel="stylesheet" href="@Url.Content("~/css/cardapio.css")">
+    <link rel="stylesheet" href="@Url.Content("~/css/cardapio.css")">
 </head>
+
 <body>
     <header>
-    
+
     </header>
-    
+
     <div class="container">
-    
+
         <nav class="sidebar">
-         <ul>
-            @foreach (var category in ViewBag.Categories)
+            <ul>
+                @foreach (var category in ViewBag.Categories)
                 {
-                    <li>
-                        <img src="~/img/categories/@(category.slug).png" alt="@category.name">
-                        <a href="/cardapio/@category.slug" class="@(category.active ? "active" : "")">
+                    <a href="/cardapio/@category.slug" class="@(category.active ? "active" : "")" style="margin-left: 5px;">
+                        <li>
+                            <img src="~/img/categories/@(category.slug).png" alt="@category.name">
                             @category.name
-                        </a>
-                    </li>
+                        </li>
+                    </a>
                 }
             </ul>
         </nav>
-        
+
         <main class="content">
-        <div class="top-menu-scroll">
-           @foreach (var sub in ViewBag.SubCategories)
+            <div class="top-menu-scroll">
+                @foreach (var sub in ViewBag.SubCategories)
                 {
                     /*
                     string activeClass = subcategory.active ? "active" : "";
                     <a href="/Cardapio/@ViewBag.Category/@subcategory.slug" class="subcategory-btn @activeClass">
-                        <span class="label">@subcategory.name</span>
+                    <span class="label">@subcategory.name</span>
                     </a>
                     */
 
@@ -48,26 +50,28 @@
                         @sub.name
                     </a>
                 }
-        </div>
-        
+            </div>
+
             <div class="produtos">
 
-                  @foreach (var product in ViewBag.Products)
-                    {
-                        <a href="/Home/Personalizar?Id=@product.id" class="menu-item sem-estilo-hiperlink">
-                            <img src="@Url.Action("GetImage", "HubAdministrativo", new { id = product.id })" alt="@product.name">
-                            <div class="options">
-                                <h3>@product.name</h3>
-                                <p>@product.description</p>
-                                <strong>@product.price.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("pt-BR"))</strong>
-                            </div>
-                        </a>
-                    }
+                @foreach (var product in ViewBag.Products)
+                {
+                    <a href="/Home/Personalizar?Id=@product.id" class="menu-item sem-estilo-hiperlink">
+                        <img src="@Url.Action("GetImage", "HubAdministrativo", new { id = product.id })"
+                            alt="@product.name">
+                        <div class="options">
+                            <h3>@product.name</h3>
+                            <p>@product.description</p>
+                            <strong>@product.price.ToString("C",
+                                                            System.Globalization.CultureInfo.GetCultureInfo("pt-BR"))</strong>
+                    </div>
+                </a>
+                                }
             </div>
 
         </main>
     </div>
-    
+
     <footer>
         <div class="footer-info">
             <p>Total de itens: <span id="total-itens">0</span></p>
@@ -78,17 +82,18 @@
             <button class="btn-car" onclick="redirecionarCarrinho()">
                 <i class="fa-solid fa-cart-shopping"></i>
             </button>
-        </div>    
+        </div>
         <button class="btn-confirm">Pronto</button>
     </footer>
-    
 
-<script>
 
-    function redirecionarCarrinho() {
-        // Função de redirecionamento para o carrinho
-        window.location.href = "/Home/carrinho";
-    }
-</script>
+    <script>
+
+        function redirecionarCarrinho() {
+            // Função de redirecionamento para o carrinho
+            window.location.href = "/Home/carrinho";
+        }
+    </script>
 </body>
+
 </html>

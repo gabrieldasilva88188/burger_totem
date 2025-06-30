@@ -1,0 +1,105 @@
+@{
+    Layout = "_WelcomeLayout";
+    var cardapioUrl = Url.Action("Cardapio", "Home");
+}
+<head>
+    <link rel="stylesheet" href="@Url.Content("~/css/cliCPF.css")"/>
+</head>
+<h1>DIGITE SEU CPF</h1>
+<div class="input-box">
+    <input type="text" id="cpf" readonly placeholder="123.456.789-00" maxlength="14">
+</div>
+
+<div class="keyboard" id="keyboard"></div>
+
+<button id="continuar">CONTINUAR</button>
+<button id="avancarSemCpf" class="secondary-btn">AVANÇAR SEM CPF</button> <script>
+    const keyboard = document.getElementById('keyboard');
+    const input = document.getElementById('cpf');
+    const keys = [
+        "1", "2", "3",
+        "4", "5", "6",
+        "7", "8", "9",
+        "←", "0", "Limpar"
+    ];
+
+    function aplicarMascaraCPF(valor) {
+        valor = valor.replace(/\D/g, '');
+        valor = valor.substring(0, 11);
+        valor = valor.replace(/^(\d{3})(\d)/, "$1.$2");
+        valor = valor.replace(/^(\d{3})\.(\d{3})(\d)/, "$1.$2.$3");
+        valor = valor.replace(/^(\d{3})\.(\d{3})\.(\d{3})(\d)/, "$1.$2.$3-$4");
+        return valor;
+    }
+
+    keys.forEach(key => {
+        const button = document.createElement('button');
+        button.textContent = key;
+        button.classList.add('key');
+
+        button.addEventListener('click', () => {
+            let currentVal = input.value.replace(/\D/g, '');
+
+            if (key === "←") {
+                currentVal = currentVal.slice(0, -1);
+            } else if (key === "Limpar") {
+                currentVal = "";
+            } else {
+                if(currentVal.length < 11) {
+                    currentVal += key;
+                }
+            }
+
+            input.value = aplicarMascaraCPF(currentVal);
+        });
+
+        keyboard.appendChild(button);
+    });
+
+    function validarCPF(cpf) {
+        cpf = cpf.replace(/\D/g, '');
+        if (cpf.length !== 11) return false;
+
+        if (/^(\d)\1+$/.test(cpf)) return false;
+
+        let soma = 0;
+        for (let i = 0; i < 9; i++) {
+            soma += parseInt(cpf.charAt(i)) * (10 - i);
+        }
+        let resto = (soma * 10) % 11;
+        if (resto === 10 || resto === 11) resto = 0;
+        if (resto !== parseInt(cpf.charAt(9))) return false;
+
+        soma = 0;
+        for (let i = 0; i < 10; i++) {
+            soma += parseInt(cpf.charAt(i)) * (11 - i);
+        }
+        resto = (soma * 10) % 11;
+        if (resto === 10 || resto === 11) resto = 0;
+        if (resto !== parseInt(cpf.charAt(10))) return false;
+
+        return true;
+    }
+
+    const cardapioUrl = '@cardapioUrl';
+
+    document.getElementById('continuar').addEventListener('click', () => {
+        const cpfValor = input.value;
+
+        if (!validarCPF(cpfValor)) {
+            alert('CPF inválido! Por favor, digite um CPF válido.');
+            return;
+        }
+
+        // Armazena o CPF válido no sessionStorage
+        sessionStorage.setItem('clienteCPF', cpfValor.replace(/\D/g, '')); // Armazena apenas os números
+        
+        window.location.href = cardapioUrl;
+    });
+
+    // NOVO: Event Listener para o botão "AVANÇAR SEM CPF"
+    document.getElementById('avancarSemCpf').addEventListener('click', () => {
+        sessionStorage.removeItem('clienteCPF'); // Garante que nenhum CPF inválido ou antigo esteja salvo
+        window.location.href = cardapioUrl;
+    });
+</script>

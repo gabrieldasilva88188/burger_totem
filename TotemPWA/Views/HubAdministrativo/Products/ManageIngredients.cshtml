@@ -1,0 +1,56 @@
+@{
+    var produto = ViewBag.Produto;
+    var ingredientesAssociados = ViewBag.IngredientesAssociados as IEnumerable<dynamic>;
+    var ingredientesDisponiveis = ViewBag.IngredientesDisponiveis as IEnumerable<TotemPWA.Models.Ingredient>;
+}
+<link rel="stylesheet" href="@Url.Content("~/css/produto/editarProduto.css")">
+
+<h2>Gerenciar Ingredientes para: @produto.Name</h2>
+
+<h4>Ingredientes Associados</h4>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Quantidade</th>
+            <th>Limite</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in ingredientesAssociados)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Quantity</td>
+                <td>@item.Limit</td>
+                <td>
+                    <form asp-action="RemoveIngredientFromProduct" method="post" style="display:inline;">
+                        <input type="hidden" name="productId" value="@produto.Id" />
+                        <input type="hidden" name="ingredientId" value="@item.IngredientId" />
+                        <button type="submit" class="btn btn-danger btn-sm">Remover</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h4>Adicionar Ingrediente</h4>
+<form asp-action="AddIngredientToProduct" method="post" class="form-inline">
+    <input type="hidden" name="productId" value="@produto.Id" />
+    <div class="form-group">
+        <select name="ingredientId" class="form-control" required>
+            <option value="">Selecione um ingrediente</option>
+            @foreach (var ing in ingredientesDisponiveis)
+            {
+                <option value="@ing.Id">@ing.Name</option>
+            }
+        </select>
+    </div>
+    <div class="form-group mx-2">
+        <input type="number" name="quantity" class="form-control" placeholder="Quantidade" min="1" value="1" required />
+    </div>
+    <button type="submit" class="btn btn-success">Adicionar</button>
+    <a href="@Url.Action("Products", "HubAdministrativo")" class="btn btn-secondary">Voltar</a>
+</form> 

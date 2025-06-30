@@ -1,0 +1,262 @@
+/* Reset e base */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Container principal da tela de personalização */
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+    margin: auto;
+    background-color: #fff;
+    padding: 0;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgb(236, 41, 41);
+    position: relative; /* <- Adiciona isso */
+}
+
+/* Imagem do lanche */
+#produto-imagem {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center center;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Título e preço */
+#produto-nome {
+    font-size: 1.8rem;
+    margin: 1rem 0 0.5rem;
+    text-align: center;
+}
+#produto-preco {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #4CAF50;
+}
+
+.info-ingredientes {
+    background-color: #e3f2fd;
+    border: 1px solid #2196f3;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin: 0 1rem 1rem 1rem;
+    text-align: center;
+}
+
+.info-ingredientes p {
+    margin: 0;
+    color: #1976d2;
+    font-size: 0.9rem;
+}
+
+#adicionar-ingredientes {
+    width: 95%;
+    text-align: left;
+    padding: 0 1rem; /* deixa uma margem lateral suave */
+    font-size: 1.2rem; /* opcional: aumenta um pouco o título */
+    margin-top: 1rem;  /* opcional: espaçamento superior */
+}
+
+/* Ingredientes */
+#ingredientes-container {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.ingrediente-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 15px;
+}
+
+.ingrediente-item:last-child {
+    border-bottom: none;
+}
+
+.ingrediente-item:hover {
+    background-color: #f9f9f9;
+}
+
+.ingrediente-nome {
+    font-size: 1.1rem;
+    flex: 1;
+}
+
+.ingrediente-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-left: 10px;
+}
+
+/* Botões de + e - */
+.ingrediente-controles button {
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.ingrediente-controles .aumentar {
+    background-color: #4CAF50;
+}
+.ingrediente-controles .aumentar:hover {
+    background-color: #43a047;
+}
+
+.ingrediente-controles .diminuir {
+    background-color: #f44336;
+}
+.ingrediente-controles .diminuir:hover {
+    background-color: #e53935;
+}
+
+.quantidade {
+    margin: 0 10px;
+    font-size: 1.1rem;
+    min-width: 20px;
+    text-align: center;
+}
+
+/* Quantidade geral */
+.quantidade-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+}
+.quantidade-container button {
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+}
+.quantidade-container button:first-child {
+    background-color: #f44336;
+}
+.quantidade-container button:first-child:hover {
+    background-color: #e53935;
+}
+.quantidade-container button:last-child {
+    background-color: #4CAF50;
+}
+.quantidade-container button:last-child:hover {
+    background-color: #43a047;
+}
+#quantidade-lanche {
+    width: 60px;
+    text-align: center;
+    margin: 0 10px;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+/* Botão confirmar */
+#confirmar-personalizacao,
+button[onclick="adicionarAoCarrinho()"] {
+    height: 60px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+#confirmar-personalizacao:hover,
+button[onclick="adicionarAoCarrinho()"]:hover {
+    background-color: #45a049;
+}
+
+
+.botoes-personalizar {
+    display: flex;
+    justify-content: flex-end; /* 👈 Alinha os botões à direita */
+    gap: 10px; /* 👈 Espaço entre os botões */
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.botoes-personalizar .back-btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #ffb300;
+    color: #fff;
+    transition: background-color 0.3s;
+    display: inline-block;
+    text-align: center;
+    border: none; /* Adicione isso para consistência com o outro botão */
+}
+
+.botoes-personalizar .back-btn:hover {
+    background-color: #e09e00;
+}
+
+
+
+.botoes-personalizar button {
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    background-color: #ffb300;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.botoes-personalizar button:hover {
+    background-color: #e09e00;
+}
+
+.btn-voltar {
+    background-color: #ffb300;
+    color: #ffffff;
+    border: 2px solid #ffffff; 
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.btn-voltar:hover {
+    background-color: #e09e00;
+    transform: scale(1.03);
+}
+
+.btn-voltar i {
+    font-size: 1.1rem;
+}
+
+

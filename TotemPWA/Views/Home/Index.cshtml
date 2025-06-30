@@ -1,14 +1,25 @@
 ﻿@{
     Layout = "_WelcomeLayout";
+    var cardapioUrl = Url.Action("clienteNome", "Home");
 }
 
-<img class="logo" src="./img/Red Illustrative Burger Food Logo_20250216_231603_0000 1.png" alt="">
-<div class="caixa-verm"></div>
-<p>
-    O MELHOR <br> LANCHE DE <br> SOROCABA.
-</p>
-<img class="combao" src="./img/Red_Illustrative_Burger_Food_Logo-removebg-preview 1.png" alt="">
-<div class="center-baixo">
-    <button class="inic-p">Toque para iniciar</button>
+<link rel="stylesheet" href="@Url.Content("~/css/site.css")">
+
+<div class="contei">
+    <img class="logo" src="~/img/Red Illustrative Burger Food Logo_20250216_231603_0000 1.png" alt="">
+    <div class="caixa-verm"></div>
+    <p>
+        O MELHOR <br> LANCHE DE <br> SOROCABA.
+    </p>
+    <img class="combao" src="~/img/Red_Illustrative_Burger_Food_Logo-removebg-preview 1.png" alt="">
+        <button class="inic-p" onclick="redirecionar()">Toque para iniciar</button>
 </div>
->>>>>>> release/v0.1
+
+
+<script>
+    
+    function redirecionar() {
+        //  redirecionar para a próxima página
+        window.location.href = "home/clienteNome";
+    }
+</script>

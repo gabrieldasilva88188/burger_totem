@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Escolha de Pedido</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="@Url.Content("~/css/escolha.css")" />
+</head>
+
+<body>
+
+  <a href="#" class="back-button " onclick="voltar()">
+      <i class="fa-solid fa-arrow-left fa-xl"></i>
+  </a>
+
+  <div class="container">
+    <h1 class="title">COMO DESEJA RECEBER SEU PEDIDO?</h1>
+
+    <div class="opcoes">
+      <div class="opcao" id="viagem">
+        <div class="opcao-box" onclick="redirecionarPagamento()">
+          <img src="@Url.Content("~/img/bonecoLancheSacola.png")" class="img-opc" />
+          <p>PARA VIAGEM</p>
+        </div>
+      </div>
+
+      <div class="opcoes" id="local">
+        <div class="opcao-box" onclick="redirecionarPagamento()">
+          <img src="@Url.Content("~/img/bonecoLancheBandeja.png")" class="img-opc" />
+          <p>COMER NO LOCAL</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+
+  function redirecionarPagamento() {
+    window.location.href = "@Url.Content("~/Pagamento/tpagamento")";
+  }
+  function voltar() {
+    window.location.href = "@Url.Content("~/home/Carrinho")";
+  }
+
+</script>
+
+</html>

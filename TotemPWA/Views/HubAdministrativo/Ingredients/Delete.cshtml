@@ -1,0 +1,21 @@
+@model TotemPWA.Models.Ingredient
+@{
+    ViewBag.Title = "Excluir Ingrediente";
+}
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "Hub Administrativo";
+}
+<link rel="stylesheet" href="@Url.Content("~/css/produto/deletarProduto.css")">
+
+<h2>Excluir Ingrediente</h2>
+<div>
+    <div class="alert alert-danger">
+    <h4>Tem certeza que deseja excluir o ingrediente <strong>@Model.Name</strong>?</h4>
+    </div>
+    <form asp-action="DeleteIngredient" method="post">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger">Excluir</button>
+        <a href="@Url.Action("Ingredients", "HubAdministrativo")" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div> 

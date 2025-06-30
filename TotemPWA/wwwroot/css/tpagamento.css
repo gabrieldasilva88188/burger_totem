@@ -1,0 +1,97 @@
+/* Corpo da página */
+body {
+  background-color: #990000;
+  color: white;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container com proporção fixa */
+.main-container {
+  width: 800px;
+  height: 1240px;
+  background-color: #990000;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+
+/* Botão de voltar */
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  border: 2px solid white;
+  background-color: #990000;
+  padding: 11px 24px;
+  font-size: 22px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  text-decoration: none;
+}
+
+/* Título principal */
+h1 {
+  font-size: 32px;
+  margin-top: 60px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Subtítulo */
+h2 {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* Grid dos botões */
+.payment-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  width: 120%;
+  max-width: 700px;
+  margin-top: 15%;
+}
+
+/* Botões de pagamento com altura fixa */
+.option-btn {
+  border: 2px solid white;
+  background-color: #990000;
+  color: white;
+  padding: 20px;
+  font-size: 22px;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 120px; /* ALTURA FIXA PARA TODOS */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 100%; /* LARGURA TOTAL DO BLOCO */
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.option-btn i {
+  font-size: 28px;
+}
+
+.option-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}

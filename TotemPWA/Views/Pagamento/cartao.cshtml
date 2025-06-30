@@ -1,0 +1,48 @@
+@{
+    Layout = "_WelcomeLayout";
+}
+
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento cartão</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="@Url.Content("~/css/cartao.css")">
+    <link rel="stylesheet" href="@Url.Content("~/css/fontawesome-free-6.7.2-web/css/all.css")">
+    <link rel="stylesheet" href="@Url.Content("~/css/fontawesome-free-6.7.2-web/css/all.min.css")">
+    <script src="@Url.Content("~/css/fontawesome-free-6.7.2-web/js/all.js")"></script>
+    <script src="@Url.Content("~/css/fontawesome-free-6.7.2-web/js/all.min.js")"></script>
+</head>
+
+<body>
+    <i onclick="voltar()" class="fa-solid fa-arrow-left fa-2xl"></i>
+    <h1>pagamento com cartão</h1>
+    <p>insira,aproxime ou passe seu cartão no leitor ao lado</p>
+    <img src="~/img/tpagamento/cartao.png" alt="Cartão de Crédito/Débito">
+    <p><strong>Total a pagar: <span id="totalPedidoDisplay">R$ 0,00</span></strong></p>
+    <script>
+        function voltar() {
+            window.location.href = "@Url.Content("~/Pagamento/tpagamento")";
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            let totalDoPedido = sessionStorage.getItem("totalPedido");
+
+            if (totalDoPedido) {
+                const totalFormatado = parseFloat(totalDoPedido).toLocaleString('pt-BR', {
+                    style: 'currency',
+                    currency: 'BRL'
+                });
+                document.getElementById('totalPedidoDisplay').innerText = totalFormatado;
+            } else {
+                document.getElementById('totalPedidoDisplay').innerText = 'R$ 0,00';
+                console.warn("Total do pedido não encontrado no sessionStorage na página de pagamento com cartão.");
+            }
+        });
+    </script>
+</body>
+
+</html>

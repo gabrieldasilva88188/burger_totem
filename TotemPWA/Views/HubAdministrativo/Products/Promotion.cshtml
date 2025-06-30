@@ -1,0 +1,35 @@
+@model TotemPWA.Models.Product
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "Promoção do Produto";
+    var promo = ViewBag.Promotion as TotemPWA.Models.Promotion;
+}
+<link rel="stylesheet" href="@Url.Content("~/css/produto/editarProduto.css")">
+
+<h2>Promoção para: @Model.Name</h2>
+@if (promo != null)
+{
+    <div class="alert alert-success">
+        <strong>Promoção ativa:</strong> @promo.Percent% até @promo.ValidUntil.ToString("dd/MM/yyyy HH:mm")
+        <form asp-action="RemovePromotion" method="post" style="display:inline;">
+            <input type="hidden" name="id" value="@Model.Id" />
+            <button type="submit" class="btn btn-danger btn-sm">Remover Promoção</button>
+        </form>
+    </div>
+}
+else
+{
+    <form asp-action="Promotion" method="post">
+        <input type="hidden" name="id" value="@Model.Id" />
+        <div class="mb-3">
+            <label class="form-label">Percentual de desconto (%)</label>
+            <input type="number" name="percent" class="form-control" min="1" max="100" required />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Válido até</label>
+            <input type="datetime-local" name="validUntil" class="form-control" required />
+        </div>
+        <button type="submit" class="btn btn-success">Criar Promoção</button>
+        <a href="@Url.Action("Products", "HubAdministrativo")" class="btn btn-secondary">Cancelar</a>
+    </form>
+} 

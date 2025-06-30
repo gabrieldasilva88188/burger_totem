@@ -1,5 +1,8 @@
 @model IEnumerable<TotemPWA.Models.Product>
-
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "Hub Administrativo";
+}
 <link rel="stylesheet" href="@Url.Content("~/css/produto/produtosCRUD.css")">
 
 <div class="d-flex justify-content-between align-items-center mb-4">
@@ -12,7 +15,7 @@
         <tr>
             <th>Imagem</th>
             <th>Nome</th>
-            <th>Descrição</th>
+            <th>Descrição</th>      
             <th>Preço</th>
             <th>Categoria</th>
             <th>Ações</th>

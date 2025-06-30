@@ -2,6 +2,11 @@
 @{
     ViewBag.Title = "Editar Categoria";
 }
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "Hub Administrativo";
+}
+<link rel="stylesheet" href="@Url.Content("~/css/produto/editarProduto.css")">
 <h2>Editar Categoria</h2>
 <form asp-action="EditCategory" method="post">
     <input type="hidden" asp-for="Id" />

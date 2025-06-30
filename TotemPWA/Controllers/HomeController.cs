@@ -99,42 +99,16 @@ public class HomeController : Controller
             .ToList();
 
         // Produtos da subcategoria ativa
-        var products = new List<object>();
-        if (activeSubcategoryId != null)
-        {
-            products = await _context.Products
-                .Where(p => p.CategoryId == activeSubcategoryId)
-                .Select(p => new
-                {
-                    id = p.Id,
-                    name = p.Name,
-                    description = p.Description,
-                    price = p.Price
-                })
-                .ToListAsync<object>();
-        }
-        else if (activeCategoryId != null)
-        {
-            var subcategoryIds = await _context.Categories
-                .Where(c => c.ParentCategoryId == activeCategoryId)
-                .Select(c => c.Id)
-                .ToListAsync();
-
-            products = await _context.Products
-                .Where(p => p.CategoryId == activeCategoryId || subcategoryIds.Contains(p.CategoryId))
-                .Select(p => new
-                {
-                    id = p.Id,
-                    name = p.Name,
-                    description = p.Description,
-                    price = p.Price
-                })
-                .ToListAsync<object>();
-        }
-        else
-        {
-            products = new List<object>();
-        }
+        var products = await _context.Products
+            .Where(p => p.CategoryId == activeSubcategoryId)
+            .Select(p => new
+            {
+                id = p.Id,
+                name = p.Name,
+                description = p.Description,
+                price = p.Price
+            })
+            .ToListAsync();
 
         ViewBag.Category = activeCategory?.Slug;
         ViewBag.Categories = rootCategories;
@@ -144,7 +118,7 @@ public class HomeController : Controller
         return View();
     }
 
-    public async Task<IActionResult> Personalizar(int id)
+    public async Task<IActionResult> Personalizar(int id, bool? editando = false)
     {
         var produto = await _context.Products
             .Include(p => p.ProductIngredients)
@@ -155,14 +129,16 @@ public class HomeController : Controller
 
         ViewBag.Nome = produto.Name;
         ViewBag.Preco = produto.Price.ToString("0.00");
+        ViewBag.ProdutoId = produto.Id;
+        ViewBag.Editando = editando;
         if (produto.Image != null)
         {
-            string imgSrc = $"/Home/GetImage/{produto.Id}";
+            string imgSrc = Url.Action("GetImage", "HubAdministrativo", new { id = produto.Id });
             ViewBag.Imagem = imgSrc;
         }
         else
         {
-            ViewBag.Imagem = "~/img/default.png";
+            ViewBag.Imagem = Url.Content("~/img/default.png");
         }
 
         ViewBag.Ingredientes = produto.ProductIngredients.Select(pi => new {

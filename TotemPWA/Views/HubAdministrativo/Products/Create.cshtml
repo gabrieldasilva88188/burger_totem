@@ -3,11 +3,14 @@
 @{
     ViewData["Title"] = "Novo Produto";
 }
-
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "Hub Administrativo";
+}
 <link rel="stylesheet" href="@Url.Content("~/css/produto/novoProduto.css")">
 
-<div class="content">
-    <div class="form-container">
+
+    
         <h2 class="form-title">Novo Produto</h2>
 
         <form asp-action="Create" method="post" enctype="multipart/form-data">
@@ -50,8 +53,8 @@
                 <a href="@Url.Action("Products", "HubAdministrativo")" class="btn btn-secondary">Cancelar</a>
             </div>
         </form>
-    </div>
-</div>
+    
+
 
 <script>
     // Script opcional para pré-visualização da imagem

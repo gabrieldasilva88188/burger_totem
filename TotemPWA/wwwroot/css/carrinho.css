@@ -236,6 +236,25 @@ header {
     margin: 2%;
     margin-left: 70%;
   }
+.remove-cupom-btn {
+  font-size: 18px;
+  width: 25%;
+  height: 3%;
+  margin: 2%;
+  margin-left: 70%;
+  padding: 10px 15px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: none;
+}
+
+.remove-cupom-btn:hover {
+  background-color: #c82333;
+}
+
 
   /* Overlay */
   .modal-overlay {

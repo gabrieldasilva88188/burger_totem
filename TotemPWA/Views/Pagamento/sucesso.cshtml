@@ -1,0 +1,96 @@
+@{
+    Layout = "_WelcomeLayout";
+}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmação de Pagamento</title>
+    <link rel="stylesheet" href="@Url.Content("~/css/confirmacao.css")">
+</head>
+<body>
+  <div class="container">
+    <div class="title">
+      <p>PAGAMENTO EFETUADO COM SUCESSO</p>
+      <br>
+      <p>PEDIDO SENDO PREPARADO...</p>
+    </div>
+    <img class="img-confirm" src="~/img/tpagamento/confirme 1.png" alt="Sucesso">
+    <div class="footer-message">
+      OBRIGADO PELA PREFERÊNCIA!
+    </div>
+  </div>
+
+  <script>
+    // Define o tempo em milissegundos para o redirecionamento (5 segundos = 5000 ms)
+    const redirectDelay = 5000; 
+
+
+    function resetPedidoCompleto() {
+        sessionStorage.removeItem("itensCarrinho");
+        sessionStorage.removeItem("totalPedido");
+        sessionStorage.removeItem("totalItens");
+        sessionStorage.removeItem("cupomAplicado");
+        console.log("Carrinho e dados do pedido limpos com sucesso!");
+    }
+
+    // Chama a função de limpeza IMEDIATAMENTE quando a página de sucesso é carregada
+    resetPedidoCompleto(); 
+
+    // Redireciona para a página inicial após o tempo definido
+    setTimeout(() => {
+      window.location.href = "/"; // Redireciona para a raiz do seu site
+    }, redirectDelay);
+  </script>
+</body>
+</html>
+
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    background-color: #c3e74f;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    width: 800px;
+    height: 1280px;
+    background-color: #c3e74f;
+    position: relative;
+    overflow: hidden;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 60px;
+    line-height: 1.6;
+  }
+
+  .img-confirm {
+    width: 200px;
+    margin: 100px auto 60px;
+    margin-left: 50px;
+  }
+
+  .footer-message {
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+</style>

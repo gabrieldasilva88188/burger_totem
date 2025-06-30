@@ -75,6 +75,7 @@ body {
     cursor: pointer;
     gap: 8px;
     white-space: nowrap;
+    margin-bottom: 15px;
 }
 
 .btn-success {

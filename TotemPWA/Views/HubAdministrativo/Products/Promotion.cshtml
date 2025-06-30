@@ -4,6 +4,8 @@
     ViewData["Title"] = "Promoção do Produto";
     var promo = ViewBag.Promotion as TotemPWA.Models.Promotion;
 }
+<link rel="stylesheet" href="@Url.Content("~/css/produto/editarProduto.css")">
+
 <h2>Promoção para: @Model.Name</h2>
 @if (promo != null)
 {

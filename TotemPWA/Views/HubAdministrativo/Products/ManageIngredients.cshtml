@@ -3,6 +3,8 @@
     var ingredientesAssociados = ViewBag.IngredientesAssociados as IEnumerable<dynamic>;
     var ingredientesDisponiveis = ViewBag.IngredientesDisponiveis as IEnumerable<TotemPWA.Models.Ingredient>;
 }
+<link rel="stylesheet" href="@Url.Content("~/css/produto/editarProduto.css")">
+
 <h2>Gerenciar Ingredientes para: @produto.Name</h2>
 
 <h4>Ingredientes Associados</h4>

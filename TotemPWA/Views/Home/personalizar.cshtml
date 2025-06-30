@@ -87,18 +87,17 @@
             const item = itens[itemIndex];
             
             // Carrega as quantidades dos ingredientes
-            Object.entries(item.ingredientes).forEach(([nome, qtd]) => {
-                // Procura o span com a quantidade pelo nome do ingrediente
+            // Itera sobre as propriedades do objeto 'ingredientes' para obter nome e quantidade
+            Object.entries(item.ingredientes || {}).forEach(([nomeIngredienteItem, qtdItem]) => {
                 const spans = document.querySelectorAll('.quantidade');
                 spans.forEach(span => {
-                    const spanId = span.id;
-                    // Como estamos usando IDs numéricos, vamos tentar encontrar pelo nome
-                    // Vamos verificar se o span está dentro de um item que contém o nome do ingrediente
-                    const ingredienteItem = span.closest('.ingrediente-item');
-                    if (ingredienteItem) {
-                        const nomeSpan = ingredienteItem.querySelector('.ingrediente-nome');
-                        if (nomeSpan && nomeSpan.textContent.includes(nome)) {
-                            span.innerText = qtd;
+                    const ingredienteItemDiv = span.closest('.ingrediente-item');
+                    if (ingredienteItemDiv) {
+                        const nomeSpan = ingredienteItemDiv.querySelector('.ingrediente-nome');
+                        // Verifica se o nome do ingrediente no HTML (removendo preço) corresponde ao nome do item no carrinho
+                        const nomeHtmlLimpo = nomeSpan.textContent.split('(')[0].trim();
+                        if (nomeHtmlLimpo === nomeIngredienteItem) {
+                            span.innerText = qtdItem;
                         }
                     }
                 });
@@ -120,7 +119,7 @@
     function alterarIngrediente(id, valor) {
         const span = document.getElementById(`quantidade-${id}`);
         let qtd = parseInt(span.innerText) + valor;
-        if (qtd < 0) qtd = 0;
+        if (qtd < 0) qtd = 0; // Garante que a quantidade não seja negativa
         span.innerText = qtd;
         atualizarPrecoTempoReal();
     }
@@ -128,7 +127,6 @@
     function atualizarPrecoTempoReal() {
         let precoIngredientesExtras = 0.0;
 
-        // Atualizar o dicionário de preços dos ingredientes dinamicamente
         const precosIngredientes = {};
         const quantidadesPadrao = {};
         @if (ViewBag.Ingredientes != null)
@@ -154,148 +152,162 @@
 
         const precoFinal = precoBaseOriginal + precoIngredientesExtras;
         
-        // Atualiza o preço na tela
         const elementoPreco = document.getElementById("produto-preco");
         if (elementoPreco) {
             elementoPreco.textContent = `Preço: R$ ${precoFinal.toFixed(2).replace(".", ",")}`;
         }
     }
 
-function adicionarAoCarrinho() {
-    const nome = document.getElementById("produto-nome").innerText.replace("Personalizar ", "").replace("Editar ", "");
-    const editando = @(ViewBag.Editando == true ? "true" : "false");
-    const produtoId = @ViewBag.ProdutoId;
-    const produtoSlug = "@ViewBag.ProdutoSlug";
-    
-    if (editando) {
-        alert("Atualizando item no carrinho: " + nome);
-    } else {
-        alert("Adicionando ao carrinho: " + nome);
-    }
-    
-    const quantidade = 1;
-    let precoBase = precoBaseOriginal;
-    
-    // Validação do preço base
-    if (isNaN(precoBase) || precoBase <= 0) {
-        alert("Erro: Preço base inválido");
-        return;
-    }
+   function adicionarAoCarrinho() {
+        const nome = document.getElementById("produto-nome").innerText.replace("Personalizar ", "").replace("Editar ", "");
+        const editando = @(ViewBag.Editando == true ? "true" : "false");
+        const produtoId = @ViewBag.ProdutoId;
+        const produtoSlug = '@ViewBag.ProdutoSlug'; // <-- ADICIONE ESTA LINHA PARA PEGAR O SLUG DA VIEW BAG
+        
+        if (editando) {
+            alert("Atualizando item no carrinho: " + nome);
+        } else {
+            alert("Adicionando ao carrinho: " + nome);
+        }
+        
+        const quantidade = 1; // Quantidade de unidades do produto sendo adicionado/editado
+        let precoBase = precoBaseOriginal;
+        
+        if (isNaN(precoBase) || precoBase <= 0) {
+            alert("Erro: Preço base inválido");
+            return;
+        }
 
-    const ingredientes = {};
-    const ingredientesExtras = {};
-    let precoIngredientesExtras = 0.0;
+        const ingredientes = {};
+        const ingredientesExtras = {};
+        let precoIngredientesExtras = 0.0;
 
-    // Atualizar o dicionário de preços dos ingredientes dinamicamente
-    const precosIngredientes = {};
-    const nomesIngredientes = {};
-    const quantidadesPadrao = {};
-    @if (ViewBag.Ingredientes != null)
-    {
-        foreach (var ingrediente in ViewBag.Ingredientes)
-        {
-            <text>precosIngredientes[@ingrediente.Id] = @(((double)ingrediente.Price).ToString("0.00", System.Globalization.CultureInfo.InvariantCulture));</text>
-            <text>nomesIngredientes[@ingrediente.Id] = "@ingrediente.Name";</text>
-            <text>quantidadesPadrao[@ingrediente.Id] = @ingrediente.Quantity;</text>
+        const precosIngredientes = {};
+        const nomesIngredientes = {};
+        const quantidadesPadrao = {};
+        @if (ViewBag.Ingredientes != null)
+        {
+            foreach (var ingrediente in ViewBag.Ingredientes)
+            {
+                <text>precosIngredientes[@ingrediente.Id] = @(((double)ingrediente.Price).ToString("0.00", System.Globalization.CultureInfo.InvariantCulture));</text>
+                <text>nomesIngredientes[@ingrediente.Id] = "@ingrediente.Name";</text>
+                <text>quantidadesPadrao[@ingrediente.Id] = @ingrediente.Quantity;</text>
+            }
+        }
+
+        document.querySelectorAll(".quantidade").forEach(span => {
+            const idIngrediente = parseInt(span.id.replace("quantidade-", ""));
+            const qtdAtual = parseInt(span.innerText) || 0;
+            const qtdPadrao = quantidadesPadrao[idIngrediente] || 0;
+            const qtdExtra = qtdAtual - qtdPadrao;
+            
+            // Salva a quantidade total no objeto ingredientes
+            ingredientes[nomesIngredientes[idIngrediente]] = qtdAtual;
+            
+            // Se há ingredientes extras, calcula o preço e salva
+            if (qtdExtra > 0) {
+                const precoIngrediente = parseFloat(precosIngredientes[idIngrediente]) || 0;
+                precoIngredientesExtras += precoIngrediente * qtdExtra;
+                ingredientesExtras[nomesIngredientes[idIngrediente]] = qtdExtra;
+            }
+        });
+
+        const precoFinal = precoBase + precoIngredientesExtras;
+        const imagem = document.getElementById("produto-imagem").getAttribute("src");
+
+        console.log("URL da imagem capturada:", imagem);
+
+        if (isNaN(precoFinal) || precoFinal <= 0) {
+            alert("Erro: Preço final inválido");
+            // Removi o console.error("Item inválido:", item); daqui porque 'item' ainda não existe
+            return;
+        }
+
+        const item = {
+            id: produtoId,
+            slug: produtoSlug, // <-- ADICIONE ESTA LINHA AQUI NO OBJETO ITEM
+            nome: nome,
+            quantidade: quantidade, 
+            precoUnitario: precoFinal, 
+            total: quantidade * precoFinal, 
+            ingredientes: ingredientes, 
+            ingredientesExtras: ingredientesExtras, 
+            precoIngredientesExtras: precoIngredientesExtras,
+            imagem: imagem
+        };
+
+        if (!item.nome || isNaN(item.total) || item.total <= 0) {
+            alert("Erro: Dados do item inválidos");
+            console.error("Item inválido:", item);
+            return;
+        }
+
+        let itens = [];
+        try {
+            itens = JSON.parse(sessionStorage.getItem("itensCarrinho")) || [];
+            if (!Array.isArray(itens)) itens = [];
+        } catch (e) {
+            itens = [];
+        }
+        
+        if (editando) {
+            const itemIndex = itens.findIndex(i => i.id === produtoId);
+            if (itemIndex !== -1) {
+                // Preserve a quantidade original do item se ele já estava no carrinho
+                // ao invés de resetar para 1
+                const quantidadeOriginal = itens[itemIndex].quantidade || 1;
+                item.quantidade = quantidadeOriginal; 
+                item.total = quantidadeOriginal * item.precoUnitario; // Recalcula o total com a quantidade original
+                
+                itens[itemIndex] = item;
+            } else {
+                itens.push(item);
+            }
+        } else {
+            itens.push(item);
+        }
+        
+        sessionStorage.setItem("itensCarrinho", JSON.stringify(itens));
+
+        recalcularTotalComCupom(); 
+
+        // Debug dos totais (agora serão os totais já com o cupom aplicado, se houver)
+        console.log("Salvando totais - Total itens:", sessionStorage.getItem("totalItens"), "Total pedido:", sessionStorage.getItem("totalPedido"));
+        console.log("SessionStorage após salvar:", {
+            totalItens: sessionStorage.getItem("totalItens"),
+            totalPedido: sessionStorage.getItem("totalPedido")
+        });
+
+        console.log("Itens no carrinho após " + (editando ? "atualizar" : "adicionar") + ":", itens);
+        
+        window.location.href = '@Url.Action("Cardapio", "Home")';
+    }
+
+    function recalcularTotalComCupom() {
+        let itens = JSON.parse(sessionStorage.getItem("itensCarrinho")) || [];
+        let totalBruto = 0;
+
+        // Calcula o total dos itens sem desconto
+        itens.forEach(item => {
+            totalBruto += (item.total || 0);
+        });
+
+        let totalFinal = totalBruto;
+        const cupomAplicado = sessionStorage.getItem("cupomAplicado") === "true";
+        const descontoCupom = parseFloat(sessionStorage.getItem("descontoCupom")) || 0;
+
+        // Se houver um cupom aplicado, aplica o desconto
+        if (cupomAplicado && descontoCupom > 0) {
+            totalFinal = totalBruto * (1 - descontoCupom);
         }
-    }
 
-    document.querySelectorAll(".quantidade").forEach(span => {
-        const idIngrediente = parseInt(span.id.replace("quantidade-", ""));
-        const qtdAtual = parseInt(span.innerText) || 0;
-        const qtdPadrao = quantidadesPadrao[idIngrediente] || 0;
-        const qtdExtra = qtdAtual - qtdPadrao;
+        sessionStorage.setItem("totalPedido", totalFinal.toFixed(2));
         
-        // Salva a quantidade total no objeto ingredientes
-        ingredientes[nomesIngredientes[idIngrediente]] = qtdAtual;
-        
-        // Se há ingredientes extras, calcula o preço e salva
-        if (qtdExtra > 0) {
-            const precoIngrediente = parseFloat(precosIngredientes[idIngrediente]) || 0;
-            precoIngredientesExtras += precoIngrediente * qtdExtra;
-            ingredientesExtras[nomesIngredientes[idIngrediente]] = qtdExtra;
-        }
-    });
-
-    const precoFinal = precoBase + precoIngredientesExtras;
-    const imagem = document.getElementById("produto-imagem").getAttribute("src");
-
-    // Debug da imagem
-    console.log("URL da imagem capturada:", imagem);
-
-    // Validação final dos valores
-    if (isNaN(precoFinal) || precoFinal <= 0) {
-        alert("Erro: Preço final inválido");
-        return;
+        // Atualiza o total de itens
+        let totalItens = 0;
+        itens.forEach(i => {
+            totalItens += (i.quantidade || 0);
+        });
+        sessionStorage.setItem("totalItens", totalItens);
     }
-
-    const item = {
-        id: produtoId,
-        slug: produtoSlug,
-        nome: nome,
-        quantidade: quantidade,
-        precoUnitario: precoFinal,
-        total: quantidade * precoFinal,
-        ingredientes: ingredientes,
-        ingredientesExtras: ingredientesExtras,
-        precoIngredientesExtras: precoIngredientesExtras,
-        imagem: imagem
-    };
-
-    // Validação do item antes de adicionar
-    if (!item.nome || isNaN(item.total) || item.total <= 0) {
-        alert("Erro: Dados do item inválidos");
-        console.error("Item inválido:", item);
-        return;
-    }
-
-    let itens = [];
-    try {
-        itens = JSON.parse(sessionStorage.getItem("itensCarrinho")) || [];
-        if (!Array.isArray(itens)) itens = [];
-    } catch (e) {
-        itens = [];
-    }
-    
-    if (editando) {
-        // Se estiver editando, substitui o item existente
-        const itemIndex = itens.findIndex(i => i.id === produtoId);
-        if (itemIndex !== -1) {
-            itens[itemIndex] = item;
-        } else {
-            itens.push(item); // Fallback: adiciona se não encontrar
-        }
-    } else {
-        // Se não estiver editando, adiciona novo item
-        itens.push(item);
-    }
-    
-    sessionStorage.setItem("itensCarrinho", JSON.stringify(itens));
-
-    // Atualiza totais
-    let totalItens = 0, totalPedido = 0;
-    itens.forEach(i => {
-        totalItens += (i.quantidade || 0);
-        totalPedido += (i.total || 0);
-    });
-    sessionStorage.setItem("totalItens", totalItens);
-    sessionStorage.setItem("totalPedido", totalPedido.toFixed(2));
-
-    // Debug dos totais
-    console.log("Salvando totais - Total itens:", totalItens, "Total pedido:", totalPedido);
-    console.log("SessionStorage após salvar:", {
-        totalItens: sessionStorage.getItem("totalItens"),
-        totalPedido: sessionStorage.getItem("totalPedido")
-    });
-
-    // Debug
-    console.log("Itens no carrinho após " + (editando ? "atualizar" : "adicionar") + ":", itens);
-    console.log("Total do pedido:", totalPedido);
-    console.log("Ingredientes extras:", ingredientesExtras);
-    
-    window.location.href = '@Url.Action("Cardapio", "Home")';
-}
-
-
-
 </script>

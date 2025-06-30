@@ -26,6 +26,11 @@
   </div>
   <!-- Botao para abrir o modal de cupom -->
   <button class="open-modal-btn botao-cupom" onclick="openModal()">Adicionar Cupom</button>
+
+  <button id="btnRemoverCupom" class="remove-cupom-btn" onclick="removerCupom()">
+    Remover Cupom
+  </button>
+
   <!-- Modal de cupom -->
   <div class="modal-overlay" id="modalOverlay">
     <div class="modal">
@@ -317,8 +322,9 @@
 
           totalPreco.textContent = `R$ ${novoTotal.toFixed(2).replace(".", ",")}`;
           sessionStorage.setItem("cupomAplicado", "true");
+          document.getElementById("btnRemoverCupom").style.display = "inline-block";
         } else {
-           exibirMensagemCupom(data.mensagem);
+          exibirMensagemCupom(data.mensagem);
         }
 
         closeModal();
@@ -329,4 +335,21 @@
         console.error(err);
       });
   }
+
+  function removerCupom() {
+    if (sessionStorage.getItem("cupomAplicado") !== "true") {
+      exibirMensagemCupom("Nenhum cupom aplicado no momento.");
+      return;
+    }
+
+    // Remove o cupom da sessão
+    document.getElementById("btnRemoverCupom").style.display = "none";
+    sessionStorage.removeItem("cupomAplicado");
+
+    exibirMensagemCupom("Cupom removido com sucesso!");
+  }
+  if (sessionStorage.getItem("cupomAplicado") === "true") {
+    document.getElementById("btnRemoverCupom").style.display = "inline-block";
+  }
+
 </script>

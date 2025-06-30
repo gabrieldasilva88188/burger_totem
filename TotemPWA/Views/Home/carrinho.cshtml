@@ -1,361 +1,362 @@
 @{
-    Layout = "_WelcomeLayout";
-    var cardapioUrl = Url.Action("Cardapio", "Home");
+  Layout = "_WelcomeLayout";
+  var cardapioUrl = Url.Action("Cardapio", "Home");
 }
 
 <!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrinho - Totem FastFood</title>
-    <link rel="stylesheet" href="@Url.Content("~/css/carrinho.css")">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho - Totem FastFood</title>
+  <link rel="stylesheet" href="@Url.Content("~/css/carrinho.css")">
 </head>
 
 <body>
 
-    <header>
+  <header>
 
 
-    </header>
+  </header>
 
-    <div class="headCar">
-        <h1> Carrinho de (usuario)</h1>
-        <button class="back-btn" onclick="redirecionarCardapio()">← Voltar</button>
+  <div class="headCar">
+    <h1> Carrinho de (usuario)</h1>
+    <button class="back-btn" onclick="redirecionarCardapio()">← Voltar</button>
+  </div>
+  <button class="open-modal-btn botao-cupom" onclick="abrirModalCupom()">Adicionar Cupom</button> <button
+    id="btnRemoverCupom" class="remove-cupom-btn" onclick="removerCupom()">
+    Remover Cupom
+  </button>
+
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="close-btn" onclick="closeModal()">&times;</button>
+      <h2>ADICIONE O CUPOM</h2>
+      <input type="text" id="nome" value="" readonly maxlength="10" />
+
+      <div class="keyboard" id="keyboard"></div>
     </div>
-    <button class="open-modal-btn botao-cupom" onclick="abrirModalCupom()">Adicionar Cupom</button> <button id="btnRemoverCupom" class="remove-cupom-btn" onclick="removerCupom()">
-        Remover Cupom
-    </button>
+  </div>
+  <div class="modal-msg-overlay" id="modalMsgOverlay">
+    <div class="modal-msg">
+      <p id="modalMsgTexto"></p>
+      <button onclick="fecharModalMsg()">Fechar</button>
+    </div>
+  </div>
 
-    <div class="modal-overlay" id="modalOverlay">
-        <div class="modal">
-            <button class="close-btn" onclick="closeModal()">&times;</button>
-            <h2>ADICIONE O CUPOM</h2>
-            <input type="text" id="nome" value="" readonly maxlength="10" />
 
-            <div class="keyboard" id="keyboard"></div>
+  </div>
+  <main class="cart-container">
+
+    <div class="cart-items"></div>
+
+    <section class="suggestions">
+      <h2>Turbine seu pedido!</h2>
+      <div class="suggestions-container">
+        <div class="suggestion-item">
+          <img src="~/img/bebidas.png" alt="Free Refill">
+          <p>Free Refill</p>
+          <p>R$ 5,00</p>
+          <button style="margin-top: 25px;">+</button>
         </div>
-    </div>
-    <div class="modal-msg-overlay" id="modalMsgOverlay">
-        <div class="modal-msg">
-            <p id="modalMsgTexto"></p>
-            <button onclick="fecharModalMsg()">Fechar</button>
+        <div class="suggestion-item">
+          <img src="~/img/d4u1GTvl_kmUrrsUwaj0OV0huie-m7AFB15UzmGDqoU.jpg" alt="Batata Frita Grande">
+          <p>Batata Frita Grande</p>
+          <p>R$ 8,00</p>
+          <button>+</button>
         </div>
-    </div>
-
-
-    </div>
-    <main class="cart-container">
-
-        <div class="cart-items"></div>
-
-        <section class="suggestions">
-            <h2>Turbine seu pedido!</h2>
-            <div class="suggestions-container">
-                <div class="suggestion-item">
-                    <img src="~/img/bebidas.png" alt="Free Refill">
-                    <p>Free Refill</p>
-                    <p>R$ 5,00</p>
-                    <button style="margin-top: 25px;">+</button>
-                </div>
-                <div class="suggestion-item">
-                    <img src="~/img/d4u1GTvl_kmUrrsUwaj0OV0huie-m7AFB15UzmGDqoU.jpg" alt="Batata Frita Grande">
-                    <p>Batata Frita Grande</p>
-                    <p>R$ 8,00</p>
-                    <button>+</button>
-                </div>
-                <div class="suggestion-item">
-                    <img src="~/img/sobremesas1.jpg" alt="Casquinha Baunilha">
-                    <p>Casquinha Baunilha</p>
-                    <p>R$ 4,00</p>
-                    <button>+</button>
-                </div>
-            </div>
-        </section>
-    </main>
-
-
-    <footer class="cart-summary">
-        <div class="total">
-            <p>Total a pagar:</p>
-            <p class="total-price">R$ 0,00</p>
+        <div class="suggestion-item">
+          <img src="~/img/sobremesas1.jpg" alt="Casquinha Baunilha">
+          <p>Casquinha Baunilha</p>
+          <p>R$ 4,00</p>
+          <button>+</button>
         </div>
-        <button class="checkout-btn" onclick="redirecionarEscolha()">Finalizar Pedido</button>
-        <p class="cancel-order">Cancelar Pedido</p>
-    </footer>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="cart-summary">
+    <div class="total">
+      <p>Total a pagar:</p>
+      <p class="total-price">R$ 0,00</p>
+    </div>
+    <button class="checkout-btn" onclick="redirecionarEscolha()">Finalizar Pedido</button>
+    <p class="cancel-order">Cancelar Pedido</p>
+  </footer>
 
 </body>
 
 </html>
 
 <script>
-    const cardapioUrl = '@cardapioUrl';
+  const cardapioUrl = '@cardapioUrl';
 
-    function redirecionarCardapio() {
-        window.location.href = cardapioUrl;
+  function redirecionarCardapio() {
+    window.location.href = cardapioUrl;
+  }
+
+  function redirecionarEscolha() {
+    window.location.href = "escolha";
+  }
+
+  function atualizarFooterCarrinho() {
+    const totalItens = sessionStorage.getItem("totalItens") || 0;
+    let totalPedido = sessionStorage.getItem("totalPedido");
+    totalPedido = parseFloat(totalPedido);
+    if (isNaN(totalPedido)) totalPedido = 0;
+    const totalPreco = document.querySelector(".total-price");
+    if (totalPreco) totalPreco.textContent = `R$ ${totalPedido.toFixed(2).replace('.', ',')}`;
+  }
+
+  function renderizarItensCarrinho() {
+    let itens = [];
+    try {
+      itens = JSON.parse(sessionStorage.getItem("itensCarrinho")) || [];
+      if (!Array.isArray(itens)) itens = [];
+    } catch (e) {
+      itens = [];
     }
 
-    function redirecionarEscolha() {
-        window.location.href = "escolha";
-    }
+    const container = document.querySelector(".cart-items");
+    container.innerHTML = "";
 
-    function atualizarFooterCarrinho() {
-        const totalItens = sessionStorage.getItem("totalItens") || 0;
-        let totalPedido = sessionStorage.getItem("totalPedido");
-        totalPedido = parseFloat(totalPedido);
-        if (isNaN(totalPedido)) totalPedido = 0;
-        const totalPreco = document.querySelector(".total-price");
-        if (totalPreco) totalPreco.textContent = `R$ ${totalPedido.toFixed(2).replace('.', ',')}`;
-    }
+    const itensValidos = itens.filter(item => {
+      if (!item || !item.nome || isNaN(item.total) || item.total <= 0) {
+        console.warn("Item inválido encontrado e removido:", item);
+        return false;
+      }
+      return true;
+    });
 
-    function renderizarItensCarrinho() {
-        let itens = [];
-        try {
-            itens = JSON.parse(sessionStorage.getItem("itensCarrinho")) || [];
-            if (!Array.isArray(itens)) itens = [];
-        } catch (e) {
-            itens = [];
-        }
+    itensValidos.forEach((item, index) => {
+      let ingredientesTexto = "Sem ingredientes extras";
+      if (item.ingredientesExtras && Object.keys(item.ingredientesExtras).length > 0) {
+        ingredientesTexto = Object.entries(item.ingredientesExtras)
+          .map(([nome, qtd]) => `+${qtd}x ${nome}`)
+          .join(", ");
+      }
 
-        const container = document.querySelector(".cart-items");
-        container.innerHTML = ""; 
+      const itemTotal = parseFloat(item.total) || 0;
 
-        const itensValidos = itens.filter(item => {
-            if (!item || !item.nome || isNaN(item.total) || item.total <= 0) {
-                console.warn("Item inválido encontrado e removido:", item);
-                return false;
-            }
-            return true;
-        });
-
-        itensValidos.forEach((item, index) => {
-            let ingredientesTexto = "Sem ingredientes extras";
-            if (item.ingredientesExtras && Object.keys(item.ingredientesExtras).length > 0) {
-                ingredientesTexto = Object.entries(item.ingredientesExtras)
-                    .map(([nome, qtd]) => `+${qtd}x ${nome}`)
-                    .join(", ");
-            }
-
-            const itemTotal = parseFloat(item.total) || 0;
-
-            container.innerHTML += `
-                <div class="cart-item">
-                    <img src="${item.imagem || ''}" alt="${item.nome}" onerror="this.src='/img/default.png'; this.onerror=null;">
-                    <div class="item-info">
-                        <h2>${item.nome}</h2>
-                        <p>${ingredientesTexto}</p>
-                    </div>
-                    <div class="item-price">
-                        <p>R$ ${itemTotal.toFixed(2).replace(".", ",")}</p>
-                        <div class="quantity">
-                            <button onclick="alterarQtd(${index}, -1)">-</button>
-                            <span>${item.quantidade || 1}</span>
-                            <button onclick="alterarQtd(${index}, 1)">+</button>
-                            <p class="edit-item"><a href="/Home/Personalizar/${item.id}?editando=true">Editar Item</a></p>
+      container.innerHTML += `
+        <div class="cart-item">
+            <img src="${item.imagem || ''}" alt="${item.nome}" onerror="this.src='/img/default.png'; this.onerror=null;">
+            <div class="item-info">
+                <h2>${item.nome}</h2>
+                <p>${ingredientesTexto}</p>
+            </div>
+            <div class="item-price">
+                <p>R$ ${itemTotal.toFixed(2).replace(".", ",")}</p>
+                <div class="quantity">
+                    <button onclick="alterarQtd(${index}, -1)">-</button>
+                    <span>${item.quantidade || 1}</span>
+                    <button onclick="alterarQtd(${index}, 1)">+</button>
+                    <p class="edit-item"><a href="/Home/Personalizar/${item.slug}?editando=true">Editar Item</a></p>
                         </div>
                     </div>
                 </div>
             `;
-        });
-
-        recalcularTotalComCupom();
-
-        if (itensValidos.length !== itens.length) {
-            sessionStorage.setItem("itensCarrinho", JSON.stringify(itensValidos));
-        }
-    }
-
-
-    document.addEventListener("DOMContentLoaded", () => {
-        renderizarItensCarrinho();
-        atualizarFooterCarrinho();
-        if (sessionStorage.getItem("cupomAplicado") === "true") {
-            document.getElementById("btnRemoverCupom").style.display = "inline-block";
-        }
     });
 
-    window.addEventListener('storage', atualizarFooterCarrinho);
-    document.addEventListener('visibilitychange', function () {
-        if (!document.hidden) atualizarFooterCarrinho();
-    });
+    recalcularTotalComCupom();
 
-    function alterarQtd(index, delta) {
-        let itens = JSON.parse(sessionStorage.getItem("itensCarrinho")) || [];
-        if (!itens[index]) {
-            console.warn(`Item no índice ${index} não encontrado. Recarregando carrinho.`);
-            renderizarItensCarrinho(); 
-            return;
-        }
-
-        itens[index].quantidade = (itens[index].quantidade || 1) + delta;
-        if (itens[index].quantidade <= 0) {
-            itens.splice(index, 1);
-        } else {
-            itens[index].total = itens[index].quantidade * (parseFloat(itens[index].precoUnitario) || 0);
-        }
-
-        sessionStorage.setItem("itensCarrinho", JSON.stringify(itens));
-        renderizarItensCarrinho();
+    if (itensValidos.length !== itens.length) {
+      sessionStorage.setItem("itensCarrinho", JSON.stringify(itensValidos));
     }
+  }
 
 
-    function exibirMensagemCupom(texto) {
-        const overlay = document.getElementById("modalMsgOverlay");
-        const msgTexto = document.getElementById("modalMsgTexto");
-        msgTexto.textContent = texto;
-        overlay.style.display = "flex";
-    }
-
-    function fecharModalMsg() {
-        document.getElementById("modalMsgOverlay").style.display = "none";
-    }
-
-    // NOVA FUNÇÃO: Verifica o CPF antes de abrir o modal do cupom
-    function abrirModalCupom() {
-        const clienteCPF = sessionStorage.getItem('clienteCPF');
-        if (clienteCPF && clienteCPF.length === 11) { // Verifica se há um CPF de 11 dígitos
-            document.getElementById("modalOverlay").style.display = "flex";
-        } else {
-            exibirMensagemCupom("Para usar cupons, por favor, informe seu CPF na tela inicial.");
-            // Opcional: Redirecionar para a tela de CPF se você quiser forçar isso.
-            // setTimeout(() => { window.location.href = '/Home/CliCPF'; }, 2000); 
-        }
-    }
-
-    function closeModal() {
-        document.getElementById("modalOverlay").style.display = "none";
-    }
-
-    window.onload = () => {
-        const keyboard = document.getElementById('keyboard');
-        const input = document.getElementById('nome');
-
-        const keys = [
-            ..."ABCDEFGHIJ",
-            ..."KLMNOPQRST",
-            ..."UVWXYZ",
-            "←", "Resetar", "Espaço", "Enter"
-        ];
-
-        keys.forEach(key => {
-            const button = document.createElement('button');
-            button.textContent = key;
-            button.classList.add('key');
-
-            if (["Resetar", "Espaço", "Enter"].includes(key)) {
-                button.classList.add('key-spc');
-            }
-            if (["←"].includes(key)) {
-                button.classList.add('key-wide');
-            }
-            if (key === "Enter") button.classList.add("key-enter");
-            if (key === "Resetar") button.classList.add("key-reset");
-
-            button.addEventListener('click', () => {
-                if (key === "←") {
-                    input.value = input.value.slice(0, -1);
-                } else if (key === "Resetar") {
-                    input.value = "";
-                } else if (key === "Espaço") {
-                    if (input.value.length < 11) input.value += " ";
-                } else if (key === "Enter") {
-                    submeterCupom(input.value);
-                } else {
-                    if (input.value.length < 11) input.value += key;
-                }
-            });
-            keyboard.appendChild(button);
-        });
-
-        const continuar = document.getElementById('continuar');
-        if (continuar) {
-            continuar.addEventListener('click', () => {
-                submeterCupom(input.value);
-            });
-        }
-    };
-
-    function submeterCupom(valorCupom) {
-        // VERIFICAÇÃO ADICIONAL DE CPF ANTES DE SUBMETER O CUPOM
-        const clienteCPF = sessionStorage.getItem('clienteCPF');
-        if (!clienteCPF || clienteCPF.length !== 11) {
-            exibirMensagemCupom("Por favor, informe seu CPF para aplicar um cupom.");
-            closeModal(); // Fecha o modal do cupom
-            return;
-        }
-
-        if (!valorCupom.trim()) {
-            exibirMensagemCupom("Por favor, insira um cupom válido.");
-            return;
-        }
-        if (sessionStorage.getItem("cupomAplicado") === "true") {
-            exibirMensagemCupom("Cupom já aplicado a este pedido.");
-            return;
-        }
-        fetch(`/Home/VerificarCupom?codigo=${encodeURIComponent(valorCupom)}`)
-            .then(response => response.json())
-            .then(data => {
-                if (data.valido) {
-                    exibirMensagemCupom(`Cupom "${valorCupom}" aplicado com sucesso! 🎉`);
-                    sessionStorage.setItem("descontoCupom", data.desconto);
-                    sessionStorage.setItem("cupomAplicado", "true");
-                    recalcularTotalComCupom();
-                    document.getElementById("btnRemoverCupom").style.display = "inline-block";
-                } else {
-                    exibirMensagemCupom(data.mensagem);
-                }
-                closeModal();
-                document.getElementById("nome").value = "";
-            })
-            .catch(err => {
-                alert("Erro ao verificar cupom.");
-                console.error(err);
-            });
-    }
-
-    function recalcularTotalComCupom() {
-        let itens = JSON.parse(sessionStorage.getItem("itensCarrinho")) || [];
-        let totalBruto = 0;
-        itens.forEach(item => {
-            totalBruto += (item.total || 0);
-        });
-
-        let totalFinal = totalBruto;
-        const cupomAplicado = sessionStorage.getItem("cupomAplicado") === "true";
-        const descontoCupom = parseFloat(sessionStorage.getItem("descontoCupom")) || 0;
-
-        if (cupomAplicado && descontoCupom > 0) {
-            totalFinal = totalBruto * (1 - descontoCupom);
-        }
-
-        sessionStorage.setItem("totalPedido", totalFinal.toFixed(2));
-        const totalPrecoElement = document.querySelector(".total-price");
-        if (totalPrecoElement) {
-            totalPrecoElement.textContent = `R$ ${totalFinal.toFixed(2).replace(".", ",")}`;
-        }
-
-        let totalItens = 0;
-        itens.forEach(i => {
-            totalItens += (i.quantidade || 0);
-        });
-        sessionStorage.setItem("totalItens", totalItens);
-        atualizarFooterCarrinho();
-    }
-
-    function removerCupom() {
-        if (sessionStorage.getItem("cupomAplicado") !== "true") {
-            exibirMensagemCupom("Nenhum cupom aplicado no momento.");
-            return;
-        }
-        document.getElementById("btnRemoverCupom").style.display = "none";
-        sessionStorage.removeItem("cupomAplicado");
-        sessionStorage.removeItem("descontoCupom");
-        recalcularTotalComCupom();
-        exibirMensagemCupom("Cupom removido com sucesso!");
-    }
-    
+  document.addEventListener("DOMContentLoaded", () => {
+    renderizarItensCarrinho();
+    atualizarFooterCarrinho();
     if (sessionStorage.getItem("cupomAplicado") === "true") {
       document.getElementById("btnRemoverCupom").style.display = "inline-block";
     }
+  });
+
+  window.addEventListener('storage', atualizarFooterCarrinho);
+  document.addEventListener('visibilitychange', function () {
+    if (!document.hidden) atualizarFooterCarrinho();
+  });
+
+  function alterarQtd(index, delta) {
+    let itens = JSON.parse(sessionStorage.getItem("itensCarrinho")) || [];
+    if (!itens[index]) {
+      console.warn(`Item no índice ${index} não encontrado. Recarregando carrinho.`);
+      renderizarItensCarrinho();
+      return;
+    }
+
+    itens[index].quantidade = (itens[index].quantidade || 1) + delta;
+    if (itens[index].quantidade <= 0) {
+      itens.splice(index, 1);
+    } else {
+      itens[index].total = itens[index].quantidade * (parseFloat(itens[index].precoUnitario) || 0);
+    }
+
+    sessionStorage.setItem("itensCarrinho", JSON.stringify(itens));
+    renderizarItensCarrinho();
+  }
+
+
+  function exibirMensagemCupom(texto) {
+    const overlay = document.getElementById("modalMsgOverlay");
+    const msgTexto = document.getElementById("modalMsgTexto");
+    msgTexto.textContent = texto;
+    overlay.style.display = "flex";
+  }
+
+  function fecharModalMsg() {
+    document.getElementById("modalMsgOverlay").style.display = "none";
+  }
+
+  // NOVA FUNÇÃO: Verifica o CPF antes de abrir o modal do cupom
+  function abrirModalCupom() {
+    const clienteCPF = sessionStorage.getItem('clienteCPF');
+    if (clienteCPF && clienteCPF.length === 11) { // Verifica se há um CPF de 11 dígitos
+      document.getElementById("modalOverlay").style.display = "flex";
+    } else {
+      exibirMensagemCupom("Para usar cupons, por favor, informe seu CPF na tela inicial.");
+      // Opcional: Redirecionar para a tela de CPF se você quiser forçar isso.
+      // setTimeout(() => { window.location.href = '/Home/CliCPF'; }, 2000); 
+    }
+  }
+
+  function closeModal() {
+    document.getElementById("modalOverlay").style.display = "none";
+  }
+
+  window.onload = () => {
+    const keyboard = document.getElementById('keyboard');
+    const input = document.getElementById('nome');
+
+    const keys = [
+      ..."ABCDEFGHIJ",
+      ..."KLMNOPQRST",
+      ..."UVWXYZ",
+      "←", "Resetar", "Espaço", "Enter"
+    ];
+
+    keys.forEach(key => {
+      const button = document.createElement('button');
+      button.textContent = key;
+      button.classList.add('key');
+
+      if (["Resetar", "Espaço", "Enter"].includes(key)) {
+        button.classList.add('key-spc');
+      }
+      if (["←"].includes(key)) {
+        button.classList.add('key-wide');
+      }
+      if (key === "Enter") button.classList.add("key-enter");
+      if (key === "Resetar") button.classList.add("key-reset");
+
+      button.addEventListener('click', () => {
+        if (key === "←") {
+          input.value = input.value.slice(0, -1);
+        } else if (key === "Resetar") {
+          input.value = "";
+        } else if (key === "Espaço") {
+          if (input.value.length < 11) input.value += " ";
+        } else if (key === "Enter") {
+          submeterCupom(input.value);
+        } else {
+          if (input.value.length < 11) input.value += key;
+        }
+      });
+      keyboard.appendChild(button);
+    });
+
+    const continuar = document.getElementById('continuar');
+    if (continuar) {
+      continuar.addEventListener('click', () => {
+        submeterCupom(input.value);
+      });
+    }
+  };
+
+  function submeterCupom(valorCupom) {
+    // VERIFICAÇÃO ADICIONAL DE CPF ANTES DE SUBMETER O CUPOM
+    const clienteCPF = sessionStorage.getItem('clienteCPF');
+    if (!clienteCPF || clienteCPF.length !== 11) {
+      exibirMensagemCupom("Por favor, informe seu CPF para aplicar um cupom.");
+      closeModal(); // Fecha o modal do cupom
+      return;
+    }
+
+    if (!valorCupom.trim()) {
+      exibirMensagemCupom("Por favor, insira um cupom válido.");
+      return;
+    }
+    if (sessionStorage.getItem("cupomAplicado") === "true") {
+      exibirMensagemCupom("Cupom já aplicado a este pedido.");
+      return;
+    }
+    fetch(`/Home/VerificarCupom?codigo=${encodeURIComponent(valorCupom)}`)
+      .then(response => response.json())
+      .then(data => {
+        if (data.valido) {
+          exibirMensagemCupom(`Cupom "${valorCupom}" aplicado com sucesso! 🎉`);
+          sessionStorage.setItem("descontoCupom", data.desconto);
+          sessionStorage.setItem("cupomAplicado", "true");
+          recalcularTotalComCupom();
+          document.getElementById("btnRemoverCupom").style.display = "inline-block";
+        } else {
+          exibirMensagemCupom(data.mensagem);
+        }
+        closeModal();
+        document.getElementById("nome").value = "";
+      })
+      .catch(err => {
+        alert("Erro ao verificar cupom.");
+        console.error(err);
+      });
+  }
+
+  function recalcularTotalComCupom() {
+    let itens = JSON.parse(sessionStorage.getItem("itensCarrinho")) || [];
+    let totalBruto = 0;
+    itens.forEach(item => {
+      totalBruto += (item.total || 0);
+    });
+
+    let totalFinal = totalBruto;
+    const cupomAplicado = sessionStorage.getItem("cupomAplicado") === "true";
+    const descontoCupom = parseFloat(sessionStorage.getItem("descontoCupom")) || 0;
+
+    if (cupomAplicado && descontoCupom > 0) {
+      totalFinal = totalBruto * (1 - descontoCupom);
+    }
+
+    sessionStorage.setItem("totalPedido", totalFinal.toFixed(2));
+    const totalPrecoElement = document.querySelector(".total-price");
+    if (totalPrecoElement) {
+      totalPrecoElement.textContent = `R$ ${totalFinal.toFixed(2).replace(".", ",")}`;
+    }
+
+    let totalItens = 0;
+    itens.forEach(i => {
+      totalItens += (i.quantidade || 0);
+    });
+    sessionStorage.setItem("totalItens", totalItens);
+    atualizarFooterCarrinho();
+  }
+
+  function removerCupom() {
+    if (sessionStorage.getItem("cupomAplicado") !== "true") {
+      exibirMensagemCupom("Nenhum cupom aplicado no momento.");
+      return;
+    }
+    document.getElementById("btnRemoverCupom").style.display = "none";
+    sessionStorage.removeItem("cupomAplicado");
+    sessionStorage.removeItem("descontoCupom");
+    recalcularTotalComCupom();
+    exibirMensagemCupom("Cupom removido com sucesso!");
+  }
+
+  if (sessionStorage.getItem("cupomAplicado") === "true") {
+    document.getElementById("btnRemoverCupom").style.display = "inline-block";
+  }
 </script>

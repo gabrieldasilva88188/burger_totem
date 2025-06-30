@@ -89,6 +89,55 @@
         // Função de redirecionamento para o carrinho
         window.location.href = "/Home/carrinho";
     }
+
+    // Atualiza os totais do footer dinamicamente
+    function atualizarFooterCarrinho() {
+        const totalItens = sessionStorage.getItem("totalItens") || 0;
+        let totalPedido = sessionStorage.getItem("totalPedido");
+        totalPedido = parseFloat(totalPedido);
+        if (isNaN(totalPedido)) totalPedido = 0;
+        
+        // Debug detalhado
+        console.log("=== DEBUG FOOTER CARDÁPIO ===");
+        console.log("SessionStorage totalItens:", sessionStorage.getItem("totalItens"));
+        console.log("SessionStorage totalPedido:", sessionStorage.getItem("totalPedido"));
+        console.log("Valores processados - Total itens:", totalItens, "Total pedido:", totalPedido);
+        console.log("Itens no carrinho:", sessionStorage.getItem("itensCarrinho"));
+        
+        const totalItensElement = document.getElementById("total-itens");
+        const totalPedidoElement = document.getElementById("total-pedido");
+        
+        if (totalItensElement) {
+            totalItensElement.textContent = totalItens;
+            console.log("Elemento total-itens atualizado com:", totalItens);
+        } else {
+            console.error("Elemento total-itens não encontrado");
+        }
+        
+        if (totalPedidoElement) {
+            totalPedidoElement.textContent = totalPedido.toFixed(2).replace('.', ',');
+            console.log("Elemento total-pedido atualizado com:", totalPedido.toFixed(2).replace('.', ','));
+        } else {
+            console.error("Elemento total-pedido não encontrado");
+        }
+        console.log("=== FIM DEBUG ===");
+    }
+    
+    // Atualiza os totais quando a página carrega
+    document.addEventListener('DOMContentLoaded', function() {
+        atualizarFooterCarrinho();
+    });
+    
+    // Atualiza quando há mudanças no sessionStorage
+    window.addEventListener('storage', atualizarFooterCarrinho);
+    
+    // Atualiza quando a página volta a ficar visível
+    document.addEventListener('visibilitychange', function() {
+        if (!document.hidden) atualizarFooterCarrinho();
+    });
+    
+    // Atualiza os totais imediatamente
+    atualizarFooterCarrinho();
 </script>
 </body>
 </html>

@@ -28,6 +28,10 @@ public class PagamentoController : Controller
     {
         return View();
     }
+    public IActionResult Sucesso()
+    {
+        return View();
+    }
     public IActionResult Dinheiro()
     {
         return View("dinheiro"); 

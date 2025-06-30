@@ -50,25 +50,7 @@
   </div>
   <main class="cart-container">
 
-    <div class="cart-items">
-      <div class="cart-item">
-        <img src="~/img/back1.jpg" alt="Whopper">
-        <div class="item-info">
-          <h2>Big Css</h2>
-          <p>*sem alface*</p>
-        </div>
-        <div class="item-price">
-          <p>R$ 27,90</p>
-          <div class="quantity">
-            <button>-</button>
-            <span>1</span>
-            <button>+</button>
-          </div>
-        </div>
-      </div>
-      <p class="edit-item"> <a href="#">Editar Item</a></p>
-    </div>
-
+    <div class="cart-items"></div>
 
     <section class="suggestions">
       <h2>Turbine seu pedido!</h2>
@@ -77,9 +59,7 @@
           <img src="~/img/bebidas.png" alt="Free Refill">
           <p>Free Refill</p>
           <p>R$ 5,00</p>
-          <button style="
-                margin-top: 25px;
-            ">+</button>
+          <button style="margin-top: 25px;">+</button>
         </div>
         <div class="suggestion-item">
           <img src="~/img/d4u1GTvl_kmUrrsUwaj0OV0huie-m7AFB15UzmGDqoU.jpg" alt="Batata Frita Grande">
@@ -101,7 +81,7 @@
   <footer class="cart-summary">
     <div class="total">
       <p>Total a pagar:</p>
-      <p class="total-price">R$ 27,90</p>
+      <p class="total-price">R$ 0,00</p>
     </div>
     <button class="checkout-btn" onclick="redirecionarEscolha()">Finalizar Pedido</button>
     <p class="cancel-order">Cancelar Pedido</p>
@@ -121,57 +101,108 @@
   function redirecionarEscolha() {
     window.location.href = "escolha";
   }
+
+  // Atualiza os totais do footer dinamicamente
+  function atualizarFooterCarrinho() {
+    const totalItens = sessionStorage.getItem("totalItens") || 0;
+    let totalPedido = sessionStorage.getItem("totalPedido");
+    totalPedido = parseFloat(totalPedido);
+    if (isNaN(totalPedido)) totalPedido = 0;
+    // Se quiser exibir o total de itens no carrinho, adicione um elemento e atualize aqui
+    // Exemplo: document.getElementById("total-itens").textContent = totalItens;
+    const totalPreco = document.querySelector(".total-price");
+    if (totalPreco) totalPreco.textContent = `R$ ${totalPedido.toFixed(2).replace('.', ',')}`;
+  }
+  atualizarFooterCarrinho();
+  window.addEventListener('storage', atualizarFooterCarrinho);
+  document.addEventListener('visibilitychange', function() {
+    if (!document.hidden) atualizarFooterCarrinho();
+  });
 </script>
 
 <script>
   document.addEventListener("DOMContentLoaded", () => {
-    const itens = JSON.parse(sessionStorage.getItem("itensCarrinho")) || [];
+    let itens = [];
+    try {
+        itens = JSON.parse(sessionStorage.getItem("itensCarrinho")) || [];
+        if (!Array.isArray(itens)) itens = [];
+    } catch (e) {
+        itens = [];
+    }
     const container = document.querySelector(".cart-items");
     const totalPreco = document.querySelector(".total-price");
 
     container.innerHTML = ""; // Limpa conteúdo fixo
     let totalGeral = 0;
-    itens.forEach((item, index) => {
-      const ingredientes = Object.entries(item.ingredientes)
-        .map(([nome, qtd]) => `${qtd}x ${nome}`)
-        .join(", ");
+    
+    // Filtra itens válidos e calcula total
+    const itensValidos = itens.filter(item => {
+        if (!item || !item.nome || isNaN(item.total) || item.total <= 0) {
+            console.warn("Item inválido encontrado:", item);
+            return false;
+        }
+        return true;
+    });
+    
+    itensValidos.forEach((item, index) => {
+      // Mostra apenas os ingredientes extras (que foram adicionados além do padrão)
+      let ingredientesTexto = "";
+      if (item.ingredientesExtras && Object.keys(item.ingredientesExtras).length > 0) {
+        const ingredientesExtras = Object.entries(item.ingredientesExtras)
+          .map(([nome, qtd]) => `+${qtd}x ${nome}`)
+          .join(", ");
+        ingredientesTexto = ingredientesExtras;
+      } else {
+        ingredientesTexto = "Sem ingredientes extras";
+      }
 
-      totalGeral += item.total;
+      const itemTotal = parseFloat(item.total) || 0;
+      totalGeral += itemTotal;
 
       container.innerHTML += `
-    <div class="cart-item">
-        <img src="${item.imagem}" alt="${item.nome}">
-        <div class="item-info">
-            <h2>${item.nome}</h2>
-            <p>${ingredientes ? ingredientes : "Sem ingredientes extras"}</p>
-        </div>
-        <div class="item-price">
-            <p>R$ ${item.total.toFixed(2).replace(".", ",")}</p>
-            <div class="quantity">
-                <button onclick="alterarQtd(${index}, -1)">-</button>
-                <span>${item.quantidade}</span>
-                <button onclick="alterarQtd(${index}, 1)">+</button>
-                <p class="edit-item"><a href="#">Editar Item</a></p>
+        <div class="cart-item">
+            <img src="${item.imagem || ''}" alt="${item.nome}" onerror="this.src='/img/default.png'; this.onerror=null;">
+            <div class="item-info">
+                <h2>${item.nome}</h2>
+                <p>${ingredientesTexto}</p>
+            </div>
+            <div class="item-price">
+                <p>R$ ${itemTotal.toFixed(2).replace(".", ",")}</p>
+                <div class="quantity">
+                    <button onclick="alterarQtd(${index}, -1)">-</button>
+                    <span>${item.quantidade || 1}</span>
+                    <button onclick="alterarQtd(${index}, 1)">+</button>
+                    <p class="edit-item"><a href="/Home/Personalizar/${item.id}?editando=true">Editar Item</a></p>
+                </div>
             </div>
         </div>
-    </div>
-    
-`;
-
+      `;
+      
+      // Debug da imagem no carrinho
+      console.log(`Imagem do item ${item.nome}:`, item.imagem);
     });
 
-    totalPreco.textContent = `R$ ${totalGeral.toFixed(2).replace(".", ",")}`;
+    if (totalPreco) totalPreco.textContent = `R$ ${totalGeral.toFixed(2).replace(".", ",")}`;
+
+    // Atualiza o sessionStorage com apenas itens válidos
+    if (itensValidos.length !== itens.length) {
+        sessionStorage.setItem("itensCarrinho", JSON.stringify(itensValidos));
+        sessionStorage.setItem("totalItens", itensValidos.reduce((sum, item) => sum + (item.quantidade || 1), 0));
+        sessionStorage.setItem("totalPedido", totalGeral.toFixed(2));
+    }
+
+    alert("Itens no carrinho: " + itensValidos.map(i => i.nome).join(", "));
   });
 
   function alterarQtd(index, delta) {
     let itens = JSON.parse(sessionStorage.getItem("itensCarrinho")) || [];
     if (!itens[index]) return;
 
-    itens[index].quantidade += delta;
+    itens[index].quantidade = (itens[index].quantidade || 1) + delta;
     if (itens[index].quantidade <= 0) {
       itens.splice(index, 1); // Remove item se quantidade for zero
     } else {
-      itens[index].total = itens[index].quantidade * itens[index].precoUnitario;
+      itens[index].total = itens[index].quantidade * (itens[index].precoUnitario || 0);
     }
 
     sessionStorage.setItem("itensCarrinho", JSON.stringify(itens));
@@ -179,12 +210,15 @@
     // Atualiza total
     let totalItens = 0, totalPedido = 0;
     itens.forEach(i => {
-      totalItens += i.quantidade;
-      totalPedido += i.total;
+      totalItens += (i.quantidade || 0);
+      totalPedido += (i.total || 0);
     });
 
     sessionStorage.setItem("totalItens", totalItens);
     sessionStorage.setItem("totalPedido", totalPedido.toFixed(2));
+
+    // Debug dos totais
+    console.log("Carrinho - Salvando totais:", { totalItens, totalPedido });
 
     location.reload(); // Recarrega a tela para atualizar os dados
   }

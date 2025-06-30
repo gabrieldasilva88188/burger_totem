@@ -41,6 +41,21 @@ body {
     color: #4CAF50;
 }
 
+.info-ingredientes {
+    background-color: #e3f2fd;
+    border: 1px solid #2196f3;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin: 0 1rem 1rem 1rem;
+    text-align: center;
+}
+
+.info-ingredientes p {
+    margin: 0;
+    color: #1976d2;
+    font-size: 0.9rem;
+}
+
 #adicionar-ingredientes {
     width: 95%;
     text-align: left;

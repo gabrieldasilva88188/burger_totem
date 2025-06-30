@@ -1,0 +1,67 @@
+@model TotemPWA.Models.Employee
+
+@{
+    ViewData["Title"] = "Editar Funcionário";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Editar Funcionário</h2>
+                </div>
+                <div class="card-body">
+                    <form asp-action="EditEmployee" method="post">
+                        <input type="hidden" asp-for="Id" />
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        
+                        <div class="form-group">
+                            <label asp-for="Name" class="control-label">Nome</label>
+                            <input asp-for="Name" class="form-control" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label asp-for="Email" class="control-label">Email</label>
+                            <input asp-for="Email" type="email" class="form-control" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label asp-for="User" class="control-label">Usuário</label>
+                            <input asp-for="User" class="form-control" />
+                            <span asp-validation-for="User" class="text-danger"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label asp-for="Password" class="control-label">Nova Senha (deixe em branco para manter a atual)</label>
+                            <input asp-for="Password" type="password" class="form-control" />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label asp-for="Type" class="control-label">Tipo</label>
+                            <select asp-for="Type" class="form-control">
+                                <option value="">Selecione um tipo</option>
+                                <option value="admin">Administrador</option>
+                                <option value="funcionario">Funcionário</option>
+                                <option value="gerente">Gerente</option>
+                            </select>
+                            <span asp-validation-for="Type" class="text-danger"></span>
+                        </div>
+                        
+                        <div class="form-group mt-3">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-save"></i> Salvar
+                            </button>
+                            <a asp-action="Employees" class="btn btn-secondary">
+                                <i class="fas fa-arrow-left"></i> Voltar
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

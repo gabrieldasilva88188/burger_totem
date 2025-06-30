@@ -163,6 +163,7 @@ function adicionarAoCarrinho() {
     const nome = document.getElementById("produto-nome").innerText.replace("Personalizar ", "").replace("Editar ", "");
     const editando = @(ViewBag.Editando == true ? "true" : "false");
     const produtoId = @ViewBag.ProdutoId;
+    const produtoSlug = "@ViewBag.ProdutoSlug";
     
     if (editando) {
         alert("Atualizando item no carrinho: " + nome);
@@ -228,6 +229,7 @@ function adicionarAoCarrinho() {
 
     const item = {
         id: produtoId,
+        slug: produtoSlug,
         nome: nome,
         quantidade: quantidade,
         precoUnitario: precoFinal,

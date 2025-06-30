@@ -82,10 +82,23 @@ app.UseAuthorization();
 
 app.MapStaticAssets();
 
+// Rota específica para Personalizar com slug
+app.MapControllerRoute(
+    name: "personalizar",
+    pattern: "Home/Personalizar/{slug}",
+    defaults: new { controller = "Home", action = "Personalizar" });
+
+// Rota específica para Cardapio
+app.MapControllerRoute(
+    name: "cardapio",
+    pattern: "Cardapio/{categorySlug?}/{subcategorySlug?}",
+    defaults: new { controller = "Home", action = "Cardapio" });
+
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
-    .WithStaticAssets();
+    pattern: "{controller=Home}/{action=Index}/{id?}"
+)
+.WithStaticAssets();
 
 
 

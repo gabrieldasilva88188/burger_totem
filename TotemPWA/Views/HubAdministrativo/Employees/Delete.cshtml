@@ -1,0 +1,56 @@
+@model TotemPWA.Models.Employee
+
+@{
+    ViewData["Title"] = "Excluir Funcionário";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Excluir Funcionário</h2>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-danger">
+                        <h4>Tem certeza que deseja excluir este funcionário?</h4>
+                        <p>Esta ação não pode ser desfeita.</p>
+                    </div>
+                    
+                    <dl class="row">
+                        <dt class="col-sm-3">ID:</dt>
+                        <dd class="col-sm-9">@Model.Id</dd>
+                        
+                        <dt class="col-sm-3">Nome:</dt>
+                        <dd class="col-sm-9">@Model.Name</dd>
+                        
+                        <dt class="col-sm-3">Email:</dt>
+                        <dd class="col-sm-9">@Model.Email</dd>
+                        
+                        <dt class="col-sm-3">Usuário:</dt>
+                        <dd class="col-sm-9">@Model.User</dd>
+                        
+                        <dt class="col-sm-3">Tipo:</dt>
+                        <dd class="col-sm-9">
+                            <span class="badge @(Model.Type == "admin" ? "badge-danger" : "badge-info")">
+                                @Model.Type
+                            </span>
+                        </dd>
+                    </dl>
+                    
+                    <form asp-action="DeleteEmployee" method="post">
+                        <input type="hidden" asp-for="Id" />
+                        <div class="form-group mt-3">
+                            <button type="submit" class="btn btn-danger">
+                                <i class="fas fa-trash"></i> Confirmar Exclusão
+                            </button>
+                            <a asp-action="Employees" class="btn btn-secondary">
+                                <i class="fas fa-arrow-left"></i> Voltar
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

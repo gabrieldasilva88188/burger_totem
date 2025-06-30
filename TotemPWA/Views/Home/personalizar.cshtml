@@ -164,11 +164,6 @@
         const produtoId = @ViewBag.ProdutoId;
         const produtoSlug = '@ViewBag.ProdutoSlug'; // <-- ADICIONE ESTA LINHA PARA PEGAR O SLUG DA VIEW BAG
         
-        if (editando) {
-            alert("Atualizando item no carrinho: " + nome);
-        } else {
-            alert("Adicionando ao carrinho: " + nome);
-        }
         
         const quantidade = 1; // Quantidade de unidades do produto sendo adicionado/editado
         let precoBase = precoBaseOriginal;

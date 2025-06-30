@@ -11,6 +11,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carrinho - Totem FastFood</title>
   <link rel="stylesheet" href="@Url.Content("~/css/carrinho.css")">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
 </head>
 
 <body>
@@ -21,11 +23,16 @@
   </header>
 
   <div class="headCar">
-    <h1> Carrinho de (usuario)</h1>
-    <button class="back-btn" onclick="redirecionarCardapio()">← Voltar</button>
+    <h1 id="tituloCarrinho">Carrinho</h1>
+    <button class="btn-voltar" onclick="redirecionarCardapio()"> 
+      <i class="fa-solid fa-arrow-left"></i> Voltar
+    </button>
   </div>
-  <button class="open-modal-btn botao-cupom" onclick="abrirModalCupom()">Adicionar Cupom</button> <button
-    id="btnRemoverCupom" class="remove-cupom-btn" onclick="removerCupom()">
+
+  <!-- Botao para abrir o modal de cupom -->
+  <button class="open-modal-btn botao-cupom" onclick="openModal()"><i class="fa-solid fa-ticket"></i> Adicionar Cupom</button>
+
+  <button id="btnRemoverCupom" class="remove-cupom-btn" onclick="removerCupom()">
     Remover Cupom
   </button>
 
@@ -47,10 +54,10 @@
 
 
   </div>
-  <main class="cart-container">
+   <main class="cart-container"></main>
 
     <div class="cart-items"></div>
-
+<!-- 
     <section class="suggestions">
       <h2>Turbine seu pedido!</h2>
       <div class="suggestions-container">
@@ -73,8 +80,8 @@
           <button>+</button>
         </div>
       </div>
-    </section>
-  </main>
+    </section>-->
+  </main> 
 
 
   <footer class="cart-summary">
@@ -83,7 +90,8 @@
       <p class="total-price">R$ 0,00</p>
     </div>
     <button class="checkout-btn" onclick="redirecionarEscolha()">Finalizar Pedido</button>
-    <p class="cancel-order">Cancelar Pedido</p>
+    <p class="cancel-order" id="cancelarPedido">Cancelar Pedido</p>
+
   </footer>
 
 </body>
@@ -359,4 +367,31 @@
   if (sessionStorage.getItem("cupomAplicado") === "true") {
     document.getElementById("btnRemoverCupom").style.display = "inline-block";
   }
+
+  document.addEventListener("DOMContentLoaded", () => {
+  const nome = sessionStorage.getItem("nomeUsuario") || "usuário";
+  const titulo = document.getElementById("tituloCarrinho");
+
+  // Capitaliza o nome se quiser
+  const nomeFormatado = nome
+    .toLowerCase()
+    .replace(/\b\w/g, letra => letra.toUpperCase());
+
+  titulo.textContent = `Carrinho de ${nomeFormatado}`;
+
+  
+});
+
+  document.getElementById("cancelarPedido").addEventListener("click", () => {
+    // Limpa os dados do carrinho
+    sessionStorage.removeItem("itensCarrinho");
+    sessionStorage.removeItem("totalPedido");
+    sessionStorage.removeItem("totalItens");
+    sessionStorage.removeItem("cupomAplicado");
+
+    // Redireciona para o cardápio (ou a tela que você quiser)
+    window.location.href = '@cardapioUrl';
+  });
+
+
 </script>

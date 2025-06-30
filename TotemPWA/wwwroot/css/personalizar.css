@@ -234,3 +234,29 @@ button[onclick="adicionarAoCarrinho()"]:hover {
     background-color: #e09e00;
 }
 
+.btn-voltar {
+    background-color: #ffb300;
+    color: #ffffff;
+    border: 2px solid #ffffff; 
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.btn-voltar:hover {
+    background-color: #e09e00;
+    transform: scale(1.03);
+}
+
+.btn-voltar i {
+    font-size: 1.1rem;
+}
+
+

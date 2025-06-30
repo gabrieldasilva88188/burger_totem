@@ -54,7 +54,7 @@
   </div>
   <script>
     function selectPayment(method) {
-    alert("Você selecionou: " + method);
+    window.location.href = "@Url.Content("~/Pagamento/Applepay")";
   }
     function redirecionarGooglePay() {
       window.location.href = "@Url.Content("~/Pagamento/Googlepay")";

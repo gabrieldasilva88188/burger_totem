@@ -24,6 +24,10 @@ public class PagamentoController : Controller
     {
         return View();
     }
+    public IActionResult Applepay()
+    {
+        return View();
+    }
     public IActionResult Dinheiro()
     {
         return View("dinheiro"); 

@@ -1,23 +1,23 @@
-    <!DOCTYPE html>
-    <html lang="pt-BR">
-    <head>
-    <meta charset="UTF-8" />
-    <title>Pagamento em Dinheiro</title>
-    <link rel="stylesheet" href="@Url.Content("~/css/pagDinheiro.css")">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<title>Pagamento em Dinheiro</title>
+<link rel="stylesheet" href="@Url.Content("~/css/pagDinheiro.css")">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <div class="top">
-        <button  onclick="voltar()" class="back-button">
-        <i class="fas fa-arrow-left"></i>
-        </button> 
-    </div>
+</head>
+<body>
 
-    <h1>Pagamento com Dinheiro</h1>
+<div class="top">
+    <button onclick="voltar()" class="back-button">
+    <i class="fas fa-arrow-left"></i>
+    </button> 
+</div>
 
-  <div class="container">
+<h1>Pagamento com Dinheiro</h1>
+
+<div class="container">
     <div id="pedidoNumero" class="pedido-numero">
         Número do Pedido: #
     </div>
@@ -26,22 +26,40 @@
         Dirija-se ao caixa para realizar o pagamento.
     </div>
 
-    <div class="total">
-        R$ 34,90
-    </div>
+    <div class="total" id="totalPedidoDisplay"> 
+        R$ 0,00 </div>
 </div>
-    <script>
-        function voltar() {
-                window.location.href = "@Url.Content("~/Pagamento/tpagamento")";
-            }
-
-        function gerarNumeroPedido() {
-        return Math.floor(Math.random() * 9000) + 1000;
+<script>
+    function voltar() {
+            window.location.href = "@Url.Content("~/Pagamento/tpagamento")";
         }
 
-        const numeroPedido = gerarNumeroPedido();
-        document.getElementById('pedidoNumero').innerText = 'Número do Pedido: #' + numeroPedido;
-    </script>
+    function gerarNumeroPedido() {
+        return Math.floor(Math.random() * 9000) + 1000;
+    }
 
-    </body>
-    </html>
+    const numeroPedido = gerarNumeroPedido();
+    document.getElementById('pedidoNumero').innerText = 'Número do Pedido: #' + numeroPedido;
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // Recupera o valor total do sessionStorage
+        let totalDoPedido = sessionStorage.getItem("totalPedido");
+
+        // Verifica se o valor existe e é um número válido
+        if (totalDoPedido) {
+            // Formata para exibição em Real Brasileiro
+            const totalFormatado = parseFloat(totalDoPedido).toLocaleString('pt-BR', {
+                style: 'currency',
+                currency: 'BRL'
+            });
+            document.getElementById('totalPedidoDisplay').innerText = totalFormatado;
+        } else {
+            // Caso não encontre o valor no sessionStorage, define um valor padrão ou exibe um erro
+            document.getElementById('totalPedidoDisplay').innerText = 'R$ 0,00';
+            console.warn("Total do pedido não encontrado no sessionStorage.");
+        }
+    });
+</script>
+
+</body>
+</html>

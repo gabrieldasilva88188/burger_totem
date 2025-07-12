@@ -10,7 +10,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carrinho - Totem FastFood</title>
-  <link rel="stylesheet" href="@Url.Content("~/css/carrinho.css")">
+  <link rel="stylesheet" href="@Url.Content("~/css/home/carrinho.css")">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 </head>
@@ -24,13 +24,14 @@
 
   <div class="headCar">
     <h1 id="tituloCarrinho">Carrinho</h1>
-    <button class="btn-voltar" onclick="redirecionarCardapio()"> 
+    <button class="btn-voltar" onclick="redirecionarCardapio()">
       <i class="fa-solid fa-arrow-left"></i> Voltar
     </button>
   </div>
 
   <!-- Botao para abrir o modal de cupom -->
-  <button class="open-modal-btn botao-cupom" onclick="abrirModalCupom()"><i class="fa-solid fa-ticket"></i> Adicionar Cupom</button>
+  <button class="open-modal-btn botao-cupom" onclick="abrirModalCupom()"><i class="fa-solid fa-ticket"></i> Adicionar
+    Cupom</button>
 
   <button id="btnRemoverCupom" class="remove-cupom-btn" onclick="removerCupom()">
     Remover Cupom
@@ -54,10 +55,10 @@
 
 
   </div>
-   <main class="cart-container"></main>
+  <main class="cart-container"></main>
 
-    <div class="cart-items"></div>
-<!-- 
+  <div class="cart-items"></div>
+  <!-- 
     <section class="suggestions">
       <h2>Turbine seu pedido!</h2>
       <div class="suggestions-container">
@@ -81,7 +82,7 @@
         </div>
       </div>
     </section>-->
-  </main> 
+  </main>
 
 
   <footer class="cart-summary">
@@ -241,7 +242,7 @@
     document.getElementById("modalOverlay").style.display = "none";
   }
 
-  window.onload = () => {
+  document.addEventListener("DOMContentLoaded", () => {
     const keyboard = document.getElementById('keyboard');
     const input = document.getElementById('nome');
 
@@ -288,7 +289,8 @@
         submeterCupom(input.value);
       });
     }
-  };
+  });
+
 
   function submeterCupom(valorCupom) {
     // VERIFICAÇÃO ADICIONAL DE CPF ANTES DE SUBMETER O CUPOM
@@ -374,18 +376,18 @@
   }
 
   document.addEventListener("DOMContentLoaded", () => {
-  const nome = sessionStorage.getItem("nomeUsuario") || "usuário";
-  const titulo = document.getElementById("tituloCarrinho");
+    const nome = sessionStorage.getItem("nomeUsuario") || "usuário";
+    const titulo = document.getElementById("tituloCarrinho");
 
-  // Capitaliza o nome se quiser
-  const nomeFormatado = nome
-    .toLowerCase()
-    .replace(/\b\w/g, letra => letra.toUpperCase());
+    // Capitaliza o nome se quiser
+    const nomeFormatado = nome
+      .toLowerCase()
+      .replace(/\b\w/g, letra => letra.toUpperCase());
 
-  titulo.textContent = `Carrinho de ${nomeFormatado}`;
+    titulo.textContent = `Carrinho de ${nomeFormatado}`;
 
-  
-});
+
+  });
 
   document.getElementById("cancelarPedido").addEventListener("click", () => {
     // Limpa os dados do carrinho
@@ -402,74 +404,75 @@
 </script>
 
 <script>
-    let inactivityTimeout;
-    let questionTimeout;
-    const inactivityDelay = 2 * 60 * 1000; // 2 minutos
-    const responseDelay = 15 * 1000;        // 15 segundos
+  let inactivityTimeout;
+  let questionTimeout;
+  const inactivityDelay = 2 * 60 * 1000; // 2 minutos
+  const responseDelay = 15 * 1000;        // 15 segundos
 
-    function resetPedido() {
-        // Limpa os dados do carrinho
-        sessionStorage.removeItem("itensCarrinho");
-        sessionStorage.removeItem("totalPedido");
-        sessionStorage.removeItem("totalItens");
-        sessionStorage.removeItem("cupomAplicado");
+  function resetPedido() {
+    // Limpa os dados do carrinho
+    sessionStorage.removeItem("itensCarrinho");
+    sessionStorage.removeItem("totalPedido");
+    sessionStorage.removeItem("totalItens");
+    sessionStorage.removeItem("cupomAplicado");
 
-        // Redireciona para a tela inicial
-        window.location.href = "/";
-    }
+    // Redireciona para a tela inicial
+    window.location.href = "/";
+  }
 
-    function showPrompt() {
-        // Criar o modal
-        const prompt = document.createElement("div");
-        prompt.id = "inactivityPrompt";
+  function showPrompt() {
+    // Criar o modal
+    const prompt = document.createElement("div");
+    prompt.id = "inactivityPrompt";
 
-        // Texto
-        const message = document.createElement("p");
-        message.innerText = "Tem alguém aí?";
+    // Texto
+    const message = document.createElement("p");
+    message.innerText = "Tem alguém aí?";
 
-        // Botão confirmar
-        const btnConfirm = document.createElement("button");
-        btnConfirm.innerText = "Estou usando o Totem!!";
+    // Botão confirmar
+    const btnConfirm = document.createElement("button");
+    btnConfirm.innerText = "Estou usando o Totem!!";
 
-        btnConfirm.addEventListener("click", () => {
-            clearTimeout(questionTimeout);
-            clearPrompt();
-            resetInactivityTimer();
-        });
-
-        prompt.appendChild(message);
-        prompt.appendChild(btnConfirm);
-        document.body.appendChild(prompt);
-
-        // Inicia contagem para resetar se não houver resposta
-        questionTimeout = setTimeout(() => {
-            resetPedido();
-        }, responseDelay);
-    }
-
-    function clearPrompt() {
-        const prompt = document.getElementById("inactivityPrompt");
-        if (prompt) {
-            prompt.remove();
-        }
-        clearTimeout(questionTimeout);
-    }
-
-    function resetInactivityTimer() {
-        clearTimeout(inactivityTimeout);
-        clearPrompt();
-
-        inactivityTimeout = setTimeout(() => {
-            showPrompt();
-        }, inactivityDelay);
-    }
-
-    // Eventos de interação
-    ["click", "mousemove", "keydown", "touchstart"].forEach(evt => {
-        document.addEventListener(evt, resetInactivityTimer);
+    btnConfirm.addEventListener("click", () => {
+      clearTimeout(questionTimeout);
+      clearPrompt();
+      resetInactivityTimer();
     });
 
-    window.onload = () => {
-        resetInactivityTimer();
-    };
+    prompt.appendChild(message);
+    prompt.appendChild(btnConfirm);
+    document.body.appendChild(prompt);
+
+    // Inicia contagem para resetar se não houver resposta
+    questionTimeout = setTimeout(() => {
+      resetPedido();
+    }, responseDelay);
+  }
+
+  function clearPrompt() {
+    const prompt = document.getElementById("inactivityPrompt");
+    if (prompt) {
+      prompt.remove();
+    }
+    clearTimeout(questionTimeout);
+  }
+
+  function resetInactivityTimer() {
+    clearTimeout(inactivityTimeout);
+    clearPrompt();
+
+    inactivityTimeout = setTimeout(() => {
+      showPrompt();
+    }, inactivityDelay);
+  }
+
+  // Eventos de interação
+  ["click", "mousemove", "keydown", "touchstart"].forEach(evt => {
+    document.addEventListener(evt, resetInactivityTimer);
+  });
+
+  document.addEventListener("DOMContentLoaded", () => {
+    resetInactivityTimer();
+  });
+
 </script>

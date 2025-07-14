@@ -2,8 +2,9 @@
     Layout = "_WelcomeLayout";
     var cardapioUrl = Url.Action("Cardapio", "Home");
 }
+
 <head>
-    <link rel="stylesheet" href="@Url.Content("~/css/home/cliCPF.css")"/>
+    <link rel="stylesheet" href="@Url.Content("~/css/home/cliCPF.css")" />
 </head>
 <h1>DIGITE SEU CPF</h1>
 <div class="input-box">
@@ -13,7 +14,8 @@
 <div class="keyboard" id="keyboard"></div>
 
 <button id="continuar">CONTINUAR</button>
-<button id="avancarSemCpf" class="secondary-btn">AVANÇAR SEM CPF</button> <script>
+<button id="avancarSemCpf" class="secondary-btn">AVANÇAR SEM CPF</button>
+<script>
     const keyboard = document.getElementById('keyboard');
     const input = document.getElementById('cpf');
     const keys = [
@@ -45,7 +47,7 @@
             } else if (key === "Limpar") {
                 currentVal = "";
             } else {
-                if(currentVal.length < 11) {
+                if (currentVal.length < 11) {
                     currentVal += key;
                 }
             }
@@ -93,7 +95,7 @@
 
         // Armazena o CPF válido no sessionStorage
         sessionStorage.setItem('clienteCPF', cpfValor.replace(/\D/g, '')); // Armazena apenas os números
-        
+
         window.location.href = cardapioUrl;
     });
 

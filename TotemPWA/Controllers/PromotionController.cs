@@ -48,4 +48,4 @@ namespace TotemPWA.Controllers
             return NoContent();
         }
     }
-} 
+}

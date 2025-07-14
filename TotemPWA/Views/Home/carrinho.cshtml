@@ -58,30 +58,6 @@
   <main class="cart-container"></main>
 
   <div class="cart-items"></div>
-  <!-- 
-    <section class="suggestions">
-      <h2>Turbine seu pedido!</h2>
-      <div class="suggestions-container">
-        <div class="suggestion-item">
-          <img src="~/img/bebidas.png" alt="Free Refill">
-          <p>Free Refill</p>
-          <p>R$ 5,00</p>
-          <button style="margin-top: 25px;">+</button>
-        </div>
-        <div class="suggestion-item">
-          <img src="~/img/d4u1GTvl_kmUrrsUwaj0OV0huie-m7AFB15UzmGDqoU.jpg" alt="Batata Frita Grande">
-          <p>Batata Frita Grande</p>
-          <p>R$ 8,00</p>
-          <button>+</button>
-        </div>
-        <div class="suggestion-item">
-          <img src="~/img/sobremesas1.jpg" alt="Casquinha Baunilha">
-          <p>Casquinha Baunilha</p>
-          <p>R$ 4,00</p>
-          <button>+</button>
-        </div>
-      </div>
-    </section>-->
   </main>
 
 
@@ -226,15 +202,12 @@
     document.getElementById("modalMsgOverlay").style.display = "none";
   }
 
-  // NOVA FUNÇÃO: Verifica o CPF antes de abrir o modal do cupom
   function abrirModalCupom() {
     const clienteCPF = sessionStorage.getItem('clienteCPF');
-    if (clienteCPF && clienteCPF.length === 11) { // Verifica se há um CPF de 11 dígitos
+    if (clienteCPF && clienteCPF.length === 11) { 
       document.getElementById("modalOverlay").style.display = "flex";
     } else {
       exibirMensagemCupom("Para usar cupons, por favor, informe seu CPF na tela inicial.");
-      // Opcional: Redirecionar para a tela de CPF se você quiser forçar isso.
-      // setTimeout(() => { window.location.href = '/Home/CliCPF'; }, 2000); 
     }
   }
 
@@ -379,7 +352,6 @@
     const nome = sessionStorage.getItem("nomeUsuario") || "usuário";
     const titulo = document.getElementById("tituloCarrinho");
 
-    // Capitaliza o nome se quiser
     const nomeFormatado = nome
       .toLowerCase()
       .replace(/\b\w/g, letra => letra.toUpperCase());
@@ -396,7 +368,7 @@
     sessionStorage.removeItem("totalItens");
     sessionStorage.removeItem("cupomAplicado");
 
-    // Redireciona para o cardápio (ou a tela que você quiser)
+    // Redireciona para o cardápio 
     window.location.href = '@cardapioUrl';
   });
 

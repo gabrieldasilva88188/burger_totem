@@ -31,12 +31,13 @@
     <label class="form-label">Imagem:</label><br />
     @if (Model.Image != null)
     {
-        <img src="@Url.Action("GetImage", "HubAdministrativo", new { id = Model.Id })" alt="Imagem" width="80" height="80" style="object-fit:cover; border-radius:8px;" />
+        <img src="@Url.Action("GetImage", "HubAdministrativo", new { id = Model.Id })" alt="Imagem" width="80" height="80"
+            style="object-fit:cover; border-radius:8px;" />
     }
 </div>
 
 <form asp-action="Delete" method="post">
     <input type="hidden" asp-for="Id" />
     <button type="submit" class="btn btn-danger">Excluir</button>
-      <a href="@Url.Action("Products", "HubAdministrativo")" class="btn btn-secondary">Cancelar</a>
-</form> 
+    <a href="@Url.Action("Products", "HubAdministrativo")" class="btn btn-secondary">Cancelar</a>
+</form>

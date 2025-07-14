@@ -12,7 +12,7 @@
 <body>
 
   <a href="#" class="back-button " onclick="voltar()">
-      <i class="fa-solid fa-arrow-left fa-xl"></i>
+    <i class="fa-solid fa-arrow-left fa-xl"></i>
   </a>
 
   <div class="container">
@@ -47,76 +47,76 @@
 </script>
 
 <script>
-    let inactivityTimeout;
-    let questionTimeout;
-    const inactivityDelay = 2 * 60 * 1000; // 2 minutos
-    const responseDelay = 15 * 1000;        // 15 segundos
+  let inactivityTimeout;
+  let questionTimeout;
+  const inactivityDelay = 2 * 60 * 1000; // 2 minutos
+  const responseDelay = 15 * 1000;        // 15 segundos
 
-    function resetPedido() {
-        // Limpa os dados do carrinho
-        sessionStorage.removeItem("itensCarrinho");
-        sessionStorage.removeItem("totalPedido");
-        sessionStorage.removeItem("totalItens");
-        sessionStorage.removeItem("cupomAplicado");
+  function resetPedido() {
+    // Limpa os dados do carrinho
+    sessionStorage.removeItem("itensCarrinho");
+    sessionStorage.removeItem("totalPedido");
+    sessionStorage.removeItem("totalItens");
+    sessionStorage.removeItem("cupomAplicado");
 
-        // Redireciona para a tela inicial
-        window.location.href = "/";
-    }
+    // Redireciona para a tela inicial
+    window.location.href = "/";
+  }
 
-    function showPrompt() {
-        // Criar o modal
-        const prompt = document.createElement("div");
-        prompt.id = "inactivityPrompt";
+  function showPrompt() {
+    // Criar o modal
+    const prompt = document.createElement("div");
+    prompt.id = "inactivityPrompt";
 
-        // Texto
-        const message = document.createElement("p");
-        message.innerText = "Tem alguém aí?";
+    // Texto
+    const message = document.createElement("p");
+    message.innerText = "Tem alguém aí?";
 
-        // Botão confirmar
-        const btnConfirm = document.createElement("button");
-        btnConfirm.innerText = "Estou usando o Totem!!";
+    // Botão confirmar
+    const btnConfirm = document.createElement("button");
+    btnConfirm.innerText = "Estou usando o Totem!!";
 
-        btnConfirm.addEventListener("click", () => {
-            clearTimeout(questionTimeout);
-            clearPrompt();
-            resetInactivityTimer();
-        });
-
-        prompt.appendChild(message);
-        prompt.appendChild(btnConfirm);
-        document.body.appendChild(prompt);
-
-        // Inicia contagem para resetar se não houver resposta
-        questionTimeout = setTimeout(() => {
-            resetPedido();
-        }, responseDelay);
-    }
-
-    function clearPrompt() {
-        const prompt = document.getElementById("inactivityPrompt");
-        if (prompt) {
-            prompt.remove();
-        }
-        clearTimeout(questionTimeout);
-    }
-
-    function resetInactivityTimer() {
-        clearTimeout(inactivityTimeout);
-        clearPrompt();
-
-        inactivityTimeout = setTimeout(() => {
-            showPrompt();
-        }, inactivityDelay);
-    }
-
-    // Eventos de interação
-    ["click", "mousemove", "keydown", "touchstart"].forEach(evt => {
-        document.addEventListener(evt, resetInactivityTimer);
+    btnConfirm.addEventListener("click", () => {
+      clearTimeout(questionTimeout);
+      clearPrompt();
+      resetInactivityTimer();
     });
 
-    window.onload = () => {
-        resetInactivityTimer();
-    };
+    prompt.appendChild(message);
+    prompt.appendChild(btnConfirm);
+    document.body.appendChild(prompt);
+
+    // Inicia contagem para resetar se não houver resposta
+    questionTimeout = setTimeout(() => {
+      resetPedido();
+    }, responseDelay);
+  }
+
+  function clearPrompt() {
+    const prompt = document.getElementById("inactivityPrompt");
+    if (prompt) {
+      prompt.remove();
+    }
+    clearTimeout(questionTimeout);
+  }
+
+  function resetInactivityTimer() {
+    clearTimeout(inactivityTimeout);
+    clearPrompt();
+
+    inactivityTimeout = setTimeout(() => {
+      showPrompt();
+    }, inactivityDelay);
+  }
+
+  // Eventos de interação
+  ["click", "mousemove", "keydown", "touchstart"].forEach(evt => {
+    document.addEventListener(evt, resetInactivityTimer);
+  });
+
+  window.onload = () => {
+    resetInactivityTimer();
+  };
 </script>
 
 </html>

@@ -41,7 +41,7 @@ public class HomeController : Controller
         if (cupom == null)
             return Json(new { valido = false, mensagem = "Cupom não encontrado." });
 
-        if (!cupom.Active )
+        if (!cupom.Active)
             return Json(new { valido = false, mensagem = "Cupom inativo." });
 
         if (cupom.ValidUntil.HasValue && cupom.ValidUntil < DateTime.Now)
@@ -161,7 +161,8 @@ public class HomeController : Controller
             ViewBag.Imagem = Url.Content("~/img/default.png");
         }
 
-        ViewBag.Ingredientes = produto.ProductIngredients.Select(pi => new {
+        ViewBag.Ingredientes = produto.ProductIngredients.Select(pi => new
+        {
             pi.Ingredient.Id,
             pi.Ingredient.Name,
             pi.Ingredient.Price,

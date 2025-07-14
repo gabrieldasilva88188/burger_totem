@@ -1,15 +1,17 @@
 @{
-    Layout = "_WelcomeLayout";
+  Layout = "_WelcomeLayout";
 }
 
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Confirmação de Pagamento</title>
-    <link rel="stylesheet" href="@Url.Content("~/css/confirmacao.css")">
+  <link rel="stylesheet" href="@Url.Content("~/css/confirmacao.css")">
 </head>
+
 <body>
   <div class="container">
     <div class="title">
@@ -25,19 +27,19 @@
 
   <script>
     // Define o tempo em milissegundos para o redirecionamento (5 segundos = 5000 ms)
-    const redirectDelay = 5000; 
+    const redirectDelay = 5000;
 
 
     function resetPedidoCompleto() {
-        sessionStorage.removeItem("itensCarrinho");
-        sessionStorage.removeItem("totalPedido");
-        sessionStorage.removeItem("totalItens");
-        sessionStorage.removeItem("cupomAplicado");
-        console.log("Carrinho e dados do pedido limpos com sucesso!");
+      sessionStorage.removeItem("itensCarrinho");
+      sessionStorage.removeItem("totalPedido");
+      sessionStorage.removeItem("totalItens");
+      sessionStorage.removeItem("cupomAplicado");
+      console.log("Carrinho e dados do pedido limpos com sucesso!");
     }
 
     // Chama a função de limpeza IMEDIATAMENTE quando a página de sucesso é carregada
-    resetPedidoCompleto(); 
+    resetPedidoCompleto();
 
     // Redireciona para a página inicial após o tempo definido
     setTimeout(() => {
@@ -45,11 +47,12 @@
     }, redirectDelay);
   </script>
 </body>
+
 </html>
 
 
 <style>
-body {
+  body {
     margin: 0;
     padding: 0;
     font-family: serif;

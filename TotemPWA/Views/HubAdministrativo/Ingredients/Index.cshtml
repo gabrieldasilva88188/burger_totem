@@ -29,10 +29,12 @@
                 <td>R$ @item.Price.ToString("0.00")</td>
                 <td>@item.Limit</td>
                 <td>
-                    <a href="@Url.Action("EditIngredient", "HubAdministrativo", new { id = item.Id })" class="btn btn-sm btn-warning">Editar</a>
-                    <a href="@Url.Action("DeleteIngredient", "HubAdministrativo", new { id = item.Id })" class="btn btn-sm btn-danger">Excluir</a>
+                    <a href="@Url.Action("EditIngredient", "HubAdministrativo", new { id = item.Id })"
+                        class="btn btn-sm btn-warning">Editar</a>
+                    <a href="@Url.Action("DeleteIngredient", "HubAdministrativo", new { id = item.Id })"
+                        class="btn btn-sm btn-danger">Excluir</a>
                 </td>
             </tr>
         }
     </tbody>
-</table> 
+</table>

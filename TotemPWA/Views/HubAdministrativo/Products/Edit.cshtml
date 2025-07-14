@@ -39,7 +39,8 @@
         <label class="form-label">Imagem Atual</label><br />
         @if (Model.Image != null)
         {
-            <img src="@Url.Action("GetImage", "HubAdministrativo", new { id = Model.Id })" alt="Imagem" width="80" height="80" style="object-fit:cover; border-radius:8px;" />
+            <img src="@Url.Action("GetImage", "HubAdministrativo", new { id = Model.Id })" alt="Imagem" width="80"
+                height="80" style="object-fit:cover; border-radius:8px;" />
         }
     </div>
     <div class="mb-3">
@@ -48,4 +49,4 @@
     </div>
     <button type="submit" class="btn btn-primary">Salvar Alterações</button>
     <a href="@Url.Action("Products", "HubAdministrativo")" class="btn btn-secondary">Cancelar</a>
-</form> 
+</form>

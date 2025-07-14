@@ -35,7 +35,8 @@
     <label class="form-label">Imagem:</label><br />
     @if (Model.Image != null)
     {
-        <img src="@Url.Action("GetImage", "Products", new { id = Model.Id })" alt="Imagem" width="120" height="120" style="object-fit:cover; border-radius:8px;" />
+        <img src="@Url.Action("GetImage", "Products", new { id = Model.Id })" alt="Imagem" width="120" height="120"
+            style="object-fit:cover; border-radius:8px;" />
     }
 </div>
-<a asp-action="Index" class="btn btn-secondary">Voltar</a> 
+<a asp-action="Index" class="btn btn-secondary">Voltar</a>

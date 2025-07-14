@@ -34,6 +34,6 @@ public class PagamentoController : Controller
     }
     public IActionResult Dinheiro()
     {
-        return View("dinheiro"); 
+        return View("dinheiro");
     }
 }

@@ -23,32 +23,32 @@ public class EmployeeLoginController : Controller
         return View();
     }
 
-  [HttpPost("Login")]
-public async Task<IActionResult> Login(string user, string password)
-{
-    // Debug
-    Console.WriteLine($"Tentativa de login - User: '{user}', Password: '{password}'");
-    
-    var employee = await _context.Employees
-        .FirstOrDefaultAsync(e => e.User == user);
-    
-    if (employee != null)
+    [HttpPost("Login")]
+    public async Task<IActionResult> Login(string user, string password)
     {
-        Console.WriteLine($"Usuário encontrado. Senha no BD: '{employee.Password}'");
-        
-        // Comparação direta sem hash
-        if (password == employee.Password)
+        // Debug
+        Console.WriteLine($"Tentativa de login - User: '{user}', Password: '{password}'");
+
+        var employee = await _context.Employees
+            .FirstOrDefaultAsync(e => e.User == user);
+
+        if (employee != null)
         {
-            HttpContext.Session.SetInt32("EmployeeId", employee.Id);
-            HttpContext.Session.SetString("EmployeeName", employee.User);
-            HttpContext.Session.SetString("EmployeeRole", employee.Type);
-            return RedirectToAction("Index", "HubAdministrativo");
+            Console.WriteLine($"Usuário encontrado. Senha no BD: '{employee.Password}'");
+
+            // Comparação direta sem hash
+            if (password == employee.Password)
+            {
+                HttpContext.Session.SetInt32("EmployeeId", employee.Id);
+                HttpContext.Session.SetString("EmployeeName", employee.User);
+                HttpContext.Session.SetString("EmployeeRole", employee.Type);
+                return RedirectToAction("Index", "HubAdministrativo");
+            }
         }
+
+        ViewBag.Error = "Usuário ou senha inválidos.";
+        return View();
     }
-    
-    ViewBag.Error = "Usuário ou senha inválidos.";
-    return View();
-}
 
     public IActionResult Logout()
     {

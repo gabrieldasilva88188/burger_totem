@@ -1,0 +1,305 @@
+@model TotemPWA.Models.Combo
+
+@{
+    ViewData["Title"] = "Editar Combo";
+    Layout = "_AdminLayout";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Editar Combo: @Model.Name</h3>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Edit" method="post" enctype="multipart/form-data">
+                        <input type="hidden" asp-for="Id" />
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label asp-for="Name" class="control-label">Nome do Combo</label>
+                                    <input asp-for="Name" class="form-control" />
+                                    <span asp-validation-for="Name" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label asp-for="Price" class="control-label">Preço</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">R$</span>
+                                        <input asp-for="Price" class="form-control" type="number" step="0.01" min="0" />
+                                    </div>
+                                    <span asp-validation-for="Price" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group mb-3">
+                            <label asp-for="Description" class="control-label">Descrição</label>
+                            <textarea asp-for="Description" class="form-control" rows="3"></textarea>
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+                        
+                        <div class="form-group mb-3">
+                            <label asp-for="CategoryId" class="control-label">Categoria do Combo</label>
+                            <select asp-for="CategoryId" class="form-select" required>
+                                <option value="">Selecione uma categoria...</option>
+                                @foreach (var categoria in ViewBag.Categorias)
+                                {
+                                    var selected = categoria.Id == Model.CategoryId ? "selected" : "";
+                                    <option value="@categoria.Id" selected="@(categoria.Id == Model.CategoryId)">
+                                        @categoria.Name
+                                    </option>
+                                }
+                            </select>
+                            <span asp-validation-for="CategoryId" class="text-danger"></span>
+                        </div>
+                        
+                        <div class="form-group mb-3">
+                            <label class="control-label">Imagem do Combo</label>
+                            @if (Model.Image != null)
+                            {
+                                <div class="mb-2">
+                                    <img src="@Url.Action("GetImage", "Combo", new { id = Model.Id })" 
+                                         alt="@Model.Name" class="img-thumbnail" style="max-height: 150px;" />
+                                    <small class="form-text text-muted">Imagem atual</small>
+                                </div>
+                            }
+                            <input type="file" name="ImageFile" class="form-control" accept="image/*" />
+                            <small class="form-text text-muted">Deixe em branco para manter a imagem atual. Formatos aceitos: JPG, PNG, GIF, WEBP</small>
+                        </div>
+                        
+                        <div class="form-check mb-3">
+                            <input asp-for="IsActive" class="form-check-input" />
+                            <label asp-for="IsActive" class="form-check-label">Combo Ativo</label>
+                        </div>
+                        
+                        <hr>
+                        
+                        <h4>Produtos do Combo <span id="produtos-count" class="badge bg-info">@(ViewBag.ProdutosAssociados?.Count ?? 1)</span></h4>
+                        <div id="produtos-container">
+                            @if (ViewBag.ProdutosAssociados != null && ViewBag.ProdutosAssociados.Count > 0)
+                            {
+                                @foreach (var comboProduct in ViewBag.ProdutosAssociados)
+                                {
+                                    <div class="produto-item mb-3 p-3 border rounded">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label class="control-label">Produto</label>
+                                                <select name="produtoIds" class="form-select produto-select" required>
+                                                    <option value="">Selecione um produto...</option>
+                                                    @foreach (var produto in ViewBag.Produtos)
+                                                    {
+                                                        var selected = produto.Id == comboProduct.ProductId ? "selected" : "";
+                                                        <option value="@produto.Id" data-preco="@produto.Price" selected="@(produto.Id == comboProduct.ProductId)">
+                                                            @produto.Category.Name - @produto.Name (R$ @produto.Price.ToString("0.00"))
+                                                        </option>
+                                                    }
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label class="control-label">Quantidade</label>
+                                                <input type="number" name="quantidades" class="form-control quantidade-input" 
+                                                       value="@comboProduct.Quantity" min="1" required />
+                                            </div>
+                                            <div class="col-md-2 d-flex align-items-end">
+                                                <button type="button" class="btn btn-danger btn-remover-produto">
+                                                    <i class="fas fa-trash"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            }
+                            else
+                            {
+                                <div class="produto-item mb-3 p-3 border rounded">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label class="control-label">Produto</label>
+                                            <select name="produtoIds" class="form-select produto-select" required>
+                                                <option value="">Selecione um produto...</option>
+                                                @foreach (var produto in ViewBag.Produtos)
+                                                {
+                                                    <option value="@produto.Id" data-preco="@produto.Price">
+                                                        @produto.Category.Name - @produto.Name (R$ @produto.Price.ToString("0.00"))
+                                                    </option>
+                                                }
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="control-label">Quantidade</label>
+                                            <input type="number" name="quantidades" class="form-control quantidade-input" value="1" min="1" required />
+                                        </div>
+                                        <div class="col-md-2 d-flex align-items-end">
+                                            <button type="button" class="btn btn-danger btn-remover-produto" style="display: none;">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                        
+                        <button type="button" id="btn-adicionar-produto" class="btn btn-outline-primary mb-3">
+                            <i class="fas fa-plus"></i> Adicionar Produto
+                        </button>
+                        
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-save"></i> Salvar Alterações
+                            </button>
+                            <a asp-action="Index" class="btn btn-secondary">
+                                <i class="fas fa-arrow-left"></i> Voltar
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Produtos Disponíveis</h5>
+                </div>
+                <div class="card-body">
+                    <div class="list-group">
+                        @foreach (var produto in ViewBag.Produtos)
+                        {
+                            <div class="list-group-item">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>@produto.Name</strong>
+                                        <br>
+                                        <small class="text-muted">@produto.Category.Name</small>
+                                    </div>
+                                    <span class="badge bg-primary">R$ @produto.Price.ToString("0.00")</span>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Versão com jQuery
+        $(document).ready(function() {
+            console.log('Script carregado - jQuery disponível:', typeof $ !== 'undefined');
+            
+            // Função para atualizar botões de remoção e contador
+            function updateRemoveButtons() {
+                var items = $('.produto-item');
+                var count = items.length;
+                console.log('Atualizando botões - Total de produtos:', count);
+                $('#produtos-count').text(count);
+                
+                if (count > 1) {
+                    items.find('.btn-remover-produto').show();
+                } else {
+                    items.find('.btn-remover-produto').hide();
+                }
+            }
+            
+            // Adicionar novo produto
+            $('#btn-adicionar-produto').click(function(e) {
+                e.preventDefault();
+                console.log('Botão adicionar produto clicado');
+                
+                var template = $('.produto-item').first().clone();
+                template.find('select').val('');
+                template.find('input').val('1');
+                template.find('.btn-remover-produto').show();
+                $('#produtos-container').append(template);
+                updateRemoveButtons();
+                
+                console.log('Novo produto adicionado');
+            });
+            
+            // Remover produto
+            $(document).on('click', '.btn-remover-produto', function() {
+                console.log('Removendo produto');
+                var items = $('.produto-item');
+                if (items.length > 1) {
+                    $(this).closest('.produto-item').remove();
+                } else {
+                    // Se for o último item, apenas limpar os valores
+                    $(this).closest('.produto-item').find('select').val('');
+                    $(this).closest('.produto-item').find('input').val('1');
+                }
+                updateRemoveButtons();
+            });
+            
+            // Inicializar botões
+            updateRemoveButtons();
+            console.log('Inicialização concluída');
+        });
+        
+        // Versão alternativa sem jQuery (fallback)
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof $ === 'undefined') {
+                console.log('jQuery não disponível, usando JavaScript puro');
+                
+                function updateRemoveButtons() {
+                    var items = document.querySelectorAll('.produto-item');
+                    var count = items.length;
+                    var countElement = document.getElementById('produtos-count');
+                    if (countElement) countElement.textContent = count;
+                    
+                    items.forEach(function(item) {
+                        var removeBtn = item.querySelector('.btn-remover-produto');
+                        if (removeBtn) {
+                            removeBtn.style.display = count > 1 ? 'block' : 'none';
+                        }
+                    });
+                }
+                
+                var addButton = document.getElementById('btn-adicionar-produto');
+                if (addButton) {
+                    addButton.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        console.log('Botão adicionar produto clicado (JS puro)');
+                        
+                        var template = document.querySelector('.produto-item').cloneNode(true);
+                        template.querySelector('select').value = '';
+                        template.querySelector('input').value = '1';
+                        var removeBtn = template.querySelector('.btn-remover-produto');
+                        if (removeBtn) removeBtn.style.display = 'block';
+                        
+                        document.getElementById('produtos-container').appendChild(template);
+                        updateRemoveButtons();
+                        
+                        console.log('Novo produto adicionado (JS puro)');
+                    });
+                }
+                
+                // Remover produto
+                document.addEventListener('click', function(e) {
+                    if (e.target.closest('.btn-remover-produto')) {
+                        console.log('Removendo produto (JS puro)');
+                        var items = document.querySelectorAll('.produto-item');
+                        if (items.length > 1) {
+                            e.target.closest('.produto-item').remove();
+                        } else {
+                            // Se for o último item, apenas limpar os valores
+                            var item = e.target.closest('.produto-item');
+                            item.querySelector('select').value = '';
+                            item.querySelector('input').value = '1';
+                        }
+                        updateRemoveButtons();
+                    }
+                });
+                
+                updateRemoveButtons();
+                console.log('Inicialização concluída (JS puro)');
+            }
+        });
+    </script>
+} 

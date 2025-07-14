@@ -33,6 +33,8 @@ namespace TotemPWA.Models
 
         public ICollection<Product> Products { get; set; } = new List<Product>();
 
+        public ICollection<Combo> Combos { get; set; } = new List<Combo>();
+
         private string GenerateSlug(string text)
         {
             text = text.ToLowerInvariant().Trim();

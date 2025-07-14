@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TotemPWA.Data;
 
@@ -10,9 +11,11 @@ using TotemPWA.Data;
 namespace TotemPWA.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250630174851_ImagemIngre")]
+    partial class ImagemIngre
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.6");
@@ -327,9 +330,6 @@ namespace TotemPWA.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int?>("CategoryId")
-                        .HasColumnType("INTEGER");
-
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasMaxLength(1000)
@@ -350,8 +350,6 @@ namespace TotemPWA.Migrations
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("CategoryId");
 
                     b.ToTable("Combos");
                 });
@@ -789,21 +787,16 @@ namespace TotemPWA.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int?>("ComboId")
-                        .HasColumnType("INTEGER");
-
                     b.Property<double>("Percent")
                         .HasColumnType("REAL");
 
-                    b.Property<int?>("ProductId")
+                    b.Property<int>("ProductId")
                         .HasColumnType("INTEGER");
 
                     b.Property<DateTime>("ValidUntil")
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ComboId");
 
                     b.HasIndex("ProductId");
 
@@ -874,16 +867,6 @@ namespace TotemPWA.Migrations
                     b.Navigation("ParentCategory");
                 });
 
-            modelBuilder.Entity("TotemPWA.Models.Combo", b =>
-                {
-                    b.HasOne("TotemPWA.Models.Category", "Category")
-                        .WithMany("Combos")
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.Navigation("Category");
-                });
-
             modelBuilder.Entity("TotemPWA.Models.ComboProduct", b =>
                 {
                     b.HasOne("TotemPWA.Models.Combo", "Combo")
@@ -935,15 +918,11 @@ namespace TotemPWA.Migrations
 
             modelBuilder.Entity("TotemPWA.Models.Promotion", b =>
                 {
-                    b.HasOne("TotemPWA.Models.Combo", "Combo")
-                        .WithMany("Promotions")
-                        .HasForeignKey("ComboId");
-
                     b.HasOne("TotemPWA.Models.Product", "Product")
                         .WithMany("Promotions")
-                        .HasForeignKey("ProductId");
-
-                    b.Navigation("Combo");
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Product");
                 });
@@ -961,8 +940,6 @@ namespace TotemPWA.Migrations
 
             modelBuilder.Entity("TotemPWA.Models.Category", b =>
                 {
-                    b.Navigation("Combos");
-
                     b.Navigation("Products");
 
                     b.Navigation("Subcategories");
@@ -971,8 +948,6 @@ namespace TotemPWA.Migrations
             modelBuilder.Entity("TotemPWA.Models.Combo", b =>
                 {
                     b.Navigation("ComboProducts");
-
-                    b.Navigation("Promotions");
                 });
 
             modelBuilder.Entity("TotemPWA.Models.Ingredient", b =>

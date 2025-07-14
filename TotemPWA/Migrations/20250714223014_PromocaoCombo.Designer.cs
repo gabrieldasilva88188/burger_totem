@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TotemPWA.Data;
 
@@ -10,9 +11,11 @@ using TotemPWA.Data;
 namespace TotemPWA.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250714223014_PromocaoCombo")]
+    partial class PromocaoCombo
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.6");
@@ -327,9 +330,6 @@ namespace TotemPWA.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int?>("CategoryId")
-                        .HasColumnType("INTEGER");
-
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasMaxLength(1000)
@@ -350,8 +350,6 @@ namespace TotemPWA.Migrations
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("CategoryId");
 
                     b.ToTable("Combos");
                 });
@@ -874,16 +872,6 @@ namespace TotemPWA.Migrations
                     b.Navigation("ParentCategory");
                 });
 
-            modelBuilder.Entity("TotemPWA.Models.Combo", b =>
-                {
-                    b.HasOne("TotemPWA.Models.Category", "Category")
-                        .WithMany("Combos")
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.Navigation("Category");
-                });
-
             modelBuilder.Entity("TotemPWA.Models.ComboProduct", b =>
                 {
                     b.HasOne("TotemPWA.Models.Combo", "Combo")
@@ -961,8 +949,6 @@ namespace TotemPWA.Migrations
 
             modelBuilder.Entity("TotemPWA.Models.Category", b =>
                 {
-                    b.Navigation("Combos");
-
                     b.Navigation("Products");
 
                     b.Navigation("Subcategories");

@@ -45,6 +45,7 @@ namespace TotemPWA.Models
         // Relacionamento com combos
         public ICollection<ComboProduct> ComboProducts { get; set; } = new List<ComboProduct>();
 
+        // Relacionamento com promoções de produto
         public ICollection<Promotion> Promotions { get; set; } = new List<Promotion>();
 
         [NotMapped]

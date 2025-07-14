@@ -39,6 +39,13 @@ namespace TotemPWA.Data
                 .HasForeignKey(p => p.CategoryId)
                 .OnDelete(DeleteBehavior.Cascade);
 
+            // Define 1-to-many relationship between Combo and Category
+            modelBuilder.Entity<Combo>()
+                .HasOne(c => c.Category)
+                .WithMany(cat => cat.Combos)
+                .HasForeignKey(c => c.CategoryId)
+                .OnDelete(DeleteBehavior.Cascade);
+
             // Define 1-to-many relationship between Product and Variation
             modelBuilder.Entity<Variation>()
                 .HasOne(v => v.Product)

@@ -174,8 +174,16 @@ public IActionResult CreateIngredient()
 }
 
 [HttpPost]
-public async Task<IActionResult> CreateIngredient(Ingredient ingredient)
+public async Task<IActionResult> CreateIngredient(Ingredient ingredient, IFormFile? ImageFile)
 {
+    if (ImageFile != null && ImageFile.Length > 0)
+    {
+        using (var ms = new MemoryStream())
+        {
+            await ImageFile.CopyToAsync(ms);
+            ingredient.Image = ms.ToArray();
+        }
+    }
     if (ModelState.IsValid)
     {
         _context.Ingredients.Add(ingredient);
@@ -194,15 +202,28 @@ public async Task<IActionResult> EditIngredient(int id)
 }
 
 [HttpPost]
-public async Task<IActionResult> EditIngredient(Ingredient ingredient)
+public async Task<IActionResult> EditIngredient(Ingredient ingredient, IFormFile? ImageFile)
 {
+    var ingredientDb = await _context.Ingredients.FindAsync(ingredient.Id);
+    if (ingredientDb == null) return NotFound();
+    if (ImageFile != null && ImageFile.Length > 0)
+    {
+        using (var ms = new MemoryStream())
+        {
+            await ImageFile.CopyToAsync(ms);
+            ingredientDb.Image = ms.ToArray();
+        }
+    }
+    ingredientDb.Name = ingredient.Name;
+    ingredientDb.Price = ingredient.Price;
+    ingredientDb.Limit = ingredient.Limit;
     if (ModelState.IsValid)
     {
-        _context.Ingredients.Update(ingredient);
+        _context.Ingredients.Update(ingredientDb);
         await _context.SaveChangesAsync();
         return RedirectToAction("Ingredients");
     }
-    return View("Ingredients/Edit", ingredient);
+    return View("Ingredients/Edit", ingredientDb);
 }
 
 [HttpGet]
@@ -462,5 +483,14 @@ public async Task<IActionResult> RemovePromotion(int id)
     _context.Promotions.RemoveRange(promos);
     await _context.SaveChangesAsync();
     return RedirectToAction("Products");
+}
+
+[HttpGet]
+public async Task<IActionResult> GetIngredientImage(int id)
+{
+    var ingredient = await _context.Ingredients.FindAsync(id);
+    if (ingredient?.Image == null) return NotFound();
+    string mimeType = "image/jpeg";
+    return File(ingredient.Image, mimeType);
 }
 }

@@ -20,6 +20,7 @@
             <ul class="sidebar-menu">
                 <li><a href="/HubAdministrativo"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
                 <li><a href="/HubAdministrativo/Products"><i class="fas fa-hamburger"></i> Produtos</a></li>
+                <li><a href="/Combo"><i class="fas fa-box"></i> Combos</a></li>
                 <li><a href="/HubAdministrativo/Ingredients"><i class="fas fa-hamburger"></i> Ingredientes</a></li>
                 <li><a href="/HubAdministrativo/Categories"><i class="fas fa-list"></i> Categorias</a></li>
                 <li><a href="/HubAdministrativo/Employees"><i class="fas fa-user-tie"></i> Funcionários</a></li>
@@ -30,6 +31,7 @@
             @RenderBody()
         </main>
     </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>

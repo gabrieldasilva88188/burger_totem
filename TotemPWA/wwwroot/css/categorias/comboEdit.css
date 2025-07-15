@@ -1,0 +1,399 @@
+/* comboEdit.css - Estilo para a página de Edição de Combo */
+
+/* --- Variáveis de Cores (Consistente com outros arquivos CSS) --- */
+:root {
+    --primary-color: #4a4e69; /* Azul escuro/cinza dos botões e cabeçalhos */
+    --secondary-color: #6c757d; /* Cinza para botões secundários */
+    --success-color: #4aaf50; /* Verde para sucesso/promoção */
+    --warning-color: #e67e22; /* Laranja para edição */
+    --danger-color: #c0392b; /* Vermelho para exclusão */
+    --info-color: #17a2b8; /* Azul claro para informações */
+    --light-bg: #f8fafc; /* Fundo claro da página */
+    --card-bg: #fff; /* Fundo dos cartões */
+    --border-color: #e2e8f0; /* Cor da borda padrão */
+    --text-dark: #1e293b; /* Texto escuro principal */
+    --text-muted: #334155; /* Texto cinza secundário */
+    --input-border: #cbd5e1; /* Borda dos inputs */
+    --input-focus-border: #6ee7b7; /* Borda ao focar no input */
+    --input-placeholder: #94a3b8; /* Cor do placeholder */
+}
+
+/* --- Layout Principal --- */
+.container-fluid {
+    padding: 2rem; /* Espaçamento mais generoso */
+    max-width: 1200px; /* Limita a largura para melhor legibilidade em telas grandes */
+    margin: 0 auto; /* Centraliza o container */
+}
+
+/* --- Cartões --- */
+.card {
+    border: 1px solid var(--border-color); /* Borda sutil */
+    border-radius: 0.5rem; /* Arredondamento dos cantos */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Sombra mais suave */
+    background-color: var(--card-bg);
+}
+
+.card-header {
+    background-color: var(--light-bg); /* Fundo similar ao header da tabela de produtos */
+    border-bottom: 1px solid var(--border-color);
+    font-weight: 600;
+    color: var(--text-dark);
+    padding: 1.25rem 1.5rem; /* Aumenta o padding do cabeçalho do card */
+    border-top-left-radius: 0.5rem; /* Arredonda cantos superiores */
+    border-top-right-radius: 0.5rem;
+}
+
+.card-header h3 {
+    font-size: 1.75rem; /* Tamanho da fonte do título principal */
+    font-weight: 700;
+    color: var(--text-dark);
+    margin: 0; /* Remove margin padrão do h3 */
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.card-header h3::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 24px;
+    background-color: var(--primary-color); /* Cor da barra lateral do título */
+    border-radius: 3px;
+}
+
+.card-body {
+    padding: 1.5rem; /* Padding interno consistente */
+    color: var(--text-muted); /* Cor de texto padrão para o corpo do card */
+}
+
+/* --- Títulos Secundários --- */
+h4, h5 {
+    color: var(--text-dark);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+h4 .badge, h5 .badge {
+    vertical-align: middle; /* Alinha o badge com o texto do título */
+    margin-left: 0.5rem;
+}
+
+/* --- Formulários e Inputs --- */
+.form-group {
+    margin-bottom: 1.5rem; /* Espaçamento entre grupos de formulário */
+}
+
+.form-group label {
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+    display: block; /* Garante que a label ocupe sua própria linha */
+    font-size: 0.95rem;
+}
+
+.form-control,
+.form-select,
+.input-group-text {
+    border-radius: 0.375rem; /* Arredondamento padrão do Bootstrap */
+    font-size: 1rem; /* Tamanho padrão para inputs */
+    padding: 0.75rem 1rem; /* Padding confortável */
+    border: 1px solid var(--input-border);
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--input-focus-border);
+    box-shadow: 0 0 0 0.25rem rgba(110, 231, 183, 0.25); /* Sombra de foco suave */
+    outline: 0;
+}
+
+.input-group-text {
+    background-color: #f1f5f9; /* Fundo mais suave para o input group text */
+    color: var(--text-dark);
+    font-weight: 600;
+    border-right: none; /* Remove a borda entre o texto e o input */
+}
+
+.input-group > .form-control,
+.input-group > .form-select {
+    border-left: none; /* Remove a borda entre o input e o input group text */
+}
+
+/* Validações */
+.text-danger {
+    font-size: 0.875rem; /* Um pouco menor para feedback */
+    color: var(--danger-color) !important; /* Garante a cor de perigo */
+    margin-top: 0.25rem;
+    display: block; /* Garante que a mensagem de erro fique em sua própria linha */
+}
+
+/* Imagem e Upload */
+.img-thumbnail {
+    max-height: 180px; /* Um pouco maior para melhor visualização da imagem atual */
+    width: auto; /* Mantém a proporção */
+    object-fit: contain; /* Garante que a imagem inteira seja visível */
+    border: 1px solid var(--border-color);
+    border-radius: 0.375rem !important; /* Arredondamento padrão */
+}
+
+.form-text.text-muted {
+    font-size: 0.875rem;
+    color: var(--text-muted) !important;
+    margin-top: 0.5rem;
+}
+
+/* Checkbox para Combo Ativo */
+.form-check {
+    padding-left: 1.75em; /* Ajusta o padding para o checkbox */
+    margin-bottom: 1.5rem;
+}
+
+.form-check-input {
+    width: 1em;
+    height: 1em;
+    margin-top: 0.25em;
+    margin-left: -1.75em;
+    border: 1px solid var(--input-border);
+}
+
+.form-check-input:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.form-check-label {
+    font-size: 1rem;
+    color: var(--text-dark);
+    cursor: pointer;
+}
+
+/* Linha Separadora */
+hr {
+    border-top: 1px solid var(--border-color);
+    margin: 2rem 0;
+}
+
+/* --- Produtos Associados (Dynamic Fields) --- */
+#produtos-container {
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: #fcfdfe; /* Fundo levemente diferente para a área dos produtos */
+}
+
+.produto-item {
+    background-color: var(--card-bg); /* Fundo branco para cada item de produto */
+    border: 1px solid #e2e8f0; /* Borda suave */
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem; /* Espaçamento entre os itens de produto */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03); /* Sombra mais sutil */
+    position: relative;
+}
+
+.produto-item .form-control,
+.produto-item .form-select {
+    font-size: 0.9rem; /* Inputs menores dentro do item de produto */
+    padding: 0.6rem 0.8rem;
+}
+
+.produto-item label {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-muted);
+}
+
+.btn-remover-produto {
+    background-color: var(--danger-color);
+    color: white;
+    padding: 0.6rem 0.8rem;
+    font-size: 0.9rem;
+    border-radius: 0.375rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto; /* Permite que o botão se ajuste ao conteúdo */
+    min-width: 40px; /* Largura mínima para o ícone */
+}
+
+.btn-remover-produto i {
+    margin: 0; /* Remove margem extra se for apenas ícone */
+}
+
+.btn-remover-produto:hover {
+    background-color: #a93226;
+    transform: translateY(-1px);
+}
+
+/* Contador de produtos */
+#produtos-count {
+    background-color: var(--info-color); /* Cor do badge de informação */
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.4em 0.7em;
+    border-radius: 0.375rem;
+}
+
+/* Botão Adicionar Produto (abaixo dos itens) */
+#btn-adicionar-produto {
+    background-color: transparent;
+    border: 1px dashed var(--primary-color); /* Borda tracejada */
+    color: var(--primary-color);
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    border-radius: 0.375rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.2s ease-in-out;
+}
+
+#btn-adicionar-produto:hover {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+    transform: translateY(-1px);
+}
+
+/* --- Lista de Produtos Disponíveis (coluna lateral) --- */
+.list-group {
+    border: none; /* Remove borda padrão do list-group */
+    padding: 0;
+}
+
+.list-group-item {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    margin-bottom: 0.75rem; /* Espaço entre os itens da lista */
+    padding: 1rem 1.25rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+    transition: transform 0.2s ease-in-out;
+}
+
+.list-group-item:hover {
+    transform: translateY(-2px); /* Efeito suave ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.list-group-item strong {
+    font-size: 1.1rem; /* Título do produto */
+    color: var(--text-dark);
+}
+
+.list-group-item small {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.list-group-item .badge.bg-primary {
+    background-color: var(--primary-color) !important;
+    color: white;
+    font-weight: 600;
+    padding: 0.4em 0.7em;
+    border-radius: 0.375rem;
+}
+
+/* --- Botões Finais do Formulário (Salvar/Voltar) --- */
+.form-group.d-flex, .form-group:last-of-type { /* Seleciona o grupo que contém os botões finais */
+    margin-top: 2rem; /* Espaço acima dos botões finais */
+    padding-top: 1rem; /* Padding interno */
+    border-top: 1px solid var(--border-color); /* Linha divisória */
+    display: flex;
+    gap: 1rem; /* Espaçamento entre os botões */
+    flex-wrap: wrap; /* Permite que os botões quebrem a linha em telas pequenas */
+}
+
+.form-group .btn {
+    flex-grow: 1; /* Faz os botões crescerem para preencher o espaço */
+    max-width: fit-content; /* Ou um valor fixo se preferir */
+    padding: 0.75rem 1.5rem; /* Padding confortável */
+    font-size: 1.05rem;
+    border-radius: 2rem; /* Botões mais arredondados */
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #3b3f54; /* Tom mais escuro */
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+}
+.btn-secondary:hover {
+    background-color: #5a6268;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+/* --- Responsividade --- */
+@media (max-width: 992px) { /* Tablets e telas menores */
+    .col-md-8, .col-md-4 {
+        width: 100%;
+        flex: none;
+        max-width: none;
+    }
+    .card:not(:last-child) {
+        margin-bottom: 1.5rem; /* Adiciona espaço entre os cards empilhados */
+    }
+    .card-header {
+        text-align: center; /* Centraliza o título do cabeçalho */
+        display: block; /* Remove flexbox para centralizar */
+    }
+    .card-header h3::before {
+        display: none; /* Remove a barra lateral do título em telas menores */
+    }
+    .form-group .btn {
+        flex-grow: 1; /* Botões finais ocupam toda a largura */
+        margin-right: 0;
+        margin-bottom: 0.75rem; /* Espaçamento entre botões empilhados */
+    }
+    .form-group .btn:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 576px) { /* Celulares */
+    .container-fluid {
+        padding: 1rem;
+    }
+    .card-header h3 {
+        font-size: 1.4rem;
+    }
+    .card-body {
+        padding: 1rem;
+    }
+    .row > div { /* Para as colunas internas do produto-item */
+        margin-bottom: 1rem;
+    }
+    .produto-item .row > div:last-child { /* Para o botão de remover, remove margem inferior */
+        margin-bottom: 0;
+    }
+    .btn-remover-produto {
+        width: 100%; /* Faz o botão de remover ocupar toda a largura */
+        min-width: unset;
+        font-size: 1rem;
+        padding: 0.75rem;
+    }
+    .form-group.d-flex {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+}

@@ -1,0 +1,394 @@
+/* comboDelete.css - Estilo para a página de Exclusão de Combo */
+
+/* --- Variáveis de Cores (Consistente com outros arquivos CSS) --- */
+:root {
+    --primary-color: #4a4e69; /* Azul escuro/cinza dos botões e cabeçalhos */
+    --secondary-color: #6c757d; /* Cinza para botões secundários */
+    --success-color: #4aaf50; /* Verde para sucesso/promoção */
+    --warning-color: #e67e22; /* Laranja para aviso (usado no alerta aqui) */
+    --danger-color: #c0392b; /* Vermelho forte para exclusão */
+    --info-color: #17a2b8; /* Azul claro para informações */
+    --light-bg: #f8fafc; /* Fundo claro da página */
+    --card-bg: #fff; /* Fundo dos cartões */
+    --border-color: #e2e8f0; /* Cor da borda padrão */
+    --text-dark: #1e293b; /* Texto escuro principal */
+    --text-muted: #334155; /* Texto cinza secundário */
+}
+
+/* --- Container Principal --- */
+.container-fluid {
+    padding: 2.5rem; /* Mais padding para um respiro maior */
+    max-width: 900px; /* Limita a largura para foco na confirmação */
+    margin: 0 auto; /* Centraliza o container na página */
+}
+
+/* --- Cartão de Confirmação --- */
+.card {
+    border: 1px solid var(--border-color); /* Borda sutil */
+    border-radius: 0.75rem; /* Cantos mais arredondados para um toque suave */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* Sombra mais pronunciada para destaque */
+    background-color: var(--card-bg);
+    overflow: hidden; /* Garante que o border-radius seja aplicado ao header */
+}
+
+.card-header.bg-danger {
+    background-color: var(--danger-color) !important; /* Cor vermelha forte */
+    color: white;
+    font-weight: 700; /* Mais negrito */
+    font-size: 1.5rem; /* Título maior */
+    padding: 1.5rem 2rem; /* Mais padding */
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Espaço entre o ícone e o texto */
+    border-bottom: none; /* Remove a borda inferior, pois a cor já divide */
+}
+
+.card-header.bg-danger i {
+    font-size: 1.8rem; /* Tamanho do ícone de aviso */
+}
+
+.card-body {
+    padding: 2rem; /* Padding generoso */
+    color: var(--text-muted); /* Cor de texto padrão */
+}
+
+/* --- Alertas --- */
+.alert-warning {
+    background-color: #fff9e6; /* Fundo mais claro para o aviso */
+    border: 1px solid #ffeeba; /* Borda sutil */
+    border-left: 6px solid var(--warning-color); /* Barra lateral mais grossa e colorida */
+    color: #856404; /* Texto com bom contraste */
+    padding: 1.25rem 1.5rem; /* Padding confortável */
+    border-radius: 0.5rem; /* Cantos arredondados */
+    margin-bottom: 2rem; /* Espaço maior abaixo do alerta */
+}
+
+.alert-warning h5 {
+    color: #856404; /* Cor do título do alerta */
+    font-size: 1.15rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem; /* Espaço abaixo do título do alerta */
+}
+
+.alert-warning i {
+    font-size: 1.25rem; /* Tamanho do ícone de aviso */
+}
+
+.alert-warning p {
+    font-size: 1rem; /* Tamanho da fonte do parágrafo */
+    line-height: 1.5;
+}
+
+.alert-info {
+    background-color: #e0f2f7; /* Fundo mais suave para info */
+    border: 1px solid #b3e0ed; /* Borda suave */
+    color: #0d6e7d; /* Texto com bom contraste */
+    padding: 1rem 1.25rem;
+    border-left: 6px solid var(--info-color); /* Barra lateral de info */
+    border-radius: 0.5rem;
+    font-size: 0.95rem;
+    margin-top: 1.5rem; /* Espaço acima do alerta info */
+}
+
+.alert-info i {
+    margin-right: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* --- Detalhes do Combo (Imagem, Nome, Descrição, Status, Preço) --- */
+.row.mb-4 { /* Adicionado mb-4 para espaçamento consistente */
+    margin-bottom: 2rem;
+}
+
+.img-fluid {
+    max-height: 220px; /* Um pouco maior para melhor visualização */
+    width: 100%; /* Garante que ocupe a largura da coluna */
+    object-fit: cover; /* Recorta a imagem para preencher o espaço */
+    border-radius: 0.75rem; /* Cantos mais arredondados */
+    border: 1px solid var(--border-color); /* Borda sutil */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Sombra leve */
+}
+
+.bg-light.d-flex {
+    height: 220px; /* Garante a mesma altura que a imagem real */
+    border-radius: 0.75rem;
+    border: 1px dashed var(--border-color); /* Borda tracejada para indicar ausência */
+    color: var(--text-muted);
+}
+
+.bg-light .fa-image {
+    font-size: 4rem; /* Ícone maior para placeholder */
+    color: var(--input-placeholder); /* Cor do placeholder */
+}
+
+h4 {
+    font-size: 1.8rem; /* Nome do combo maior e em destaque */
+    color: var(--text-dark);
+    font-weight: 700;
+    margin-bottom: 0.75rem; /* Espaço abaixo do nome */
+}
+
+p.text-muted {
+    font-size: 1.05rem; /* Descrição mais legível */
+    line-height: 1.6;
+    margin-bottom: 1.5rem; /* Espaço abaixo da descrição */
+    color: var(--text-muted);
+}
+
+strong {
+    color: var(--text-dark); /* Deixa as labels em negrito com a cor de texto escura */
+}
+
+.badge {
+    font-size: 0.9rem; /* Badge um pouco maior */
+    padding: 0.4rem 0.8rem; /* Padding confortável para o badge */
+    border-radius: 0.375rem; /* Cantos padrão do Bootstrap */
+    font-weight: 600;
+    vertical-align: middle; /* Alinha verticalmente com o texto */
+    margin-left: 0.5rem;
+}
+
+.badge.bg-success {
+    background-color: var(--success-color) !important;
+}
+
+.badge.bg-secondary {
+    background-color: var(--secondary-color) !important;
+}
+
+.badge.bg-info { /* Badge para quantidade na tabela */
+    background-color: var(--info-color) !important;
+    color: white;
+}
+
+/* --- Linha Separadora --- */
+hr {
+    border-top: 1px solid var(--border-color);
+    margin: 2.5rem 0; /* Mais espaço antes e depois da linha */
+}
+
+/* --- Tabela de Produtos Associados --- */
+h5 {
+    color: var(--text-dark);
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+    font-size: 1.3rem;
+}
+
+.table {
+    border-collapse: separate; /* Permite border-radius nas células da tabela */
+    border-spacing: 0 0.5rem; /* Espaçamento entre as linhas */
+    width: 100%;
+}
+
+.table thead th {
+    background-color: var(--light-bg); /* Fundo claro para o cabeçalho da tabela */
+    font-weight: 700; /* Mais negrito */
+    color: var(--text-dark);
+    border-bottom: 1px solid var(--border-color); /* Borda inferior */
+    padding: 1rem 1.25rem;
+    text-align: left;
+}
+
+.table tbody tr {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color); /* Borda em cada linha */
+    border-radius: 0.5rem; /* Cantos arredondados para as linhas */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03); /* Sombra suave */
+    transition: all 0.2s ease-in-out;
+}
+
+.table tbody tr:hover {
+    transform: translateY(-2px); /* Leve levantamento ao passar o mouse */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Sombra mais forte */
+}
+
+.table tbody td {
+    padding: 1rem 1.25rem;
+    border-top: none; /* Remove borda superior entre células */
+    border-bottom: none; /* Remove borda inferior entre células */
+    color: var(--text-dark);
+}
+
+.table tbody td:first-child {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.table tbody td:last-child {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.table tbody td strong {
+    font-size: 1.05rem; /* Nome do produto na tabela */
+}
+
+/* --- Botões de Ação (Confirmar/Cancelar) --- */
+.d-flex.justify-content-between {
+    margin-top: 2.5rem; /* Mais espaço acima dos botões */
+    padding-top: 1.5rem; /* Padding acima dos botões */
+    border-top: 1px solid var(--border-color); /* Linha divisória */
+    flex-wrap: wrap; /* Permite que os botões quebrem a linha */
+    gap: 1.25rem; /* Espaçamento entre os botões */
+}
+
+.btn {
+    padding: 0.85rem 1.75rem; /* Botões maiores e mais confortáveis */
+    font-weight: 600; /* Mais negrito */
+    font-size: 1.05rem;
+    border-radius: 2rem; /* Botões com cantos super arredondados (pill-like) */
+    text-decoration: none; /* Garante que não haja sublinhado */
+    transition: all 0.2s ease-in-out;
+    display: flex; /* Para alinhar ícone e texto */
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-grow: 1; /* Faz os botões crescerem para preencher o espaço */
+    max-width: fit-content; /* Ajusta a largura ao conteúdo */
+}
+
+.btn-danger {
+    background-color: var(--danger-color);
+    border-color: var(--danger-color);
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #a93226; /* Tom mais escuro ao hover */
+    border-color: #a93226;
+    transform: translateY(-2px); /* Leve efeito de "levantar" */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #5a6268;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* --- Responsividade --- */
+@media (max-width: 768px) {
+    .container-fluid {
+        padding: 1.5rem;
+    }
+
+    .card-header.bg-danger {
+        font-size: 1.3rem;
+        padding: 1rem 1.5rem;
+        text-align: center;
+        flex-direction: column; /* Stack icon and text */
+        gap: 0.5rem;
+    }
+    .card-header.bg-danger i {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .card-body {
+        padding: 1.5rem;
+    }
+
+    .alert-warning {
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .alert-warning h5 {
+        font-size: 1.1rem;
+        flex-direction: column; /* Stack icon and text */
+        gap: 0.25rem;
+        text-align: center;
+    }
+
+    .alert-warning p {
+        font-size: 0.95rem;
+    }
+
+    .row > div {
+        margin-bottom: 1.5rem; /* Add space between stacked columns */
+    }
+
+    .row > div:last-child {
+        margin-bottom: 0; /* Remove margin for the last stacked column */
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    p.text-muted {
+        font-size: 1rem;
+    }
+
+    .table thead {
+        display: none; /* Hide table headers on small screens */
+    }
+
+    .table tbody tr {
+        display: block; /* Make rows act as blocks */
+        margin-bottom: 1rem;
+        border: 1px solid var(--border-color);
+        border-radius: 0.75rem;
+        overflow: hidden;
+    }
+
+    .table tbody td {
+        display: block; /* Make cells act as blocks */
+        text-align: right;
+        padding-left: 50%; /* Make space for pseudo-element label */
+        position: relative;
+        border-bottom: 1px solid #f0f0f0; /* Separator for cells */
+    }
+
+    .table tbody td::before {
+        content: attr(data-label); /* Use data-label for content */
+        position: absolute;
+        left: 1rem;
+        width: calc(50% - 1.5rem);
+        padding-right: 1rem;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: 600;
+        color: var(--text-dark);
+    }
+    .table tbody td:first-child::before { content: "Produto:"; }
+    .table tbody td:nth-child(2)::before { content: "Categoria:"; }
+    .table tbody td:nth-child(3)::before { content: "Quantidade:"; }
+
+    .table tbody td:last-child {
+        border-bottom: none; /* No border for the last cell */
+    }
+
+    .d-flex.justify-content-between {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 0.75rem;
+    }
+
+    .btn {
+        width: 100%; /* Full width buttons */
+        max-width: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .container-fluid {
+        padding: 1rem;
+    }
+    .card-body {
+        padding: 1rem;
+    }
+    .img-fluid, .bg-light.d-flex {
+        max-height: 180px;
+    }
+}

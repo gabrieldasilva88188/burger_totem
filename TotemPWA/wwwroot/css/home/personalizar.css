@@ -257,62 +257,93 @@ button[onclick="adicionarAoCarrinho()"]:hover {
 }
 
 .botoes-personalizar .back-btn {
+    height: 60px;
     padding: 12px 24px;
-    font-size: 16px;
+    font-size: 1rem;
+    background-color: #6c757d;
+    color: white;
+    border: none;
     border-radius: 8px;
     cursor: pointer;
-    background-color: #ffb300;
-    color: #fff;
-    transition: background-color 0.3s;
-    display: inline-block;
-    text-align: center;
-    border: none; /* Adicione isso para consistência com o outro botão */
+    transition: 0.2s;
 }
 
 .botoes-personalizar .back-btn:hover {
-    background-color: #e09e00;
+    background-color: #5a6268;
 }
 
-
-
 .botoes-personalizar button {
+    height: 60px;
     padding: 12px 24px;
-    font-size: 16px;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
     border-radius: 8px;
     cursor: pointer;
-    border: none;
-    background-color: #ffb300;
-    color: #fff;
-    transition: background-color 0.3s;
+    transition: 0.2s;
 }
 
 .botoes-personalizar button:hover {
-    background-color: #e09e00;
+    background-color: #45a049;
 }
 
 .btn-voltar {
-    background-color: #ffb300;
-    color: #ffffff;
-    border: 2px solid #ffffff; 
-    padding: 10px 20px;
-    border-radius: 8px;
+    height: 60px;
+    padding: 12px 24px;
     font-size: 1rem;
-    font-weight: bold;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.1s ease;
+    transition: 0.2s;
     display: flex;
     align-items: center;
     gap: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 .btn-voltar:hover {
-    background-color: #e09e00;
-    transform: scale(1.03);
+    background-color: #5a6268;
 }
 
 .btn-voltar i {
     font-size: 1.1rem;
+}
+
+/* Modal de inatividade */
+#inactivityPrompt {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    z-index: 10000;
+}
+
+#inactivityPrompt p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+#inactivityPrompt button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#inactivityPrompt button:hover {
+    background: #45a049;
 }
 
 

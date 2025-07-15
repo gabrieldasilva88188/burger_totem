@@ -173,58 +173,17 @@ public class HubAdministrativoController : Controller
         return View("Ingredients/Create");
     }
 
-<<<<<<< HEAD
     [HttpPost]
-    public async Task<IActionResult> CreateIngredient(Ingredient ingredient)
-=======
-[HttpGet]
-public async Task<IActionResult> GetImage(int id)
-{
-    var produto = await _context.Products.FindAsync(id);
-    if (produto?.Image == null) return NotFound();
-
-    // Detectar tipo MIME
-    string mimeType = "image/jpeg";
-    var img = produto.Image;
-    if (img.Length > 3 && img[0] == 0x89 && img[1] == 0x50 && img[2] == 0x4E && img[3] == 0x47) // PNG
-        mimeType = "image/png";
-    else if (img.Length > 2 && img[0] == 0x47 && img[1] == 0x49 && img[2] == 0x46) // GIF
-        mimeType = "image/gif";
-    else if (img.Length > 11 && img[8] == 0x57 && img[9] == 0x45 && img[10] == 0x42 && img[11] == 0x50) // WEBP
-        mimeType = "image/webp";
-    // JPEG já é o padrão
-
-    return File(produto.Image, mimeType);
-}
-
-// CRUD de Ingredientes
-[HttpGet]
-public async Task<IActionResult> Ingredients()
-{
-    var ingredientes = await _context.Ingredients.ToListAsync();
-    return View("Ingredients/Index", ingredientes);
-}
-
-[HttpGet]
-public IActionResult CreateIngredient()
-{
-    return View("Ingredients/Create");
-}
-
-[HttpPost]
-public async Task<IActionResult> CreateIngredient(Ingredient ingredient, IFormFile? ImageFile)
-{
-    if (ImageFile != null && ImageFile.Length > 0)
+    public async Task<IActionResult> CreateIngredient(Ingredient ingredient, IFormFile? ImageFile)
     {
-        using (var ms = new MemoryStream())
+        if (ImageFile != null && ImageFile.Length > 0)
         {
-            await ImageFile.CopyToAsync(ms);
-            ingredient.Image = ms.ToArray();
+            using (var ms = new MemoryStream())
+            {
+                await ImageFile.CopyToAsync(ms);
+                ingredient.Image = ms.ToArray();
+            }
         }
-    }
-    if (ModelState.IsValid)
->>>>>>> feature/Combo
-    {
         if (ModelState.IsValid)
         {
             _context.Ingredients.Add(ingredient);
@@ -243,15 +202,28 @@ public async Task<IActionResult> CreateIngredient(Ingredient ingredient, IFormFi
     }
 
     [HttpPost]
-    public async Task<IActionResult> EditIngredient(Ingredient ingredient)
+    public async Task<IActionResult> EditIngredient(Ingredient ingredient, IFormFile? ImageFile)
     {
+        var ingredientDb = await _context.Ingredients.FindAsync(ingredient.Id);
+        if (ingredientDb == null) return NotFound();
+        if (ImageFile != null && ImageFile.Length > 0)
+        {
+            using (var ms = new MemoryStream())
+            {
+                await ImageFile.CopyToAsync(ms);
+                ingredientDb.Image = ms.ToArray();
+            }
+        }
+        ingredientDb.Name = ingredient.Name;
+        ingredientDb.Price = ingredient.Price;
+        ingredientDb.Limit = ingredient.Limit;
         if (ModelState.IsValid)
         {
-            _context.Ingredients.Update(ingredient);
+            _context.Ingredients.Update(ingredientDb);
             await _context.SaveChangesAsync();
             return RedirectToAction("Ingredients");
         }
-        return View("Ingredients/Edit", ingredient);
+        return View("Ingredients/Edit", ingredientDb);
     }
 
     [HttpGet]
@@ -272,7 +244,6 @@ public async Task<IActionResult> CreateIngredient(Ingredient ingredient, IFormFi
         return RedirectToAction("Ingredients");
     }
 
-<<<<<<< HEAD
     [HttpGet]
     public async Task<IActionResult> ManageIngredients(int id)
     {
@@ -297,40 +268,6 @@ public async Task<IActionResult> CreateIngredient(Ingredient ingredient, IFormFi
         ViewBag.IngredientesDisponiveis = ingredientesDisponiveis;
         return View("Products/ManageIngredients");
     }
-=======
-[HttpGet]
-public async Task<IActionResult> EditIngredient(int id)
-{
-    var ingredient = await _context.Ingredients.FindAsync(id);
-    if (ingredient == null) return NotFound();
-    return View("Ingredients/Edit", ingredient);
-}
-
-[HttpPost]
-public async Task<IActionResult> EditIngredient(Ingredient ingredient, IFormFile? ImageFile)
-{
-    var ingredientDb = await _context.Ingredients.FindAsync(ingredient.Id);
-    if (ingredientDb == null) return NotFound();
-    if (ImageFile != null && ImageFile.Length > 0)
-    {
-        using (var ms = new MemoryStream())
-        {
-            await ImageFile.CopyToAsync(ms);
-            ingredientDb.Image = ms.ToArray();
-        }
-    }
-    ingredientDb.Name = ingredient.Name;
-    ingredientDb.Price = ingredient.Price;
-    ingredientDb.Limit = ingredient.Limit;
-    if (ModelState.IsValid)
-    {
-        _context.Ingredients.Update(ingredientDb);
-        await _context.SaveChangesAsync();
-        return RedirectToAction("Ingredients");
-    }
-    return View("Ingredients/Edit", ingredientDb);
-}
->>>>>>> feature/Combo
 
     [HttpPost]
     public async Task<IActionResult> AddIngredientToProduct(int productId, int ingredientId, int quantity)
@@ -520,7 +457,6 @@ public async Task<IActionResult> EditIngredient(Ingredient ingredient, IFormFile
         return View("Products/Promotion", produto);
     }
 
-<<<<<<< HEAD
     [HttpPost]
     public async Task<IActionResult> Promotion(int id, double percent, DateTime validUntil)
     {
@@ -549,23 +485,13 @@ public async Task<IActionResult> EditIngredient(Ingredient ingredient, IFormFile
         await _context.SaveChangesAsync();
         return RedirectToAction("Products");
     }
-=======
-[HttpPost]
-public async Task<IActionResult> RemovePromotion(int id)
-{
-    var promos = await _context.Promotions.Where(p => p.ProductId == id && p.ValidUntil >= DateTime.Now).ToListAsync();
-    _context.Promotions.RemoveRange(promos);
-    await _context.SaveChangesAsync();
-    return RedirectToAction("Products");
-}
 
-[HttpGet]
-public async Task<IActionResult> GetIngredientImage(int id)
-{
-    var ingredient = await _context.Ingredients.FindAsync(id);
-    if (ingredient?.Image == null) return NotFound();
-    string mimeType = "image/jpeg";
-    return File(ingredient.Image, mimeType);
-}
->>>>>>> feature/Combo
+    [HttpGet]
+    public async Task<IActionResult> GetIngredientImage(int id)
+    {
+        var ingredient = await _context.Ingredients.FindAsync(id);
+        if (ingredient?.Image == null) return NotFound();
+        string mimeType = "image/jpeg";
+        return File(ingredient.Image, mimeType);
+    }
 }

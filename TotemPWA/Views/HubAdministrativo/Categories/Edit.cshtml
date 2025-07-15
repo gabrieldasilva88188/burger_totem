@@ -1,27 +1,36 @@
 @model TotemPWA.Models.Category
 @{
-    ViewBag.Title = "Editar Categoria";
+    ViewData["Title"] = "Editar Categoria";
 }
 @{
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
-    ViewData["Title"] = "Hub Administrativo";
 }
 <link rel="stylesheet" href="@Url.Content("~/css/produto/editarProduto.css")">
 <h2>Editar Categoria</h2>
-<form asp-action="EditCategory" method="post">
+<form asp-action="EditCategory" enctype="multipart/form-data">
     <input type="hidden" asp-for="Id" />
     <div class="form-group">
-        <label asp-for="Name">Nome</label>
+        <label asp-for="Name"></label>
         <input asp-for="Name" class="form-control" />
         <span asp-validation-for="Name" class="text-danger"></span>
     </div>
     <div class="form-group">
         <label asp-for="ParentCategoryId">Categoria Pai</label>
         <select asp-for="ParentCategoryId" asp-items="ViewBag.Categorias" class="form-control">
-            <option value="">Nenhuma</option>
+            <option value="">Nenhuma (Categoria Raiz)</option>
         </select>
-        <span asp-validation-for="ParentCategoryId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label>Imagem da Categoria</label>
+        <input type="file" name="ImageFile" class="form-control" accept="image/*" />
+        @if (Model.Image != null)
+        {
+            <div class="mt-2">
+                <img src="@Url.Action("GetCategoryImage", "HubAdministrativo", new { id = Model.Id })" alt="Imagem da Categoria" style="max-width: 200px; max-height: 120px; border:1px solid #ccc;" />
+            </div>
+        }
     </div>
     <button type="submit" class="btn btn-success">Salvar</button>
-    <a href="@Url.Action("Categories", "HubAdministrativo")" class="btn btn-secondary">Cancelar</a>
-</form> 
+    <a asp-action="Categories" class="btn btn-secondary">Voltar</a>
+</form>
+

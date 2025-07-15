@@ -1,6 +1,6 @@
 @model IEnumerable<TotemPWA.Models.Category>
 @{
-    ViewBag.Title = "Categorias";
+    ViewData["Title"] = "Categorias";
 }
 @{
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
@@ -12,9 +12,10 @@
 <p>
     <a href="@Url.Action("CreateCategory", "HubAdministrativo")" class="btn btn-primary">Adicionar Categoria</a>
 </p>
-<table class="table">
+<table class="table table-striped">
     <thead>
         <tr>
+            <th>Imagem</th>
             <th>Nome</th>
             <th>Slug</th>
             <th>Categoria Pai</th>
@@ -25,14 +26,20 @@
         @foreach (var item in Model)
         {
             <tr>
+                <td>
+                    @if (item.Image != null)
+                    {
+                        <img src="@Url.Action("GetCategoryImage", "HubAdministrativo", new { id = item.Id })" alt="Imagem" style="max-width: 60px; max-height: 40px; border:1px solid #ccc;" />
+                    }
+                </td>
                 <td>@item.Name</td>
                 <td>@item.Slug</td>
                 <td>@item.ParentCategory?.Name</td>
                 <td>
-                    <a href="@Url.Action("EditCategory", "HubAdministrativo", new { id = item.Id })" class="btn btn-sm btn-warning">Editar</a>
-                    <a href="@Url.Action("DeleteCategory", "HubAdministrativo", new { id = item.Id })" class="btn btn-sm btn-danger">Excluir</a>
+                    <a asp-action="EditCategory" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Editar</a>
+                    <a asp-action="DeleteCategory" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Excluir</a>
                 </td>
             </tr>
         }
     </tbody>
-</table> 
+</table>

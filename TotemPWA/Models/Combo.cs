@@ -27,7 +27,16 @@ namespace TotemPWA.Models
         [Display(Name = "Ativo")]
         public bool IsActive { get; set; } = true;
 
+        [Display(Name = "Categoria")]
+        public int? CategoryId { get; set; }
+
+        [JsonIgnore]
+        public Category? Category { get; set; }
+
         // Relacionamento com produtos através da tabela de junção
         public ICollection<ComboProduct> ComboProducts { get; set; } = new List<ComboProduct>();
+
+        // Relacionamento com promoções
+        public ICollection<Promotion> Promotions { get; set; } = new List<Promotion>();
     }
 } 

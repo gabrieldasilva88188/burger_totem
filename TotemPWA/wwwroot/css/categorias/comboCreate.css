@@ -1,0 +1,353 @@
+/* comboCreate.css - Estilo para a página de Criação de Combo */
+
+/* --- Variáveis de Cores (Consistente com outros arquivos CSS) --- */
+:root {
+    --primary-color: #007bff; /* Azul padrão do Bootstrap, mas podemos ajustá-lo se quiser */
+    --secondary-color: #6c757d; /* Cinza para botões secundários */
+    --success-color: #28a745; /* Verde para sucesso/ativo */
+    --warning-color: #ffc107; /* Amarelo para avisos */
+    --danger-color: #dc3545; /* Vermelho para exclusão/erros */
+    --info-color: #17a2b8; /* Azul claro para informações */
+    --light-bg: #f4f7f6; /* Fundo mais suave para a página */
+    --card-bg: #fff; /* Fundo dos cartões */
+    --border-color: #e2e8f0; /* Cor da borda padrão */
+    --text-dark: #212529; /* Texto escuro principal */
+    --text-muted: #6c757d; /* Texto cinza secundário */
+    --input-border: #ced4da; /* Borda dos inputs */
+    --input-focus-border: #80bdff; /* Borda dos inputs em foco */
+    --input-placeholder: #6c757d; /* Cor do placeholder dos inputs */
+    --header-bg: #e9ecef; /* Fundo do cabeçalho do card */
+}
+
+/* --- Container Principal --- */
+.container-fluid {
+    padding: 2.5rem; /* Mais padding para um respiro maior */
+    max-width: 960px; /* Limita a largura para melhor legibilidade do formulário */
+    margin: 0 auto; /* Centraliza o container na página */
+    background-color: var(--light-bg); /* Fundo suave */
+    min-height: calc(100vh - var(--header-height, 0px) - var(--footer-height, 0px)); /* Garante que o fundo cubra a tela */
+}
+
+/* --- Cartões --- */
+.card {
+    border: 1px solid var(--border-color); /* Borda sutil */
+    border-radius: 0.75rem; /* Cantos mais arredondados para um toque suave */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* Sombra mais pronunciada para destaque */
+    background-color: var(--card-bg);
+    overflow: hidden; /* Garante que o border-radius seja aplicado ao header */
+}
+
+.card-header {
+    background-color: var(--header-bg); /* Fundo claro para o cabeçalho do card */
+    color: var(--text-dark);
+    font-weight: 700; /* Mais negrito */
+    font-size: 1.5rem; /* Título maior */
+    padding: 1.5rem 2rem; /* Mais padding */
+    border-bottom: 1px solid var(--border-color); /* Separador sutil */
+}
+
+.card-body {
+    padding: 2rem; /* Padding generoso */
+    color: var(--text-dark); /* Cor de texto padrão */
+}
+
+/* --- Títulos --- */
+h3 {
+    margin-bottom: 0; /* Remove margem padrão do h3 no header */
+}
+
+h4 {
+    color: var(--text-dark);
+    font-weight: 600;
+    margin-bottom: 1.5rem; /* Espaço abaixo do título de seção */
+    font-size: 1.35rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+/* --- Formulários e Inputs --- */
+.form-group.mb-3 {
+    margin-bottom: 1.5rem !important; /* Espaçamento consistente entre grupos de formulário */
+}
+
+label.control-label {
+    font-weight: 600; /* Labels mais em negrito */
+    margin-bottom: 0.5rem; /* Espaço entre label e input */
+    color: var(--text-dark);
+    display: block; /* Garante que a label ocupe sua própria linha */
+}
+
+.form-control,
+.form-select {
+    border: 1px solid var(--input-border);
+    border-radius: 0.375rem; /* Cantos padrão do Bootstrap, mas um pouco mais suaves */
+    padding: 0.75rem 1rem; /* Padding confortável */
+    font-size: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--input-focus-border);
+    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25); /* Sombra de foco azul */
+    outline: none; /* Remove outline padrão */
+}
+
+.form-control::placeholder {
+    color: var(--input-placeholder);
+    opacity: 1; /* Garante que o placeholder seja visível */
+}
+
+.input-group-text {
+    background-color: var(--header-bg); /* Cor de fundo do input group */
+    border: 1px solid var(--input-border);
+    border-right: none; /* Remove borda entre o texto e o input */
+    border-radius: 0.375rem 0 0 0.375rem; /* Apenas canto esquerdo arredondado */
+    font-weight: 700;
+    color: var(--text-dark);
+    padding: 0.75rem 1rem;
+}
+
+.input-group .form-control {
+    border-left: none; /* Remove borda entre o texto e o input */
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+textarea.form-control {
+    min-height: 100px; /* Altura mínima para textareas */
+    resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+.form-check {
+    margin-top: 1.5rem; /* Espaço acima do checkbox */
+    margin-bottom: 1.5rem !important;
+    display: flex;
+    align-items: center;
+}
+
+.form-check-input {
+    margin-right: 0.75rem; /* Espaço entre checkbox e label */
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.form-check-label {
+    font-weight: 500; /* Label do checkbox menos negrito */
+    color: var(--text-dark);
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.form-text.text-muted {
+    font-size: 0.85rem;
+    color: var(--text-muted) !important;
+    margin-top: 0.25rem;
+}
+
+/* --- Validação --- */
+.text-danger {
+    font-size: 0.85rem;
+    color: var(--danger-color) !important; /* Cor mais forte para erro */
+    margin-top: 0.25rem;
+    display: block; /* Garante que a mensagem de erro fique em sua própria linha */
+}
+
+/* --- Seção de Produtos do Combo --- */
+#produtos-count {
+    font-size: 0.9rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.5rem;
+    background-color: var(--info-color); /* Fundo do badge de info */
+    color: white;
+    font-weight: 600;
+}
+
+.produto-item {
+    background-color: #fcfdfe; /* Fundo quase branco para cada item de produto */
+    border: 1px solid #e9edf2; /* Borda mais suave */
+    border-radius: 0.6rem; /* Cantos arredondados */
+    padding: 1.5rem !important; /* Mais padding interno */
+    margin-bottom: 1.25rem !important; /* Espaço entre os itens de produto */
+    transition: all 0.2s ease-in-out;
+}
+
+.produto-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Sombra sutil ao hover */
+    border-color: #d7e0eb; /* Borda um pouco mais escura ao hover */
+}
+
+.produto-item .col-md-2.d-flex.align-items-end {
+    justify-content: flex-end; /* Alinha o botão de remover à direita */
+}
+
+/* Botão de Remover Produto */
+.btn-remover-produto {
+    background-color: var(--danger-color);
+    border-color: var(--danger-color);
+    color: white;
+    padding: 0.6rem 1rem; /* Padding ajustado para um botão menor */
+    font-size: 0.9rem;
+    border-radius: 0.5rem; /* Cantos mais arredondados */
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-remover-produto:hover {
+    background-color: #bb2d3b;
+    border-color: #bb2d3b;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Botão Adicionar Produto */
+#btn-adicionar-produto {
+    background-color: #fff;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 0.75rem 1.5rem; /* Padding confortável */
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 2rem; /* Botão com cantos super arredondados (pill-like) */
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem !important; /* Mais espaço abaixo do botão */
+}
+
+#btn-adicionar-produto:hover {
+    background-color: var(--primary-color);
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+/* --- Botões de Ação Final (Criar/Voltar) --- */
+.form-group .btn { /* Especificidade para os botões finais */
+    padding: 0.85rem 1.75rem; /* Botões maiores e mais confortáveis */
+    font-weight: 600; /* Mais negrito */
+    font-size: 1.05rem;
+    border-radius: 2rem; /* Botões com cantos super arredondados (pill-like) */
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    display: inline-flex; /* Para alinhar ícone e texto */
+    align-items: center;
+    gap: 0.5rem;
+    margin-right: 1rem; /* Espaço entre os botões */
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Tom mais escuro ao hover */
+    border-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #5a6268;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+hr {
+    border-top: 1px solid var(--border-color);
+    margin: 2.5rem 0; /* Mais espaço antes e depois da linha */
+}
+
+/* --- Responsividade --- */
+@media (max-width: 768px) {
+    .container-fluid {
+        padding: 1.5rem;
+    }
+
+    .card-header {
+        font-size: 1.3rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .card-body {
+        padding: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .form-group.mb-3 {
+        margin-bottom: 1rem !important;
+    }
+
+    .produto-item {
+        padding: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.95rem;
+        border-radius: 1.5rem;
+    }
+
+    .form-group .btn {
+        width: 100%; /* Botões finais ocupam largura total */
+        margin-right: 0;
+        margin-bottom: 0.75rem; /* Espaço entre eles quando empilhados */
+        justify-content: center; /* Centraliza ícone e texto */
+    }
+
+    .btn-remover-produto {
+        width: auto; /* Deixa o botão de remover ajustar ao conteúdo */
+        margin-left: auto; /* Alinha à direita */
+        margin-top: 0.75rem; /* Espaço extra no topo em telas menores */
+    }
+
+    .col-md-6, .col-md-4, .col-md-2 {
+        /* Garante que as colunas se comportem como blocos em telas pequenas */
+        margin-bottom: 1rem; /* Espaçamento entre as colunas quando empilhadas */
+    }
+
+    .row > div:last-child {
+        margin-bottom: 0; /* Remove margem extra para a última coluna de uma linha */
+    }
+}
+
+@media (max-width: 576px) {
+    .container-fluid {
+        padding: 1rem;
+    }
+    .card-body {
+        padding: 1rem;
+    }
+    .card-header {
+        font-size: 1.1rem;
+    }
+    h4 {
+        font-size: 1.1rem;
+    }
+    .form-control, .form-select {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.95rem;
+    }
+    .input-group-text {
+        padding: 0.6rem 0.8rem;
+    }
+    #btn-adicionar-produto, .form-group .btn {
+        font-size: 0.9rem;
+        padding: 0.7rem 1rem;
+    }
+}

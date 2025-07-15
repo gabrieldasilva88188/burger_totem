@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 800px;
+  height: 1280px;
+  background-color: #990000;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.top {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+.back-button {
+  padding: 10px 25px;
+  font-size: 2.5em;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+h1 {
+  color: #f7f7cf;
+  font-size: 3em;
+  margin-top: 100px; 
+  padding-left: 80px; 
+  margin-left: 100px;  
+  text-align: center;
+}
+
+.container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+  margin-left: 80px;
+}
+
+.pedido-numero {
+  margin-top: 40px;
+  font-size: 2.5em;
+  color: #990000;
+  background-color: #FFF3CD;
+  border: 3px dashed #FF6600;
+  padding: 20px 40px;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.orientacao {
+  font-size: 2em;
+  color: #f7f7cf;
+  text-align: center;
+  margin-top: 40px;
+  max-width: 700px;
+}
+
+.total {
+  font-size: 4em;
+  color: #FF6600;
+  font-weight: bold;
+  margin-top: 80px;
+  background-color: #fff;
+  padding: 30px 60px;
+  border: 5px solid #C1D343;
+  border-radius: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}

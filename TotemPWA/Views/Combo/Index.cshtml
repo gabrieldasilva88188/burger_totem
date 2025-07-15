@@ -1,0 +1,122 @@
+@model IEnumerable<TotemPWA.Models.Combo>
+
+@{
+    ViewData["Title"] = "Gerenciar Combos";
+    Layout = "_AdminLayout"; // Ensure this layout includes your CSS or link it directly
+}
+<link rel="stylesheet" href="@Url.Content("~/css/produto/produtosCRUD.css")">
+<link rel="stylesheet" href="@Url.Content("~/css/categorias/combosCRUD.css")"> @* Keep this if you have specific combo styles not covered by produtosCRUD.css *@
+
+<div class="page-header">
+    <h2>Gerenciar Combos</h2>
+    <a asp-action="Create" class="btn btn-success">
+        Novo Combo <i class="fas fa-plus"></i>
+    </a>
+</div>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info">
+        <i class="fas fa-info-circle"></i> Nenhum combo cadastrado ainda.
+    </div>
+}
+else
+{
+    <div class="table-container">
+        <table class="table table-striped table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th>Imagem</th>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Preço</th>
+                    <th>Status</th>
+                    <th>Produtos do Combo</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var combo in Model)
+                {
+                    <tr>
+                        <td data-label="Imagem">
+                            @if (combo.Image != null)
+                            {
+                                <img src="@Url.Action("GetImage", "Combo", new { id = combo.Id })"
+                                     class="product-image" alt="@combo.Name" />
+                            }
+                            else
+                            {
+                                <div class="product-image bg-light d-flex align-items-center justify-content-center">
+                                    <i class="fas fa-image fa-2x text-muted"></i>
+                                </div>
+                            }
+                        </td>
+                        <td data-label="Nome">@combo.Name</td>
+                        <td data-label="Descrição">@combo.Description</td>
+                        <td data-label="Preço">
+                            @if (ViewBag.PrecoPromocional != null) @* This ViewBag.PrecoPromocional seems to be generic, you might want to pass it per combo or calculate it if it's based on combo.Price *@
+                            {
+                                <span style="text-decoration:line-through;color:#888;">R$ @combo.Price.ToString("F2")</span>
+                                <span style="color:#d9534f;font-weight:bold;"> R$ @ViewBag.PrecoPromocional.ToString("F2")</span>
+                            }
+                            else
+                            {
+                                <span>R$ @combo.Price.ToString("F2")</span>
+                            }
+                        </td>
+                        <td data-label="Status">
+                            <span class="badge @(combo.IsActive ? "bg-success" : "bg-secondary")">
+                                @(combo.IsActive ? "Ativo" : "Inativo")
+                            </span>
+                        </td>
+                        <td data-label="Produtos do Combo">
+                            <ul class="list-unstyled">
+                                @foreach (var comboProduct in combo.ComboProducts)
+                                {
+                                    <li>
+                                        <i class="fas fa-check text-success"></i>
+                                        @comboProduct.Product.Name
+                                        @if (comboProduct.Quantity > 1)
+                                        {
+                                            <span class="badge bg-info">x@comboProduct.Quantity</span>
+                                        }
+                                    </li>
+                                }
+                            </ul>
+                        </td>
+                        <td data-label="Ações">
+                            <div class="actions-container">
+                                <a asp-action="Details" asp-route-id="@combo.Id" class="btn btn-primary btn-sm">
+                                    Detalhes <i class="fas fa-eye"></i>
+                                </a>
+                                <a asp-action="Edit" asp-route-id="@combo.Id" class="btn btn-warning btn-sm">
+                                    Editar <i class="fas fa-edit"></i>
+                                </a>
+                                <a asp-action="Promotion" asp-route-id="@combo.Id" class="btn btn-success btn-sm">
+                                    Promoção <i class="fas fa-percentage"></i>
+                                </a>
+                                <a asp-action="Delete" asp-route-id="@combo.Id" class="btn btn-danger btn-sm">
+                                    Excluir <i class="fas fa-trash"></i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+
+@section Scripts {
+    <script>
+        // Adicionar confirmação para exclusão
+        $(document).ready(function() {
+            $('a[asp-action="Delete"]').click(function(e) {
+                if (!confirm('Tem certeza que deseja excluir este combo?')) {
+                    e.preventDefault();
+                }
+            });
+        });
+    </script>
+}

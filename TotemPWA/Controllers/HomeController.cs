@@ -41,7 +41,7 @@ public class HomeController : Controller
         if (cupom == null)
             return Json(new { valido = false, mensagem = "Cupom não encontrado." });
 
-        if (!cupom.Active )
+        if (!cupom.Active)
             return Json(new { valido = false, mensagem = "Cupom inativo." });
 
         if (cupom.ValidUntil.HasValue && cupom.ValidUntil < DateTime.Now)
@@ -73,7 +73,8 @@ public class HomeController : Controller
                 id = c.Id,
                 name = c.Name,
                 slug = c.Slug,
-                active = c.Id == activeCategoryId
+                active = c.Id == activeCategoryId,
+                image = c.Image != null ? Url.Action("GetCategoryImage", "HubAdministrativo", new { id = c.Id }) : "/img/default.png"
             })
             .ToList();
 
@@ -93,7 +94,8 @@ public class HomeController : Controller
                 id = c.Id,
                 name = c.Name,
                 slug = c.Slug,
-                active = c.Id == activeSubcategoryId
+                active = c.Id == activeSubcategoryId,
+                image = c.Image != null ? Url.Action("GetCategoryImage", "HubAdministrativo", new { id = c.Id }) : "/img/default.png"
             })
             .ToList();
 
@@ -109,6 +111,7 @@ public class HomeController : Controller
                 description = p.Description,
                 price = p.Price,
                 slug = p.Slug,
+                tipo = "produto",
                 precoPromocional = p.Promotions
                     .Where(pr => pr.ValidUntil >= now)
                     .OrderByDescending(pr => pr.ValidUntil)
@@ -117,10 +120,33 @@ public class HomeController : Controller
             })
             .ToListAsync();
 
+        // Combos da subcategoria ativa
+        var combos = await _context.Combos
+            .Where(c => c.CategoryId == activeSubcategoryId && c.IsActive)
+            .Include(c => c.Promotions)
+            .Select(c => new
+            {
+                id = c.Id,
+                name = c.Name,
+                description = c.Description,
+                price = c.Price,
+                slug = $"combo-{c.Id}", // Slug único para combos
+                tipo = "combo",
+                precoPromocional = c.Promotions
+                    .Where(pr => pr.ValidUntil >= now)
+                    .OrderByDescending(pr => pr.ValidUntil)
+                    .Select(pr => c.Price * (decimal)(1 - pr.Percent / 100.0))
+                    .FirstOrDefault()
+            })
+            .ToListAsync();
+
+        // Combinar produtos e combos
+        var allItems = products.Cast<object>().Concat(combos.Cast<object>()).ToList();
+
         ViewBag.Category = activeCategory?.Slug;
         ViewBag.Categories = rootCategories;
         ViewBag.SubCategories = subcategories;
-        ViewBag.Products = products;
+        ViewBag.Products = allItems;
 
         return View();
     }
@@ -151,7 +177,7 @@ public class HomeController : Controller
         ViewBag.ProdutoId = produto.Id;
         ViewBag.ProdutoSlug = produto.Slug;
         ViewBag.Editando = editando;
-        if (produto.Image != null)
+        if (produto != null)
         {
             string imgSrc = Url.Action("GetImage", "HubAdministrativo", new { id = produto.Id });
             ViewBag.Imagem = imgSrc;
@@ -161,12 +187,14 @@ public class HomeController : Controller
             ViewBag.Imagem = Url.Content("~/img/default.png");
         }
 
-        ViewBag.Ingredientes = produto.ProductIngredients.Select(pi => new {
+        ViewBag.Ingredientes = produto.ProductIngredients.Select(pi => new
+        {
             pi.Ingredient.Id,
             pi.Ingredient.Name,
             pi.Ingredient.Price,
             pi.Ingredient.Limit,
-            pi.Quantity
+            pi.Quantity,
+            Image = Url.Action("GetIngredientImage", "HubAdministrativo", new { id = pi.Ingredient.Id })
         }).ToList();
 
         return View();
@@ -184,6 +212,80 @@ public class HomeController : Controller
 
         // Redireciona para a URL com slug
         return RedirectToAction("Personalizar", new { slug = produto.Slug, editando });
+    }
+
+    // Método para personalizar combos
+    public async Task<IActionResult> PersonalizarCombo(int id, bool? editando = false)
+    {
+        var combo = await _context.Combos
+            .Include(c => c.ComboProducts)
+                .ThenInclude(cp => cp.Product)
+                    .ThenInclude(p => p.ProductIngredients)
+                        .ThenInclude(pi => pi.Ingredient)
+            .Include(c => c.Promotions)
+            .FirstOrDefaultAsync(c => c.Id == id);
+
+        if (combo == null) return NotFound();
+
+        var now = DateTime.Now;
+        var promo = combo.Promotions
+            .Where(p => p.ValidUntil >= now)
+            .OrderByDescending(p => p.ValidUntil)
+            .FirstOrDefault();
+        decimal precoFinal = combo.Price;
+        if (promo != null)
+        {
+            precoFinal = combo.Price * (decimal)(1 - promo.Percent / 100.0);
+        }
+
+        ViewBag.Nome = combo.Name;
+        ViewBag.Preco = precoFinal.ToString("0.00");
+        ViewBag.ComboId = combo.Id;
+        ViewBag.Editando = editando;
+        ViewBag.IsCombo = true;
+        
+        if (combo.Image != null)
+        {
+            string imgSrc = Url.Action("GetImage", "Combo", new { id = combo.Id });
+            ViewBag.Imagem = imgSrc;
+        }
+        else
+        {
+            ViewBag.Imagem = Url.Content("~/img/default.png");
+        }
+
+        // Preparar produtos do combo para exibição
+        ViewBag.ProdutosCombo = combo.ComboProducts.Select(cp => new {
+            cp.Product.Id,
+            cp.Product.Name,
+            cp.Product.Description,
+            cp.Product.Price,
+            cp.Quantity,
+            Image = Url.Action("GetImage", "HubAdministrativo", new { id = cp.Product.Id })
+        }).ToList();
+
+        // Preparar todos os ingredientes dos produtos do combo
+        var todosIngredientes = new List<object>();
+        foreach (var comboProduct in combo.ComboProducts)
+        {
+            foreach (var productIngredient in comboProduct.Product.ProductIngredients)
+            {
+                todosIngredientes.Add(new {
+                    Id = productIngredient.Ingredient.Id,
+                    Name = $"{comboProduct.Product.Name} - {productIngredient.Ingredient.Name}",
+                    Price = productIngredient.Ingredient.Price,
+                    Limit = productIngredient.Ingredient.Limit,
+                    Quantity = productIngredient.Quantity,
+                    ProductId = comboProduct.Product.Id,
+                    ProductName = comboProduct.Product.Name,
+                    Image = Url.Action("GetIngredientImage", "HubAdministrativo", new { id = productIngredient.Ingredient.Id })
+                });
+            }
+        }
+
+        ViewBag.Ingredientes = todosIngredientes;
+
+        return View("Personalizar");
     }
 
     public IActionResult Carrinho()

@@ -1,0 +1,172 @@
+@model TotemPWA.Models.Combo
+
+@{
+    ViewData["Title"] = "Detalhes do Combo";
+    Layout = "_AdminLayout";
+}
+<link rel="stylesheet" href="@Url.Content("~/css/categorias/comboDetails.css")">
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h3>Detalhes do Combo: @Model.Name</h3>
+                    <div>
+                        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">
+                            <i class="fas fa-edit"></i> Editar
+                        </a>
+                        <a asp-action="Index" class="btn btn-secondary">
+                            <i class="fas fa-arrow-left"></i> Voltar
+                        </a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            @if (Model.Image != null)
+                            {
+                                <img src="@Url.Action("GetImage", "Combo", new { id = Model.Id })" 
+                                     alt="@Model.Name" class="img-fluid rounded" />
+                            }
+                            else
+                            {
+                                <div class="bg-light d-flex align-items-center justify-content-center rounded" style="height: 200px;">
+                                    <i class="fas fa-image fa-3x text-muted"></i>
+                                </div>
+                            }
+                        </div>
+                        <div class="col-md-8">
+                            <h4>@Model.Name</h4>
+                            <p class="text-muted">@Model.Description</p>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <strong>Status:</strong>
+                                    <span class="badge @(Model.IsActive ? "bg-success" : "bg-secondary")">
+                                        @(Model.IsActive ? "Ativo" : "Inativo")
+                                    </span>
+                                </div>
+                                <div class="col-md-6">
+                                    <strong>Preço:</strong> R$ @Model.Price.ToString("0.00")
+                                </div>
+                            </div>
+                            
+                            @if (ViewBag.PrecoPromocional != null)
+                            {
+                                <div class="alert alert-success mt-3">
+                                    <h5><i class="fas fa-percentage"></i> Promoção Ativa!</h5>
+                                    <p class="mb-1">
+                                        <strong>Preço Original:</strong> R$ @Model.Price.ToString("0.00")<br>
+                                        <strong>Preço Promocional:</strong> R$ @ViewBag.PrecoPromocional.ToString("0.00")<br>
+                                        <strong>Desconto:</strong> @ViewBag.Promocao.Percent%<br>
+                                        <strong>Válido até:</strong> @ViewBag.Promocao.ValidUntil.ToString("dd/MM/yyyy HH:mm")
+                                    </p>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                    
+                    <hr>
+                    
+                    <h5>Produtos do Combo</h5>
+                    @if (Model.ComboProducts.Any())
+                    {
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Produto</th>
+                                        <th>Categoria</th>
+                                        <th>Quantidade</th>
+                                        <th>Preço Unitário</th>
+                                        <th>Subtotal</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var comboProduct in Model.ComboProducts)
+                                    {
+                                        <tr>
+                                            <td>
+                                                <strong>@comboProduct.Product.Name</strong>
+                                            </td>
+                                            <td>@comboProduct.Product.Category?.Name</td>
+                                            <td>
+                                                <span class="badge bg-info">@comboProduct.Quantity</span>
+                                            </td>
+                                            <td>R$ @comboProduct.Product.Price.ToString("0.00")</td>
+                                            <td>R$ @((comboProduct.Product.Price * comboProduct.Quantity).ToString("0.00"))</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                                <tfoot>
+                                    <tr class="table-info">
+                                        <td colspan="4" class="text-end"><strong>Total dos Produtos:</strong></td>
+                                        <td>
+                                            <strong>
+                                                R$ @Model.ComboProducts.Sum(cp => cp.Product.Price * cp.Quantity).ToString("0.00")
+                                            </strong>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-warning">
+                                        <td colspan="4" class="text-end"><strong>Preço do Combo:</strong></td>
+                                        <td>
+                                            <strong>R$ @Model.Price.ToString("0.00")</strong>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="alert alert-warning">
+                            <i class="fas fa-exclamation-triangle"></i> Nenhum produto associado a este combo.
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Ações</h5>
+                </div>
+                <div class="card-body">
+                    <div class="d-grid gap-2">
+                        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">
+                            <i class="fas fa-edit"></i> Editar Combo
+                        </a>
+                        <a asp-action="Promotion" asp-route-id="@Model.Id" class="btn btn-success">
+                            <i class="fas fa-percentage"></i> Gerenciar Promoção
+                        </a>
+                        <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger">
+                            <i class="fas fa-trash"></i> Excluir Combo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            @if (ViewBag.PrecoPromocional != null)
+            {
+                <div class="card mt-3">
+                    <div class="card-header bg-success text-white">
+                        <h5><i class="fas fa-percentage"></i> Promoção Ativa</h5>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Desconto:</strong> @ViewBag.Promocao.Percent%</p>
+                        <p><strong>Válido até:</strong> @ViewBag.Promocao.ValidUntil.ToString("dd/MM/yyyy HH:mm")</p>
+                        <form asp-action="RemovePromotion" method="post" style="display: inline;">
+                            <input type="hidden" name="id" value="@Model.Id" />
+                            <button type="submit" class="btn btn-outline-danger btn-sm" 
+                                    onclick="return confirm('Tem certeza que deseja remover a promoção?')">
+                                <i class="fas fa-times"></i> Remover Promoção
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div> 

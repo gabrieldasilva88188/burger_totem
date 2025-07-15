@@ -9,8 +9,9 @@ namespace TotemPWA.Models
         [Key]
         public int Id { get; set; }
 
-        [Required]
-        public int ProductId { get; set; }
+        // Agora ProductId e ComboId são opcionais, permitindo promoção para produto OU combo
+        public int? ProductId { get; set; }
+        public int? ComboId { get; set; }
 
         [Required]
         [Range(0, 100)]
@@ -20,6 +21,9 @@ namespace TotemPWA.Models
         public DateTime ValidUntil { get; set; }
 
         [ForeignKey("ProductId")]
-        public Product Product { get; set; }
+        public Product? Product { get; set; }
+
+        [ForeignKey("ComboId")]
+        public Combo? Combo { get; set; }
     }
 } 

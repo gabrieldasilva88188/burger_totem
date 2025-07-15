@@ -1,5 +1,5 @@
 @{
-    Layout = "_WelcomeLayout";
+    Layout = "_WelcomeLayout";
 }
 
 <!DOCTYPE html>
@@ -10,42 +10,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagamento com applepay</title>
-    <link rel="stylesheet" href="@Url.Content("~/css/googlepay.css")">
+    <link rel="stylesheet" href="@Url.Content("~/css/pagamento/googlepay.css")">
     <link rel="stylesheet" href="@Url.Content("~/css/fontawesome-free-6.7.2-web/css/all.css")">
     <link rel="stylesheet" href="@Url.Content("~/css/fontawesome-free-6.7.2-web/css/all.min.css")">
     <script src="@Url.Content("~/css/fontawesome-free-6.7.2-web/js/all.js")"></script>
     <script src="@Url.Content("~/css/fontawesome-free-6.7.2-web/js/all.min.js")"></script>
-</head> 
+</head>
 
 <body>
-    <i onclick="voltar()" class="fa-solid fa-arrow-left fa-2xl"></i>
-    <h1>Pagamento com Apple Pay</h1>
-    <p>Aproxime seu celular do leitor para pagar</p>
-    <img src="~/img/tpagamento/googlepay.png" alt="Google Pay logo">
+        <i onclick="voltar()" class="fa-solid fa-arrow-left fa-2xl"></i>
+        <h1>Pagamento com Apple Pay</h1>
+        <p>Aproxime seu celular do leitor para pagar</p>
+        <img src="~/img/tpagamento/googlepay.png" alt="Google Pay logo">
 
-        <p><strong>Total a pagar: <span id="totalPedidoDisplay">R$ 0,00</span></strong></p> 
-    
-    <script>
-        function voltar() {
-            window.location.href = "@Url.Content("~/Pagamento/tpagamento")";
-        }
+        <p><strong>Total a pagar: <span id="totalPedidoDisplay">R$ 0,00</span></strong></p>
+       
+       
+    <script>
+        function voltar() {
+            window.location.href = "@Url.Content("~/Pagamento/tpagamento")";
+        }
 
         // Script para recuperar e exibir o valor do pedido
-        document.addEventListener('DOMContentLoaded', function() {
-            let totalDoPedido = sessionStorage.getItem("totalPedido");
+        document.addEventListener('DOMContentLoaded', function () {
+            let totalDoPedido = sessionStorage.getItem("totalPedido");
 
-            if (totalDoPedido) {
-                const totalFormatado = parseFloat(totalDoPedido).toLocaleString('pt-BR', {
-                    style: 'currency',
-                    currency: 'BRL'
-                });
-                document.getElementById('totalPedidoDisplay').innerText = totalFormatado;
-            } else {
-                document.getElementById('totalPedidoDisplay').innerText = 'R$ 0,00';
-                console.warn("Total do pedido não encontrado no sessionStorage na página de pagamento do Google Pay.");
-            }
-        });
-    </script>
+            if (totalDoPedido) {
+                const totalFormatado = parseFloat(totalDoPedido).toLocaleString('pt-BR', {
+                    style: 'currency',
+                    currency: 'BRL'
+                });
+                document.getElementById('totalPedidoDisplay').innerText = totalFormatado;
+            } else {
+                document.getElementById('totalPedidoDisplay').innerText = 'R$ 0,00';
+                console.warn("Total do pedido não encontrado no sessionStorage na página de pagamento do Google Pay.");
+            }
+        });
+    </script>
 </body>
 
 </html>

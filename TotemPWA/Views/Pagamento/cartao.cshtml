@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagamento cartão</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="@Url.Content("~/css/cartao.css")">
+    <link rel="stylesheet" href="@Url.Content("~/css/pagamento/cartao.css")">
     <link rel="stylesheet" href="@Url.Content("~/css/fontawesome-free-6.7.2-web/css/all.css")">
     <link rel="stylesheet" href="@Url.Content("~/css/fontawesome-free-6.7.2-web/css/all.min.css")">
     <script src="@Url.Content("~/css/fontawesome-free-6.7.2-web/js/all.js")"></script>
@@ -33,7 +33,8 @@
         <div class="modal-content">
             <span class="close-button" onclick="closeErrorModal()">&times;</span>
             <h2>Erro no Pagamento</h2>
-            <p>Não foi possível processar seu pagamento. Por favor, verifique os dados do cartão ou tente novamente mais tarde.</p>
+            <p>Não foi possível processar seu pagamento. Por favor, verifique os dados do cartão ou tente novamente mais
+                tarde.</p>
             <p>Se o problema persistir, entre em contato com nosso suporte.</p>
         </div>
     </div>
@@ -59,15 +60,14 @@
         });
 
         function handlePaymentSuccess() {
-            // Simulate a delay for processing, then redirect
             setTimeout(() => {
-                window.location.href = "@Url.Content("~/Pagamento/Sucesso")"; // Assuming "Confirmacao" is your success page
-            }, 1000); // 1 second delay
+                window.location.href = "@Url.Content("~/Pagamento/Sucesso")";
+            }, 1000); 
         }
 
         function handlePaymentError() {
             const errorModal = document.getElementById('errorModal');
-            errorModal.style.display = 'flex'; // Use flex to center the modal content
+            errorModal.style.display = 'flex'; 
         }
 
         function closeErrorModal() {
@@ -75,8 +75,7 @@
             errorModal.style.display = 'none';
         }
 
-        // Close the modal if the user clicks outside of it
-        window.onclick = function(event) {
+        window.onclick = function (event) {
             const errorModal = document.getElementById('errorModal');
             if (event.target == errorModal) {
                 errorModal.style.display = "none";

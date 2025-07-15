@@ -273,17 +273,10 @@ C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\To
 C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\TotemPWA.RazorAssemblyInfo.cs
 C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\TotemPWA.sourcelink.json
 C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\scopedcss\bundle\TotemPWA.styles.css
-C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\prh438x6dk-ix4iiqfejh.gz
-C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\m43fx650my-hq12f9cvz2.gz
-C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\1xn8zmblva-tlxiyys2eu.gz
-C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\cyjnqtr5id-96gkz4cywu.gz
 C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\o714mzz554-5ipweew5fc.gz
 C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\0650jfti8d-5ipweew5fc.gz
 C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\rpc4ytm2qg-wz9ib0cs98.gz
 C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\audkmcsjax-5ipweew5fc.gz
-C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\dyyif5p930-m2irtc7wpq.gz
-C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\owilyj4x3y-j0tsws4kh2.gz
-C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\spcolm9jj1-xgfz5c9vrw.gz
 C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\tpm17afnd2-p8i1qpdwjn.gz
 C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\f6epgipj57-asslg8p8x5.gz
 C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\1ntz0hhmif-90n5zh25z8.gz
@@ -2383,20 +2376,15 @@ C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\co
 C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\symeazeol5-bvqen9za82.gz
 C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\y8gteuchnu-cj5z2qygue.gz
 C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\nou4uahdpt-fc5px87938.gz
-C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\u44ood7rum-2wzu7s8edb.gz
 C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\hb6akxdleh-c3kg0f4r9a.gz
 C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\5yx7zrx46y-5zgccvpgxg.gz
 C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\6m86nlmzvv-ju8eu174ki.gz
 C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\c25vjakjsr-haflj4q58s.gz
 C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\hqxrcm7pdr-qx13nqfhod.gz
-C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\x5bc07sofz-vu6y8f2ar1.gz
-C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\1p7qm2t0m7-4suk14u3o2.gz
-C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\5f1lcnn17s-2dzehjqynk.gz
 C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\e36xmwwxxe-xtrbb22q0l.gz
 C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\nj43r3o61c-jnfkrvzbyq.gz
 C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\xgsfaz54dc-v8e7b45soq.gz
 C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\rmorwa7xx8-aptn57x6tb.gz
-C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\m9ktxqvt5g-kwy17k2gf0.gz
 C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\ade2i2q1em-61n19gt1b8.gz
 C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\e2aey3kj30-p4924a0amb.gz
 C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\9y97fnyyhx-xtxxf3hu2r.gz
@@ -2475,7 +2463,6 @@ C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\re
 C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\TotemPWA.pdb
 C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\TotemPWA.genruntimeconfig.cache
 C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\ref\TotemPWA.dll
-C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\5x7mdqe4nv-ztx9hu6l7v.gz
 C:\Users\dani-\Desktop\burger_totem\totempwa\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\dani-\Desktop\burger_totem\totempwa\bin\Debug\net9.0\appsettings.json
 C:\Users\dani-\Desktop\burger_totem\totempwa\bin\Debug\net9.0\Data\SeedData.json
@@ -4857,3 +4844,22 @@ C:\Users\dani-\Desktop\burger_totem\totempwa\obj\Debug\net9.0\refint\TotemPWA.dl
 C:\Users\dani-\Desktop\burger_totem\totempwa\obj\Debug\net9.0\TotemPWA.pdb
 C:\Users\dani-\Desktop\burger_totem\totempwa\obj\Debug\net9.0\TotemPWA.genruntimeconfig.cache
 C:\Users\dani-\Desktop\burger_totem\totempwa\obj\Debug\net9.0\ref\TotemPWA.dll
+C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\dg1wzfn70u-71cxltmaxe.gz
+C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\it5yyi7nup-78lh2e1uux.gz
+C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\zk2bhm8nlp-bbwhmxxd2x.gz
+C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\py81k7xwak-giwnff931r.gz
+C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\oml4xj7cdx-0m4ycvwkju.gz
+C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\tt4gngrgad-x8m3wa0z7d.gz
+C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\7k7nnv751u-ix4iiqfejh.gz
+C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\pzx6whvbzr-hq12f9cvz2.gz
+C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\7xc316meax-tlxiyys2eu.gz
+C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\agxmelnrxd-m2irtc7wpq.gz
+C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\0bjc3fjgtj-j0tsws4kh2.gz
+C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\bwd7rzrexy-xgfz5c9vrw.gz
+C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\sqael2lurf-dxhom7yjr2.gz
+C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\2bgx16um2f-ztx9hu6l7v.gz
+C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\11ebiabo1a-b03oe7f9xt.gz
+C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\616aa19g2l-2wzu7s8edb.gz
+C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\i1a82bl0vm-vu6y8f2ar1.gz
+C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\f1abw8t2ej-2dzehjqynk.gz
+C:\Users\Nefalem\Desktop\Versão Final\burger_totem\totempwa\obj\Debug\net9.0\compressed\o9783lqeqo-kwy17k2gf0.gz

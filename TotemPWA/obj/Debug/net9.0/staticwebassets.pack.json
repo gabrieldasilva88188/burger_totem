@@ -1,20 +1,28 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\css\\cardapio.css",
-      "PackagePath": "staticwebassets\\css\\cardapio.css"
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\css\\categorias\\comboCreate.css",
+      "PackagePath": "staticwebassets\\css\\categorias\\comboCreate.css"
     },
     {
-      "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\css\\carregamento.css",
-      "PackagePath": "staticwebassets\\css\\carregamento.css"
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\css\\categorias\\comboDelete.css",
+      "PackagePath": "staticwebassets\\css\\categorias\\comboDelete.css"
     },
     {
-      "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\css\\carrinho.css",
-      "PackagePath": "staticwebassets\\css\\carrinho.css"
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\css\\categorias\\comboDetails.css",
+      "PackagePath": "staticwebassets\\css\\categorias\\comboDetails.css"
     },
     {
-      "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\css\\cartao.css",
-      "PackagePath": "staticwebassets\\css\\cartao.css"
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\css\\categorias\\comboEdit.css",
+      "PackagePath": "staticwebassets\\css\\categorias\\comboEdit.css"
+    },
+    {
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\css\\categorias\\comboPromotion.css",
+      "PackagePath": "staticwebassets\\css\\categorias\\comboPromotion.css"
+    },
+    {
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\css\\categorias\\combosCRUD.css",
+      "PackagePath": "staticwebassets\\css\\categorias\\combosCRUD.css"
     },
     {
       "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\css\\categorias\\deletarCategoria.css",
@@ -31,18 +39,6 @@
     {
       "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\css\\categorias\\novaCategoria.css",
       "PackagePath": "staticwebassets\\css\\categorias\\novaCategoria.css"
-    },
-    {
-      "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\css\\cliCPF.css",
-      "PackagePath": "staticwebassets\\css\\cliCPF.css"
-    },
-    {
-      "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\css\\cliNome.css",
-      "PackagePath": "staticwebassets\\css\\cliNome.css"
-    },
-    {
-      "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\css\\escolha.css",
-      "PackagePath": "staticwebassets\\css\\escolha.css"
     },
     {
       "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\css\\fontawesome-free-6.7.2-web\\LICENSE.txt",
@@ -8641,8 +8637,36 @@
       "PackagePath": "staticwebassets\\css\\fontawesome-free-6.7.2-web\\webfonts\\fa-v4compatibility.woff2"
     },
     {
-      "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\css\\googlepay.css",
-      "PackagePath": "staticwebassets\\css\\googlepay.css"
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\css\\home\\cardapio.css",
+      "PackagePath": "staticwebassets\\css\\home\\cardapio.css"
+    },
+    {
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\css\\home\\carregamento.css",
+      "PackagePath": "staticwebassets\\css\\home\\carregamento.css"
+    },
+    {
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\css\\home\\carrinho.css",
+      "PackagePath": "staticwebassets\\css\\home\\carrinho.css"
+    },
+    {
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\css\\home\\cliCPF.css",
+      "PackagePath": "staticwebassets\\css\\home\\cliCPF.css"
+    },
+    {
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\css\\home\\cliNome.css",
+      "PackagePath": "staticwebassets\\css\\home\\cliNome.css"
+    },
+    {
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\css\\home\\escolha.css",
+      "PackagePath": "staticwebassets\\css\\home\\escolha.css"
+    },
+    {
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\css\\home\\personalizar.css",
+      "PackagePath": "staticwebassets\\css\\home\\personalizar.css"
+    },
+    {
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\css\\home\\site.css",
+      "PackagePath": "staticwebassets\\css\\home\\site.css"
     },
     {
       "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\css\\hubadmin.css",
@@ -8665,16 +8689,24 @@
       "PackagePath": "staticwebassets\\css\\ingredientes\\novoIngredientes.css"
     },
     {
-      "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\css\\pagDinheiro.css",
-      "PackagePath": "staticwebassets\\css\\pagDinheiro.css"
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\css\\pagamento\\cartao.css",
+      "PackagePath": "staticwebassets\\css\\pagamento\\cartao.css"
     },
     {
-      "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\css\\personalizar.css",
-      "PackagePath": "staticwebassets\\css\\personalizar.css"
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\css\\pagamento\\googlepay.css",
+      "PackagePath": "staticwebassets\\css\\pagamento\\googlepay.css"
     },
     {
-      "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\css\\pix.css",
-      "PackagePath": "staticwebassets\\css\\pix.css"
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\css\\pagamento\\pagDinheiro.css",
+      "PackagePath": "staticwebassets\\css\\pagamento\\pagDinheiro.css"
+    },
+    {
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\css\\pagamento\\pix.css",
+      "PackagePath": "staticwebassets\\css\\pagamento\\pix.css"
+    },
+    {
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\css\\pagamento\\tpagamento.css",
+      "PackagePath": "staticwebassets\\css\\pagamento\\tpagamento.css"
     },
     {
       "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\css\\produto\\deletarProduto.css",
@@ -8691,14 +8723,6 @@
     {
       "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\css\\produto\\produtosCRUD.css",
       "PackagePath": "staticwebassets\\css\\produto\\produtosCRUD.css"
-    },
-    {
-      "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\css\\site.css",
-      "PackagePath": "staticwebassets\\css\\site.css"
-    },
-    {
-      "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\css\\tpagamento.css",
-      "PackagePath": "staticwebassets\\css\\tpagamento.css"
     },
     {
       "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\favicon.ico",
@@ -8837,10 +8861,6 @@
       "PackagePath": "staticwebassets\\img\\ingredientes\\alface.png"
     },
     {
-      "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\img\\ingredientes\\bacon.png",
-      "PackagePath": "staticwebassets\\img\\ingredientes\\bacon.png"
-    },
-    {
       "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\img\\ingredientes\\cebola.png",
       "PackagePath": "staticwebassets\\img\\ingredientes\\cebola.png"
     },
@@ -8903,6 +8923,10 @@
     {
       "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\img\\tpagamento\\cartao.png",
       "PackagePath": "staticwebassets\\img\\tpagamento\\cartao.png"
+    },
+    {
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\img\\tpagamento\\confirme 1.png",
+      "PackagePath": "staticwebassets\\img\\tpagamento\\confirme 1.png"
     },
     {
       "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final\\burger_totem\\totempwa\\wwwroot\\img\\tpagamento\\googlepay.png",

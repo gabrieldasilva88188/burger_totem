@@ -1,17 +1,19 @@
 @{
-    Layout = "_WelcomeLayout";
+  Layout = "_WelcomeLayout";
 }
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
-<!-- Estilo principal -->
-  <link rel="stylesheet" href="@Url.Content("~/css/tpagamento.css")"/>
-<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de pagamento</title>
+  <!-- Estilo principal -->
+  <link rel="stylesheet" href="@Url.Content("~/css/pagamento/tpagamento.css")" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela de pagamento</title>
   <!-- Font Awesome -->
   <script src="@Url.Content("~/css/fontawesome-free-6.7.2-web/js/all.min.js")"></script>
 </head>
+
 <body>
   <!-- Container central com proporção fixa -->
   <div class="main-container">
@@ -20,7 +22,7 @@
     <a href="#" class="back-button " onclick="voltar()">
       <i class="fa-solid fa-arrow-left fa-xl"></i>
     </a>
-    
+
     <h1>COMO DESEJA REALIZAR O PAGAMENTO?</h1>
     <h2>SELECIONE A FORMA DE PAGAMENTO</h2>
 
@@ -54,8 +56,8 @@
   </div>
   <script>
     function selectPayment(method) {
-    window.location.href = "@Url.Content("~/Pagamento/Applepay")";
-  }
+      window.location.href = "@Url.Content("~/Pagamento/Applepay")";
+    }
     function redirecionarGooglePay() {
       window.location.href = "@Url.Content("~/Pagamento/Googlepay")";
     }
@@ -65,12 +67,13 @@
     function redirecionarCartao() {
       window.location.href = "@Url.Content("~/Pagamento/Cartao")";
     }
-     function redirecionarDinheiro() {
+    function redirecionarDinheiro() {
       window.location.href = "@Url.Content("~/Pagamento/Dinheiro")";
     }
     function voltar() {
       window.location.href = "@Url.Content("~/Home/escolha")";
     }
   </script>
-  </body>
+</body>
+
 </html>

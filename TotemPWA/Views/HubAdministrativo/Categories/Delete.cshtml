@@ -10,11 +10,11 @@
 <h2>Excluir Categoria</h2>
 <div>
     <div class="alert alert-danger">
-    <h4>Tem certeza que deseja excluir a categoria <strong>@Model.Name</strong>?</h4>
+        <h4>Tem certeza que deseja excluir a categoria <strong>@Model.Name</strong>?</h4>
     </div>
     <form asp-action="DeleteCategory" method="post">
         <input type="hidden" asp-for="Id" />
         <button type="submit" class="btn btn-danger">Excluir</button>
         <a href="@Url.Action("Categories", "HubAdministrativo")" class="btn btn-secondary">Cancelar</a>
     </form>
-</div> 
+</div>

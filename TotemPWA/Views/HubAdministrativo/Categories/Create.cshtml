@@ -1,26 +1,27 @@
 @model TotemPWA.Models.Category
+
 @{
-    ViewBag.Title = "Adicionar Categoria";
+    ViewData["Title"] = "Nova Categoria";
 }
-@{
-    Layout = "~/Views/Shared/_AdminLayout.cshtml";
-    ViewData["Title"] = "Hub Administrativo";
-}
-<link rel="stylesheet" href="@Url.Content("~/css/produto/novoProduto.css")">
-<h2>Adicionar Categoria</h2>
-<form asp-action="CreateCategory" method="post">
+
+<h2>Nova Categoria</h2>
+
+<form asp-action="CreateCategory" enctype="multipart/form-data">
     <div class="form-group">
-        <label asp-for="Name">Nome</label>
+        <label asp-for="Name"></label>
         <input asp-for="Name" class="form-control" />
         <span asp-validation-for="Name" class="text-danger"></span>
     </div>
     <div class="form-group">
         <label asp-for="ParentCategoryId">Categoria Pai</label>
         <select asp-for="ParentCategoryId" asp-items="ViewBag.Categorias" class="form-control">
-            <option value="">Nenhuma</option>
+            <option value="">Nenhuma (Categoria Raiz)</option>
         </select>
-        <span asp-validation-for="ParentCategoryId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label>Imagem da Categoria</label>
+        <input type="file" name="ImageFile" class="form-control" accept="image/*" />
     </div>
     <button type="submit" class="btn btn-success">Salvar</button>
-    <a href="@Url.Action("Categories", "HubAdministrativo")" class="btn btn-secondary">Cancelar</a>
-</form> 
+    <a asp-action="Categories" class="btn btn-secondary">Voltar</a>
+</form>

@@ -13,6 +13,8 @@ namespace TotemPWA.Models
 
         public int Limit { get; set; }
 
+        public byte[]? Image { get; set; }
+
         public ICollection<ProductIngredient> ProductIngredients { get; set; } = new List<ProductIngredient>();
     }
 } 

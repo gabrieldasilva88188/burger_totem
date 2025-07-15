@@ -40,6 +40,7 @@ body {
   font-size: xx-large;
   color: #990000;
   background-color: #F7F7CF;
+  margin-bottom: 70px;
   margin-top: 50px;
   z-index: 1;
 }
@@ -112,4 +113,5 @@ p {
     width: 35vw;
     height: auto;
   }
+
 }

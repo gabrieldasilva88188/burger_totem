@@ -35,6 +35,9 @@ namespace TotemPWA.Models
 
         public ICollection<Combo> Combos { get; set; } = new List<Combo>();
 
+        // Imagem da categoria
+        public byte[]? Image { get; set; }
+
         private string GenerateSlug(string text)
         {
             text = text.ToLowerInvariant().Trim();

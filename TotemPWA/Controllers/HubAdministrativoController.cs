@@ -310,8 +310,14 @@ public class HubAdministrativoController : Controller
     }
 
     [HttpPost]
-    public async Task<IActionResult> CreateCategory(Category category)
+    public async Task<IActionResult> CreateCategory(Category category, IFormFile? ImageFile)
     {
+        if (ImageFile != null && ImageFile.Length > 0)
+        {
+            using var ms = new MemoryStream();
+            await ImageFile.CopyToAsync(ms);
+            category.Image = ms.ToArray();
+        }
         if (ModelState.IsValid)
         {
             _context.Categories.Add(category);
@@ -332,16 +338,27 @@ public class HubAdministrativoController : Controller
     }
 
     [HttpPost]
-    public async Task<IActionResult> EditCategory(Category category)
+    public async Task<IActionResult> EditCategory(Category category, IFormFile? ImageFile)
     {
+        var categoryDb = await _context.Categories.FindAsync(category.Id);
+        if (categoryDb == null) return NotFound();
+        if (ImageFile != null && ImageFile.Length > 0)
+        {
+            using var ms = new MemoryStream();
+            await ImageFile.CopyToAsync(ms);
+            categoryDb.Image = ms.ToArray();
+        }
+        categoryDb.Name = category.Name;
+        categoryDb.Slug = category.Slug;
+        categoryDb.ParentCategoryId = category.ParentCategoryId;
         if (ModelState.IsValid)
         {
-            _context.Categories.Update(category);
+            _context.Categories.Update(categoryDb);
             await _context.SaveChangesAsync();
             return RedirectToAction("Categories");
         }
         ViewBag.Categorias = new SelectList(await _context.Categories.Where(c => c.Id != category.Id).ToListAsync(), "Id", "Name", category.ParentCategoryId);
-        return View("Categories/Edit", category);
+        return View("Categories/Edit", categoryDb);
     }
 
     [HttpGet]
@@ -360,6 +377,22 @@ public class HubAdministrativoController : Controller
         _context.Categories.Remove(categoryDb);
         await _context.SaveChangesAsync();
         return RedirectToAction("Categories");
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> GetCategoryImage(int id)
+    {
+        var category = await _context.Categories.FindAsync(id);
+        if (category?.Image == null) return NotFound();
+        string mimeType = "image/jpeg";
+        var img = category.Image;
+        if (img.Length > 3 && img[0] == 0x89 && img[1] == 0x50 && img[2] == 0x4E && img[3] == 0x47)
+            mimeType = "image/png";
+        else if (img.Length > 2 && img[0] == 0x47 && img[1] == 0x49 && img[2] == 0x46)
+            mimeType = "image/gif";
+        else if (img.Length > 11 && img[8] == 0x57 && img[9] == 0x45 && img[10] == 0x42 && img[11] == 0x50)
+            mimeType = "image/webp";
+        return File(category.Image, mimeType);
     }
 
     // CRUD de Funcionários
@@ -383,6 +416,7 @@ public class HubAdministrativoController : Controller
         {
             _context.Employees.Add(employee);
             await _context.SaveChangesAsync();
+            TempData["Success"] = "Funcionário criado com sucesso!";
             return RedirectToAction("Employees");
         }
         return View("Employees/Create", employee);
@@ -418,6 +452,7 @@ public class HubAdministrativoController : Controller
 
             _context.Employees.Update(employeeDb);
             await _context.SaveChangesAsync();
+            TempData["Success"] = "Funcionário atualizado com sucesso!";
             return RedirectToAction("Employees");
         }
         return View("Employees/Edit", employee);
@@ -428,6 +463,15 @@ public class HubAdministrativoController : Controller
     {
         var employee = await _context.Employees.FindAsync(id);
         if (employee == null) return NotFound();
+        
+        // Verificar se o funcionário logado está tentando deletar a si mesmo
+        var currentEmployeeId = HttpContext.Session.GetInt32("EmployeeId");
+        if (currentEmployeeId == id)
+        {
+            TempData["Error"] = "Você não pode deletar seu próprio perfil.";
+            return RedirectToAction("Employees");
+        }
+        
         return View("Employees/Delete", employee);
     }
 
@@ -436,8 +480,18 @@ public class HubAdministrativoController : Controller
     {
         var employeeDb = await _context.Employees.FindAsync(employee.Id);
         if (employeeDb == null) return NotFound();
+        
+        // Verificar se o funcionário logado está tentando deletar a si mesmo
+        var currentEmployeeId = HttpContext.Session.GetInt32("EmployeeId");
+        if (currentEmployeeId == employee.Id)
+        {
+            TempData["Error"] = "Você não pode deletar seu próprio perfil.";
+            return RedirectToAction("Employees");
+        }
+        
         _context.Employees.Remove(employeeDb);
         await _context.SaveChangesAsync();
+        TempData["Success"] = "Funcionário excluído com sucesso!";
         return RedirectToAction("Employees");
     }
 

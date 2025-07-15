@@ -53,7 +53,7 @@ public class EmployeeLoginController : Controller
     public IActionResult Logout()
     {
         HttpContext.Session.Clear();
-        return RedirectToAction("Index", "EmployeeLogin");
+        return Redirect("/EmployeeLogin/Login");
     }
 
     private string HashPassword(string password)

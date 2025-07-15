@@ -73,7 +73,8 @@ public class HomeController : Controller
                 id = c.Id,
                 name = c.Name,
                 slug = c.Slug,
-                active = c.Id == activeCategoryId
+                active = c.Id == activeCategoryId,
+                image = c.Image != null ? Url.Action("GetCategoryImage", "HubAdministrativo", new { id = c.Id }) : "/img/default.png"
             })
             .ToList();
 
@@ -93,7 +94,8 @@ public class HomeController : Controller
                 id = c.Id,
                 name = c.Name,
                 slug = c.Slug,
-                active = c.Id == activeSubcategoryId
+                active = c.Id == activeSubcategoryId,
+                image = c.Image != null ? Url.Action("GetCategoryImage", "HubAdministrativo", new { id = c.Id }) : "/img/default.png"
             })
             .ToList();
 

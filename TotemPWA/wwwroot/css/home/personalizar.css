@@ -276,7 +276,6 @@ button[onclick="adicionarAoCarrinho()"]:hover {
     height: 60px;
     padding: 12px 24px;
     font-size: 1rem;
-    background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 8px;
@@ -284,15 +283,12 @@ button[onclick="adicionarAoCarrinho()"]:hover {
     transition: 0.2s;
 }
 
-.botoes-personalizar button:hover {
-    background-color: #45a049;
-}
 
 .btn-voltar {
     height: 60px;
     padding: 12px 24px;
     font-size: 1rem;
-    background-color: #6c757d;
+    background-color: #84857e;
     color: white;
     border: none;
     border-radius: 8px;
@@ -342,8 +338,5 @@ button[onclick="adicionarAoCarrinho()"]:hover {
     transition: 0.2s;
 }
 
-#inactivityPrompt button:hover {
-    background: #45a049;
-}
 
 
